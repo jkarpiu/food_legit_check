@@ -87,6 +87,7 @@ class _HomeState extends State<Home> {
                     SizedBox(
                         height: 225,
                         child: ListView.builder(
+                            physics: NeverScrollableScrollPhysics(),
                             itemCount: 4,
                             itemBuilder: (BuildContext ctxt, int index) {
                               return ListTile(
