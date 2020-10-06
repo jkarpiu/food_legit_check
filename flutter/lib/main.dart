@@ -1,5 +1,6 @@
 import 'package:barcode_food_scaner/home.dart';
 import 'package:barcode_food_scaner/stats.dart';
+import 'package:barcode_food_scaner/addProduct.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -93,9 +94,12 @@ class _FLCState extends State<FLC> {
                 ListTile(
                   title: Text('Dodaj produkt'),
                   leading: Icon(Icons.library_add_outlined),
+                  selected: (selectedOption == "add"),
                   onTap: () {
-                    // Update the state of the app.
-                    // ...
+                    setState(() {
+                      currentState = Add();
+                      selectedOption = "add";
+                    });
                     Navigator.pop(context);
                   },
                 ),
