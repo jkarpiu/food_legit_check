@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
+import 'package:barcode_food_scaner/compositorsWidget.dart';
 
 class Add extends StatefulWidget {
   @override
@@ -8,15 +9,9 @@ class Add extends StatefulWidget {
 }
 
 class _AddState extends State<Add> {
-  Map _compositionElement = {
-    "id": 0,
-    "name": "",
-    "diffrentName": "",
-    "amount": 0
-  };
-
   Map product = {
     "brand": "",
+    "image": "",
     "name": "",
     "price": 0,
     "barcode": 0,
@@ -92,55 +87,31 @@ class _AddState extends State<Add> {
             }));
   }
 
-  Widget buildComposition() {
-    return Column(children: [
-      ListView.builder(
-        physics: NeverScrollableScrollPhysics(),
-        shrinkWrap: true,
-        itemCount: _compositorCounter,
-        itemBuilder: (BuildContext ctxt, int index) {
-          product["composition"].addAll(_compositionElement);
-          return ListTile(
-            title: Column(
-              children: [
-                TextFormField(
-                  decoration: InputDecoration(hintText: "Nazwa składnika"),
-                  validator: (String value) {
-                    if (value.isEmpty) return "To pole nie może być puste";
-                  },
-                  onSaved: (String value) {
-                    product["composition"][index]["name"] = value;
-                  },
-                  textInputAction: TextInputAction.next,
-                )
-              ],
-            ),
-          );
-        },
-      )
-    ]);
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        children: [
-          Card(
-              child: Form(
+        body: Form(
             key: _formKey,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                buildBrand(),
-                buildBrand(),
-                buildName(),
-                buildPrice(),
-                buildBarcode(),
-                buildComposition(),
-                SizedBox(
-                  height: 100,
-                ),
+                Expanded(
+                    child: ListView(children: [
+                  Card(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        buildBrand(),
+                        buildName(),
+                        buildPrice(),
+                        buildBarcode(),
+                        Compositors(),
+                        SizedBox(
+                          height: 100,
+                        ),
+                      ],
+                    ),
+                  )
+                ])),
                 RaisedButton(
                   onPressed: () {
                     if (!_formKey.currentState.validate()) {
@@ -152,10 +123,6 @@ class _AddState extends State<Add> {
                   child: Text("Wyślij do zatwierdzenia"),
                 )
               ],
-            ),
-          ))
-        ],
-      ),
-    );
+            )));
   }
 }
