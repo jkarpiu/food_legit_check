@@ -89,6 +89,7 @@ class _AddState extends State<Add> {
 
   @override
   Widget build(BuildContext context) {
+    var localCompositors = new Compositors();
     return Scaffold(
         body: Form(
             key: _formKey,
@@ -104,7 +105,7 @@ class _AddState extends State<Add> {
                         buildName(),
                         buildPrice(),
                         buildBarcode(),
-                        Compositors(),
+                        localCompositors,
                         SizedBox(
                           height: 100,
                         ),
@@ -118,6 +119,7 @@ class _AddState extends State<Add> {
                       return;
                     }
                     _formKey.currentState.save();
+                    product["composition"] = localCompositors.Composition;
                     print(product);
                   },
                   child: Text("Wyślij do zatwierdzenia"),
