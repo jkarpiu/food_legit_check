@@ -3,10 +3,12 @@ import 'package:barcode_food_scaner/stats.dart';
 import 'package:barcode_food_scaner/addProduct.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:barcode_food_scaner/settings.dart';
 
 void main() => runApp(MaterialApp(
-      home: FLC(),
       theme: ThemeData(primaryColor: Colors.green),
+      initialRoute: '/',
+      routes: {'/': (context) => FLC(), "/settings": (context) => Settings()},
     ));
 
 class FLC extends StatefulWidget {
@@ -15,6 +17,8 @@ class FLC extends StatefulWidget {
 }
 
 class _FLCState extends State<FLC> {
+  bool isAuth = false;
+  var user = {"name": "karp", "email": "karp@karp.com"};
   Widget currentState = Home();
   String selectedOption = "home";
   @override
@@ -125,14 +129,9 @@ class _FLCState extends State<FLC> {
                             icon: Icon(Icons.settings),
                             onPressed: () {
                               Navigator.pop(context);
+                              Navigator.pushNamed(context, "/settings");
                             },
                           ),
-                          IconButton(
-                            icon: Icon(Icons.logout),
-                            onPressed: () {
-                              Navigator.pop(context);
-                            },
-                          )
                         ]))
                   ],
                 ))
