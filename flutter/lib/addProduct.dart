@@ -1,3 +1,4 @@
+import 'package:barcode_food_scaner/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
@@ -91,6 +92,10 @@ class _AddState extends State<Add> {
   Widget build(BuildContext context) {
     var localCompositors = new Compositors();
     return Scaffold(
+        drawer: AppDrawer(),
+        appBar: new AppBar(
+          title: Text("Dodaj produkt"),
+        ),
         body: Form(
             key: _formKey,
             child: Column(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:barcode_food_scaner/statsHomeWidget.dart';
+import 'package:barcode_food_scaner/drawer.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -14,118 +15,126 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: new AppBar(
+          title: Text("Podsumowanie"),
+        ),
+        drawer: AppDrawer(),
         body: ListView(
-      children: [
-        Container(
-            padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
-            width: double.maxFinite,
-            child: Column(children: <Widget>[
-              Card(
-                elevation: 4,
-                child: Flex(
-                  direction: Axis.vertical,
-                  crossAxisAlignment: CrossAxisAlignment.baseline,
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Form(
-                      child: ListTile(
-                          leading: Icon(Icons.search),
-                          title: TextFormField(
-                            controller: searchFieldController,
-                            keyboardType: TextInputType.text,
-                            decoration: InputDecoration(
-                                border: InputBorder.none,
-                                hintText: "Wyszukaj produkt..."),
-                          )),
+          children: [
+            Container(
+                padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+                width: double.maxFinite,
+                child: Column(children: <Widget>[
+                  Card(
+                    elevation: 4,
+                    child: Flex(
+                      direction: Axis.vertical,
+                      crossAxisAlignment: CrossAxisAlignment.baseline,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Form(
+                          child: ListTile(
+                              leading: Icon(Icons.search),
+                              title: TextFormField(
+                                controller: searchFieldController,
+                                keyboardType: TextInputType.text,
+                                decoration: InputDecoration(
+                                    border: InputBorder.none,
+                                    hintText: "Wyszukaj produkt..."),
+                              )),
+                        ),
+                        Divider(
+                          thickness: 1,
+                          indent: 30,
+                          endIndent: 30,
+                          height: 1,
+                        ),
+                        FlatButton(
+                            padding: EdgeInsets.zero,
+                            onPressed: () async => _scan(),
+                            child: ListTile(
+                              leading: Icon(Icons.qr_code),
+                              title: Text("Zeskanuj kod kreskowy"),
+                            )),
+                      ],
                     ),
-                    Divider(
-                      thickness: 1,
-                      indent: 30,
-                      endIndent: 30,
-                      height: 1,
-                    ),
-                    FlatButton(
-                        padding: EdgeInsets.zero,
-                        onPressed: () async => _scan(),
-                        child: ListTile(
-                          leading: Icon(Icons.qr_code),
-                          title: Text("Zeskanuj kod kreskowy"),
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                  elevation: 4,
-                  child: Flex(direction: Axis.vertical, children: [
-                    ListTile(
-                        title: SizedBox(
-                            height: 250,
-                            child: (SimpleBarChart.withSampleData()))),
-                    Divider(
-                      height: 3,
-                      thickness: 1,
-                      indent: 30,
-                      endIndent: 30,
-                    ),
-                    FlatButton(
-                      padding: EdgeInsets.zero,
-                      child: ListTile(
-                        contentPadding: EdgeInsets.zero,
-                        trailing: SizedBox(
-                            width: 125,
-                            child: Flex(direction: Axis.horizontal, children: [
-                              Text("Pokaż więcej"),
-                              Icon(Icons.arrow_forward)
-                            ])),
-                      ),
-                      onPressed: () => {print("test")},
-                    )
-                  ])),
-              Card(
-                  elevation: 4,
-                  child: Flex(direction: Axis.vertical, children: [
-                    SizedBox(
-                        height: 225,
-                        child: ListView.builder(
-                            physics: NeverScrollableScrollPhysics(),
-                            itemCount: 4,
-                            itemBuilder: (BuildContext ctxt, int index) {
-                              return ListTile(
-                                title:
-                                    Text("produkt " + (index + 1).toString()),
-                                trailing: Text("2012-21-12"),
-                              );
-                            })),
-                    Divider(
-                      height: 1,
-                      thickness: 1,
-                      indent: 30,
-                      endIndent: 30,
-                    ),
-                    FlatButton(
-                      padding: EdgeInsets.zero,
-                      child: ListTile(
-                        contentPadding: EdgeInsets.zero,
-                        trailing: SizedBox(
-                            width: 125,
-                            child: Flex(direction: Axis.horizontal, children: [
-                              Text("Pokaż więcej"),
-                              Icon(Icons.arrow_forward)
-                            ])),
-                      ),
-                      onPressed: () => {print("test")},
-                    )
-                  ])),
-              Card(
-                elevation: 4,
-                child: ListTile(
-                    title:
-                        Text("na podstawie twoich ostatnich zdrowe jedzeinie")),
-              )
-            ])),
-        Text(_data)
-      ],
-    ));
+                  ),
+                  Card(
+                      elevation: 4,
+                      child: Flex(direction: Axis.vertical, children: [
+                        ListTile(
+                            title: SizedBox(
+                                height: 250,
+                                child: (SimpleBarChart.withSampleData()))),
+                        Divider(
+                          height: 3,
+                          thickness: 1,
+                          indent: 30,
+                          endIndent: 30,
+                        ),
+                        FlatButton(
+                          padding: EdgeInsets.zero,
+                          child: ListTile(
+                            contentPadding: EdgeInsets.zero,
+                            trailing: SizedBox(
+                                width: 125,
+                                child: Flex(
+                                    direction: Axis.horizontal,
+                                    children: [
+                                      Text("Pokaż więcej"),
+                                      Icon(Icons.arrow_forward)
+                                    ])),
+                          ),
+                          onPressed: () => {print("test")},
+                        )
+                      ])),
+                  Card(
+                      elevation: 4,
+                      child: Flex(direction: Axis.vertical, children: [
+                        SizedBox(
+                            height: 225,
+                            child: ListView.builder(
+                                physics: NeverScrollableScrollPhysics(),
+                                itemCount: 4,
+                                itemBuilder: (BuildContext ctxt, int index) {
+                                  return ListTile(
+                                    title: Text(
+                                        "produkt " + (index + 1).toString()),
+                                    trailing: Text("2012-21-12"),
+                                  );
+                                })),
+                        Divider(
+                          height: 1,
+                          thickness: 1,
+                          indent: 30,
+                          endIndent: 30,
+                        ),
+                        FlatButton(
+                          padding: EdgeInsets.zero,
+                          child: ListTile(
+                            contentPadding: EdgeInsets.zero,
+                            trailing: SizedBox(
+                                width: 125,
+                                child: Flex(
+                                    direction: Axis.horizontal,
+                                    children: [
+                                      Text("Pokaż więcej"),
+                                      Icon(Icons.arrow_forward)
+                                    ])),
+                          ),
+                          onPressed: () => {print("test")},
+                        )
+                      ])),
+                  Card(
+                    elevation: 4,
+                    child: ListTile(
+                        title: Text(
+                            "na podstawie twoich ostatnich zdrowe jedzeinie")),
+                  )
+                ])),
+            Text(_data)
+          ],
+        ));
   }
 
   _scan() async {
