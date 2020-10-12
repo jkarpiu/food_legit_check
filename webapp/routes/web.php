@@ -21,9 +21,8 @@ Route::get('/add-product', function () {
     return view('add-product');
 });
 
-Route::get('/catalog', function () {
-    return view('catalog');
-});
+Route::get('/catalog', 'ProductsController@index');
+Route::get('/product/{id}', 'SingleProductController@index');
 
 Route::get('/our-app', function () {
     return view('our-app');

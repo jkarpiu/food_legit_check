@@ -408,6 +408,11 @@ article.list-products .single-product-outer {
     padding: 15px;
 }
 
+article.list-products .single-product-outer a {
+    text-decoration: none;
+    color: #262626;
+}
+
 article.list-products .single-product-outer .single-product-inner {
     position: relative;
     background-color: #eee;
@@ -422,8 +427,14 @@ article.list-products .single-product-outer .single-product-inner h3 {
 }
 
 article.list-products .single-product-outer .single-product-inner h4 {
-    color: #aaa;
+    color: #666666;
     margin-top: 5px;
+    font-size: 1em;
+}
+
+article.list-products .single-product-outer .single-product-inner h5 {
+    color: #aaa;
+    margin-top: 10px;
     font-size: .9em;
 }
 
@@ -454,6 +465,58 @@ article.list-products .single-product-outer:hover .single-product-inner {
 article.list-products .single-product-outer:hover .img-box {
     cursor: pointer;
     transform: scale(1.04);
+}
+
+article.single-product-site {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 50px;
+}
+
+article.single-product-site .left-part {
+    text-align: center;
+    width: 40vw;
+    height: auto;
+    float: left;
+}
+
+article.single-product-site .left-part img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+article.single-product-site .right-part {
+    padding: 50px;
+    float: left;
+    width: 50vw;
+}
+
+article.single-product-site .right-part h1 {
+    font-size: 2em;
+    color: #109137;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+article.single-product-site .right-part h2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+
+article.single-product-site .right-part h3 {
+    color: #aaa;
+    text-transform: uppercase;
+}
+
+article.single-product-site .right-part h3.barcode {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+article.single-product-site .right-part h3 .components {
+    text-transform: lowercase;
 }
 
 footer {
@@ -547,9 +610,40 @@ footer .copyright {
     }
 }
 
+@media (max-width: 1300px) {
+    article.single-product-site {
+        height: 70vh;
+        padding: 100px 30px;
+    }
+}
+
 @media (max-width: 1200px) {
     article.list-products .single-product-outer {
         width: 50%;
+    }
+}
+
+@media (max-width: 1150px) {
+    article.single-product-site {
+        padding: 150px 20px;
+    }
+    article.single-product-site .left-part {
+        margin-top: 20px;
+        width: 30vw;
+        padding: 20px;
+    }
+    article.single-product-site .right-part {
+        padding: 50px 30px;
+        margin-left: 50px;
+    }
+    article.single-product-site .right-part h1 {
+        font-size: 1.8em;
+    }
+    article.single-product-site .right-part h2 {
+        font-size: 1.4em;
+    }
+    article.single-product-site .right-part h3 {
+        font-size: 1.1em;
     }
 }
 
@@ -569,6 +663,42 @@ footer .copyright {
     article.add-product-section form span.first-part label {
         display: block;
         margin: 15px 0px;
+    }
+}
+
+@media (max-width: 1000px) {
+    article.single-product-site .left-part {
+        margin-top: 50px;
+    }
+    article.single-product-site .right-part h1 {
+        font-size: 1.6em;
+    }
+    article.single-product-site .right-part h2 {
+        font-size: 1.3em;
+    }
+    article.single-product-site .right-part h3,
+    article.single-product-site .right-part h3.barcode {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 900px) {
+    article.single-product-site {
+        padding: 120px 0px;
+    }
+    article.single-product-site .left-part {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+    article.single-product-site .left-part img {
+        max-width: 100%;
+        min-height: 100%;
+    }
+    article.single-product-site .right-part {
+        width: 100%;
+        padding: 100px;
+        margin-left: 0;
     }
 }
 
@@ -594,6 +724,13 @@ footer .copyright {
     section.products-label {
         margin: 0 50px;
         font-size: .9em;
+    }
+    article.single-product-site {
+        padding: 100px 0px;
+    }
+    article.single-product-site .right-part {
+        width: 100%;
+        padding: 70px;
     }
 }
 
@@ -624,5 +761,33 @@ footer .copyright {
     #search {
         text-align: center;
         width: 70%;
+    }
+    article.single-product-site .left-part {
+        height: auto;
+    }
+    article.single-product-site .right-part h1 {
+        font-size: 1.3em;
+    }
+    article.single-product-site .right-part h2 {
+        font-size: 1.1em;
+    }
+    article.single-product-site .right-part h3.barcode {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    article.single-product-site {
+        padding: 100px 0px;
+    }
+    article.single-product-site .right-part {
+        width: 100%;
+        padding: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    article.single-product-site .right-part {
+        padding: 50px 30px 70px 30px;
     }
 }
