@@ -18,7 +18,10 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: new AppBar(
-          title: Text("Podsumowanie"),
+          title: Text(
+            "FLC",
+            style: TextStyle(color: Colors.green[800]),
+          ),
         ),
         drawer: AppDrawer(),
         body: ListView(

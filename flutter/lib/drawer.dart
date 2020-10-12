@@ -26,13 +26,13 @@ class AppDrawer extends StatelessWidget {
               ],
             ),
             decoration: BoxDecoration(
-              color: Colors.green,
+              color: Colors.green[200],
             ),
           ),
           ListTile(
             title: Text('Posumowanie'),
             leading: Icon(Icons.home_outlined),
-            // selected: (selectedOption == "home"),
+            selected: (route.settings.name == "/"),
             onTap: () {
               // setState(() {
               //   // XDDD sory czytający ten kod ale z jakiegoś powodu element o typie widget zawsze zwraca false, pewnie przez jakieś instancje

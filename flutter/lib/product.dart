@@ -21,9 +21,35 @@ class _ProductState extends State<Product> {
             onPressed: () {
               Navigator.pop(context, false);
             }),
-        title: Text(widget.displayedProuduct["name"]),
+        title: Text("Produkt"),
       ),
-      body:   ,
+      body: ListView(
+        padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+        children: <Widget>[
+          Card(
+            elevation: 2,
+            child: Row(
+              children: [
+                SizedBox(
+                    width: 120,
+                    child: Image.network(widget.displayedProuduct["image"])),
+                Column(children: <Widget>[
+                  Text(widget.displayedProuduct["name"]),
+                  Align(
+                    alignment: Alignment.bottomRight,
+                    child: Text("Orientacyjna cena: " +
+                        widget.displayedProuduct["price"]),
+                  )
+                ])
+              ],
+            ),
+          ),
+          Card(
+            elevation: 2,
+            child: Text(widget.displayedProuduct['components']),
+          )
+        ],
+      ),
     );
   }
 }
