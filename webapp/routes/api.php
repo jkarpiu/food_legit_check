@@ -15,3 +15,4 @@ Route::group([
 });
 
 Route::get('/get_product', "apiController@get");
+Route::get("/test", "apiController@test");
