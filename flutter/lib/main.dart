@@ -11,6 +11,7 @@ import 'profile.dart';
 void main() => runApp(MaterialApp(
       theme: ThemeData(
         primaryColor: Colors.white,
+        accentColor: Colors.green[800]
       ),
       initialRoute: '/',
       routes: {

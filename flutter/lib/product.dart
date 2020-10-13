@@ -16,6 +16,7 @@ class _ProductState extends State<Product> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
+
         leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () {

@@ -19,7 +19,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
         appBar: new AppBar(
           title: Text(
-            "FLC",
+            "Food Legit Check",
             style: TextStyle(color: Colors.green[800]),
           ),
         ),
