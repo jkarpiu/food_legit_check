@@ -1,8 +1,10 @@
+import 'package:barcode_food_scaner/product.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:barcode_food_scaner/statsHomeWidget.dart';
 import 'package:barcode_food_scaner/drawer.dart';
+import 'package:barcode_food_scaner/apiController.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -16,7 +18,10 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: new AppBar(
-          title: Text("Podsumowanie"),
+          title: Text(
+            "Food Legit Check",
+            style: TextStyle(color: Colors.green[800]),
+          ),
         ),
         drawer: AppDrawer(),
         body: ListView(
@@ -140,6 +145,10 @@ class _HomeState extends State<Home> {
   _scan() async {
     await FlutterBarcodeScanner.scanBarcode(
             "#4caf50", "Anuluj", true, ScanMode.BARCODE)
-        .then((value) => setState(() => _data = value));
+        .then((value) => setState(() => {_data = value}));
+    var product = await Api().getProduct(_data);
+    print(product[0]);
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => Product(product[0])));
   }
 }

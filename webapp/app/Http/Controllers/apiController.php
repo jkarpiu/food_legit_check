@@ -12,4 +12,10 @@ class apiController extends Controller
             Product::where('barcode', $_REQUEST['barcode'])->get()
         );
     }
+    public function test() {
+        return response() -> json(
+            "Parkour!!"
+        );
+    }
 }
+
