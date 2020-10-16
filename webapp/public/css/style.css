@@ -44,6 +44,31 @@ article.empty-box {
     color: #aaa;
 }
 
+article.ShowMore {
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+}
+
+article.ShowMore a {
+    text-decoration: none;
+    margin-top: -20px;
+    font-size: 1.1em;
+    color: #FFF;
+    background-color: #999;
+    border: 0;
+    padding: 10px 20px;
+    transition: .6s background-color;
+}
+
+article.ShowMore a:hover,
+article.ShowMore a:active,
+article.ShowMore a:focus {
+    outline: none;
+    cursor: pointer;
+    background-color: #10913798;
+}
+
 article.empty-box h2 {
     margin-top: 100px;
 }
@@ -155,11 +180,12 @@ section.products-label {
     margin-bottom: 50px;
 }
 
-section.products-label span:first-child {
+section.products-label a:first-child {
     margin-left: 0;
 }
 
-section.products-label span {
+section.products-label a {
+    text-decoration: none;
     margin-left: 10px;
     margin-top: 10px;
     color: #FFF;
@@ -168,11 +194,11 @@ section.products-label span {
     transition: .6s background-color;
 }
 
-section.products-label span.active {
+section.products-label a.active {
     background-color: #109137d5;
 }
 
-section.products-label span:hover {
+section.products-label a:hover {
     cursor: pointer;
     background-color: #10913798;
 }
