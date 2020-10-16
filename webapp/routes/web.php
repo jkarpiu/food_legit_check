@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,3 +28,7 @@ Route::get('/product/{id}', 'SingleProductController@index');
 Route::get('/our-app', function () {
     return view('our-app');
 });
+
+Route::get('/search', 'ProductsController@search');
+
+// Route::post('searchProducts', 'ProductsController@search');

@@ -11,13 +11,16 @@
         </div>
         <div class="nav-wrapper">
             <ul>
-                <li><a @if ($activeSite == 'add-product') class="active" @endif href="/add-product">Dodaj produkt</a></li>
-                <li><a @if ($activeSite == 'catalog') class="active" @endif href="/catalog">Katalog produktów</a></li>
-                <li><a @if ($activeSite == 'our-app') class="active" @endif href="/our-app">Nasza aplikacja</a></li>
+                <li><a @if ($activeSite=='add-product' ) class="active" @endif href="/add-product">Dodaj produkt</a>
+                </li>
+                <li><a @if ($activeSite=='catalog' ) class="active" @endif href="/catalog">Katalog produktów</a></li>
+                <li><a @if ($activeSite=='our-app' ) class="active" @endif href="/our-app">Nasza aplikacja</a></li>
             </ul>
         </div>
     </nav>
     @if ($activeSite == 'home')
-        <input type="text" name="search" id="search" placeholder="Pizza" autocomplete="off">
-        @endif
+    <form action="{{ url('/search') }}" method="get">
+    <input type="text" name="query" id="search" placeholder="Mleko" autocomplete="off" value="{{ $search ?? '' }}" autofocus>
+    </form>
+    @endif
 </header>

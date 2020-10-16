@@ -37,6 +37,21 @@ header.catalog {
     background-attachment: scroll;
 }
 
+article.empty-box {
+    width: 100vw;
+    height: 30vh;
+    text-align: center;
+    color: #aaa;
+}
+
+article.empty-box h2 {
+    margin-top: 100px;
+}
+
+article.empty-box h3 {
+    margin-top: 5px;
+}
+
 article.catalog-products {
     margin: 50px 0;
 }
@@ -703,6 +718,9 @@ footer .copyright {
 }
 
 @media (max-width: 786px) {
+    article.empty-box {
+        font-size: 12px;
+    }
     article.list-products .single-product-outer {
         width: 100%;
     }
