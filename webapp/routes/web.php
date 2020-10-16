@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,8 +23,15 @@ Route::get('/add-product', function () {
 });
 
 Route::get('/catalog', 'ProductsController@index');
+Route::get('/catalog/{q}', 'ProductsController@categories');
 Route::get('/product/{id}', 'SingleProductController@index');
 
 Route::get('/our-app', function () {
     return view('our-app');
 });
+
+Route::get('/search', 'ProductsController@search');
+
+// Route::get('/catalog', 'ProductsController@load_data');
+// Route::post('/catalog/load_data', 'ProductsController@load_data')->name('loadmore.load_data');
+

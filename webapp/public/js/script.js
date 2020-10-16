@@ -1,5 +1,3 @@
-// AOS.init();
-
 document.querySelector('.nav-btn').addEventListener('click', () => {
     if (document.getElementById('nav').checked) {
         document.querySelector('.nav-wrapper').style.display = 'none'
@@ -15,7 +13,6 @@ window.addEventListener('resize', () => {
         document.querySelector('.nav-wrapper').style.display = 'none'
     }
 })
-
 
 document.addEventListener('DOMContentLoaded', () => {
     if (window.innerWidth <= 864) {
