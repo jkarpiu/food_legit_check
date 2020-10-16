@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:barcode_food_scaner/apiController.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class ProfileSettings extends StatefulWidget {
   @override
@@ -21,14 +23,11 @@ class _ProfileSettingsState extends State<ProfileSettings> {
       ),
       body: ListView(
         padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
-        children: <Widget>[
-LoginPage()
-        ],
+        children: <Widget>[LoginPage()],
       ),
     );
   }
 }
-
 
 class LoginPage extends StatefulWidget {
   @override
@@ -38,42 +37,92 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   bool isLoading = false;
+  Map loginData = {'email': "", 'password': ""};
   @override
-  Widget build (BuildContext context){
+  Widget build(BuildContext context) {
     return Align(
       alignment: Alignment.center,
       child: Form(
           key: _formKey,
           child: Column(
-        children: <Widget>[
-          TextFormField(
-            decoration: InputDecoration(hintText: "E-Mail"),
-            validator: (String value) {
-              if (value.isEmpty) return "To pole nie może być puste";
-            },
-            onSaved: (String value) {
+            children: <Widget>[
+              Text(
+                "Food Legit Check",
+              ),
+              TextFormField(
+                decoration: InputDecoration(hintText: "E-Mail"),
+                validator: (String value) {
+                  if (value.isEmpty) return "To pole nie może być puste";
+                },
+                onSaved: (String value) {
+                  loginData['email'] = value;
+                },
+                textInputAction: TextInputAction.next,
+              ),
+              TextFormField(
+                decoration: InputDecoration(hintText: "Hasełko"),
+                obscureText: true,
+                validator: (String value) {
+                  if (value.isEmpty) return "To pole nie może być puste";
+                },
+                onSaved: (String value) {
+                  loginData['password'] = value;
+                },
+                textInputAction: TextInputAction.next,
+              ),
+              RaisedButton(
+                  onPressed: () async {
+                    if (!_formKey.currentState.validate()) {
+                      return;
+                    }
+                    _formKey.currentState.save();
+                    setState(() {
+                      isLoading = true;
+                    });
+                    var apilocal = new Api();
+                    var token = await apilocal.login(
+                        loginData['email'], loginData['password']);
+                    setState(() {
+                      isLoading = false;
+                    });
+                    if (token['statusCode'] == 200) {
+                      print(token);
+                    } else {
+                      _showMyDialog(token['statusCode'], token['body']);
+                    }
+                  },
+                  child: isLoading
+                      ? SpinKitFoldingCube(color: Colors.green[800], size: 50.0)
+                      : Text("Zaloguj się"))
+            ],
+          )),
+    );
+  }
 
-            } ,
-            textInputAction: TextInputAction.next,
+  Future<void> _showMyDialog(code, body) async {
+    return showDialog<void>(
+      context: context,
+      barrierDismissible: false, // user must tap button!
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Błąd' + code.toString()),
+          content: SingleChildScrollView(
+            child: ListBody(
+              children: <Widget>[
+                Text(body['message'].toString()),
+              ],
+            ),
           ),
-          TextFormField(
-            decoration: InputDecoration(hintText: "Hasełko"),
-            obscureText: true,
-            validator: (String value) {
-              if (value.isEmpty) return "To pole nie może być puste";
-            },
-            onSaved: (String value) {
-
-            } ,
-            textInputAction: TextInputAction.next,
-          ),
-          RaisedButton(onPressed: () {
-            setState(() {
-              isLoading = true;
-            });
-          }, child: isLoading ? SpinKitFoldingCube(color: Colors.green[800], size: 50.0) : Text("Zaloguj się"))
-        ],
-      )),
+          actions: <Widget>[
+            TextButton(
+              child: Text('OK'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
     );
   }
 }

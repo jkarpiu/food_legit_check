@@ -32,6 +32,7 @@ dependencies:
   charts_flutter: any
   http: any
   flutter_spinkit: any
+  shared_preferences: any
 
 dev_dependencies:
   flutter_test:

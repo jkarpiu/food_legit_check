@@ -1,4 +1,5 @@
 import 'package:http/http.dart' as http;
+import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 
 class Api {
@@ -16,6 +17,21 @@ class Api {
     String fullUrl = adress + "test";
     var data = await http.get(fullUrl, headers: _setHeaders());
     return jsonDecode(data.body);
+  }
+
+  login(email, password) async {
+    String fullUrl = "http://" + adress + "/api/auth/login";
+    SharedPreferences localStorage = await SharedPreferences.getInstance();
+    var data = await http.post(
+      fullUrl,
+      body: jsonEncode({"email": email, "password": password}),
+      headers: _setHeaders(),
+    );
+    Map response = jsonDecode(data.body);
+    if (data.statusCode == 200) {
+      localStorage.setString('token', jsonEncode(response['access_token']));
+    }
+    return {"statusCode": data.statusCode, "body": response};
   }
 
   _setHeaders() => {
