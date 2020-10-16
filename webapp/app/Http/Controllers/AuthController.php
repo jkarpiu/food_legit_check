@@ -52,7 +52,7 @@ class AuthController extends Controller
         $credentials = request(['email', 'password']);
         if(!Auth::attempt($credentials))
             return response()->json([
-                'message' => 'Wrong password'
+                'message' => 'Podano błędne dane logowanie'
             ], 401);
         $user = $request->user();
         $tokenResult = $user->createToken('Personal Access Token');

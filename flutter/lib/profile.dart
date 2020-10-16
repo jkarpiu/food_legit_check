@@ -86,9 +86,20 @@ class _LoginPageState extends State<LoginPage> {
                       isLoading = false;
                     });
                     if (token['statusCode'] == 200) {
-                      print(token);
+                      Navigator.pushNamed(context, '/');
                     } else {
-                      _showMyDialog(token['statusCode'], token['body']);
+                      final snackBar = SnackBar(
+                          content: ListTile(
+                        leading: Text(token['statusCode'].toString()),
+                        title: Text(token['body']['message'].toString()),
+                        trailing: FlatButton(
+                            onPressed: () {
+                              Scaffold.of(context).hideCurrentSnackBar();
+                            },
+                            child: Text("Zamknij")),
+                      ));
+                      Scaffold.of(context).showSnackBar(snackBar);
+                      // _showMyDialog(token['statusCode'], token['body']);
                     }
                   },
                   child: isLoading
@@ -96,33 +107,6 @@ class _LoginPageState extends State<LoginPage> {
                       : Text("Zaloguj się"))
             ],
           )),
-    );
-  }
-
-  Future<void> _showMyDialog(code, body) async {
-    return showDialog<void>(
-      context: context,
-      barrierDismissible: false, // user must tap button!
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text('Błąd' + code.toString()),
-          content: SingleChildScrollView(
-            child: ListBody(
-              children: <Widget>[
-                Text(body['message'].toString()),
-              ],
-            ),
-          ),
-          actions: <Widget>[
-            TextButton(
-              child: Text('OK'),
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-            ),
-          ],
-        );
-      },
     );
   }
 }
