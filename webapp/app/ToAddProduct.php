@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class ToAddProduct extends Model
 {
     public $timestamps = true;
-    protected $primaryKey = 'barcode';
+    protected $primaryKey = 'product_id';
     public $incrementing = true;
 }

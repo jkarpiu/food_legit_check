@@ -36,7 +36,7 @@
     <link rel="stylesheet" type="text/css" href={{ asset("/css/style.css") }} />
     <!-- Scripts -->
     <script type="text/javascript" defer src={{ asset("/js/script.js") }}></script>
-    @if ($activeSite == 'catalog' or $activeSite == 'home' or $activeSite == 'approve')
+    @if ($activeSite == 'catalog' or $activeSite == 'home' or $activeSite == 'approve-list')
     <script type="text/javascript" defer src={{ asset("/js/scroll.js") }}></script>
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
@@ -46,7 +46,11 @@
 </head>
 
 <body>
+    @if ($admin ?? '')
+    @include('partials.AdminHeader')
+    @else
     @include('partials.header')
+    @endif
     @yield('content')
     <i class="fas fa-arrow-circle-up"></i>
     @include('partials.footer')

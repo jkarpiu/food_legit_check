@@ -41,31 +41,111 @@ header.catalog {
     background-attachment: scroll;
 }
 
-header.approve {
-    width: 100%;
-    height: 40vh;
+header.approve-list {
     background: url('/img/bg-approve.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
 }
 
-.toap {
-    word-break: break-all;
+header.account {
+    background: url('/img/bg-account.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
 }
 
-header.approve section {
+header.admin {
+    width: 100%;
+    height: 40vh;
+}
+
+header.admin section {
     display: block;
     margin: 150px auto;
 }
 
-header.approve h2.header-title {
+header.admin h2.header-title {
     color: #109137;
     display: block;
     font-size: 2.2em;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
+}
+
+article.product-approve {
+    width: 100%;
+    height: 90vh;
+    padding: 150px 100px 100px 100px;
+}
+
+article.product-approve h2 {
+    text-align: center;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+article.product-approve h2 span.title-product {
+    color: #109137;
+    font-weight: 600;
+}
+
+article.product-approve img {
+    width: 10%;
+    min-width: 100px;
+}
+
+article.product-approve section.operations {
+    text-align: center;
+    margin-top: 40px;
+}
+
+article.product-approve section.operations a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    color: #FFF;
+    transition: .6s background-color;
+}
+
+article.product-approve section.operations a.approve {
+    margin-left: 0;
+    background-color: #109137;
+}
+
+article.product-approve section.operations a.approve:hover {
+    background-color: #0e7e30;
+}
+
+article.product-approve section.operations a.edit {
+    background-color: #1DB2DB;
+}
+
+article.product-approve section.operations a.edit:hover {
+    background-color: #1693b6;
+}
+
+article.product-approve section.operations a.delete {
+    background-color: #D43519;
+}
+
+article.product-approve section.operations a.delete:hover {
+    background-color: #a32a14;
+}
+
+article.product-approve section.operations a.back {
+    background-color: #C1BE1A;
+}
+
+article.product-approve section.operations a.back:hover {
+    background-color: #a3a116;
+}
+
+.toap {
+    word-break: break-all;
 }
 
 article.products-to-approve .single-product-outer .single-product-inner h6 {
@@ -264,6 +344,7 @@ article.add-success h2 {
 }
 
 article.add-success h3 {
+    font-weight: 500;
     font-size: 1.1em;
     margin-top: 5px;
 }
@@ -890,6 +971,13 @@ footer .copyright {
     }
 }
 
+@media (max-width: 700px) {
+    article.product-approve {
+        font-size: 15px;
+        padding: 200px 50px 50px 50px;
+    }
+}
+
 @media (max-width: 600px) {
     article.add-product-section {
         margin: 100px 50px;
@@ -950,6 +1038,13 @@ footer .copyright {
     article.single-product-site .right-part h3.barcode {
         margin-bottom: 10px;
     }
+    article.product-approve {
+        padding: 200px 30px 100px 30px;
+        font-size: 14px;
+    }
+    article.product-approve h2 {
+        text-align: left;
+    }
 }
 
 @media (max-width: 450px) {
@@ -962,6 +1057,13 @@ footer .copyright {
     }
 }
 
+@media (max-width: 450px) and (max-height: 850px) {
+    article.product-approve {
+        padding: 100px 30px 100px 30px;
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 400px) {
     article.single-product-site .right-part {
         padding: 50px 30px 70px 30px;
@@ -971,5 +1073,27 @@ footer .copyright {
     }
     article.add-product-section form span input[name="name"] {
         width: 85%;
+    }
+}
+
+@media (max-width: 400px) and (max-height: 800px) {
+    article.product-approve {
+        padding: 50px 30px 100px 30px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 350px) {
+    article.product-approve {
+        font-size: 13px;
+        padding: 150px 20px 50px 30px;
+    }
+}
+
+@media (max-width: 350px) and (max-height: 800px) {
+    article.product-approve {
+        height: 110vh;
+        padding: 30px 30px 30px 30px;
+        font-size: 13px;
     }
 }

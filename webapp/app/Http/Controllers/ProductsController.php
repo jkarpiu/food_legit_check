@@ -17,6 +17,11 @@ class ProductsController extends Controller
         return view('catalog', compact('products', 'labels'));
     }
 
+    public function singleProduct($id) {
+        $product = Product::where('id', $id)->firstOrFail();
+        return view('singleProduct', compact('product'));
+    }
+
     public function search() {
         $search = $_GET['query'];
         $products = Product::where('name', 'LIKE', '%'.$search.'%')->paginate(100);
@@ -54,10 +59,22 @@ class ProductsController extends Controller
         return redirect('/add/success');
     }
 
-    public function accept() {
-        $products = ToAddProduct::orderBy('product_id', 'asc')->get();
-        return view('accept-products', compact('products'));
+    public function approveList() {
+        $products = ToAddProduct::all();
+        return view('approve-products', compact('products'));
     }
+
+    public function singleApprove($id) {
+        $product = ToAddProduct::where('product_id', $id)->firstOrFail();
+        return view('singleApprove', compact('product'));
+    }
+
+    public function delete($id) {
+        $product = ToAddProduct::find($id);
+        $product -> delete();
+        return redirect('/dashboard/approve');
+    }
+
     // public function load_data(Request $request) {
     //     if ($request->ajax()) {
     //         if ($request-> id > 0) {

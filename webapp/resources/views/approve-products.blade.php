@@ -1,5 +1,6 @@
 <?php
-    $activeSite = 'approve';
+    $admin= True;
+    $activeSite = 'approve-list';
 ?>
 @extends('layouts.master')
 @section('content')
@@ -7,7 +8,7 @@
     @foreach ($products as $item)
     @csrf
     <section class="single-product-outer" data-aos="fade-up">
-        <a href="approve/{{ $item -> product_id}}">
+        <a href="{{ url('dashboard/approve/'.$item -> product_id) }}">
             <div class="img-box">
                 <img src="{{ $item -> image ?? '/img/products/woimg.jpg'}}" alt="">
             </div>

@@ -14,25 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/add_product', function () {
-    return view('add-product');
-});
-
+Route::view('/', 'home');
+Route::view('/add_product', 'add-product');
 Route::view('/add/success', 'added-product');
+Route::view('/our_app', 'our-app');
 
 Route::get('/catalog', 'ProductsController@index');
 Route::get('/catalog/{q}', 'ProductsController@categories');
-Route::get('/product/{id}', 'SingleProductController@index');
+Route::get('/product/{id}', 'ProductsController@singleProduct');
 
-Route::get('/our_app', function () {
-    return view('our-app');
-});
+Route::get('dashboard/approve', 'ProductsController@approveList');
+Route::get('dashboard/approve/{id}', 'ProductsController@singleApprove');
+Route::get('dashboard/approve/{id}/delete', 'ProductsController@delete');
 
-Route::get('dashboard/approve', 'ProductsController@accept');
+Route::get('dashboard/account', 'UserController@options');
 
 Route::get('/search', 'ProductsController@search');
 Route::post('/add', 'ProductsController@add')->name('uploadfile');

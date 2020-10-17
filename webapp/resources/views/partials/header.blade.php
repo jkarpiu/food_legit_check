@@ -23,9 +23,4 @@
     <input type="text" name="query" id="search" placeholder="Mleko" autocomplete="off" value="{{ $search ?? '' }}" autofocus>
     </form>
     @endif
-    @if ($activeSite == 'approve')
-    <section>
-        <h2 class="header-title">Produkty do zatwierdzenia</h2>
-    </section>
-    @endif
 </header>
