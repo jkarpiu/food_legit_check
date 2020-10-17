@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use App\ToAddProduct;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
+
 
 class ProductsController extends Controller
 {
@@ -25,6 +29,35 @@ class ProductsController extends Controller
         return view('catalog', compact('products', 'labels'));
     }
 
+    public function add(Request $req) {
+        $price = $req -> price;
+        $price = Str::replaceArray(',', ['.'], $price);
+            $req->validate([
+                'name' => 'required',
+                'barcode' => 'nullable|numeric',
+                'price' => ['required', 'regex:/^[1-9][0-9]{1,2}[.|,][0-9][0-9]$/'],
+                'image' => 'required|image|max:2048'
+            ]);
+        $img_name = Str::random(30);
+        $extension = $req -> image -> extension();
+        $req -> image -> storeAs('/public', $img_name.".".$extension);
+        $url = Storage::url($img_name.".".$extension);
+        $product = new ToAddProduct;
+        $product -> category = 'Inne';
+        $product -> name = $req -> name;
+        $product -> barcode = $req -> barcode;
+        $product -> image = $url;
+        $product -> components = $req -> components;
+        $product -> effects = $req -> effects;
+        $product -> price = $price;
+        $product -> save();
+        return redirect('/add/success');
+    }
+
+    public function accept() {
+        $products = ToAddProduct::orderBy('product_id', 'asc')->get();
+        return view('accept-products', compact('products'));
+    }
     // public function load_data(Request $request) {
     //     if ($request->ajax()) {
     //         if ($request-> id > 0) {

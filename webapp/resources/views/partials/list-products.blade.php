@@ -1,4 +1,4 @@
-<article class="list-products">
+<article class="list-products bss">
     @if ($products ?? '')
     @if (count($products) > 0)
     @foreach($products as $item)

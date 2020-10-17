@@ -1,4 +1,4 @@
-<article class="catalog-products">
+<article class="catalog-products bss">
     <section class="products-label">
         <a href="{{ url('/catalog') }}" class="list">Wszystko</a>
         @foreach($labels as $label)
@@ -9,7 +9,7 @@
     </section>
     <article class="list-products">
         @foreach($products as $item)
-        {{ csrf_field() }}
+        @csrf
         <section class="single-product-outer" data-aos="fade-up">
             <a href="/product/{{ $item -> id}}">
                 <div class="img-box">
