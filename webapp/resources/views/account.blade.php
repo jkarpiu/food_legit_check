@@ -1,6 +1,7 @@
 <?php
     $admin= True;
     $activeSite = 'account';
+    $header = True;
 ?>
 @extends('layouts.master')
 @section('content')

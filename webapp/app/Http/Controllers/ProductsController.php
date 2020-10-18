@@ -12,14 +12,14 @@ use Illuminate\Support\Str;
 class ProductsController extends Controller
 {
     public function index() {
-        $products = Product::orderBy('name', 'asc')->simplePaginate(100);
+        $products = Product::orderBy('name', 'asc')->paginate(100);
         $labels = Product::orderBy('category', 'asc')->get()->unique('category');
         return view('catalog', compact('products', 'labels'));
     }
 
     public function singleProduct($id) {
-        $product = Product::where('id', $id)->firstOrFail();
-        return view('singleProduct', compact('product'));
+        $product = Product::find($id);
+        return view('singleProduct')->with('product', $product);
     }
 
     public function search() {
@@ -40,7 +40,7 @@ class ProductsController extends Controller
             $req->validate([
                 'name' => 'required',
                 'barcode' => 'nullable|numeric',
-                'price' => ['required', 'regex:/^[1-9][0-9]{1,2}[.|,][0-9][0-9]$/'],
+                'price' => ['required', 'regex:/^[1-9][0-9]{0,2}[.|,][0-9][0-9]$/'],
                 'image' => 'required|image|max:2048'
             ]);
         $img_name = Str::random(30);
@@ -56,7 +56,7 @@ class ProductsController extends Controller
         $product -> effects = $req -> effects;
         $product -> price = $price;
         $product -> save();
-        return redirect('/add/success');
+        return view('success');
     }
 
     public function approveList() {
@@ -65,7 +65,7 @@ class ProductsController extends Controller
     }
 
     public function singleApprove($id) {
-        $product = ToAddProduct::where('product_id', $id)->firstOrFail();
+        $product = ToAddProduct::find($id);
         return view('singleApprove', compact('product'));
     }
 

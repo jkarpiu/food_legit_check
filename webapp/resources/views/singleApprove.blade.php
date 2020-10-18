@@ -1,6 +1,7 @@
 <?php
     $admin= True;
     $activeSite = 'approve';
+    $header = False;
 ?>
 @extends('layouts.master')
 @section('content')

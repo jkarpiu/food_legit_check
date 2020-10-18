@@ -1,4 +1,4 @@
-<header class="{{$activeSite}} admin">
+<header class="{{$activeSite}} @if ($header ?? '' != False) admin @endif">
     <nav>
         <input type='checkbox' id="nav" class="hidden">
         <label for="nav" class="nav-btn">

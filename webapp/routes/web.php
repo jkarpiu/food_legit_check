@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'home');
 Route::view('/add_product', 'add-product');
-Route::view('/add/success', 'added-product');
 Route::view('/our_app', 'our-app');
 
 Route::get('/catalog', 'ProductsController@index');
