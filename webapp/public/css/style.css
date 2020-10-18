@@ -55,6 +55,102 @@ header.account {
     background-attachment: scroll;
 }
 
+header.login {
+    width: 100%;
+    height: 100vh;
+    background: url('/img/bg-login.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+section.login-section {
+    min-width: 500px;
+    max-width: 550px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 300px 100px;
+}
+
+section.login-section form.login-box {
+    padding: 30px 40px;
+    background-color: rgba(255, 255, 255, .8);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.8);
+}
+
+section.login-section form.login-box h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10px 0px 20px 0px;
+    text-transform: uppercase;
+    color: #109137af;
+}
+
+section.login-section form.login-box label {
+    display: block;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #109137af;
+    margin: 15px 0px 10px 0px;
+}
+
+section.login-section form.login-box input[type="email"],
+section.login-section form.login-box input[type="password"] {
+    background-color: transparent;
+    border: 0;
+    padding: 2px 10px;
+    margin-left: 5px;
+    transform: translateY(-3px);
+    font-size: 1em;
+    border-bottom: 1px solid #888;
+}
+
+section.login-section form.login-box input[type="email"]:focus,
+section.login-section form.login-box input[type="password"]:focus {
+    border-bottom: 1px solid #262626;
+}
+
+section.login-section form.login-box label[for="remember"] {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+section.login-section form.login-box button {
+    display: block;
+    font-size: 1.1em;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 2px solid #109137;
+    text-transform: uppercase;
+    color: #109137;
+    cursor: pointer;
+    transition: .6s background-color, .6s color;
+}
+
+section.login-section form.login-box button:hover,
+section.login-section form.login-box button:active,
+section.login-section form.login-box button:focus {
+    background-color: #109137;
+    color: #fff;
+    outline: none;
+}
+
+section.login-section form.login-box a.remember {
+    display: block;
+    text-decoration: none;
+    margin-top: 15px;
+    color: #109137;
+    transition: .6s color;
+}
+
+section.login-section form.login-box a.remember:hover {
+    color: #0e7e30;
+    text-decoration: underline;
+}
+
 header.admin {
     width: 100%;
     height: 40vh;
@@ -72,6 +168,185 @@ header.admin h2.header-title {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
+}
+
+article.activity-center {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    padding: 100px;
+}
+
+article.activity-center section.user-section {
+    text-align: center;
+    padding: 0 50px;
+}
+
+article.activity-center section.user-section img {
+    width: 128px;
+    height: 128px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+article.activity-center section.user-section h2 {
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: #109137;
+}
+
+article.activity-center section.user-section h3 {
+    margin: 10px 0;
+    color: #999;
+}
+
+article.activity-center section.user-section form textarea {
+    width: 360px;
+    height: 120px;
+    padding: 10px 20px;
+    font-size: 1em;
+    resize: none;
+}
+
+article.activity-center section.user-section form textarea:focus {
+    border: 1px solid #555;
+}
+
+article.activity-center section.user-section form input {
+    display: block;
+    margin: 10px auto;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #109137;
+    text-transform: uppercase;
+    color: #109137;
+    cursor: pointer;
+    transition: .6s background-color, .6s color;
+}
+
+article.activity-center section.user-section form input:hover {
+    background-color: #109137;
+    color: #fff;
+}
+
+article.activity-center .new-products-to-approve,
+article.activity-center .null-products {
+    padding: 0 50px;
+    text-align: center;
+}
+
+article.activity-center .approvement-list {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+article.activity-center .new-products-to-approve h2,
+article.activity-center .null-products h2 {
+    text-transform: uppercase;
+    color: #109137;
+    text-align: left;
+}
+
+article.activity-center .single-product-outer {
+    display: block;
+    width: 33%;
+    text-align: center;
+    padding: 15px;
+}
+
+article.activity-center .single-product-outer a {
+    text-decoration: none;
+    color: #262626;
+}
+
+article.activity-center .single-product-outer .single-product-inner {
+    position: relative;
+    background-color: #eee;
+    padding: 10px 50px 30px 50px;
+    text-align: center;
+    transition: 0.6s box-shadow, 0.6s transform;
+}
+
+article.activity-center .single-product-outer .single-product-inner h3 {
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+article.activity-center .single-product-outer .single-product-inner h4 {
+    color: #666666;
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+article.activity-center .single-product-outer .single-product-inner h5 {
+    color: #aaa;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+article.activity-center .single-product-outer .single-product-inner h6 {
+    color: #aaa;
+    margin-top: 0px;
+    font-size: .9em;
+}
+
+article.activity-center .single-product-outer .img-box {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    z-index: 999;
+    transition: 0.6s transform;
+}
+
+article.activity-center .single-product-outer .img-box img {
+    width: inherit;
+    height: inherit;
+    z-index: 999;
+    object-fit: cover;
+}
+
+article.activity-center .single-product-outer:hover .single-product-inner {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 15px 10px rgba(16, 145, 55, 0.5);
+    -moz-box-shadow: 0px 0px 15px 10px rgba(16, 145, 55, 0.5);
+    box-shadow: 0px 0px 15px 10px rgba(16, 145, 55, 0.5);
+    transform: scale(1.04);
+}
+
+article.activity-center .single-product-outer:hover .img-box {
+    cursor: pointer;
+    transform: scale(1.04);
+}
+
+article.activity-center a.showAll {
+    display: inline-block;
+    font-size: 1.3em;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #109137;
+    text-transform: uppercase;
+    color: #109137;
+    cursor: pointer;
+    transition: .6s background-color, .6s color;
+    text-decoration: none;
+}
+
+article.activity-center a.showAll:hover {
+    background-color: #109137;
+    color: #fff;
+}
+
+article.activity-center div.emptyApprovements {
+    color: #999;
+    text-align: left;
+}
+
+article.activity-center div.emptyApprovements h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
 }
 
 article.product-approve {
@@ -150,7 +425,7 @@ article.product-approve section.operations a.back:hover {
 
 article.products-to-approve .single-product-outer .single-product-inner h6 {
     margin-top: 5px;
-    font-size: .8em;
+    font-size: .9em;
     opacity: .5;
 }
 
@@ -829,6 +1104,15 @@ footer .copyright {
     align-items: center;
 }
 
+@media (max-width: 1700px) {
+    article.activity-center .approvement-list section:nth-child(6) {
+        display: none;
+    }
+    article.activity-center .approvement-list section {
+        width: 50%;
+    }
+}
+
 @media (max-width: 1600px) {
     article.add-product-section form span.first-part .image-box {
         display: block;
@@ -840,6 +1124,21 @@ footer .copyright {
     article.list-products .single-product-outer {
         width: 33.3%;
         padding: 15px;
+    }
+    article.activity-center {
+        padding: 100px 80px;
+    }
+    article.activity-center .new-products-to-approve {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1400px) {
+    article.activity-center {
+        padding: 100px 40px;
+    }
+    article.activity-center .single-product-outer .single-product-inner {
+        padding: 10px 30px 30px 30px;
     }
 }
 
@@ -859,6 +1158,9 @@ footer .copyright {
         height: 70vh;
         padding: 100px 30px;
     }
+    article.activity-center .new-products-to-approve {
+        padding: 0;
+    }
 }
 
 @media (max-width: 1250px) {
@@ -866,11 +1168,26 @@ footer .copyright {
         display: block;
         margin-top: 30px;
     }
+    article.activity-center.founded {
+        flex-direction: column;
+        height: 120vh;
+    }
+    article.activity-center.founded .new-products-to-approve {
+        margin-top: 50px;
+        padding: 0 100px;
+    }
+    article.activity-center.founded .new-products-to-approve h2 {
+        text-align: center;
+    }
 }
 
 @media (max-width: 1200px) {
     article.list-products .single-product-outer {
         width: 50%;
+    }
+    article.activity-center.founded .null-products h2 {
+        text-align: center!important;
+        margin-top: 50px;
     }
 }
 
@@ -915,6 +1232,9 @@ footer .copyright {
         display: block;
         margin: 15px 0px;
     }
+    article.activity-center .null-products {
+        padding: 0 50px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -930,6 +1250,9 @@ footer .copyright {
     article.single-product-site .right-part h3,
     article.single-product-site .right-part h3.barcode {
         font-size: 1em;
+    }
+    article.activity-center.founded .new-products-to-approve {
+        padding: 0 50px;
     }
 }
 
@@ -951,6 +1274,29 @@ footer .copyright {
         padding: 100px;
         margin-left: 0;
     }
+    article.activity-center {
+        padding: 100px 50px;
+    }
+    article.activity-center {
+        flex-direction: column;
+    }
+    article.activity-center .null-products {
+        margin-top: 50px;
+    }
+    article.activity-center .null-products h2,
+    article.activity-center .null-products h3,
+    article.activity-center .null-products h4 {
+        text-align: center;
+    }
+    article.activity-center .single-product-outer {
+        width: 100%;
+    }
+    article.activity-center.founded {
+        padding: 100px 30px;
+    }
+    article.activity-center.founded .new-products-to-approve {
+        padding: 0 30px;
+    }
 }
 
 @media (max-width: 786px) {
@@ -969,12 +1315,28 @@ footer .copyright {
     footer .description {
         display: none;
     }
+    article.activity-center .approvement-list {
+        flex-direction: column;
+        padding: 0 100px;
+    }
+    article.activity-center .approvement-list section {
+        width: 100%;
+    }
+    article.activity-center.founded .new-products-to-approve .single-product-outer {
+        width: 100%;
+    }
+    article.activity-center.founded {
+        height: 160vh;
+    }
 }
 
 @media (max-width: 700px) {
     article.product-approve {
         font-size: 15px;
         padding: 200px 50px 50px 50px;
+    }
+    article.activity-center .approvement-list {
+        padding: 0 50px;
     }
 }
 
@@ -995,6 +1357,19 @@ footer .copyright {
     }
     article.add-product-section form span input[name="name"] {
         width: 300px;
+    }
+    article.activity-center {
+        padding: 50px 30px;
+    }
+    article.activity-center section.user-section {
+        padding: 0 30px;
+    }
+    article.activity-center .null-products {
+        padding: 0 20px;
+    }
+    article.activity-center .approvement-list {
+        flex-direction: column;
+        padding: 0 10px;
     }
 }
 
@@ -1045,6 +1420,26 @@ footer .copyright {
     article.product-approve h2 {
         text-align: left;
     }
+    section.login-section {
+        min-width: 400px;
+        padding: 300px 50px;
+    }
+    article.activity-center {
+        font-size: 14px;
+        padding: 50px 20px;
+    }
+    article.activity-center section.user-section {
+        padding: 0 20px;
+    }
+    article.activity-center section.user-section form textarea {
+        width: 80%;
+    }
+    article.activity-center .approvement-list {
+        padding: 0;
+    }
+    article.activity-center.founded {
+        padding: 100px 10px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1062,6 +1457,18 @@ footer .copyright {
         padding: 100px 30px 100px 30px;
         font-size: 14px;
     }
+    section.login-section {
+        font-size: 15px;
+        min-width: 400px;
+        padding: 170px 50px;
+    }
+    article.activity-center {
+        height: 100vh;
+        padding: 40px 20px;
+    }
+    article.activity-center.founded {
+        height: 210vh;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1074,12 +1481,38 @@ footer .copyright {
     article.add-product-section form span input[name="name"] {
         width: 85%;
     }
+    article.activity-center section.user-section form textarea {
+        width: 90%;
+    }
+    article.activity-center.founded .new-products-to-approve {
+        padding: 0 10px;
+    }
 }
 
-@media (max-width: 400px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 820px) {
     article.product-approve {
         padding: 50px 30px 100px 30px;
         font-size: 13px;
+    }
+    section.login-section {
+        min-width: 330px;
+        padding: 150px 30px;
+    }
+    article.activity-center {
+        height: 90vh;
+        padding: 40px 20px;
+    }
+    article.activity-center.founded {
+        height: 190vh;
+    }
+}
+
+@media (max-width: 400px) and (max-height: 700px) {
+    article.activity-center.founded {
+        height: 240vh;
+    }
+    article.activity-center {
+        height: 110vh;
     }
 }
 
@@ -1095,5 +1528,28 @@ footer .copyright {
         height: 110vh;
         padding: 30px 30px 30px 30px;
         font-size: 13px;
+    }
+    section.login-section {
+        min-width: 320px;
+        padding: 110px 20px;
+    }
+    section.login-section .login-box {
+        padding: 20px 30px!important;
+    }
+    article.activity-center {
+        height: 130vh;
+    }
+    article.activity-center.founded {
+        height: 280vh;
+    }
+}
+
+@media (max-width: 300px) and (max-height: 800px) {
+    section.login-section {
+        min-width: 280px;
+        padding: 150px 0px;
+    }
+    section.login-section .login-box {
+        padding: 20px 20px!important;
     }
 }

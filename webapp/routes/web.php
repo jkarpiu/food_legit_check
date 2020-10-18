@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +34,7 @@ Route::post('/add', 'ProductsController@add')->name('uploadfile');
 // Route::get('/catalog', 'ProductsController@load_data');
 // Route::post('/catalog/load_data', 'ProductsController@load_data')->name('loadmore.load_data');
 
+
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');

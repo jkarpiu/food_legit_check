@@ -1,6 +1,6 @@
 <?php
     $admin= True;
-    $activeSite = 'approve-list';
+    $activeSite = 'approve approve-list';
     $header = True;
 ?>
 @extends('layouts.master')
