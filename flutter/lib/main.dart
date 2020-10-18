@@ -6,10 +6,11 @@ import 'package:flutter/material.dart';
 import 'package:barcode_food_scaner/settings.dart';
 import 'profile.dart';
 import 'loginPage.dart';
+import 'package:barcode_food_scaner/registerPage.dart';
 
 void main() => runApp(MaterialApp(
       theme: ThemeData(
-          primaryColor: Colors.green[800], accentColor: Colors.green[800]),
+          primaryColor: Colors.green[800], backgroundColor: Colors.white),
       initialRoute: '/',
       routes: {
         '/': (context) => Home(),
@@ -17,6 +18,7 @@ void main() => runApp(MaterialApp(
         "/stats": (context) => Stats(),
         "/settings": (context) => Settings(),
         "/settings/profile": (context) => ProfileSettings(),
-        "/login": (context) => LoginPage()
+        "/login": (context) => LoginPage(),
+        "/register": (context) => RegisterPage()
       },
     ));

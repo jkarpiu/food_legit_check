@@ -36,6 +36,14 @@ class Api {
     return {"statusCode": data.statusCode, "body": response};
   }
 
+  register(user) async {
+    String fullUrl = "http://" + adress + "/api/auth/signup";
+    var data = await http.post(fullUrl,
+        body: jsonEncode(user), headers: await _setHeaders(false));
+    var response = jsonDecode(data.body);
+    return {"statusCode": data.statusCode, "body": response};
+  }
+
   getUser() async {
     String fullUrl = "http://" + adress + "/api/auth/user";
     var data = await http.get(fullUrl, headers: await _setHeaders(true));
