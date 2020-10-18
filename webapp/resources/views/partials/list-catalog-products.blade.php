@@ -1,4 +1,4 @@
-<article class="catalog-products">
+<article class="catalog-products bss">
     <section class="products-label">
         <a href="{{ url('/catalog') }}" class="list">Wszystko</a>
         @foreach($labels as $label)
@@ -9,7 +9,8 @@
     </section>
     <article class="list-products">
         @foreach($products as $item)
-        {{ csrf_field() }}
+        @if ($item -> image != 'http://www.eskleplewiatan.pl/templates/szablon_pit/grafika/brak_zdjecia_srednie.gif' and $item -> image != 'https://dodomku.pl/gfx/loading_grey_spinner.gif')
+        @csrf
         <section class="single-product-outer" data-aos="fade-up">
             <a href="/product/{{ $item -> id}}">
                 <div class="img-box">
@@ -22,6 +23,7 @@
                 </div>
             </a>
         </section>
+        @endif
         @endforeach
     </article>
     <article class="ShowMore">

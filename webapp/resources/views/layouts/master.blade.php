@@ -9,6 +9,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="apple-mobile-web-app-title" content="XXX" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Open Graph -->
     <meta property="og:title" content="XXX" />
@@ -27,7 +28,7 @@
     <link rel="apple-touch-icon" sizes="192x192" href={{ asset("/img/favicon.png") }} />
     <link rel="apple-touch-startup-image" href={{ asset("/img/favicon.png") }} />
     <!-- Font Awesome -->
-    <!-- <script src="https://kit.fontawesome.com/95a2d2c3f2.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
         integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
@@ -35,7 +36,8 @@
     <link rel="stylesheet" type="text/css" href={{ asset("/css/style.css") }} />
     <!-- Scripts -->
     <script type="text/javascript" defer src={{ asset("/js/script.js") }}></script>
-    @if ($activeSite == 'catalog')
+    @if ($activeSite == 'catalog' or $activeSite == 'home' or $activeSite == 'approve-list')
+    <script type="text/javascript" defer src={{ asset("/js/scroll.js") }}></script>
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
         crossorigin="anonymous"></script> --}}
@@ -44,12 +46,14 @@
 </head>
 
 <body>
+    @if ($admin ?? '')
+    @include('partials.AdminHeader')
+    @else
     @include('partials.header')
-
+    @endif
     @yield('content')
-
+    <i class="fas fa-arrow-circle-up"></i>
     @include('partials.footer')
-
 </body>
 {{-- @if ($activeSite == 'catalog')
 <script>
@@ -89,7 +93,6 @@
         duration: 1200,
         once: false,
     });
-
 </script>
 
 </html>

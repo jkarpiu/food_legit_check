@@ -1,8 +1,9 @@
-<article class="list-products">
+<article class="list-products bss">
     @if ($products ?? '')
     @if (count($products) > 0)
     @foreach($products as $item)
-    <section class="single-product-outer {{ $item -> category }}" data-aos="fade-up">
+    @if ($item -> image != 'http://www.eskleplewiatan.pl/templates/szablon_pit/grafika/brak_zdjecia_srednie.gif' and $item -> image != 'https://dodomku.pl/gfx/loading_grey_spinner.gif')
+    <section class="single-product-outer" data-aos="fade-up">
         <a href="/product/{{ $item -> id}}">
             <div class="img-box">
                 <img src="{{ $item -> image}}" alt="">
@@ -14,6 +15,7 @@
             </div>
         </a>
     </section>
+    @endif
     @endforeach
     @else
     <article class="empty-box">

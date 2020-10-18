@@ -4,13 +4,22 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use App\ToAddProduct;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
+
 
 class ProductsController extends Controller
 {
     public function index() {
-        $products = Product::orderBy('name', 'asc')->simplePaginate(100);
+        $products = Product::orderBy('name', 'asc')->paginate(100);
         $labels = Product::orderBy('category', 'asc')->get()->unique('category');
         return view('catalog', compact('products', 'labels'));
+    }
+
+    public function singleProduct($id) {
+        $product = Product::find($id);
+        return view('singleProduct')->with('product', $product);
     }
 
     public function search() {
@@ -23,6 +32,47 @@ class ProductsController extends Controller
         $products = Product::where('category', 'LIKE', $q)->paginate(100);
         $labels = Product::orderBy('category', 'asc')->get()->unique('category');
         return view('catalog', compact('products', 'labels'));
+    }
+
+    public function add(Request $req) {
+        $price = $req -> price;
+        $price = Str::replaceArray(',', ['.'], $price);
+            $req->validate([
+                'name' => 'required',
+                'barcode' => 'nullable|numeric',
+                'price' => ['required', 'regex:/^[1-9][0-9]{0,2}[.|,][0-9][0-9]$/'],
+                'image' => 'required|image|max:2048'
+            ]);
+        $img_name = Str::random(30);
+        $extension = $req -> image -> extension();
+        $req -> image -> storeAs('/public', $img_name.".".$extension);
+        $url = Storage::url($img_name.".".$extension);
+        $product = new ToAddProduct;
+        $product -> category = 'Inne';
+        $product -> name = $req -> name;
+        $product -> barcode = $req -> barcode;
+        $product -> image = $url;
+        $product -> components = $req -> components;
+        $product -> effects = $req -> effects;
+        $product -> price = $price;
+        $product -> save();
+        return view('success');
+    }
+
+    public function approveList() {
+        $products = ToAddProduct::all();
+        return view('approve-products', compact('products'));
+    }
+
+    public function singleApprove($id) {
+        $product = ToAddProduct::find($id);
+        return view('singleApprove', compact('product'));
+    }
+
+    public function delete($id) {
+        $product = ToAddProduct::find($id);
+        $product -> delete();
+        return redirect('/dashboard/approve');
     }
 
     // public function load_data(Request $request) {
