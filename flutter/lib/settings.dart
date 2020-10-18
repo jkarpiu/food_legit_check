@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:barcode_food_scaner/userLibrary.dart' as user;
 
 class Settings extends StatefulWidget {
   bool isAuth = false;
@@ -27,7 +28,10 @@ class _SettingsState extends State<Settings> {
               elevation: 2,
               child: FlatButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, "/settings/profile");
+                  if (user.userData != null)
+                    Navigator.pushNamed(context, "/settings/profile");
+                  else
+                    Navigator.pushNamed(context, "/login");
                 },
                 child: ListTile(
                   leading: Column(

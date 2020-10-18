@@ -17,7 +17,6 @@ class _CompositorsState extends State<Compositors> {
         shrinkWrap: true,
         itemCount: widget.Composition.length,
         itemBuilder: (BuildContext ctxt, int index) {
-          print(index);
           widget.Composition[index]["id"] = index;
           var units = new UnitsDropdown();
           return ListTile(
@@ -57,7 +56,6 @@ class _CompositorsState extends State<Compositors> {
       RaisedButton(
           child: Text("Czy karp jest idiotą? "),
           onPressed: () {
-            print(widget.Composition);
             setState(() {});
           })
     ]);

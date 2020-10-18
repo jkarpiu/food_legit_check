@@ -125,7 +125,6 @@ class _AddState extends State<Add> {
                     }
                     _formKey.currentState.save();
                     product["composition"] = localCompositors.Composition;
-                    print(product);
                   },
                   child: Text("Wyślij do zatwierdzenia"),
                 )
