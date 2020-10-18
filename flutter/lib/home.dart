@@ -5,6 +5,8 @@ import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:barcode_food_scaner/statsHomeWidget.dart';
 import 'package:barcode_food_scaner/drawer.dart';
 import 'package:barcode_food_scaner/apiController.dart';
+import 'package:barcode_food_scaner/userLibrary.dart' as user;
+import 'package:shared_preferences/shared_preferences.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -13,14 +15,21 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   String _data = "";
+  userdata() async {
+    SharedPreferences localStorage = await SharedPreferences.getInstance();
+    if (!await Api().getUser() &&
+        localStorage.getBool("disableLogOnStartup") == null)
+      Navigator.pushNamedAndRemoveUntil(context, "/login", (r) => false);
+  }
+
   final searchFieldController = TextEditingController();
   @override
   Widget build(BuildContext context) {
+    userdata();
     return Scaffold(
         appBar: new AppBar(
           title: Text(
             "Food Legit Check",
-            style: TextStyle(color: Colors.green[800]),
           ),
         ),
         drawer: AppDrawer(),
@@ -147,7 +156,6 @@ class _HomeState extends State<Home> {
             "#4caf50", "Anuluj", true, ScanMode.BARCODE)
         .then((value) => setState(() => {_data = value}));
     var product = await Api().getProduct(_data);
-    print(product[0]);
     Navigator.push(
         context, MaterialPageRoute(builder: (context) => Product(product[0])));
   }

@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:barcode_food_scaner/userLibrary.dart' as user;
 
 class AppDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var route = ModalRoute.of(context);
-    if (route != null) {
-      print(route.settings.name);
-    }
+    if (route != null) {}
 
     return Drawer(
         child: Column(children: <Widget>[
@@ -19,15 +18,14 @@ class AppDrawer extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Expanded(
-                  child: Align(
-                      alignment: Alignment.bottomRight,
-                      child: Text('Jan Kowalski')),
-                )
+                    child: Align(
+                        alignment: Alignment.bottomRight,
+                        child: Text(user.userData != null
+                            ? user.userData['name']
+                            : "Zaloguj się, aby w pełni wykorzystywać naszą aplikacje")))
               ],
             ),
-            decoration: BoxDecoration(
-              color: Colors.green[200],
-            ),
+            decoration: BoxDecoration(),
           ),
           ListTile(
             title: Text('Posumowanie'),

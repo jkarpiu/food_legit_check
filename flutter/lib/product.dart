@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 
 class Product extends StatefulWidget {
   final Map displayedProuduct;
@@ -16,7 +15,6 @@ class _ProductState extends State<Product> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
-
         leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () {
