@@ -60,7 +60,7 @@ class ProductsController extends Controller
     }
 
     public function approveList() {
-        $products = ToAddProduct::all();
+        $products = ToAddProduct::orderBy('created_at', 'desc')->get();
         return view('approve-products', compact('products'));
     }
 

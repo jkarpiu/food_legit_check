@@ -20,7 +20,35 @@
     </nav>
     @if ($activeSite == 'home')
     <form action="{{ url('/search') }}" method="get">
-    <input type="text" name="query" id="search" placeholder="Mleko" autocomplete="off" value="{{ $search ?? '' }}" autofocus>
+        <input type="text" name="query" id="search" placeholder="Mleko" autocomplete="off" value="{{ $search ?? '' }}"
+            autofocus>
     </form>
+    @endif
+    @if ($activeSite == 'login')
+    <section class="login-section">
+        <form class="login-box" method="POST" action="{{ route('login') }}">
+            <h3>Logowanie</h3>
+            @csrf
+            <label for="email">{{ __('Adres email:') }}</label>
+            <input id="email" type="email" @error('email') is-invalid @enderror name="email" value="{{ old('email') }}"
+                required autocomplete="email" autofocus>
+            <label for="password" @error('email') style="color:red!important;" @enderror>{{ __('Hasło:') }}</label>
+            <input id="password" type="password" @error('password') is-invalid @enderror name="password" required autocomplete="current-password" @error('email') class="error" @enderror>
+            <label for="remember">
+                {{ __('Zapamiętaj hasło') }}
+            </label>
+            <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+            <button type="submit" class="btn btn-primary">
+                {{ __('Zaloguj') }}
+            </button>
+            {{-- @if (Route::has('password.request'))
+            <a class="remember" href="{{ route('password.request') }}">
+                {{ __('Przypomnij hasło') }}
+            </a>
+            @endif --}}
+            </div>
+            </div>
+        </form>
+    </section>
     @endif
 </header>
