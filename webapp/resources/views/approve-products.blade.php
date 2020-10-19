@@ -20,7 +20,7 @@
                 <h4>Cena: {{ $item -> price}} zł</h4>
                 <h6>Czas dodania:
                     @if ($item -> created_at)
-                    <span>{{$item -> created_at -> format('d M Y')}}&nbsp;{{$item -> created_at -> format('H:m:s')}}</span>
+                    <span>{{$item -> created_at -> format('d M Y')}}&nbsp;{{$item -> created_at -> format('H:i:s')}}</span>
                     @else
                     12 Sep 2020 14:20:04
                     @endif

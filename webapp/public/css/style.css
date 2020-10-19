@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 * {
@@ -41,6 +42,15 @@ header.catalog {
     background-attachment: scroll;
 }
 
+header.our-app {
+    width: 100%;
+    height: 40vh;
+    background: url('/img/bg-our-app.jpg');
+    background-position: 0% 60%;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
 header.approve-list {
     background: url('/img/bg-approve.jpg');
     background-position: center;
@@ -48,14 +58,9 @@ header.approve-list {
     background-attachment: scroll;
 }
 
-header.account {
-    background: url('/img/bg-account.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: scroll;
-}
-
-header.login {
+header.login,
+header.register {
+    z-index: 100000;
     width: 100%;
     height: 100vh;
     background: url('/img/bg-login.jpg');
@@ -64,15 +69,60 @@ header.login {
     background-attachment: scroll;
 }
 
-section.login-section {
-    min-width: 500px;
-    max-width: 550px;
-    height: 100vh;
-    margin: 0 auto;
-    padding: 300px 100px;
+header.login nav .logo,
+header.register nav .logo {
+    z-index: 99999;
 }
 
-section.login-section form.login-box {
+section.login-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: calc(100% - 58px);
+    z-index: 9;
+}
+
+form.register {
+    min-width: 400px;
+}
+
+form.login-box {
+    grid-row: 2;
+    grid-column: 3;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+}
+
+section.errors-box {
+    width: 300px;
+    margin-left: 20px;
+    grid-row: 2;
+    grid-column: 4;
+    justify-content: center;
+    align-items: center;
+}
+
+section.errors-box ul {
+    list-style-type: none;
+}
+
+section.errors-box ul li {
+    margin-bottom: 5px;
+}
+
+section.errors-box ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+section.login-section form.login-box,
+section.errors-box {
     padding: 30px 40px;
     background-color: rgba(255, 255, 255, .8);
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.8);
@@ -80,12 +130,17 @@ section.login-section form.login-box {
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.8);
 }
 
-section.login-section form.login-box h3 {
+section.login-section form.login-box h3,
+section.errors-box h3 {
     text-align: center;
     font-size: 1.5em;
     margin: 10px 0px 20px 0px;
     text-transform: uppercase;
     color: #109137af;
+}
+
+section.errors-box h3 {
+    color: #a32a14;
 }
 
 section.login-section form.login-box label {
@@ -97,7 +152,9 @@ section.login-section form.login-box label {
 }
 
 section.login-section form.login-box input[type="email"],
-section.login-section form.login-box input[type="password"] {
+section.login-section form.login-box input[type="password"],
+section.login-section form.login-box input[type="text"] {
+    width: 100%;
     background-color: transparent;
     border: 0;
     padding: 2px 10px;
@@ -130,6 +187,10 @@ section.login-section form.login-box button {
     transition: .6s background-color, .6s color;
 }
 
+section.login-section form.login-box.register button {
+    margin-top: 15px;
+}
+
 section.login-section form.login-box button:hover,
 section.login-section form.login-box button:active,
 section.login-section form.login-box button:focus {
@@ -138,7 +199,9 @@ section.login-section form.login-box button:focus {
     outline: none;
 }
 
-section.login-section form.login-box a.remember {
+section.login-section form.login-box a.remember,
+section.login-section form.login-box a.new_account,
+section.login-section form.login-box.register a.already {
     display: block;
     text-decoration: none;
     margin-top: 15px;
@@ -146,7 +209,13 @@ section.login-section form.login-box a.remember {
     transition: .6s color;
 }
 
-section.login-section form.login-box a.remember:hover {
+section.login-section form.login-box a.new_account {
+    margin-top: 5px;
+}
+
+section.login-section form.login-box a.remember:hover,
+section.login-section form.login-box a.new_account:hover,
+section.login-section form.login-box a.already:hover {
     color: #0e7e30;
     text-decoration: underline;
 }
@@ -182,7 +251,8 @@ article.activity-center section.user-section {
     padding: 0 50px;
 }
 
-article.activity-center section.user-section img {
+article.activity-center section.user-section img,
+article.user-options img {
     width: 128px;
     height: 128px;
     border-radius: 100%;
@@ -251,7 +321,7 @@ article.activity-center .null-products h2 {
 
 article.activity-center .single-product-outer {
     display: block;
-    width: 33%;
+    width: 100%;
     text-align: center;
     padding: 15px;
 }
@@ -371,12 +441,12 @@ article.product-approve img {
     min-width: 100px;
 }
 
-article.product-approve section.operations {
+section.operations {
     text-align: center;
     margin-top: 40px;
 }
 
-article.product-approve section.operations a {
+section.operations a {
     display: inline-block;
     margin-top: 10px;
     text-decoration: none;
@@ -386,36 +456,36 @@ article.product-approve section.operations a {
     transition: .6s background-color;
 }
 
-article.product-approve section.operations a.approve {
+section.operations a.approve {
     margin-left: 0;
     background-color: #109137;
 }
 
-article.product-approve section.operations a.approve:hover {
+section.operations a.approve:hover {
     background-color: #0e7e30;
 }
 
-article.product-approve section.operations a.edit {
+section.operations a.edit {
     background-color: #1DB2DB;
 }
 
-article.product-approve section.operations a.edit:hover {
+section.operations a.edit:hover {
     background-color: #1693b6;
 }
 
-article.product-approve section.operations a.delete {
+section.operations a.delete {
     background-color: #D43519;
 }
 
-article.product-approve section.operations a.delete:hover {
+section.operations a.delete:hover {
     background-color: #a32a14;
 }
 
-article.product-approve section.operations a.back {
+section.operations a.back {
     background-color: #C1BE1A;
 }
 
-article.product-approve section.operations a.back:hover {
+section.operations a.back:hover {
     background-color: #a3a116;
 }
 
@@ -526,7 +596,7 @@ article.add-product-section form span input[name="name"] {
 }
 
 .error {
-    border-bottom: 1px solid red!important;
+    border-bottom: 1px solid #a32a14!important;
 }
 
 article.add-product-section form span input[name="barcode"] {
@@ -672,13 +742,36 @@ section.products-label a:hover {
     background-color: #10913798;
 }
 
-header.our-app {
+article.user-options {
     width: 100%;
-    height: 40vh;
-    background: url('/img/bg-our-app.jpg');
-    background-position: 0% 60%;
-    background-size: cover;
-    background-attachment: scroll;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+article.user-options img {
+    margin-bottom: 15px;
+}
+
+article.user-options h2 span.title {
+    color: #109137;
+    font-weight: 600;
+}
+
+article.user-options h2 {
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+article.user-options h3 {
+    margin-top: 10px;
+    color: #999;
+}
+
+article.user-options .operations {
+    margin-top: 20px;
 }
 
 nav {
@@ -712,7 +805,7 @@ nav ul li {
 }
 
 nav ul li:not(:first-child) {
-    margin-left: 48px;
+    margin-left: 24px;
 }
 
 nav ul li:last-child {
@@ -844,6 +937,9 @@ nav ul li a:hover::after {
     }
     .nav-btn i:nth-child(3) {
         margin-top: 4px;
+    }
+    section.login-section {
+        height: calc(100% - 44px);
     }
 }
 
@@ -1297,6 +1393,9 @@ footer .copyright {
     article.activity-center.founded .new-products-to-approve {
         padding: 0 30px;
     }
+    form.login-box {
+        min-width: 350px;
+    }
 }
 
 @media (max-width: 786px) {
@@ -1327,6 +1426,24 @@ footer .copyright {
     }
     article.activity-center.founded {
         height: 160vh;
+    }
+    section.login-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    form.login-box {
+        display: grid;
+        grid-row: 2;
+        grid-column: 2;
+    }
+    section.errors-box {
+        min-width: 350px;
+        margin: 0;
+        margin-top: 20px;
+        display: grid;
+        grid-row: 3;
+        grid-column: 2;
     }
 }
 
@@ -1420,10 +1537,6 @@ footer .copyright {
     article.product-approve h2 {
         text-align: left;
     }
-    section.login-section {
-        min-width: 400px;
-        padding: 300px 50px;
-    }
     article.activity-center {
         font-size: 14px;
         padding: 50px 20px;
@@ -1457,17 +1570,16 @@ footer .copyright {
         padding: 100px 30px 100px 30px;
         font-size: 14px;
     }
-    section.login-section {
-        font-size: 15px;
-        min-width: 400px;
-        padding: 170px 50px;
-    }
     article.activity-center {
         height: 100vh;
         padding: 40px 20px;
     }
     article.activity-center.founded {
         height: 210vh;
+    }
+    header.register,
+    header.login {
+        height: 110vh;
     }
 }
 
@@ -1487,16 +1599,22 @@ footer .copyright {
     article.activity-center.founded .new-products-to-approve {
         padding: 0 10px;
     }
+    form.login-box,
+    section.errors-box {
+        min-width: 300px;
+    }
+    section.login-section .login-box {
+        padding: 20px 0px!important;
+    }
+    section.errors-box {
+        padding: 20px 40px!important;
+    }
 }
 
 @media (max-width: 400px) and (max-height: 820px) {
     article.product-approve {
         padding: 50px 30px 100px 30px;
         font-size: 13px;
-    }
-    section.login-section {
-        min-width: 330px;
-        padding: 150px 30px;
     }
     article.activity-center {
         height: 90vh;
@@ -1514,12 +1632,24 @@ footer .copyright {
     article.activity-center {
         height: 110vh;
     }
+    header.register,
+    header.login {
+        height: 130vh;
+    }
 }
 
 @media (max-width: 350px) {
     article.product-approve {
         font-size: 13px;
         padding: 150px 20px 50px 30px;
+    }
+    section.login-section {
+        font-size: 14px;
+    }
+    form.login-box,
+    section.errors-box {
+        min-width: 270px;
+        max-width: 280px;
     }
 }
 
@@ -1530,8 +1660,7 @@ footer .copyright {
         font-size: 13px;
     }
     section.login-section {
-        min-width: 320px;
-        padding: 110px 20px;
+        margin-top: 25px;
     }
     section.login-section .login-box {
         padding: 20px 30px!important;
@@ -1542,6 +1671,10 @@ footer .copyright {
     article.activity-center.founded {
         height: 280vh;
     }
+    header.register,
+    header.login {
+        height: 130vh;
+    }
 }
 
 @media (max-width: 300px) and (max-height: 800px) {
@@ -1550,6 +1683,15 @@ footer .copyright {
         padding: 150px 0px;
     }
     section.login-section .login-box {
-        padding: 20px 20px!important;
+        padding: 10px 0px!important;
+    }
+    form.login-box,
+    section.errors-box {
+        min-width: 250px;
+        max-width: 270px;
+    }
+    header.register,
+    header.login {
+        height: 140vh;
     }
 }

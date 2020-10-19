@@ -31,7 +31,7 @@ class AuthController extends Controller
         return response()->json(
              201);
     }
-  
+
     /**
      * Login user and create token
      *
@@ -68,7 +68,7 @@ class AuthController extends Controller
             )->toDateTimeString()
         ]);
     }
-  
+
     /**
      * Logout user (Revoke the token)
      *
@@ -81,7 +81,7 @@ class AuthController extends Controller
             'message' => 'Zalogowano'
         ]);
     }
-  
+
     /**
      * Get the authenticated User
      *

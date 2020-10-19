@@ -10,7 +10,7 @@
             alt="">
         <h2 data-aos='fade-right' data-aos-delay='400'>Cześć, {{ Auth::user()->name }}!</h2>
         <h3 data-aos='fade-right' data-aos-delay='800'>Poniżej znajduje się twój osobisty notatnik.</h3>
-        <form action="">
+        <form action="{{ route('saveNote') }}" method="POST">
             @csrf
             <textarea name="notes" data-aos='fade-right' data-aos-delay="1200" maxlength="150"> {{ Auth::user()->note }} </textarea>
             <div class="button" data-aos='fade-right' data-aos-delay='1600'>

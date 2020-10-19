@@ -30,10 +30,10 @@ Route::get('dashboard/account', 'UserController@options');
 
 Route::get('/search', 'ProductsController@search');
 Route::post('/add', 'ProductsController@add')->name('uploadfile');
+Route::post('/dashboard/save', 'UserController@saveNote')->name('saveNote');
 
 // Route::get('/catalog', 'ProductsController@load_data');
 // Route::post('/catalog/load_data', 'ProductsController@load_data')->name('loadmore.load_data');
-
 
 Auth::routes();
 
