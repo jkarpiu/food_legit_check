@@ -40,7 +40,7 @@ class ProductsController extends Controller
             $req->validate([
                 'name' => 'required',
                 'barcode' => 'nullable|numeric',
-                'price' => ['required', 'regex:/^[1-9][0-9]{0,2}[.|,][0-9][0-9]$/'],
+                'price' => ['required', 'regex:/^[0-9][0-9]{0,2}[.|,][0-9][0-9]$/'],
                 'image' => 'required|image|max:2048'
             ]);
         $img_name = Str::random(30);
