@@ -1,7 +1,5 @@
 <?php
-    $admin= True;
-    $activeSite = 'account';
-    $header = False;
+    $activeSite = 'single-product';
 ?>
 @extends('layouts.master')
 @section('content')
@@ -10,9 +8,9 @@
     <img data-aos='fade-right'
     src="{{ Auth::user()->avatar }}"
     alt="">
-    <h2 data-aos="fade-right" data-aos-delay="600">Czy na pewno chcesz usunąć swoje konto?</h2>
+    <h2 data-aos="fade-right" data-aos-delay="600">Czy na pewno chcesz usunąć ten produkt?</h2>
     <section class="operations">
-        <a href="{{ route('deleteUser') }}" class="delete" data-aos="fade-up" data-aos-delay="1000">Usuń konto</a>
+        <a href="{{ url()->current().'/confirmed' }}" class="delete" data-aos="fade-up" data-aos-delay="1000">Usuń produkt</a>
     </section>
     </section>
 </article>

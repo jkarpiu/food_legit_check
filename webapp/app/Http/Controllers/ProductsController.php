@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 use App\Product;
-
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class ProductsController extends Controller
 {
@@ -12,7 +14,7 @@ class ProductsController extends Controller
         return view('catalog', compact('products', 'labels'));
     }
 
-    public function singleProduct($id) {
+    public function find($id) {
         $product = Product::find($id);
         return view('singleProduct')->with('product', $product);
     }
@@ -27,6 +29,36 @@ class ProductsController extends Controller
         $products = Product::where('category', 'LIKE', $q)->paginate(100);
         $labels = Product::orderBy('category', 'asc')->get()->unique('category');
         return view('catalog', compact('products', 'labels'));
+    }
+
+    public function edit(Request $req) {
+        $req->validate([
+            'name' => 'required',
+            'barcode' => 'nullable|numeric',
+            'price' => ['required', 'regex:/^[0-9][0-9]{0,2}[.|,][0-9][0-9]$/'],
+            'components' => 'nullable|max:1000|string',
+            'image' => 'nullable|image|max:2048',
+        ]);
+        $product = Product::find($req -> id);
+        $product -> category = $req -> categories;
+        $product -> name = $req -> name;
+        $product -> barcode = $req -> barcode;
+        if($req -> image != null) {
+            $img_name = Str::random(30);
+            $extension = $req -> image -> extension();
+            $req -> image -> storeAs('/public', $img_name.".".$extension);
+            $url = Storage::url($img_name.".".$extension);
+            $product -> image = $url;
+        }
+        $product -> components = $req -> components;
+        $product -> price = $req -> price;
+        $product -> save();
+        return redirect('/product/'.$product -> id);
+    }
+
+    public function delete($id) {
+        Product::find($id)->delete();
+        return redirect('/catalog');
     }
 
     // public function load_data(Request $request) {

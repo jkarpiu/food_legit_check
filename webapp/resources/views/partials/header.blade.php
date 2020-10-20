@@ -13,7 +13,7 @@
             <ul>
                 <li><a @if ($activeSite=='add-product' ) class="active" @endif href="/add_product">Dodaj produkt</a>
                 </li>
-                <li><a @if ($activeSite=='catalog' ) class="active" @endif href="/catalog">Katalog produktów</a></li>
+                <li><a @if ($activeSite=='catalog' or $activeSite=='single-product' ) class="active" @endif href="/catalog">Katalog produktów</a></li>
                 <li><a @if ($activeSite=='our-app' ) class="active" @endif href="/our_app">Nasza aplikacja</a></li>
                 @guest
                 @if ($activeSite != 'register')

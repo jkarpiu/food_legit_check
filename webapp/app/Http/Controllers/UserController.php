@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
@@ -9,6 +8,11 @@ use Illuminate\Support\Facades\Storage;
 
 class UserController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function options() {
         User::find(Auth::id());
         return view('account');
@@ -20,6 +24,7 @@ class UserController extends Controller
         $userNote->save();
         return redirect('/dashboard');
     }
+
     public function edit(Request $req) {
         $req->validate([
             'name' => 'required|min:2|max:16|alpha_num',
@@ -38,5 +43,10 @@ class UserController extends Controller
         }
         $user->save();
         return redirect('/dashboard/account');
+    }
+
+    public function delete() {
+        Auth::user()->delete();
+        return redirect('/');
     }
 }

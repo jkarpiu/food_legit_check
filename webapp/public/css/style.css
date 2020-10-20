@@ -314,7 +314,6 @@ article.activity-center .null-products {
 article.activity-center .approvement-list {
     display: flex;
     margin-top: 10px;
-    margin-bottom: 20px;
 }
 
 article.activity-center .new-products-to-approve h2,
@@ -567,12 +566,12 @@ article.add-product-section {
     margin: 100px;
 }
 
-article.approvement {
+article.product {
     margin: 0;
     padding: 200px;
 }
 
-article.approvement h2 {
+article.product h2 {
     text-align: center;
     padding: 0 40px;
     font-size: 2em;
@@ -581,7 +580,7 @@ article.approvement h2 {
     color: #109137;
 }
 
-article.approvement select {
+article.product select {
     margin-left: 10px;
     margin-right: 20px;
     outline: none;
@@ -1121,6 +1120,17 @@ article.list-products {
     flex-direction: row;
     flex-wrap: wrap;
     width: 90%;
+}
+
+article.list-products div.emptyApprovements {
+    margin: 0 auto;
+    padding: 100px 50px;
+    color: #999;
+    text-align: center;
+}
+
+article.list-products div.emptyApprovements h3 {
+    font-size: 1.2em;
 }
 
 article.list-products .single-product-outer {
@@ -1690,6 +1700,9 @@ footer .copyright {
         width: 100%;
         padding: 50px;
     }
+    article.list-products div.emptyApprovements {
+        padding: 50px 30px;
+    }
 }
 
 @media (max-width: 450px) and (max-height: 850px) {
@@ -1784,6 +1797,15 @@ footer .copyright {
     section.errors-box {
         min-width: 270px;
         max-width: 280px;
+    }
+    article.list-products div.emptyApprovements {
+        padding: 50px 20px;
+    }
+    article.list-products div.emptyApprovements h3 {
+        font-size: 1em;
+    }
+    article.list-products div.emptyApprovements h4 {
+        font-size: 1em;
     }
 }
 

@@ -9,9 +9,18 @@ use Illuminate\Support\Str;
 
 class ApprovementsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index() {
         $products = ToAddProduct::orderBy('created_at', 'desc')->get();
         return view('approve-products', compact('products'));
+    }
+
+    public function addSite() {
+        return view('add_product');
     }
 
     public function add(Request $req) {
@@ -55,7 +64,6 @@ class ApprovementsController extends Controller
     public function edit(Request $req) {
         // dd($req);
         $price = $req -> price;
-        $id = $req -> product_id;
         $price = Str::replaceArray(',', ['.'], $price);
         $req->validate([
             'name' => 'required',

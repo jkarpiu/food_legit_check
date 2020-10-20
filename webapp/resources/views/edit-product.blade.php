@@ -1,15 +1,13 @@
 <?php
-    $admin= True;
-    $activeSite = 'approve';
-    $header = False;
+    $activeSite = 'single-product';
 ?>
 @extends('layouts.master')
 @section('content')
 <article class="add-product-section product">
     <h2 data-aos='fade-down' data-aos-delay="400">Edycja produktu</h2>
-    <form action="{{ route('editApprovement') }}" method="POST" autocomplete="off" enctype="multipart/form-data">
+    <form action="{{ route('editProduct') }}" method="POST" autocomplete="off" enctype="multipart/form-data">
         @csrf
-        <input type="hidden" name="id" value="{{$product -> product_id}}">
+        <input type="hidden" name="id" value="{{ $product -> id }}">
         <span class="first-part">
             <label for="name" @error('name') style="color: #a32a14" @enderror>Nazwa produktu: </label>
         <input type="text" name="name" maxlength="50" minlength="10" @error('name') class="error" placeholder="Podaj nazwę produktu" @enderror value="{{ $product -> name }}">
