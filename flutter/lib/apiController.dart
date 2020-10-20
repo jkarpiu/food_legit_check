@@ -5,7 +5,7 @@ import 'dart:convert';
 import 'package:barcode_food_scaner/userLibrary.dart' as user;
 
 class Api {
-  String adress = "192.168.43.192:8000";
+  String adress = "192.168.8.125:8000";
   getProduct(String content, bool byId) async {
     print("dupga");
     print(content);

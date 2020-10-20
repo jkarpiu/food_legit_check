@@ -1,0 +1,2638 @@
+[
+    {
+        "id": 0,
+        "tiles": [
+            "E100",
+            "kurkumina"
+        ],
+        "content": "jest to naturalna, nieszkodliwa dla Twojego zdrowia substancja pochodząca z kłaczy roślin tropikalnych. Jej regularne stosowanie nie powoduje skutków ubocznych. Żółty barwnik z rozłogów rośliny Curcuma longa jest bakteriobójczy (niszczy nawet komórki rakowe) i pełni funkcję przeciwzapalną. E100 możesz znaleźć przede wszystkim w przyprawach, a także w koncentratach."
+    },
+    {
+        "id": 1,
+        "tiles": [
+            "E101",
+            "ryboflawina",
+            "witamina B2",
+            "laktoflawina"
+        ],
+        "content": "jest to naturalny i nieszkodliwy dla organizmu barwnik, który wpływa korzystnie na wzrok. Niedobór witaminy B2 może powodować zaburzenia układu nerwowego oraz stany zapalne błon śluzowych. Występuje szczególnie w zielonych częściach warzyw, np. w fasoli lub grochu. Ryboflawinę używa się podczas produkcji m.in. płatków zbożowych lub kukurydzianych, masła orzechowego oraz kawy."
+    },
+    {
+        "id": 2,
+        "tiles": [
+            "E102",
+            "tartrazyna",
+            "żółcień spożywcza 5"
+        ],
+        "content": "jest to syntetyczny, niebezpieczny dla zdrowia barwnik azowy, który stosowany jest do barwienia takich produktów, jak: napoje w proszku, miód sztuczny, polewy do deserów, galaretek, dżemów, musztard. Regularna konsumpcja produktów z tym barwnikiem może powodować m.in. zapalenie skóry, bezsenność, depresję, pokrzywkę, katar sienny. Osoby uczulone na aspirynę powinny w szczególności unikać tego typu barwnika, ponieważ jego stosowanie może wywołać reakcje alergiczne. Dopuszczalne dzienne spożycie barwnika wynosi 7,5 mg/kg masy ciała."
+    },
+    {
+        "id": 3,
+        "tiles": [
+            "E103",
+            "rezorcyna"
+        ],
+        "content": "do połowy XX wieku barwnik stosowany był leczniczo jako substancja odkażająca choroby pasożytnicze, nieżyty jelit i żołądka, a także zwalczał infekcje bakteryjne. Aktualnie stosowanie rezorcyny w przemyśle spożywczym jest zabronione. Rezorcyna działa przeciwtrądzikowo, wygładza wgłębienia na skórze, a także usuwa przebarwienia skóry."
+    },
+    {
+        "id": 4,
+        "tiles": [
+            "E104",
+            "żółcień chinolinowa"
+        ],
+        "content": "barwnik nieazowy stanowiący dodatek do produktów cukierniczych. Jest to substancja szkodliwa dla zdrowia, jednak przy dziennym spożyciu nie więcej niż 10 mg/kg masy ciała nie przynosi skutków ubocznych. Ze względu na jego szkodliwość, w niektórych krajach (np. w USA, Japonii) został wycofany z produkcji żywności. Barwnik ten można spotkać w pastylkach na kaszel, napojach niegazowanych, lodach. Wykonano badania na szczurach, w których okazało się, że stosowanie czystej chinoliny powoduje powstanie komórek nowotworowych wątroby. Regularne spożywanie substancji może powodować m.in. zaczerwienienie skóry, nadpobudliwość u dzieci, wysypkę, pokrzywkę, dekoncentrację."
+    },
+    {
+        "id": 5,
+        "tiles": [
+            "E105",
+            "żółcień trwała",
+            "AB"
+        ],
+        "content": "kiedyś substancja stosowana w przemyśle spożywczym, aktualnie barwnik jest zabroniony przy produkcji żywieniowej. Przeprowadzono badania toksykologiczne, które wykazały, że barwnik jest szkodliwy dla zdrowia."
+    },
+    {
+        "id": 6,
+        "tiles": [
+            "E106",
+            "sól sodowa fosforanu-5’-ryboflawiny"
+        ],
+        "content": "barwnik zakazany w przemyśle spożywczym."
+    },
+    {
+        "id": 7,
+        "tiles": [
+            "E107",
+            "żółcień 2G"
+        ],
+        "content": "barwnik azowy niedopuszczalny w produkcji żywieniowej. Skutkiem ubocznym jego stosowania jest alergia, a u dzieci może powodować nadpobudliwość i dekoncentrację umysłową. Na terenie Unii Europejskiej jedynie Wielka Brytania stosuje tę substancję do celów spożywczych."
+    },
+    {
+        "id": 8,
+        "tiles": [
+            "E110",
+            "żółcień pomarańczowa S",
+            "żółć pomarańczowa"
+        ],
+        "content": "azowy barwnik syntetyczny stanowiący dodatek do zup w proszku, kasz, płatków zbożowych, marmolady, gum do żucia lub powłok tabletek. Jest to substancja szkodliwa dla zdrowia, a dopuszczalne dzienne spożycie wynosi 2,5 mg/kg masy ciała. Regularne spożywanie przez astmatyków może doprowadzić do nasilenia tej choroby (np. duszności, pokrzywki), natomiast u dzieci mogą wystąpić objawy nadpobudliwości i braku koncentracji. Badania na zwierzętach wykazały, że stosowanie barwnika E110 wywołuje powstawanie komórek nowotworowych nerek. W niektórych krajach (np. w Norwegii, Finlandii) barwnik ten jest całkowicie zakazany przy produkcji żywności."
+    },
+    {
+        "id": 9,
+        "tiles": [
+            "E111",
+            "oranż GGN"
+        ],
+        "content": "barwnik całkowicie zabroniony w przemyśle spożywczym ze względu na jego toksyczne dla organizmu działanie."
+    },
+    {
+        "id": 10,
+        "tiles": [
+            "E120",
+            "kwas karminowy",
+            "karmina",
+            "koszelina"
+        ],
+        "content": "barwnik naturalny, nieszkodliwy dla zdrowia, pozyskiwany z wysuszonych owadów Dactylopius cossus cacti (pluskwiak meksykański). Nie jest przeznaczony dla wegan i wegetarian. E120 to substancja o barwie czerwonej, która bardzo dobrze rozpuszcza się w wodzie. Nie powinny jej spożywać osoby cierpiące na astmę oraz uczulone na salicylany. Dopuszczalna dawka żywieniowa to 5 mg/kg masy ciała."
+    },
+    {
+        "id": 11,
+        "tiles": [
+            "E121",
+            "lakmus"
+        ],
+        "content": "substancja zabroniona w przemyśle spożywczym."
+    },
+    {
+        "id": 12,
+        "tiles": [
+            "E122",
+            "azorubina",
+            "karmoizyna"
+        ],
+        "content": "barwnik azowy nieszkodliwy dla zdrowia, bardzo dobrze rozpuszczalny w wodzie w postaci soli sodowej. Substancja jest stosowana w marmoladach, dżemach, budyniach, polewach lub wodach. Zalecana jest ostrożność przy jego stosowaniu, ponieważ może zwiększyć objawy astmy, a powoduje skurcze macicy u kobiet ciężarnych. Dopuszczalne dzienne spożycie wynosi 4 mg/kg masy ciała."
+    },
+    {
+        "id": 13,
+        "tiles": [
+            "E123",
+            "amarant"
+        ],
+        "content": "jest to syntetyczna substancja azowa o barwie niebiesko-czerwonej. Barwnik jest rozpuszczalny w wodzie w postaci soli sodowej. Służy do zabarwiania win, produkcji ciastek w proszku, galaretkach, płatkach zbożowych lub napojach bezalkoholowych. W badaniach przeprowadzonych na zwierzętach stwierdzono odkładanie się wapnia w niektórych częściach nerek. W USA stosowanie barwnika w przemyśle spożywczym jest zakazane ze względu na działania rakotwórcze. Dopuszczalna dzienna dawka wynosi 0,5 mg/kg masy ciała."
+    },
+    {
+        "id": 14,
+        "tiles": [
+            "E124",
+            "czerwień koszelinowa"
+        ],
+        "content": "jest to nieszkodliwy dla zdrowia barwnik azowy o kolorze jasnoczerwonym. Ma postać soli sodowej i jest dobrze rozpuszczalny w wodzie. Służy jako dodatek do wyrobów cukierniczych lub wędzonych ryb. Dopuszczalne dzienne spożycie wynosi 4mg/kg masy ciała. Skutkami ubocznymi nadmiernego stosowania barwnika może być m.in. katar sienny, skurcze macicy u kobiet w ciąży a także nasilenie objawów astmy. Może także prowadzić do objawów nadpobudliwości u dzieci. Nie stosuje się go w Norwegii, Finlandii i USA."
+    },
+    {
+        "id": 15,
+        "tiles": [
+            "E125",
+            "szkarłat GN"
+        ],
+        "content": "jest to czerwony barwnik zakazany w przemyśle spożywczym."
+    },
+    {
+        "id": 16,
+        "tiles": [
+            "E126",
+            "pąs 6R"
+        ],
+        "content": "substancja o barwie czerwonej zabroniona w przemyśle spożywczym."
+    },
+    {
+        "id": 17,
+        "tiles": [
+            "E127",
+            "erytrozyna"
+        ],
+        "content": "jest to czerwony barwnik zawierający jodynę. Ma postać soli sodowej i dobrze rozpuszcza się w wodzie. Stosuje się go wyłącznie do wiśni koktajlowych, wisienek kandyzowanych lub sałatek owocowych z dodatkiem wiśni. Substancja ta jest dozwolona do stosowana w przemyśle żywieniowym tylko ze względu na to, że jest odpowiednia do barwienia wiśni przez namaczanie. Dopuszczalna dzienna dawka żywieniowa wynosi 0,1 mg/kg ciała, jednak zalecana jest ostrożność w jego spożywaniu. Osoby cierpiące na tarczycę powinny unikać produktów spożywczych z tym barwnikiem. Skutkiem ubocznym regularnego jedzenia produktów z erytrozyną jest dekoncentracja lub problemy w nauce u dzieci."
+    },
+    {
+        "id": 18,
+        "tiles": [
+            "E128",
+            "czerwień 2G"
+        ],
+        "content": "barwnik zakazany w przemyśle spożywczym od 2007 roku, ponieważ posiada właściwości rakotwórcze. Substancja jest metabolizowana do aniliny, która negatywnie wpływa na hemoglobinę. Barwnik E128 niegdyś był stosowany w produkcji mięsnej, np. w kotletach mielonych lub kiełbaskach, który utrzymywał czerwono-brązową barwę. Taka barwa miała przypominać naturalne, swojskie i tradycyjne wyroby. Skutkiem ubocznym spożywania tego barwnika to nadpobudliwość u dzieci, zwiększone objawy astmy, objawy żołądkowo-jelitowe."
+    },
+    {
+        "id": 19,
+        "tiles": [
+            "E129",
+            "czerwień Allura AC"
+        ],
+        "content": "jest to substancja azowa występujące w postaci soli sodowej. Po rozpuszczeniu w wodzie barwnik ma kolor pomarańczowoczerwony, natomiast w sproszkowanej postaci przybiera barwę ciemnoczerwoną. Barwnik jest odporny na działanie światła i wysokiej temperatury. Substancja zabroniona jest w niektórych krajach, m.in.: w Belgii, Niemczech, Danii, Szwajcarii. Stosowany jest do wyrobów cukierniczych oraz produktów mięsnych. Barwnik E129 może przyczynić się do nasilenia objawów astmy lub spowodować skurcze macicy w przypadku kobiet ciężarnych. Zaleca się szczególną ostrożność w jego spożywaniu u dzieci, ponieważ może wywołać nadpobudliwość psychoruchową (ADHD). Dopuszczalne dzienne spożycie barwnika wynosi 7mg/kg masy ciała."
+    },
+    {
+        "id": 20,
+        "tiles": [
+            "E130",
+            "błękit indantrenowy RS"
+        ],
+        "content": "jest to barwnik zakazany w przemyśle spożywczym. Ma postać niebieskich i połyskujących igieł."
+    },
+    {
+        "id": 21,
+        "tiles": [
+            "E131",
+            "błękit patentowy V"
+        ],
+        "content": "jest to azowa. Ma barwę niebieską i występuje w formie soli sodowej. Jest odporny na światło oraz wysoką temperaturę. W przemyśle spożywczym substancję używa się do barwienia lodów lub wyrobów cukierniczych. Jest to kosztowny barwnik, dlatego nie stosuje się go zbyt często. Może powodować reakcje alergiczne. Należy go spożywać z ostrożnością. Dzienna maksymalna dawka spożycia wynosi 15mg/kg masy ciała. Użycie barwnika zabronione jest na terytorium USA, Australii oraz Norwegii."
+    },
+    {
+        "id": 22,
+        "tiles": [
+            "E132",
+            "indygo",
+            "indygotyna",
+            "błękit indygowy",
+            "indygokarmina"
+        ],
+        "content": "jest to substancja o barwie ciemnoniebieskiej występująca w krzewie Indigofera tinctoria. W przemyśle spożywczym używana jest do barwienia wyrobów cukierniczych, napojów bezalkoholowych, słodyczy, lodów, itd. Z racji tego, że barwnik łączy się z białkami znajdującymi się w organizmie, u niektórych osób może spowodować pojawienie się alergii. Prawdopodobnie, regularne spożywanie barwnika może przyczynić się do chorób serca oraz nadpobudliwości. Produkty z tym barwnikiem nie powinny spożywać dzieci. Zaleca się ostrożność w jego stosowaniu. Maksymalne dziene spożycie wynosi 5mg/kg masy ciała."
+    },
+    {
+        "id": 23,
+        "tiles": [
+            "E133",
+            "błękit brylantowy FCF"
+        ],
+        "content": "jest to niebieska substancja syntetyczna dobrze rozpuszczalna w wodzie. Głównie używana jest do produkcji lodów, żelek, napojów alkoholowych lub bezalkoholowych. Barwnika E133 nie stosuje się w Szwajcarii. Nie wykryto również skutków ubocznych po zjedzeniu produktów z tą substancją. W niektórych przypadkach spożycie barwnika może powodować reakcje alergiczne. Dzienne dopuszczalne spożycie barwnika wynosi 12,5mg/kg masy ciała, jednak należy zachować szczególną ostrożność w jego stosowaniu."
+    },
+    {
+        "id": 24,
+        "tiles": [
+            "E140",
+            "chlorofile",
+            "chlorofiliny"
+        ],
+        "content": "jest to barwnik naturalny, nieszkodliwy dla zdrowia, pozyskany z części roślinnej: luceryny, traw, szpinaku, pokrzywy, itd., a także w bakteriach fotosyntezujących. Posiada właściwości odporne na działanie światła i wysoką temperaturę. Dobrze rozpuszcza się w wodzie. W przemyśle spożywczym stosowany jest do produkcji olejów, tłuszczy lub gum do żucia. Barwnik ten nie przynosi negatywnych objawów dla Twojego organizmu. Nie ma żadnych ograniczeń co do dziennego spożycia produktów z tym barwnikiem. Chlorofil występuje również w postaci tabletek, więc możesz go kupić także w aptece."
+    },
+    {
+        "id": 25,
+        "tiles": [
+            "E141",
+            "chlorofili kompleksy miedziowe",
+            "kompleks miedziowy chlorofilu"
+        ],
+        "content": "jest to naturalna, roślinna substancja o barwie zielonej. Barwnik ten posiada takie same właściwości co E140. Jedyną różnicą między barwnikami jest to, że E141 jest produkowany syntetycznie i jest wzmocniony jonami miedzi. W związku z czym barwnik E141 ma mocniejszą barwę i jest bardziej wytrzymały na działanie światła i wysoką temperaturę. Jony miedzi nie są szkodliwe dla organizmu, jednak zaleca się ostrożność w jego stosowaniu. Dopuszczalna dawka spożycia w ciągu dnia wynosi 1,5 mg/kg masy ciała. W przemyśle spożywczym barwnik dodawany jest do zup oraz sosów w proszku, owoców w zalewie a także groszku konserwowego."
+    },
+    {
+        "id": 26,
+        "tiles": [
+            "E142",
+            "zieleń S"
+        ],
+        "content": "jest to syntetyczny barwnik o odcieniu zielononiebieskim. Służy jako element uzupełniający w produkcji sosu miętowego, serników w proszku, lodów, galaretek, kremów i słodyczy. Barwnika E142 nie stosuje się na terenie Kanady, Japonii, Norwegii oraz USA."
+    },
+    {
+        "id": 27,
+        "tiles": [
+            "E150a",
+            "karmel",
+            "cukier prosty",
+            "karmel prosty",
+            "karmel klasy A",
+            "karmel alkaiczny"
+        ],
+        "content": "jest to barwnik nieszkodliwy dla zdrowia, pochodzenia roślinnego o barwie brązowej. Barwnik ten otrzymywany jest z cukru w wyniku działania wysokiej temperatury podczas procesu karmelizacji. Ma właściwości silnie barwiące. Barwnik ten ma szerokie zastosowanie w żywności. Używa się go m.in. do wyrobów cukierków (np. karmelków), produkcji napojów typu coca-cola, produkcji ciemnego pieczywa, czekolad, jogurtów a także dżemów. Należy ostrożnie spożywać produkty z tym barwnikiem, ponieważ jego nadmiar może powodować problemy żołądkowo-jelitowe."
+    },
+    {
+        "id": 28,
+        "tiles": [
+            "E150b",
+            "karmel siarczynowy",
+            "karmel klasy II",
+            "karmel zasadowo-siarczynowy"
+        ],
+        "content": "jest to brązowy barwnik powstały w procesie podgrzewania cukru z dwutlenkiem siarki bądź innymi związkami, które zawierają siarkę. W przemyśle żywieniowym stosuje się go do zabarwiania alkoholi (whisky, brandy), lodów oraz napoi fermentowanych. Nadmiar spożywania produktów z E150b może powodować dolegliwości wątroby, żołądka a także przyczynia się do nadpobudliwości."
+    },
+    {
+        "id": 29,
+        "tiles": [
+            "E150c",
+            "karmel amoniakowy",
+            "karmel klasy III"
+        ],
+        "content": "jest to barwnik syntetyczny o odcieniu brązowym. Substancja otrzymywana jest w procesie działania amoniaku na sacharozę. W przemyśle żywieniowym stosuje się do barwienia ciemnego pieczywa, sosu sojowego, zup w proszkach, dżemów, czekolad, deserów mlecznych, itd. Nadmiar spożywania produktów z tym barwnikiem może prowadzić do chorób wątroby i żołądka, a także prowadzi do bezpłodności. Zalecane dzienne spożycie wynosi 200mg/kg masy ciała."
+    },
+    {
+        "id": 30,
+        "tiles": [
+            "E150d",
+            "karmel amoniakalno-siarczynowy",
+            "karmel klasy IV"
+        ],
+        "content": "jest to barwnik brązowy używany do barwienia piwa, napojów typu coca-cola, czekolady, ciemnego sosu do mięs, dżemów, słodyczy. Skutkami ubocznymi nadmiernego spożywania barwnika jest m.in. nadpobudliwość, rozwolnienie i nasilenie ruchów robaczkowych jelit. Zatem dopuszczalna dzienna dawka żywieniowa wynosi 200 mg/kg masy ciała."
+    },
+    {
+        "id": 31,
+        "tiles": [
+            "E151",
+            "czerń brylantowa BN",
+            "czerń PN"
+        ],
+        "content": "syntetyczny barwnik azowy szkodliwy dla zdrowia. Ma czarny odcień i bardzo dobrze rozpuszcza się w wodzie. Cechuje się również wytrzymałością na działanie światła, ale ma słabą odporność na wysoką temperaturę. W przemyśle spożywczym używany jest do barwienia produktów cukierniczych, jogurtów, ikry rybiej, sosów w proszku. Na ternie Kanady, Finlandii, Japonii, Norwegii oraz USA jest zakazany. Barwnik ten jest jednym z najbardziej szkodliwych barwników używanych w przemyśle żywieniowym. Spożywanie produktów z tym barwnikiem w nadmiarze prowadzi do chorób nerek. Dzienne dopuszczalne spożycie wynosi 1-5mg/kg masy ciała. Barwnik ten można poznać po tanim kawiorze. Oryginalny i naturalny kawior nie farbuje. Natomiast kawior z barwnikiem E151 barwi białko jaj ugotowanych na twardo. Barwnik jest rozpuszczalny w wodzie, dlatego łatwo jest go wykryć."
+    },
+    {
+        "id": 32,
+        "tiles": [
+            "E152",
+            "czerń 7984"
+        ],
+        "content": "jest to barwnik całkowicie zabroniony w przemyśle spożywczym."
+    },
+    {
+        "id": 33,
+        "tiles": [
+            "E153",
+            "węgiel roślinny"
+        ],
+        "content": "jest to barwnik nieszkodliwy dla zdrowia uzyskany w wyniku spalenia części roślinnych. Stosowany jest w przemyśle spożywczym jako soki owocowe, dżemy, żelki, sosy warzywne i sałatkowe, chrupki kukurydziane, napoje spirytusowe. Głównym składnikiem barwnika jest węgiel pierwiastkowy. Nie wpływa negatywnie na organizm. W medycynie jest stosowany jako środek zapobiegający biegunce."
+    },
+    {
+        "id": 34,
+        "tiles": [
+            "E154",
+            "brąz FK"
+        ],
+        "content": "barwnik brązowy występujący w postaci syntetycznej mieszaniny związków azowych. Stosuje się go szczególnie w wyrobach rybnych, np. w wędzonych rybach oraz konserwach rybnych. Mimo, że jest to barwnik nieszkodliwy dla zdrowia, to jego regularne stosowanie może przyczyniać się do chorób nerek i powodować nasilenie objawów nietolerancji salicylanów. Nie powinny go często spożywać kobiety w ciąży, ponieważ przyczynia się do skurczów macicy. Barwnik ten jest zakazany w Unii Europejskiej z wyjątkiem Anglii i Norwegii oraz w USA."
+    },
+    {
+        "id": 35,
+        "tiles": [
+            "E155",
+            "brąz HT"
+        ],
+        "content": "barwnik azowy syntetyczny szkodliwy dla zdrowia. Bardzo dobrze rozpuszcza się w wodzie i jest wytrzymały na wysoką temperaturę, na działanie promieni świetlnych, na kwasy owocowe i benzoesowe oraz na środowisko zasadowe. W przemyśle spożywczym używany jest głównie do barwienia ciast w proszku o smaku czekoladowym, herbatników czekoladowych, dżemów, owoców, produktów rybnych. Skutkiem ubocznym regularnego spożywania barwnika może być nasilenie objawów astmy. Barwnik może odkładać się w naczyniach limfatycznych oraz w nerkach. Stosowanie barwnika zabrania się w takich krajach, jak: Australia, Dania, Francja, Belgia, Norwegia, Niemcy, Szwecja, Stany Zjednoczone. Maksymalna dopuszczalna dawka żywieniowa wynosi 1,5 mg/kg masy ciała."
+    },
+    {
+        "id": 36,
+        "tiles": [
+            "E160a",
+            "alfa-karoten",
+            "beta-karoten",
+            "prowitamina A",
+            "mieszanina karotenów"
+        ],
+        "content": "jest to naturalny barwnik roślinny o żółtej barwie, który nie jest szkodliwy dla zdrowia. Występuje w większości warzyw i owoców. Nadmierne jedzenie produktów z tym barwnikiem może powodować żółte zabarwienia skóry."
+    },
+    {
+        "id": 37,
+        "tiles": [
+            "E160b",
+            "annato",
+            "biksyna",
+            "norbiksyna",
+            "ekstrakt z nasion Bixa orellana L"
+        ],
+        "content": "jest to pomarańczowy barwnik naturalny, nieszkodliwy dla zdrowia. Substancja otrzymywana jest z nasion drzewa tropikalnego Bixa orellana L. Stanowi element uzupełniający do barwienia margaryny, żółtych serów oraz olejów roślinnych."
+    },
+    {
+        "id": 38,
+        "tiles": [
+            "E160c –",
+            "ekstrakt z papryki",
+            "kapsorubina ,kapsantyna"
+        ],
+        "content": "(ekstrakt z papryki, kapsorubina ,kapsantyna) "
+    },
+    {
+        "id": 39,
+        "tiles": [
+            "E160d",
+            "ekstrakt z pomidorów",
+            "likopen"
+        ],
+        "content": "jest to nieszkodliwy dla zdrowia barwnik o odcieniu czerwieni. Można go spotkać w pomidorach, przepękli indochińskiej oraz pozostałych czerwonych owocach, np. czerwonych grapefruitach, arbuzach, owocach dzikiej róży."
+    },
+    {
+        "id": 40,
+        "tiles": [
+            "E160e",
+            "beta-apo-8′-karotenal",
+            "ester etylowy beta-apo-8-karotenalu"
+        ],
+        "content": "to pomarańczowożółty naturalny lub syntetyczny barwnik spożywczy, który jest źródłem witaminy A. Można go spotkać w takich produktach, jak: sery topione, sery w plastrach, kremowe serki do smarowania pieczywa, sosy sałatkowe. Barwnik E160e występuje głównie w szpinaku i owocach cytrusowych. Jego nadmierne stosowanie może przyczynić się do przebarwień skóry, dlatego dopuszczalna dawka dzienna wynosi 2,5mg/kg masy ciała."
+    },
+    {
+        "id": 41,
+        "tiles": [
+            "E160f",
+            "ester etylowy kwasu beta-apo-8′ –karotenowego"
+        ],
+        "content": "karotenowego) "
+    },
+    {
+        "id": 42,
+        "tiles": [
+            "E161a",
+            "flawoksantyna"
+        ],
+        "content": "zakazany barwnik w produkcji spożywczej w Polsce."
+    },
+    {
+        "id": 43,
+        "tiles": [
+            "E161b",
+            "luteina"
+        ],
+        "content": "jest to naturalny barwnik o odcieniu żółto-czerwonym, który wpływa korzystnie na organizm. Słabo rozpuszcza się w wodzie. Substancja występuje w białku jaja kurzego, komórkach tłuszczowych oraz zielonych liściach. Luteina pełni funkcję barwnika do zup w proszku, napojów alkoholowych, wyrobów cukierniczych. Bardzo dobrze chroni wzrok przed uszkodzeniami powodowanymi przez wolne rodniki."
+    },
+    {
+        "id": 44,
+        "tiles": [
+            "E161e",
+            "wiolaksantyna"
+        ],
+        "content": "stosowanie tego barwnika jest zabronione w Polsce."
+    },
+    {
+        "id": 45,
+        "tiles": [
+            "E161g",
+            "kantaksantyna"
+        ],
+        "content": "szkodliwy barwnik produkowany syntetyczny z beta-karotenu. Występuje niewielkich ilościach roślin, grzybów oraz piór ptaków, np. flamingów. Barwnik ten nie rozpuszcza się dobrze w wodzie. W przemyśle żywieniowym barwnik jest stosowany do koloryzacji paluszków rybnych, lodów, ptasiego mleczka, przypraw do mięs, niektórych konserw. Przekroczenie dziennej dawki żywieniowej może powodować odbarwienie skóry, wrażliwość na ostre światło, pokrzywkę. Dopuszczalne dzienne spożycie to 0,03 mg/kg masy ciała. Stosowanie tego barwnika jest zakazane w niektórych krajach, np. w USA."
+    },
+    {
+        "id": 46,
+        "tiles": [
+            "E161h",
+            "zeaksantyna"
+        ],
+        "content": "stosowanie tego barwnika jest zakazane w Polsce."
+    },
+    {
+        "id": 47,
+        "tiles": [
+            "E161i",
+            "cytranaksantyna"
+        ],
+        "content": "barwnik zabroniony w Polsce."
+    },
+    {
+        "id": 48,
+        "tiles": [
+            "E161j",
+            "astaksantyna"
+        ],
+        "content": "barwnik zabroniony w Polsce."
+    },
+    {
+        "id": 49,
+        "tiles": [
+            "E162",
+            "betanina",
+            "czerwień buraczana"
+        ],
+        "content": "naturalny barwnik nieszkodliwy dla zdrowia, pochodzący z buraków ćwikłowych. Cechuje się słabą trwałością. Barwnik posiada azotany, więc nie jest zalecany dla dzieci. W przemyśle spożywczym używa się go przede wszystkim do deserów, galaretek, cukierków, dżemów, a także do barwienia napojów bezalkoholowych. Czerwień buraczaną stosuje się także w kosmetologii. Nie wykryto skutków ubocznych u dorosłych przy nadmiernym spożywaniu produktów z tym barwnikiem."
+    },
+    {
+        "id": 50,
+        "tiles": [
+            "E163",
+            "antocyjany"
+        ],
+        "content": "barwnik naturalny, nieszkodliwy dla zdrowia, pozyskiwany ze skórek czarnych winogron, jagód, aronii, jeżyn lub czerwonej kapusty. Barwniki te zwiększają wartość odżywczą w produktach spożywczych, ale ich stosowanie w przemyśle spożywczym jest ograniczone ze względu na ich słabą trwałość, tzn. są mało odporne na zmiany temperatury i pH. Antocyjany zwalczają rodniki, które powodują powstanie komórek nowotworowych."
+    },
+    {
+        "id": 51,
+        "tiles": [
+            "E170",
+            "węglan wapnia",
+            "wodorowęglan wapnia"
+        ],
+        "content": "jest to naturalny, biały, mineralny barwnik nieszkodliwy dla zdrowia. Używany jest głównie przy produkcji pieczywa, herbatników, lodów, cukierków oraz konserwowych owocach i warzywach. Spożywanie produktów E170 w małych ilościach jest nieszkodliwe, natomiast nadmiar może spowodować bóle brzucha oraz zaparcia."
+    },
+    {
+        "id": 52,
+        "tiles": [
+            "E171",
+            "dwutlenek tytanu",
+            "tlenek tytan"
+        ],
+        "content": "mineralny biały barwnik, nieszkodliwy dla Twojego zdrowia. Ma szerokie zastosowanie w przemyśle spożywczym. Używa się go do barwienia słodyczy, gum do żucia, lukru, dżemów. W słodyczach barwnik nadaje się jako środek blokujący kolory, dzięki czemu podczas tworzenia produktów kolory nie mieszają się wzajemnie. Jest wydalany z organizmu wraz z moczem. Dopuszczalne dzienne spożycie wynosi 0,5mg/kg masy ciała."
+    },
+    {
+        "id": 53,
+        "tiles": [
+            "E172",
+            "tlenki i wodorotlenki żelaza"
+        ],
+        "content": "barwniki nieszkodliwe dla zdrowia o mineralnej strukturze. W zależności od odmiany mają różną kolorystykę: żółtą, czerwoną, brązową, pomarańczową lub czarną. Używany jest jako barwni przy produkcji past mięsnych, past owoców morza, ciast i deserów w proszku. Dopuszczalna dawka dzienna wynosi 0,5mg/kg masy ciała, jednak zaleca się ostrożność w spożywaniu, gdyż żelazo jest prawdopodobnie toksyczne we wszystkich postaciach, a jego nadmiar może przyczynić się do pogorszenia stanu zdrowia."
+    },
+    {
+        "id": 54,
+        "tiles": [
+            "E173",
+            "aluminium",
+            "glin"
+        ],
+        "content": "barwnik metaliczny rzadko stosowany ze względu na szkodliwość dla zdrowia. W produkcji spożywczej używa się go do wyrobów cukierniczych, zdobienia powierzchni ciast lub tortów. Barwnik jest toksyczny dla układu krwionośnego, rozrodczego oraz nerwowego. Może przyczynić się również do choroby nerek i płuc. Udowodniono, że związek tego metalu przyczynia się do chorób Alzheimera. W związku z tym Parlament Europejski uznał, że dodawanie aluminium powinno być zakazane. Barwnik E173 jest zakazany w przemyśle spożywczym na terenie Australii."
+    },
+    {
+        "id": 55,
+        "tiles": [
+            "E174",
+            "srebro"
+        ],
+        "content": "naturalny, mineralny barwnik o barwie szaro-srebrnej. Zawarte w opakowaniach jony srebra powodują przedłużanie świeżości produktów, hamują wzrost i podział komórek, blokują wzrost bakterii, grzybów i pleśni. Barwnik stosowany jest w wyrobach cukierniczych, dekoracjach pralinek oraz tortów. Srebro koloidalne oraz niektóre związki srebra wpływają korzystnie na organizm i pełnią funkcję lekarstwa na różne schorzenia. Mimo to, zalecana jest ostrożność, ponieważ regularne spożywanie produktów z tym barwnikiem może przyczynić się do przebarwień skóry, oczy, błon śluzowych. Barwnika E174 nie stosuje się w Australii."
+    },
+    {
+        "id": 56,
+        "tiles": [
+            "E175",
+            "złoto"
+        ],
+        "content": "naturalny metal stosowany w przemyśle spożywczym jako dekoracja słodyczy, tortów, ciast. Barwnik ten nie jest szkodliwy dla zdrowia. Ze względu na jego wysoką cenę jest używany w niewielkich ilościach. Nadmiar spożywania produktów z tym barwnikiem może powodować wysypkę, dolegliwości żołądka, a także przyczynia się do wywołania reakcji alergicznych."
+    },
+    {
+        "id": 57,
+        "tiles": [
+            "E180",
+            "czerwień litolowa BK",
+            "karmin 6B",
+            "litorlubina"
+        ],
+        "content": "jest to czerwony barwnik azowy zawierający jony wapnia i glinu. Stosuje się go jako środek barwiący jadalnych powłok serów dojrzewających. Dopuszczalne dzienne spożycie wynosi 1,5mg/kg masy ciała, jednak zaleca się umiarkowanie w spożyciu. Nadmiar E180 może powodować reakcje alergiczne, katar sienny, problemy z żołądkiem oraz jelitami, a także przyczynia się do bezsenności."
+    },
+    {
+        "id": 58,
+        "tiles": [
+            "E181",
+            "taniny"
+        ],
+        "content": "barwnik zabroniony w Polsce."
+    },
+    {
+        "id": 59,
+        "tiles": [
+            "E200",
+            "kwas sorbowy",
+            "kwas sorbinowy"
+        ],
+        "content": "środek konserwujący nieszkodliwy dla zdrowia o smaku lekko kwaśnym. Działa skutecznie przeciwko grzybom i drożdżom. Występuje w owocach jarzębiny europejskiej, natomiast w przemyśle spożywczym służy jako konserwant do jogurtów, serów, margaryny, a także sałatek owocowych. Dopuszczalne dzienne spożycie wynosi 25mg/kg masy ciała. Nadmiar spożywania produktów z E200 może wywołać reakcje alergiczne w kontakcie bezpośrednim ze skórą, np. rumień, podrażnienia skóry, kontaktowe zapalenie skóry."
+    },
+    {
+        "id": 60,
+        "tiles": [
+            "E201",
+            "sorbinian sodu",
+            "sól sodowa kwasu sorbowego"
+        ],
+        "content": "nieszkodliwy dla zdrowia konserwant działający przeciwko grzybom i drożdżom. W przemyśle spożywczym używa się go do wyrobów cukierniczych, lemoniady, soku cytrynowego, wina a także napoju alkoholowego o smaku jabłkowym (do cydrów). Występuje w owocach europejskiej jarzębiny. Dopuszczalne dzienne spożycie wynosi 25 mg/kg masy ciała. W sporadycznych przypadkach może przyczynić się do wystąpienia alergii."
+    },
+    {
+        "id": 61,
+        "tiles": [
+            "E202",
+            "sorbinian potasu",
+            "sól potasowa kwasu sorbowego"
+        ],
+        "content": "środek konserwujący powstały w wyniku różnych procesów chemicznych. Występuje jako naturalny kwas w produktach spożywczych. W przemyśle spożywczym używany jest do konserwowania serów, ciast i wypieków, pieczywa, wina, napojów gazowanych oraz czekolady. Dopuszczalna dawka spożycia nie powinna przekraczać 25mg/kg masy ciała. Zaleca się ostrożność, gdyż jego nadmiar może prowadzić do wywołania reakcji alergicznych, podrażnień skóry a także problemów behawioralnych."
+    },
+    {
+        "id": 62,
+        "tiles": [
+            "E203",
+            "sorbinian wapnia",
+            "sól wapniowa kwasu sorbowego"
+        ],
+        "content": "konserwant syntetyczny używany przede wszystkim w produktach mlecznych: serach, margarynach , twarogach itd. Używa się go również jako konserwant do pieczywa. Ma lekko kwaśny smak. Dopuszczalne dzienne spożycie wynosi 25 mg/kg masy ciała. Skutkami ubocznymi nadmiernego spożywania może być: alergia, kontaktowa pokrzywka, podrażnienia skóry oraz dolegliwości behawioralne."
+    },
+    {
+        "id": 63,
+        "tiles": [
+            "E210",
+            "kwas benzoesowy"
+        ],
+        "content": "syntetyczny konserwant powstały z toluenu, choć można go spotkać także w przyrodzie: w grzybach, goździkach, cynamonie, jagodach, żurawinach. W przemyśle spożywczym używany jest m.in. do warzonych napojów bezalkoholowych, wyrobów ciast, gum do żucia, margaryn, warzywnych sałatek, konserw owocowych. Dopuszczalne dzienne spożycie wynosi 5mg/kg masy ciała. Nadmierne spożycie produktów z E210 może powodować astmę, pokrzywkę, alergię. Kwas benzoesowy jest toksyczny dla układu nerwowego."
+    },
+    {
+        "id": 64,
+        "tiles": [
+            "E211",
+            "benzoesan sodu"
+        ],
+        "content": "syntetyczny konserwant otrzymywany chemicznie z toluenu. Można go spotkać także w owocach, np. w jagodach lub żurawinie. Hamuje wzrost drożdży, pleśni, bakterii masłowych oraz octowych. Nie są skuteczne przeciwko grzybom. W przemyśle spożywczym konserwant stosowany jest do przetworów warzywnych i owocowych, sosów, majonezów, serów. Benzoesan sodu nie należy łączyć z witaminą C, gdyż może przekształcić się w rakotwórczy benzen. Zwróć szczególną uwagę na napoje gazowane, gdyż mogą one zawierać takie połączenie."
+    },
+    {
+        "id": 65,
+        "tiles": [
+            "E212",
+            "benzoesan potasu"
+        ],
+        "content": "konserwant syntetyczny produkowany z toluenu. W produkcji spożywczej używany do dżemów, margaryny, produktów z chili, lukrowanych wiśni. Można znaleźć go również w takich owocach, jak jagoda lub żurawina. Dopuszczalna dzienna dawka to 5mg/kg masy ciała. Nadmierne i regularne spożywanie produktów z E212 może powodować pokrzywkę, wypryski, astmę. Konserwant działa drażniąco na błonę śluzową żołądka. Powinny go unikać osoby uczulone na aspirynę."
+    },
+    {
+        "id": 66,
+        "tiles": [
+            "E213",
+            "benzoesan wapnia"
+        ],
+        "content": "konserwant syntetyczny produkowany z toluenu. Używa się go do produkcji napojów bezalkoholowych, soków owocowych, gum do żucia, lodów. Występuje również w owocach, np. w jagodach, żurawinach, a także znajduje się w grzybach, cynamonie i w niektórych produktach mlecznych. Nie jest zalecany dla dzieci. Skutkami ubocznymi nadmiernego spożywania może być: pokrzywka, astma, anafilaksja oraz problemy behawioralne. Dopuszczalna dzienna dawka żywieniowa to 5mg/kg masy ciała."
+    },
+    {
+        "id": 67,
+        "tiles": [
+            "E214",
+            "ester etylowy kwasu p-hydroksybenzoesowego",
+            "p-Hydroksybenzoesan etylu"
+        ],
+        "content": "jest to syntetyczny konserwant, pochodna kwasu benzoesowego. W przemyśle spożywczym służy jako dodatek do produktów rybnych, sałatek warzywnych i owocowych. Maksymalna dawka dopuszczalna w ciągu dnia wynosi 10mg/kg masy ciała. Przeprowadzono badania na zwierzętach, które pokazały, że działanie tego konserwantu przyczynia się do rozszerzenia naczyń i może wywoływać skurcze mięśni."
+    },
+    {
+        "id": 68,
+        "tiles": [
+            "E215",
+            "ester etylowy kwasu p-hydroksybenzoesowego",
+            "sól sodowa p-hydroksybenzoesanu"
+        ],
+        "content": "jest to konserwant syntetyczny, stosowany do produkcji wyrobów cukierniczych (prócz czekoladowych), żelowych nawierzchni przetworów mięsnych oraz przetworów suszonych. Dopuszczalne dzienne spożycie to 10mg/kg masy ciała."
+    },
+    {
+        "id": 69,
+        "tiles": [
+            "E216",
+            "ester propylowy kwasu p-hydroksybenzoesowego",
+            "p-Hydroksybenzoesan propylu",
+            "paraben propylu"
+        ],
+        "content": "konserwant syntetyczny, stosowany do produkcji wyrobów cukierniczych (prócz czekoladowych), żelowych nawierzchni przetworów mięsnych oraz przetworów suszonych. Dopuszczalne dzienne spożycie to 10mg/kg masy ciała."
+    },
+    {
+        "id": 70,
+        "tiles": [
+            "E217",
+            "ester propylowy kwasu p-hydroksybenzoesowego",
+            "propylo-p-Hydroksybenzoesan sodu",
+            "sól sodowa kwasu p-hydroksybenzoesowego"
+        ],
+        "content": "jest to konserwant syntetyczny, stosowany do produkcji wyrobów cukierniczych (oprócz czekoladowych), żelowych nawierzchni przetworów mięsnych oraz przetworów suszonych. Dopuszczalne dzienne spożycie to 10mg/kg masy ciała."
+    },
+    {
+        "id": 71,
+        "tiles": [
+            "E218",
+            "ester metylowy kwasu p-hydroksybenzoesowego",
+            "p-Hydroksybenzoesan metylu"
+        ],
+        "content": "jest to konserwant syntetyczny, stosowany do produkcji wyrobów cukierniczych (prócz czekoladowych), żelowych nawierzchni przetworów mięsnych oraz przetworów suszonych. Dopuszczalne dzienne spożycie to 10mg/kg masy ciała."
+    },
+    {
+        "id": 72,
+        "tiles": [
+            "E219",
+            "ester metylowy kwasu p-hydroksybenzoesowego",
+            "sól sodowa p-Hydroksybenzoesanu metylu"
+        ],
+        "content": "jest to konserwant syntetyczny, stosowany do produkcji wyrobów cukierniczych (prócz czekoladowych), żelowych nawierzchni przetworów mięsnych oraz przetworów suszonych. Dopuszczalne dzienne spożycie to 10mg/kg masy ciała."
+    },
+    {
+        "id": 73,
+        "tiles": [
+            "E220",
+            "bezwodnik kwasu siarkawego",
+            "dwutlenek siarki"
+        ],
+        "content": "syntetyczny środek konserwujący powstały w wyniku spalania siarki. W przemyśle spożywczym używany jest jako środek do utrwalania win, soków i koncentratów owocowych. Konserwant stosuje się także do suszonych owoców, więc zwróć uwagę szczególnie na skład suszonych śliwek. Służy jako środek bielący w mące i białym winie. Maksymalne dzienne spożycie wynosi 0,7 mg/kg masy ciała. Jest wydalany z organizmu wraz z moczem. Ze względu na właściwości drażniące drogi oddechowe, może przyczynić się do nasilenia objawów astmy."
+    },
+    {
+        "id": 74,
+        "tiles": [
+            "E221",
+            "siarczyn sodu"
+        ],
+        "content": "jest to syntetyczny konserwant w postaci białego, nietrwałego proszku. Stosowany jest jako środek konserwujący, utleniacz jak również substancja bieląca zapobiegająca rozkładowi i przebarwieniom. W przemyśle spożywczym stosowany jest także jako polepszacz do chleba, dzięki któremu poprawia zdolność ugniatania chleba. Występuje w żółtku kurzego jaja, sałatkach, piwie, karmelu. Może niszczyć witaminy obecne w żywności. Dopuszczalne dzienne spożycie to 0,7mg/kg masy ciała."
+    },
+    {
+        "id": 75,
+        "tiles": [
+            "E222",
+            "wodorosiarczyn sodu"
+        ],
+        "content": "syntetyczny konserwant przybierający postać białego i nietrwałego proszku. Służy jako substancja konserwująca i wybielająca. W przemyśle żywieniowym używa się go do cebuli konserwowej, napojach alkoholowych, produktów mlecznych, sokach owocowych. Maksymalna dawka żywieniowa w ciągu dnia wynosi 0,7mg/kg masy ciała."
+    },
+    {
+        "id": 76,
+        "tiles": [
+            "E223",
+            "pirosiarczyn sodu"
+        ],
+        "content": "jest to konserwant syntetyczny służący jako dodatek do produktów mącznych, pieczywa, marynowanej cebuli, koncentratu pomidorowego, ketchupu oraz soków owocowych. Konserwant E223 może utleniać witaminy w produktach do których został dodany, w wyniku czego następuje zmniejszenie ich ilości i dostępności dla organizmu. Jest on rozkładany w wątrobie i wydalany wraz z moczem. Dzienna dopuszczalna dawka wynosi 0,7mg/kg masy ciała. Skutkiem ubocznym regularnego i nadmiernego stosowania konserwantu może być atopowe zapalenie skóry, pokrzywka lub atak astmy."
+    },
+    {
+        "id": 77,
+        "tiles": [
+            "E224",
+            "pirosiarczyn potasu"
+        ],
+        "content": "jest to syntetyczny konserwant w postaci białego, nietrwałego proszku. Służy jako dodatek do serów, marynowanych owoców, konserwowanych skorupiaków oraz wina. Po spożyciu związek ten jest rozkładany w wątrobie, a następnie zostaje wydalany wraz z moczem. Nadmiar spożycia może powodować astmę, pokrzywkę, dolegliwości żołądka i jelit. Dopuszczalna dzienna dawka wynosi 0,7mg/kg masy ciała."
+    },
+    {
+        "id": 78,
+        "tiles": [
+            "E226",
+            "siarczyn wapnia"
+        ],
+        "content": "syntetyczny konserwant, używany do bielenia cukru, produkcji owoców i warzyw konserwowych. Siarczyn wapnia może utleniać witaminy w tych produktach, do których został dodany, w związku z czum zmniejsza ich ilość i dostępność dla organizmu. Po zjedzeniu produktów z tym oznaczeniem, związek jest rozkładany w wątrobie, a potem wydalany z moczem. Dopuszczalne spożycie w ciągu dnia wynosi 0,7mg/kg masy ciała. Nadmierne spożywanie może powodować atak astmy lub podrażnienia skóry."
+    },
+    {
+        "id": 79,
+        "tiles": [
+            "E227",
+            "wodorosiarczyn wapnia"
+        ],
+        "content": "jest to konserwant syntetyczny używany jako stabilizator koloru wina oraz suszonych owoców. Może powodować powstawanie astmy, dolegliwości żołądka, choroby wątroby, nerek lub płuc. Maksymalna dzienna dawka wynosi 0,7mg/kg masy ciała."
+    },
+    {
+        "id": 80,
+        "tiles": [
+            "E228",
+            "wodorosiarczyn potasu"
+        ],
+        "content": "jest to biały i nietrwały proszek, który w procesie chemicznym działa jako środek konserwujący. W produkcji spożywczej pełni funkcję dodatku do win, skrobi, suszonych produktów ziemniaczanych, suszonych warzyw i owoców, niskokalorycznym dżemów, mięsa i ryb. Istnieje również ryzyko obniżenia zawartości witamin w produktach, do których został dodany. Może powodować reakcje alergiczne, nasilenie się objawów astmy, podrażnienia żołądka, bóle głowy oraz nadpobudliwość. Dopuszczalne dzienne spożycie to 0,7mg/kg masy ciała."
+    },
+    {
+        "id": 81,
+        "tiles": [
+            "E230",
+            "bifenyl",
+            "difenyl",
+            "dwufenyl",
+            "fenylobenzen"
+        ],
+        "content": "jest to konserwant syntetyczny produkowany z benzenu. Występuje w postaci białego, nierozpuszczalnego w wodzie proszku. Używany jest w celu zahamowania wzrostu grzybów z rodzaju Penicillium na owocach cytrusowych. Stosowany jest do dezynfekcji pojemników oraz impregnacji opakowań, w które pakowane są owoce cytrusowe. Osoby, które mają styczność na co dzień z dużą ilością owoców cytrusowych mogą być wrażliwe na jego działanie. Dopuszczalne dzienne spożycie wynosi 0,05mg/kg masy ciała. Jest wydalany bez skutków ubocznych przez nerki w takiej samej postaci."
+    },
+    {
+        "id": 82,
+        "tiles": [
+            "E231",
+            "ortofenylofenol",
+            "fenylofenol"
+        ],
+        "content": "jest to konserwant syntetyczny w postaci białego, nierozpuszczalnego w wodzie proszku. Jest stosowany do spryskiwania na powierzchnię owoców cytrusowych, jabłek i gruszek. Dzięki temu zapobiega rozwojowi grzybów z rodzaju Penicillium. Warto więc pamiętać o dokładnym myciu owoców przed spożyciem. Konserwant może powodować skutki uboczne, np. mdłości, zaparcia, wymioty, a nawet zatrzymanie akcji serca lub śpiączkę. Dopuszczalne dzienne spożycie wynosi 0,2mg/kg masy ciała."
+    },
+    {
+        "id": 83,
+        "tiles": [
+            "E232",
+            "sól sodowa ortofenylofenolu"
+        ],
+        "content": "syntetyczny konserwant używany do spryskiwania lub zanurzania w nim owoców. Występuje także w marmoladzie i produktach zawierających skórki owoców. Konserwant powoli wnika w skórkę owoców przez co może być w nich obecny. Dopuszczalna dzienna dawka wynosi 0,2mg/kg masy ciała."
+    },
+    {
+        "id": 84,
+        "tiles": [
+            "E234",
+            "nizyna"
+        ],
+        "content": "jest to konserwant syntetyczny wytwarzany przez Streptococcis lactis. Występuje w formie polipeptydu, czyli antybiotyku wytwarzanego przez bakterie Lactococcus lactis. W przemyśle spożywczym używany jest do serów topionych, warzyw i owoców konserwowych, puddingów z kaszy manny, śmietance do zup i sosów. Dopuszczalne dzienne spożycie to 33000 jednostek/kg masy ciała. Zaleca się ostrożność przy spożywaniu, gdyż antybiotyk ten może stracić swoje właściwości lecznicze."
+    },
+    {
+        "id": 85,
+        "tiles": [
+            "E235",
+            "natamycyna"
+        ],
+        "content": "antybiotyk wytwarzany przez pleśnie. Stosowany jest jako środek konserwujący do zabezpieczania powierzchni suszonych kiełbas i serów. Pełni funkcję zabezpieczająca przed działaniem grzybów. Dopuszczalna dzienna dawka wynosi 0,3mg/kg masy ciała. Przy nadmiernym spożywaniu antybiotyk może stracić swoje właściwości lecznicze, przez co bakterie będą potem trudne do zwalczania. Skutkami ubocznymi spożywania natamycyny może być biegunka, wymioty, mdłości oraz niewielkie podrażnienia skóry."
+    },
+    {
+        "id": 86,
+        "tiles": [
+            "E236",
+            "kwas mrówkowy"
+        ],
+        "content": "jest to najprostszy i najmocniejszy kwas karboksylowy. Można go spotkać w przyrodzie, np. we włoskach parzącej pokrzywy oraz w jadzie mrówek. W produkcji przemysłowej otrzymywany jest w wyniku połączenia metanolu i tlenku węgla. Występuje jako konserwant o silnych właściwościach grzybobójczych. Używany jest do takich produktów, jak: wędzone ryby, soki owocowe, kiszone ogórki. Dzienna dawka nie powinna przekraczać 3mg/kg masy ciała. W dużym stężeniu kwas mrówkowy może powodować dolegliwości żołądkowe, natomiast w stężonej formie jest śmiertelnie trujący."
+    },
+    {
+        "id": 87,
+        "tiles": [
+            "E237",
+            "mrówczan sodu",
+            "sól sodowa kwasu mrówkowego)"
+        ],
+        "content": "jest to związek syntetyczny otrzymywany z wodorotlenku sodu i tlenku węgla. W przyrodzie występuje w formie kwasu mrówkowego. Używany jest jako środek konserwujący zabezpieczający przed mikroorganizmami. W przemyśle spożywczym służy jako dodatek do soków owocowych, napoi bezalkoholowych, marynowanych warzyw. Dopuszczalne dzienne spożycie wynosi 3mg/kg masy ciała. Duże stężenie mrówczanu sodu w organizmie ma właściwości moczopędne."
+    },
+    {
+        "id": 88,
+        "tiles": [
+            "E238",
+            "mrówczan wapnia",
+            "sól wapniowa kwasu mrówkowego"
+        ],
+        "content": "konserwant syntetyczny otrzymywany z wodorotlenku sodu i tlenku węgla. Podobnie jak konserwant E237 "
+    },
+    {
+        "id": 89,
+        "tiles": [
+            "E239",
+            "heksametylenotetraamina",
+            "urotropina",
+            "heksamina"
+        ],
+        "content": "jest to związek syntetyczny produkowany z formaldehydu i amoniaku. W przemyśle żywieniowym jest dodawany do kawioru, sera, śledzi oraz marynowanych ryb. Konserwant jest zakazany w niektórych krajach. Jego wysokie stężenie może prowadzić do kontaktowego zapalenia skóry, chorób przewodu pokarmowego oraz do uszkodzenia nerek. Maksymalna dzienna dawka wynosi 0,15mg/kg masy ciała. Heksamina jest metabolizowana w organizmie przez wątrobę."
+    },
+    {
+        "id": 90,
+        "tiles": [
+            "E242",
+            "dimetylo-diwęglan",
+            "pirowęglan di metylu"
+        ],
+        "content": "konserwant produkowany syntetycznie, występuje również jako inhibitor drożdży w winie. W przemyśle stosowany jest jako środek do sterylizacji pojemników napełnianych napojami bezalkoholowymi, winami, koncentratami herbaty w płynie. Konserwant E242 ulega rozkładowi po rozpuszczeniu się w produkcie, w czasie którego wydzielają się niewielkie ilości pestycydu."
+    },
+    {
+        "id": 91,
+        "tiles": [
+            "E249",
+            "azotyn potasu"
+        ],
+        "content": "jest to minerał występujący naturalnie w przyrodzie, a w przemyśle spożywczym stosowany jako konserwant chroniący przed jadem kiełbasianym. Azotyn potasu może być otrzymywany chemicznie lub wydobywany metodą kopalnianą. Używany jest do wędlin sterylizowanych, peklowanych oraz ryb. Substancja ta nie powinna być spożywana przez dzieci poniżej 1 roku życia. Wysoki poziom konserwantu może przyczynić się do zatruć objawiających się dusznościami oraz sinieniem powłok skórnych. Dopuszczalne dzienne spożycie wynosi 0,06mg/kg masy ciała. Zalecana jest ostrożność, gdyż przy nadmiar azotynu potasu może powodować astmę, zapalenie nerek, bóle i zawroty głowy, a także zaburzenia behawioralne."
+    },
+    {
+        "id": 92,
+        "tiles": [
+            "E250",
+            "azotyn sodu"
+        ],
+        "content": "jest to naturalny minerał wydobywany metodą kopalnianą. W przemyśle otrzymywany jest także chemicznie z azotanu sodu. Występuje w postaci białego proszku, którego rolą jest zahamowanie rozwoju bakterii szkodliwych dla organizmu człowieka. W przemyśle spożywczym stosowany jest do peklowania mięsa, konserwowych i wędzonych przetworów mięsnych, kiełbasek i bekonu. Może tworzyć methemoglobinę w połączeniu z hemoglobiną i wysokim stężeniu. Dopuszczalne dzienne spożycie wynosi 0,06mg/kg masy ciała. Wysoki poziom azotynu sodu może przyczynić się do zatruć objawiających się dusznością oraz sinieniem powłok skórnych. Podobnie jak konserwant E249 "
+    },
+    {
+        "id": 93,
+        "tiles": [
+            "E251",
+            "azotan sodu"
+        ],
+        "content": "jest to naturalny minerał stosowany jako środek konserwujący oraz stabilizator barwy. Występuje prawie we wszystkich warzywach. W przemyśle żywieniowym stanowi dodatek do serów, mięs i jego wyrobów oraz pizzy. Przy wysokich stężeniach może reagować z hemoglobiną tworząc methemoglobinę. Zabronione jest spożywanie tego związku dla dzieci poniżej pierwszego roku życia. Dopuszczalna dawka w ciągu dnia wynosi 3,7,g/kg masy ciała. Skutkami ubocznymi nadmiaru związku w organizmie może być: astma, zapalenie nerek, zaburzenia behawioralne, bóle i zawroty głowy."
+    },
+    {
+        "id": 94,
+        "tiles": [
+            "E252",
+            "azotan potasu"
+        ],
+        "content": "jest to naturalny minerał stosowany jako środek konserwujący oraz stabilizator barwy w produktach spożywczych. Występuje w większości warzyw. W przemyśle żywieniowym stanowi dodatek do serów, mięs i jego wyrobów oraz pizzy. Zabronione jest spożywanie tego związku dla dzieci poniżej pierwszego roku życia. Dopuszczalna dawka w ciągu dnia wynosi 3,7,g/kg masy ciała. Przy wysokich stężeniach może reagować z hemoglobiną tworząc methemoglobinę Zalecana jest ostrożność, gdyż skutkami ubocznymi nadmiaru związku w organizmie może być: astma, zapalenie nerek, zaburzenia behawioralne, bóle i zawroty głowy."
+    },
+    {
+        "id": 95,
+        "tiles": [
+            "E260",
+            "kwas octowy"
+        ],
+        "content": "jest to nieszkodliwy, naturalny kwas występujący w owocach. Jest wytwarzany podczas fermentacji bakteryjnej cukru, melasy lub alkoholu. Może być także otrzymywany drogą chemiczną poprzez syntezę z aldehydu octowego. W przemyśle spożywczym stosowany jest jako środek konserwujący przeciw grzybom i bakteriom. Służy jako dodatek do majonezu, sosów, marynat do mięs, serów oraz wypieków. Mimo, że kwas octowy nie wpływa negatywnie na nasz organizm, to powinny go unikać osoby cierpiące na nietolerancję octu. Może wywołać podrażnienia skóry, pokrzywkę oraz wysypkę."
+    },
+    {
+        "id": 96,
+        "tiles": [
+            "E261",
+            "octan potasu"
+        ],
+        "content": "jest to naturalny kwas występujący w owocach, ale otrzymywany jest także drogą przemysłową. Wytwarzany jest w procesie fermentacji cukru, melasy lub alkoholu. Może być również wytwarzany poprzez syntezę chemiczną z aldehydu octowego. Służy jako dodatek do produkcji marynat, sosów oraz chleba. Powinny go unikać osoby nietolerujące octu a także cierpiące na niewydolność nerek i choroby serca."
+    },
+    {
+        "id": 97,
+        "tiles": [
+            "E262",
+            "octan sodu",
+            "dioctan sodu"
+        ],
+        "content": "jest to naturalny kwas występujący w owocach, ale otrzymywany jest także w procesie fermentacji cukru, melasy lub alkoholu. W przemyśle produkowany jest również w wyniku syntezy chemicznej aldehydu octowego. Występuje jako konserwant, regulator kwasowości oraz bufor do produkcji dżemów, zup i sosów w proszku, płatków zbożowych, kasz oraz produkcji słodyczy. Dopuszczalna dzienna dawka żywieniowa nie może przekraczać 15mg/kg masy ciała."
+    },
+    {
+        "id": 98,
+        "tiles": [
+            "E263",
+            "octan wapnia"
+        ],
+        "content": "jest to kwas naturalny obecny w większości owoców. Uważany jest za nieszkodliwy związek dla organizmu. Wytwarzany jest w czasie fermentacji bakteryjnej cukru, melasy lub alkoholu. Otrzymuje się go także poprzez syntezę chemiczną z aldehydu octowego. Stosowany jest jako konserwant i bufor w produkcji pieczywa, zapachów kosmetycznych, a także środków leczniczych. Octan wapnia nie przynosi skutków ubocznych dla organizmu, choć powinny go unikać osoby cierpiące na nietolerancję octu."
+    },
+    {
+        "id": 99,
+        "tiles": [
+            "E270",
+            "kwas mlekowy"
+        ],
+        "content": "naturalny, nieszkodliwy dla zdrowia kwas wytwarzany przez bakterie w żywności podczas fermentacji. U człowieka występuje w jelicie grubym. Otrzymuje się go także w wyniku fermentacji bakteryjnej skrobi i melasy. Stosowany jest jako konserwant i utrwalacz produktów ziemniaczanych, sosów, napojów bezalkoholowych, wyrobów cukierniczych. Kwasu mlekowego nie powinno się podawać dla niemowląt i małym dzieciom ze względu na brak rozwiniętych odpowiednich enzymów, które w wątrobie rozkładają formy mleczanów."
+    },
+    {
+        "id": 100,
+        "tiles": [
+            "E280",
+            "kwas propionowy"
+        ],
+        "content": "jest to naturalny kwas o intensywnym zapachu, występujący w małych ilościach w niektórych produktach spożywczych. Niekiedy przy dużych stężeniach wytwarzany jest przez bakterie w produktach sfermentowanych. Kwas propionowy obecny jest w jelitach grubych człowieka, a także jest składnikiem potu. Konserwant stosowany jest przeciw grzybom, a także używany jest przy wyrobach cukierniczych, pieczywa, mięsa, wędlinach pizzy. Jest to konserwant nieszkodliwy, jednak w niektórych przypadkach może powodować bóle głowy i migrenę."
+    },
+    {
+        "id": 101,
+        "tiles": [
+            "E281",
+            "propionian sodu"
+        ],
+        "content": "konserwant syntetyczny powstający w procesie fermentacji. Jest to sól sodowa naturalnego kwasu występującego w małych ilościach w wielu produktach. Podobnie jak poprzedni konserwant "
+    },
+    {
+        "id": 102,
+        "tiles": [
+            "E282",
+            "propionian wapnia"
+        ],
+        "content": "syntetyczny konserwant wytwarzany w procesie fermentacji. Jest to sól wapniowa kwasu propionowego, kwasu występującego w niewielkich ilościach w produktach spożywczych. Przy dużych stężeniach wytwarzany jest przez bakterie w tych produktach, które są poddane fermentacji. Występuje w jelicie grubym człowieka. Stosuje się go jako środek konserwujący w pieczywie, produkcji czekolady, serków topionych. Do tej pory nieznane są skutki uboczne nadmiernego stosowania E282."
+    },
+    {
+        "id": 103,
+        "tiles": [
+            "E283",
+            "propionian potasu"
+        ],
+        "content": "jest to sól potasowa kwasu propionowego, obecnego w nieznacznych ilościach w produktach spożywczych. Przy dużych stężeniach wytwarzany jest przez bakterie w produktach poddanych fermentacji. Występuje w jelicie grubym u człowieka. Służy jako środek konserwujący w produkcji serów, herbatników, makaronów, pieczywa, a także produktów mącznych."
+    },
+    {
+        "id": 104,
+        "tiles": [
+            "E284",
+            "kwas borowy"
+        ],
+        "content": "jest to naturalny kwas, w przemyśle wytwarzany jest z boru. Używany jest jako roztwór buforowy utrzymujący niezmienną kwasowość w produktach. Dodawany jest do produktów multiwitaminowych jako źródło minerałów. Dopuszczalne dzienne spożycie wynosi 0,1 mg/kg masy ciała. Działa przeciwgrzybiczno w owocach cytrusowych. Stosowanie kwasu borowego w dużych ilościach może przyczynić się do dolegliwości nerek, wątroby, chorób układu nerwowego, krwionośnego a także rozrodczego."
+    },
+    {
+        "id": 105,
+        "tiles": [
+            "E285",
+            "tetraboran sodu",
+            "boraks"
+        ],
+        "content": "kwas naturalny, w przemyśle uzyskiwany jest z boru. Używany jest jako roztwór buforowy utrzymujący niezmienną kwasowość w produktach. Dodawany jest do produktów multiwitaminowych jako źródło minerałów. Występuje częściej w przemyśle farmaceutycznym, niż spożywczym. Długie stosowanie substancji E285 może przyczynić się do zmian skórnych i niewydolności nerek. Dopuszczalna dzienna dawka wynosi 0,1 mg/kg masy ciała."
+    },
+    {
+        "id": 106,
+        "tiles": [
+            "E290",
+            "dwutlenek węgla",
+            "tlenek węgla IV"
+        ],
+        "content": "jest to konserwant syntetyczny, naturalnie występujący w postaci gazu, który jest produkowany w procesie metabolizmu. Można go spotkać szczególnie w napojach gazowanych, wyrobów cukierniczych, śmietanki. Stosuje się go także w produkcji pakowania w zmodyfikowanej atmosferze jako propelent w instalacjach."
+    },
+    {
+        "id": 107,
+        "tiles": [
+            "E296",
+            "kwas jabłkowy"
+        ],
+        "content": "naturalny, nieszkodliwy dla zdrowia kwas występujący w większości owoców i warzyw. W produkcji przemysłowej jest wytwarzany przez syntezę chemiczną. Stanowi część metabolizmu każdej żywej komórki. Pełni rolę stabilizatora barw produktów oraz regulatora kwasowości. W przemyśle spożywczym służy jako dodatek do soków jabłkowych, winogronowych oraz do różnych przetworów owocowych i warzywnych."
+    },
+    {
+        "id": 108,
+        "tiles": [
+            "E297",
+            "kwas fumarowy"
+        ],
+        "content": "kwas nieszkodliwy dla zdrowia, naturalnie występuje w większości owoców i warzyw. W przemyśle jest uzyskiwany przez syntezę chemiczną lub przez fermentację cukrów przy pomocy grzybów. Stanowi część metabolizmu każdej żywej komórki. Stosowany jest jako regulator kwasowości w produktach serowych, napojach bezalkoholowych, słodyczach oraz galaretkach. Skutkiem ubocznym nadmiernego stosowania kwasu fumarowego może być utrata wapnia w kościach."
+    },
+    {
+        "id": 109,
+        "tiles": [
+            "E300",
+            "kwas askorbinowy",
+            "witamina C",
+            "kwas L-askorbinowy"
+        ],
+        "content": "substancja wytwarzana syntetycznie występująca w większości warzyw i owoców. W przemyśle najpierw uzyskiwana przez fermentację glukozy przy pomocy bakterii, a potem zostaje chemicznie utleniana. Kwas askorbinowy pełni rolę stabilizatora barwy. Substancja jest dobrze rozpuszczalna w wodzie. Do tej pory nie wykryto efektów ubocznych nadmiernego stosowania kwasu askorbinowego."
+    },
+    {
+        "id": 110,
+        "tiles": [
+            "E301",
+            "askorbinian sodu"
+        ],
+        "content": "nieszkodliwy, syntetyczny przeciwutleniacz, wykorzystywany jako wzmacniacz smaku, np. przy wypiekach chleba. W przemyśle uzyskuje się go z glukozy poprzez bakteryjną fermentację, którą poprzedza chemiczne utleniane. Substancja zapobiega brązowieniu owoców. Nie ma ograniczeń dziennego spożycia tej substancji."
+    },
+    {
+        "id": 111,
+        "tiles": [
+            "E302",
+            "askorbinian wapnia"
+        ],
+        "content": "syntetyczny, nieszkodliwy przeciwutleniacz, który występuje w większości owoców i warzyw. Otrzymywany jest na drodze fermentacji glukozy przez bakterie, którą poprzedza chemiczne utlenianie. Nie ma ograniczeń co do dziennego spożycia ten substancji."
+    },
+    {
+        "id": 112,
+        "tiles": [
+            "E304",
+            "palmitynian askorbylu",
+            "stearynian askorbylu",
+            "estry kwasów tłuszczowych i kwasu askorbinowego"
+        ],
+        "content": "jest to pochodna witaminy C. Substancja jest nieszkodliwa dla zdrowia. Występuje jako przeciwutleniacz w produktach tłuszczowych. Służy jako dodatek do olejów roślinnych, a także pełni rolę barwnika dodawanego do żywności. Dzienne spożycie nie powinno przekraczać 1,25 mg/kg masy ciała. Brak efektów ubocznych."
+    },
+    {
+        "id": 113,
+        "tiles": [
+            "E306",
+            "mieszanina tokoferoli",
+            "witamina E"
+        ],
+        "content": "jest to naturalny, nieszkodliwy dla zdrowia przeciwutleniacz otrzymywany w drodze ekstrakcji warzyw i olejów roślinnych bogatych w witaminę E. Pełni rolę przeciwutleniacza w produktach zawierających tłuszcz i zapobiega jełczeniu tłuszczów zwierzęcych. Maksymalne dzienne spożycie wynosi 2mg/kg masy ciała."
+    },
+    {
+        "id": 114,
+        "tiles": [
+            "E307",
+            "alfa-tokoferol"
+        ],
+        "content": "jest to syntetycznie produkowana witamina E, uważana za nieszkodliwą dla zdrowia człowieka. Otrzymywana jest z produktów bogatych w witaminę E, np. z oleju słonecznikowego. Używana jest jako przeciwutleniacz i środek wzbogacający. Spożywanie E307 jest ograniczone, ponieważ znacznie wpływa na smak żywności. Witamina E przy dużym stężeniu może wywołać reakcje niepożądane. Dzienna dawka spożycia nie powinna przekraczać 2mg/kg masy ciała."
+    },
+    {
+        "id": 115,
+        "tiles": [
+            "E308",
+            "gamma-tokoferol"
+        ],
+        "content": "substancja występująca jako ekstrakt z olejów otrzymywanych z warzyw zawierające witaminę E. Może być także otrzymywana chemicznie poprzez syntezę. Występuje jako przeciwutleniacz w produktach zawierających tłuszcz roślinny i zwierzęcy. Ma niską aktywność witaminy E. Służy jako dodatek do żywności zapobiegający jełczeniu. Dopuszczalne dzienne spożycie wynosi 2 mg/kg masy ciała."
+    },
+    {
+        "id": 116,
+        "tiles": [
+            "E309",
+            "delta-tokoferol"
+        ],
+        "content": "substancja występująca jako ekstrakt z olejów otrzymywanych z warzyw zawierające witaminę E. Może być także otrzymywana chemicznie poprzez syntezę. Występuje jako przeciwutleniacz w produktach zawierających tłuszcz roślinny i zwierzęcy. E309 zapobiega jełczeniu oliwy. Zmienia również smak produktów. Dzienna dawka spożycia nie powinna przekraczać 2 mg/kg masy ciała."
+    },
+    {
+        "id": 117,
+        "tiles": [
+            "E310",
+            "galusan propylu"
+        ],
+        "content": "syntetycznie otrzymywany przeciwutleniacz, produkowany z propanolu i kwasu galusowego. Chroni przed jełczeniem produktów spożywczych. Jest stosowany w różnych produktach spożywczych, np. dodawany jest do olejów, mleka w proszku, zup i sosów w proszku, gum do żucia. E310 ma szerokie zastosowanie w przemyśle kosmetycznym. Dopuszczalne dzienne spożycie wynosi 1,4 mg/kg masy ciała. Nadmiar spożywania tej substancji może prowadzić do reakcji alergicznych."
+    },
+    {
+        "id": 118,
+        "tiles": [
+            "E311",
+            "galusan oktylu"
+        ],
+        "content": "przeciwutleniacz otrzymywany syntetycznie, zapobiegający jełczeniu produktów żywnościowych, jest umiarkowanie toksyczny przy połknięciu. Może przyczynić się do podrażnień żołądka. Służy jako dodatek do olejów spożywczych, margaryn, mleka w proszku, ciast w proszku, zup oraz sosów w proszku, a także gum do żucia. Dopuszczalne dzienne spożycie wynosi 0,5 mg/kg masy ciała. Nie można go podawać niemowlętom oraz małym dzieciom. Taki przeciwutleniacz powinny także unikać osoby uczulone na aspirynę."
+    },
+    {
+        "id": 119,
+        "tiles": [
+            "E312",
+            "galusan dodecylu"
+        ],
+        "content": "syntetyczny przeciwutleniacz powstały z alkoholu laurylowego i kwasu galusowego. Można go znaleźć w produktach spożywczych zawierających tłuszcz. Ma właściwości zapobiegające jełczeniu. Dodawany jest do olejów spożywczych, zup w proszku, mleka w proszku, gum do żucia. Powinny go unikać dzieci. Maksymalna dzienna dawka nie powinna przekraczać 0,05 mg/kg masy ciała. Skutkami ubocznymi spożywania kwasu galusowego mogą być dolegliwości żołądkowe oraz hiperaktywność."
+    },
+    {
+        "id": 120,
+        "tiles": [
+            "E315",
+            "kwas izoaskorbinowy"
+        ],
+        "content": "przeciwutleniacz produkowany syntetycznie, pełniący rolę stabilizatora barwy oraz izomera witaminy C. Służy jako dodatek do wyrobów mięsnych i rybnych, produktów garmażeryjnych i peklowanych. Może wywołać reakcje alergiczne."
+    },
+    {
+        "id": 121,
+        "tiles": [
+            "E316",
+            "izoaskorbinian sodu"
+        ],
+        "content": "występuje jako przeciwutleniacz, izomer witaminy C i stabilizator barwy. Jest to substancja produkowana syntetycznie. W przemyśle spożywczym przeciwutleniacz dodawany jest do wyrobów mięsnych, rybnych, garmażeryjnych. Nie zanotowano maksymalnej dawki dziennej, którą człowiek może spożyć."
+    },
+    {
+        "id": 122,
+        "tiles": [
+            "E320",
+            "butylohydroksyanizol",
+            "BHA"
+        ],
+        "content": "przeciwutleniacz i stabilizator barwy otrzymywany w wyniku chemicznej syntezy. W przemyśle spożywczym można go spotkać w biszkoptach, kostkach rosołowych, orzechach, suszu ziemniaczanego, gum do żucia, produktów zbożowych. Przy połączeniu BHA z witaminą C może dojść do powstawania wolnych rodników, które uszkadzają składniki komórek, w tym DNA. Spożywanie w dużych ilościach BHA powoduje zaburzenia pracy wątroby, nerek, tarczycy, żołądka, a także powstawanie wrzodów dwunastnicy. Dopuszczalna dzienne spożycie nie powinno przekraczać 0,5 mg/kg masy ciała. Stosowanie tej substancji nie jest zalecane dzieciom."
+    },
+    {
+        "id": 123,
+        "tiles": [
+            "E321",
+            "butylohydroksytoluen",
+            "BHT"
+        ],
+        "content": "jest to syntetyczny przeciwutleniacz używany w tłuszczach, pełniący rolę ochronną przeciw jełczeniu produktów. W przemyśle spożywczym służy jako dodatek do olejów lub smalców. Skutkami ubocznymi spożywania BHT mogą być: pokrzywka, zapalenie skóry, migrena, astma, zmęczenie, a w niektórych przypadkach nawet rak wątroby. Maksymalna dzienna dawka spożycia wynosi ok. 0,3 mg/kg masy ciała. Unia Europejska ograniczyła stosowanie tej substancji ze względu na dość wysoką szkodliwość dla organizmu człowieka."
+    },
+    {
+        "id": 124,
+        "tiles": [
+            "E322",
+            "lecytyna"
+        ],
+        "content": "jest to nieszkodliwy dla zdrowia, naturalny, roślinny emulgator i przeciwutleniacz. Otrzymywany jest z takich oleju sojowego, słonecznikowego oraz rzepakowego. W przemyśle spożywczym stosowany jest do zmiękczania czekolady. Służy także przy produkcji mleka w proszku, makaronów, olei i tłuszczy. Lecytyna jest rozkładana i wykorzystywana przez organizmy bez żadnych niepożądanych efektów, stąd nie ma ograniczeń w jej stosowaniu."
+    },
+    {
+        "id": 125,
+        "tiles": [
+            "E325",
+            "mleczan sodu"
+        ],
+        "content": "jest to syntetyczny regulator kwasowości i przeciwutleniacz nieszkodliwy dla zdrowia. Wytwarzany jest z melasy i skrobi. Blokuje rozwój drożdży i pleśni oraz zapobiega wysychaniu produktów spożywczych. W przemyśle spożywczym służy jako dodatek do produkcji lodów, galaretek owocowych, serów, zup i owoców w puszce. Osoby cierpiące na nietolerancję laktozy, powinny tę substancję unikać. Nie należy również podawać jej dzieciom, które nie syntetyzują odpowiednich enzymów w wątrobie."
+    },
+    {
+        "id": 126,
+        "tiles": [
+            "E326",
+            "mleczan potasu"
+        ],
+        "content": "syntetyczny regulator kwasowości i przeciwutleniacz nieszkodliwy dla zdrowia. Wytwarzany jest z melasy i skrobi. Blokuje rozwój drożdży i pleśni oraz zapobiega wysychaniu produktów spożywczych. W przemyśle spożywczym służy jako dodatek do produkcji lodów, galaretek owocowych, serów, zup i owoców w puszce. Osoby cierpiące na nietolerancję laktozy, powinny tę substancję unikać. Nie należy również podawać jej dzieciom, które nie syntetyzują jeszcze odpowiednich enzymów w wątrobie."
+    },
+    {
+        "id": 127,
+        "tiles": [
+            "E327",
+            "mleczan wapnia"
+        ],
+        "content": "jest to syntetyczny regulator kwasowości, występuje w postaci związku wapnia i kwasu mlekowego. Wytwarzany jest z melasy i skrobi. Blokuje rozwój drożdży i pleśni oraz zapobiega wysychaniu produktów spożywczych. W przemyśle spożywczym służy jako dodatek do produkcji lodów, galaretek owocowych, serów, zup i owoców w puszce. Mleczan wapnia powinny unikać osoby cierpiące na nietolerancję laktozy. Nie powinno się także podawać produktów z tą substancją dla małych dzieci ze względu na ich niedostosowany metabolizm."
+    },
+    {
+        "id": 128,
+        "tiles": [
+            "E330",
+            "kwas cytrynowy"
+        ],
+        "content": "jest to naturalny składnik każdego żywego organizmu. Pełni istotną rolę w procesie metabolizmu. Kwas cytrynowy występuje m.in. w owocach cytrusowych, truskawkach, kiwi i innych owocach. Jest regulatorem kwasowości oraz służy jako dodatek do aromatów. Kwas cytrynowy odpowiada za wzmacnianie struktury żelu w marmoladach, przeciwdziała brunatnieniu owoców, podwyższa aktywność przeciwutleniaczy. Kwas cytrynowy ulega rozkładowi w organizmie i jest przyswajany bez żadnych skutków ubocznych. Może być spożywany przez osoby, które są uczulone na owoce cytrusowe. Ma również zastosowanie w przemyśle kosmetycznym. Osoby uczulone na glutaminian sodu powinny go unikać. Kwas cytrynowy stosowany w dużych dawkach może powodować zaburzenia w przyswajaniu wapnia i nasilać objawy opryszczki."
+    },
+    {
+        "id": 129,
+        "tiles": [
+            "E331",
+            "cytrynian sodu",
+            "cytrynian monosodowy",
+            "cytrynian disodowy",
+            "cytrynian trisodowy"
+        ],
+        "content": "jest to syntetyczny regulator kwasowości i stabilizator otrzymywany z cukru. W naturze występuje w owocach cytrusowych i organizmu jako sole sodowe kwasu cytrynowego. Występuje jako przeciwutleniacz stosowany do aromatów. Cytryniany sodu pełnią rolę wzmacniającą strukturę żelu w produktach spożywczych, chronią przed brunatnieniem owoców. Stosowane są w produkcji mleka w proszku, mleka zagęszczonego, świeżych ryb i mięs. Osoby uczulone na owoce cytrusowe mogą je spożywać. Cytryniany sodu nie zalecane są dla osób, które są wrażliwe na glutaminian sodu."
+    },
+    {
+        "id": 130,
+        "tiles": [
+            "E332",
+            "cytrynian potasu",
+            "cytrynian monopotasowy",
+            "cytrynian tri potasowy"
+        ],
+        "content": "jest to syntetyczny regulator kwasowości i stabilizator uważany za nieszkodliwy dla organizmu człowieka. Stosowany jest jako bufor i składnik odżywczy dla drożdży w produktach fermentowanych niezawierających sodu. W przemyśle spożywczym stosowany jest do przetwórstwa mleka w proszku, mleka zagęszczonego, oleju i tłuszczów pochodzenia zwierzęcego, paczkowanych mięs. Osoby, które są uczulone na owoce cytrusowe mogą spożywać cytrynian potasu. Nie jest zalecany dla osób, które są wrażliwe na glutaminian sodu."
+    },
+    {
+        "id": 131,
+        "tiles": [
+            "E333",
+            "cytrynian wapnia",
+            "cytrynian monowapniowy",
+            "cytrynian diwapniowy",
+            "cytrynian tri wapniowy"
+        ],
+        "content": "syntetyczny regulator kwasowości i stabilizator uważany za nieszkodliwy dla organizmu człowieka. Występuje w organizmie i owocach cytrusowych jako sole wapniowe kwasu cytrynowego. Stosowany jest jako bufor i składnik odżywczy. Cytryniany wapnia pełnią rolę wzmacniającą strukturę żelu w produktach spożywczych, chronią przed brunatnieniem owoców. W przemyśle spożywczym stosowany jest do przetwórstwa mleka w proszku, mleka zagęszczonego, oleju i tłuszczów pochodzenia zwierzęcego, paczkowanych mięs. Osoby, które są uczulone na owoce cytrusowe mogą spożywać cytrynian wapnia. Nie jest zalecany dla osób, które są wrażliwe na glutaminian sodu."
+    },
+    {
+        "id": 132,
+        "tiles": [
+            "E334",
+            "kwas winowy"
+        ],
+        "content": "jest to naturalny kwas nieszkodliwy dla zdrowia występujący w wielu owocach, głównie w winogronach. W przemyśle produkowany jest z odpadów, które powstają przy wytwarzaniu wina. Stanowi stabilizator barwy w owocach i różnych produktach owocowych. Używany jest również jako wzmacniacz aromatów owocowych. Kwas winowy nie jest metabolizowany przez organizm. Wydala się go wraz z moczem bez skutków ubocznych. Maksymalna dzienna dawka spożycia wynosi 30mg/kg masy ciała. Stosuje się go przede wszystkim w wyrobach cukierniczych, marmoladach, winie oraz napojach bezalkoholowych."
+    },
+    {
+        "id": 133,
+        "tiles": [
+            "E335",
+            "winian sodu",
+            "winian monosodowy",
+            "winian disodowy"
+        ],
+        "content": "jest to nieszkodliwy dla zdrowia roślinny regulator kwasowości i przeciwutleniacz. Można go spotkać w owocach, np. w winogronach. Stosuje się go przy wyrobach cukierniczych, produktów owocowych, owoców i warzyw w puszkach, sucharków oraz herbatników. Nadmiar spożywania winianu sodu może powodować dolegliwości przeczyszczające. Dopuszczalna dzienna dawka spożycia wynosi 30 mg/kg masy ciała."
+    },
+    {
+        "id": 134,
+        "tiles": [
+            "E336",
+            "winian potasu"
+        ],
+        "content": "roślinny regulator kwasowości i przeciwutleniacz. W przemyśle spożywczym wytwarzany jest z odpadów podczas produkcji wina, np. ze skórek winogron. Służy do produkcji proszku do pieczenia, wyrobów cukierniczych oraz pieczywa. Jedzenie produktów z E336 w dużych ilościach może prowadzić do dolegliwości przeczyszczających. Maksymalne dzienne spożycie wynosi 30 mg/kg masy ciała. Osoby wrażliwe na winian potasu powinny unikać produktów z tym oznaczeniem, gdyż skutkuje to nadciśnieniem tętniczym, a w skrajnych przypadkach może doprowadzić do niewydolności serca. Osoby cierpiące na niewydolność nerek lub wątroby powinny ten przeciwutleniacz unikać."
+    },
+    {
+        "id": 135,
+        "tiles": [
+            "E337",
+            "winian sodowo-potasowy",
+            "kamień winny"
+        ],
+        "content": "jest to roślinny regulator kwasowości występujący w wielu owocach, głównie w winogronach. Stosowany jest jako przeciwutleniacz, stabilizatora oraz emulgator w produktach serowych i mięsnych. Spożywanie nadmiernej ilości produktów z tą substancją może prowadzić do dolegliwości przeczyszczających. Winian sodowo-potasowy posiada sole potasowe, dlatego nie powinien być spożywany przez osoby cierpiące na niewydolność nerek, wątroby bądź serca. Zalecana jest również ostrożność dla osób mających nadciśnienie tętnicze. Dopuszczalne dzienne spożycie wynosi 30 mg/kg masy ciała."
+    },
+    {
+        "id": 136,
+        "tiles": [
+            "E338",
+            "kwas fosforowy"
+        ],
+        "content": "jest to naturalny składnik występujący w większości owoców i warzyw. W przemyśle spożywczym służy jako przeciwutleniacz i regulator kwasowości. Kwas fosforowy zwiększa transport soli w mięsie. Stosowany jest jako dodatek do napojów energetyzujących, alkoholi, wyrobów cukierniczych oraz aromatów. Spożywany w dużych ilościach może osłabiać wchłanianie magnezu, żelaza oraz wapnia. Nie powinny go stosować osoby chorujące na osteoporozę oraz kobiety w okresie menopauzalnym. Maksymalne dzienne spożycie wynosi 70 mg/kg masy ciała."
+    },
+    {
+        "id": 137,
+        "tiles": [
+            "E339",
+            "fosforan sodu",
+            "fosforan monosodowy",
+            "fosforan disodowy",
+            "fosforan trisodowy"
+        ],
+        "content": "jest to naturalny przeciwutleniacz, emulgator oraz regulator kwasowości. Pełni również funkcję stabilizatora i substancji wspomagającej wiązanie wody. W naturze można go spotkać w większości owoców i warzyw. Fosforany sodu są to sole sodowe kwasu fosforowego. Służy jako dodatek do produktów mlecznych, przetworów owocowych, napojów energetyzujących, aromatów, tłuszczów zwierzęcych, itd. Fosforan sodu może przyczynić się do uszkodzeń szkliwa zębów i powodować utratę wapnia kości. Podrażnia skórę i oczy przy bezpośrednim kontakcie. Dopuszczalne dzienne spożycie wynosi 70 mg/kg masy ciała."
+    },
+    {
+        "id": 138,
+        "tiles": [
+            "E340",
+            "fosforan potasu",
+            "fosforan monopotasowy",
+            "fosforan dipotasowy",
+            "fosforan tri potasowy"
+        ],
+        "content": "w przemyśle spożywczym występuje jako przeciwutleniacz, emulgator oraz regulator kwasowości. W naturze można go spotkać w większości owoców i warzyw. Służy jako dodatek do produktów mlecznych, przetworów owocowych, napojów energetyzujących, aromatów, tłuszczów zwierzęcych, itd. Nadmierne spożywanie produktów z fosforanem potasu może ograniczyć przyswajanie niektórych składników mineralnych. Dopuszczalne dzienne spożycie wynosi 70 mg/kg masy ciała."
+    },
+    {
+        "id": 139,
+        "tiles": [
+            "E341",
+            "fosforan wapnia",
+            "fosforan monowapniowy",
+            "fosforan diwapniowy",
+            "fosforan tri wapniowy"
+        ],
+        "content": "są to naturalne regulatory kwasowości. Sole wapniowe kwasu fosforowego. Naturalnie można je spotkać w wielu owocach i warzywach. W produkcji spożywczej stosowane są jako dodatek do chleba, proszku do pieczenia, aromatyzowanych napojów alkoholowych, produktów mlecznych, napojów energetyzujących. Fosforan wapnia jest to związek o właściwościach czyszczących w paście do zębów. Jego zadaniem jest także zapobieganie tworzeniu się brył w produktach sypkich. Dopuszczalne dzienne spożycie wynosi ok. 70 mg/kg masy ciała. Fosforany wapnia mogą powodować dolegliwości trawienne oraz podrażnienia skóry i oczu."
+    },
+    {
+        "id": 140,
+        "tiles": [
+            "E342",
+            "fosforan amonu",
+            "ortofosforan monoamonowy",
+            "ortofosforan di amonowy"
+        ],
+        "content": "regulator kwasowości zakazany w Polsce."
+    },
+    {
+        "id": 141,
+        "tiles": [
+            "E343",
+            "fosforan magnezu",
+            "fosforan monomagnezowy",
+            "fosforan dimagnezowy",
+            "fosforan tri magnezowy"
+        ],
+        "content": "jest to sól magnezowa kwasu fosforowego. Występuje jako naturalny składnik wielu owoców i warzyw. W produkcji spożywczej fosforany wapnia służą jako emulgatory i przeciwutleniacze. Mają na celu zapobiegać tworzeniu się brył w produktach sypkich. Dodawane są do takich produktów, jak: owoce kandyzowane, mleko sterylizowane i UHT, mleko zgęszczone, sery niedojrzewające, sery topione, zabielacze do napojów, lodów, deserów, preparaty owocowe, wyroby piekarnicze, wyroby cukiernicze, mąka. Maksymalne dzienne spożycie to 70 mg/kg masy ciała. Zaleca się ograniczenie stosowania fosforanów, ponieważ wiążą one wapń, co powoduje jego niedobór w organizmie."
+    },
+    {
+        "id": 142,
+        "tiles": [
+            "E350",
+            "jabłczan sodu",
+            "wodorojabłczan sodu",
+            "sól sodowa kwasu jabłkowego"
+        ],
+        "content": "jest to naturalny kwas znajdujący się w większości owoców. W przemyśle spożywczym służy jako związek buforujący oraz substancja smakowa w bezalkoholowych napojach lub produktach cukierniczych. Jabłczan sodu nie powinien być podawany dla niemowląt, ponieważ niemowlęta nie wytwarzają enzymów potrzebnych do prawidłowego metabolizmu tych substancji. Nie ma natomiast ograniczeń co do dziennego spożywania przez osoby dorosłe."
+    },
+    {
+        "id": 143,
+        "tiles": [
+            "E351",
+            "jabłczan potasu",
+            "sól potasowa kwasu jabłkowego"
+        ],
+        "content": "nieszkodliwy dla zdrowia, naturalny kwas znajdujący się w większości owoców. W przemyśle spożywczym służy jako związek buforujący oraz substancja smakowa w bezalkoholowych napojach lub produktach cukierniczych. Jabłczan potasu nie powinien być podawany dla niemowląt, ponieważ niemowlęta nie wytwarzają enzymów potrzebnych do prawidłowego metabolizmu tych substancji. Nie określono ograniczeń co do dziennego spożywania przez osoby dorosłe."
+    },
+    {
+        "id": 144,
+        "tiles": [
+            "E352",
+            "jabłczan wapnia",
+            "sól wapniowa kwasu jabłkowego"
+        ],
+        "content": "jest to sól wapniowa kwasu jabłkowego. To naturalny kwas znajdujący się w większości owoców. W przemyśle spożywczym służy jako związek buforujący oraz substancja smakowa w bezalkoholowych napojach lub produktach cukierniczych. Jabłczan wapnia nie powinien być podawany dla niemowląt, ponieważ niemowlęta nie wytwarzają enzymów potrzebnych do prawidłowego metabolizmu tych substancji. Nie ma natomiast ograniczeń co do dziennego spożywania przez osoby dorosłe."
+    },
+    {
+        "id": 145,
+        "tiles": [
+            "E353",
+            "kwas meta winowy"
+        ],
+        "content": "kwas występujący w trzcinie cukrowej. W przemyśle spożywczym pełni funkcję regulatora kwasowości oraz stabilizatora. Dodawany jest do win, soków owocowych, napoi owocowych, itp. Maksymalne dzienne spożycie wynosi 30 mg/kg masy ciała. Nadmierne ilości kwasu meta winowego może powodować zahamowanie wchłaniania wapnia przez organizm człowieka. Należy zachować ostrożność w jego spożywaniu."
+    },
+    {
+        "id": 146,
+        "tiles": [
+            "E354",
+            "winian wapnia"
+        ],
+        "content": "jest to sól wapniowa kwasu winowego, naturalnie występująca w owocach. W przemyśle spożywczym jest używana jako regulator kwasowości i konserwant. Dodawana jest do konserw warzywnych, konserw rybnych, produktów dla niemowląt oraz środków farmaceutycznych. Zalecana jest ostrożność w stosowaniu winianu wapnia, ponieważ jej nadmierne stosowanie przyczynia się do ograniczenia wchłanialności przez organizm niektórych składników mineralnych."
+    },
+    {
+        "id": 147,
+        "tiles": [
+            "E355",
+            "kwas adypinowy"
+        ],
+        "content": "kwas występujący w burakach i trzcinie cukrowej. Stosowany jest jako regulator kwasowości i substancja wzmacniająca smak. Kwas adypinowy służy jako dodatek do polew wyrobów piekarskich, suszonych deserów w proszku, sproszkowanych napojów. Dopuszczalne spożycie wynosi 5 kg/kg masy ciała. Kwas adypinowy ulega rozkładowi w organizmie i zostaje wydalony wraz z moczem."
+    },
+    {
+        "id": 148,
+        "tiles": [
+            "E356",
+            "adypinian sodu"
+        ],
+        "content": "jest to sól sodowa kwasu adypinowego, która występuje w sokach trzcinowych i burakach. Ma słony smak. W przemyśle spożywczym dodawana jest do przyprawionych mieszanek, suszonych owoców, napojów w proszku, proszku do pieczenia, itd. Podobnie jak kwas adypinowy, adypinian sodu jest rozkładany w ludzkim organizmie, a następnie wydalany z moczem. Maksymalne dzienne spożycie wynosi 5 mg/kg masy ciała."
+    },
+    {
+        "id": 149,
+        "tiles": [
+            "E357",
+            "adypinian potasu"
+        ],
+        "content": "sól potasowa kwasu adypinowanego, która występuje w trzcinie cukrowej i burakach. Jest to substancja nieszkodliwa dla zdrowia. W przemyśle spożywczym pełni funkcję regulatora kwasowości oraz substancji wzmacniającej smak. Dodawana jest do suszonych owoców, napojów w proszku, mieszanek przyprawowych o obniżonej zawartości sodu, żelujących deserów, itd. Adypinian potasu jest rozkładany w organizmie, a następnie usuwany z moczem. Maksymalna dzienna dawka żywieniowa wynosi 5 mg/kg masy ciała."
+    },
+    {
+        "id": 150,
+        "tiles": [
+            "E363",
+            "kwas bursztynowy"
+        ],
+        "content": "jest to naturalny kwas występujący w większości owoców i warzyw, uważany za substancję nieszkodliwą dla zdrowia. Pełni funkcję wzmacniacza smaku i regulatora kwasowości. Kawas bursztynowy charakteryzuje się lekko-gorzkim smakiem. Dodawany jest do produktów piekarniczych, cukierniczych, sproszkowanych napojów. Jest metabolizowany przez organizm. W skrajnych przypadkach, nadmiar spożywania kwasu bursztynowego może przyczyniać się do wymiotów lub biegunki."
+    },
+    {
+        "id": 151,
+        "tiles": [
+            "E385",
+            "sól wapniowo-disodowa kwasu etylenodiaminotetra-octowego"
+        ],
+        "content": "jest to syntetyczny przeciwutleniacz i substancja wiążąca jony metali. Pełni także rolę stabilizatora w przemyśle spożywczym. Substancja stosowana jest w produkcji konserw rybnych. Służy jako dodatek do grzyb, roślin strączkowych, mrożonych ryb i skorupiaków. Nadmierne stosowanie może doprowadzić do chorób jelitowych i uszkodzeń nerek. Dopuszczalna dzienna dawka wynosi 2,5 mg/kg masy ciała. Regularne spożycie powoduje niedobór żelaza i wchłanianie metali ciężkich."
+    },
+    {
+        "id": 152,
+        "tiles": [
+            "E400",
+            "kwas alginowy"
+        ],
+        "content": "jest to naturalnie występujący polisacharyd powstały przez wodorosty z rodziny Phaeophyceae. Występuje w postaci roślinnej substancji zagęszczającej, żelującej i do powlekania. W przemyśle spożywczym stosuje się ją do produktów przeznaczonych dla niemowląt, dżemów, marmolad, kremów do smarowania pieczywa, galaretek, budyniów. Kwas alginowy spożywany w niewielkich ilościach uważa się za bezpieczny dla zdrowia, jednak nie jest zalecany dla kobiet w ciąży. Nadmierne spożywanie tej substancji może przyczynić się do zatrzymania wchłanialności żelaza, wapnia, manganu i cynku."
+    },
+    {
+        "id": 153,
+        "tiles": [
+            "E401",
+            "alginian sodu",
+            "sól sodowa kwasu alginowego"
+        ],
+        "content": "jest to roślinny polisacharyd używany jako substancja zagęszczająca. W przemyśle spożywczym służy jako stabilizator i substancja żelująca. Dodawany jest do lodowa, deserów w proszków, koncentratów napoi i ciast, śmietany UHT. Spożywanie produktów z E401 w sposób regularny może przyczynić się do spowolnienia wchłanialności żelaza."
+    },
+    {
+        "id": 154,
+        "tiles": [
+            "E402",
+            "alginian potasu",
+            "sól potasowa kwasu alginowego"
+        ],
+        "content": "w przemyśle spożywczym występuje jako roślinny środek zagęszczający i substancja żelująca. Jest to polisacharyd otrzymywany z wodorostów z rodziny Phaeophyceae. Dodawany jest do takich produktów, jak: lody, jogurty, galaretki, dżemy, budynie w proszku. W dużych stężeniach może wiązać się z żelazem, czego przyczyną może być niedobór żelaza w organizmie."
+    },
+    {
+        "id": 155,
+        "tiles": [
+            "E404",
+            "alginian wapnia"
+        ],
+        "content": "jest to środek zagęszczający, emulgator zapobiegający krystalizacji w produktach mrożonych i wyrobach piekarniczych. E404 to polisacharyd pełniący funkcję żelującą. Stosowany jest do marmolad i lodów. Nie wytyczono dopuszczalnej dawki, jaką człowiek może spożywać w ciągu dnia. Regularne i nadmierne spożywanie emulgatora może przyczyniać się do zaburzeń przyswajalności żelaza."
+    },
+    {
+        "id": 156,
+        "tiles": [
+            "E405",
+            "alginian propylenowo-glikolowy"
+        ],
+        "content": "jest to naturalny polisacharyd pełniący funkcję środka zagęszczającego i żelującego. W przemyśle spożywczym występuje jako emulgator i stabilizator piany. Można go spotkać w lodach, galaretkach oraz wyrobach cukierniczych. Dodawany jest także do mrożonych deserów, sosów, chipsów ziemniaczanych, piwa, likierów oraz gum do żucia. Dopuszczalne dzienne spożycie wynosi 70 mg/kg masy ciała. W niektórych przypadkach może przyczyniać się do reakcji alergicznych i biegunki."
+    },
+    {
+        "id": 157,
+        "tiles": [
+            "E406",
+            "agar",
+            "agar-agar",
+            "isinglass"
+        ],
+        "content": "jest to naturalny polisacharyd wytwarzany z alg. Jest pozbawiony smaku i uważa się go z bezpieczniejszy od żelatyny. W przemyśle spożywczym pełni rolę rozpuszczalnej substancji żelującej i stabilizatora. Dodawana jest do marmolad, galaretek, lodów, napoi mlecznych, margaryn, konserw mięsnych. Maksymalna dzienna dawka nie powinna przekraczać 10 mg/kg masy ciała. Skutkami ubocznymi nadmiernego spożywania E406 mogą być wzdęcia lub reakcje alergiczne."
+    },
+    {
+        "id": 158,
+        "tiles": [
+            "E407",
+            "karagen"
+        ],
+        "content": "jest to roślinny polisacharyd powstały z czerwonych glonów morskich. W przemyśle spożywczym występuje jako środek żelujący i zagęszczający. Służy jako dodatek do śmietanki pasteryzowanej, dżemów, galaretek, marmolady, mleka w proszku. Karagen o małej masie cząsteczkowej nie można stosować w przemyśle spożywczym, ponieważ mogą przyczynić się do owrzodzenia jelit i dolegliwości przeczyszczających. Nie powinien być podawany dzieciom."
+    },
+    {
+        "id": 159,
+        "tiles": [
+            "E410",
+            "mączka chleba świętojańskiego",
+            "korab",
+            "guma korabowa"
+        ],
+        "content": "jest to naturalna roślina, a dokładnie wyciąg z nasion drzewa świętojańskiego Ceratonia siliqua L. Taką roślinność można spotkać na obszarach Morza Śródziemnego. Pełni funkcję stabilizatora, emulgatora oraz substancji zagęszczającej. Hamuje procesy krystalizacji w mrożonkach, cechuje się odpornością na działanie soli, kwasów i wysokiej temperatury. Służy jako dodatek do dżemów, marmolad, serów topionych, przetworów mlecznych i owocowych, kremów do smarowania pieczywa, galaretek, itd. W dużych stężeniach powoduje fermentację przez mikroflorę jelitową, co prowadzi do dolegliwości jelitowych, np. wzdęć. Mączka chleba świętojańskiego może obniżać cholesterol."
+    },
+    {
+        "id": 160,
+        "tiles": [
+            "E411",
+            "mączka owsiana",
+            "mączka z tamaryszku"
+        ],
+        "content": "jest to naturalny polisacharyd otrzymywany z owsa. Służy jako substancja zagęszczająca. W dużych stężeniach powoduje fermentację przez mikroflorę jelitową, co prowadzi do wzdęć. Praktycznie nie jest wykorzystywany w przemyśle."
+    },
+    {
+        "id": 161,
+        "tiles": [
+            "E412",
+            "guma guar"
+        ],
+        "content": "jest to naturalna substancja powstała z wyciągu nasion Cyamopsis tetragonolubus. Nasiona z tej rośliny można spotkać w Indiach i Pakistanie. W produkcji spożywczej używana jest jako substancja zagęszczająca i stabilizator. Dodawana jest do dżemów, żywności bezglutenowej i niskokalorycznej, płatków zbożowych, serów homogenizowanych, kremów do smarowania pieczywa, itd. Regularne i nadmierne spożywanie może prowadzić do wzdęć, mdłości i biegunki."
+    },
+    {
+        "id": 162,
+        "tiles": [
+            "E413",
+            "tragakanta",
+            "guma tragakantowi"
+        ],
+        "content": "naturalny polisacharyd powstały z drzewa Astralagus gummifer występującego w Turcji, Iranie i Syrii. Występuje jako substancja zagęszczająca, stabilizator i emulgator. W produkcji spożywczej służy jako składnik do dżemów, produktów owocowych, płatków zbożowych, serów homogenizowanych. Cechą charakterystyczną substancji E413 jest to, że nadaje niektórym produktom kremową konsystencją. Zaleca się ostrożność, szczególnie w przypadku osób wrażliwych na dolegliwości jelitowe. Nadmierne spożywanie może prowadzić do bólów brzucha, wzdęć, biegunki, a nawet może wywołać reakcje alergiczne, astmę lub duszności."
+    },
+    {
+        "id": 163,
+        "tiles": [
+            "E414",
+            "guma arabska"
+        ],
+        "content": "jest to naturalna substancją roślinna powstała z drzewa akacjowego (acacia senegal) występującego w tropikalnej Afryce. W przemyśle spożywczym pełni funkcję zagęszczającą i żelującą. Występuje jako emulgator i stabilizator. Dodawany jest do wyrobów czekoladowych, piwa, dżemów lub gum do życia. Nie zostało określone dzienne dopuszczalne spożycie. Jest to substancja mało toksyczna, choć może przyczyniać się do takich dolegliwości, jak: wysypka, pokrzywka, katar sienny lub duszności."
+    },
+    {
+        "id": 164,
+        "tiles": [
+            "E415",
+            "guma ksantanowa"
+        ],
+        "content": "naturalny polisacharyd powstały przez bakterie Xanthomonas campestris w procesie fermentacji bogatych w cukier. W przemyśle spożywczym służy jako składnik zagęszczający, emulgator i stabilizator. Dodawany jest do dżemów, marmolad, galaretek, żywności dla niemowląt i dzieci, a także do kasztanów w zalewie. Zaleca się ostrożność, gdyż w nadmiernych ilościach może powodować biegunki, wzdęcia lub wysypkę."
+    },
+    {
+        "id": 165,
+        "tiles": [
+            "E416",
+            "guma karaya"
+        ],
+        "content": "naturalny składnik roślinny powstały w drzewa Sterculia urens rosnącego w Indiach. Pełni rolę substancji zagęszczającej, stabilizującej oraz emulgującej. Służy jako dodatek do produkcji chipsów smakowych, wyrobów ciastkarskich, piekarniczych, deserów mlecznych, likierów na bazie jaj, gum do życia, aromatów. Ma też zastosowanie w przemyśle kosmetycznym, ponieważ dodawany jest do odżywek do włosów. Nadmierne spożywanie może przyczynić się do dolegliwości przeczyszczających, a także przyczynia się do zahamowania wchłanialności składników mineralnych. Skutkami ubocznymi są także: podrażnienia żołądka, nasilenia objawów astmy, alergie skórne."
+    },
+    {
+        "id": 166,
+        "tiles": [
+            "E417",
+            "guma Tara"
+        ],
+        "content": "jest to naturalna substancja o właściwościach zagęszczających i stabilizujących. Powstaje ze zmielonych nasion strączkowych drzewa Caesalpinia spinosa. Służy jako dodatek do lodów, serów, wyrobów ciastkarskich. Zalecana jest ostrożność, gdyż regularne i nadmierne spożywania przyczynia się do dolegliwości przeczyszczających i wzdęć."
+    },
+    {
+        "id": 167,
+        "tiles": [
+            "E418",
+            "guma Gella"
+        ],
+        "content": "naturalny polisacharyd powstały przez mikroorganizmy Pseudomonas elodea ze skrobi. Używana jest jako substancja zagęszczająca, stabilizująca i żelująca. Służy jako dodatek do galaretek, dżemów, marmolad, sokach, itd. Substancja E418 nie jes wchłaniana przez organizm ludzki"
+    },
+    {
+        "id": 168,
+        "tiles": [
+            "E420",
+            "sorbitol",
+            "syrop sorbitolowy"
+        ],
+        "content": "jest to substancja słodząca, naturalnie występuje w alkoholu wielowodorotlenowym pochodzącym z owoców (np. jabłek, czereśni, winogron). Pełni funkcję utrzymującą wilgotność, odpornościową na działanie wysokiej temperatury, stabilizacyjną oraz wypełniającą. W procesie chemicznym powstaje w wyniku przetwarzania glukozy. Służy jako dodatek do deserów mlecznych, produktów niskokalorycznych, lodów, wyrobów piekarniczych, gum do żucia bez cukru, musztardy. Nie wolno podawać produktów z sorbitolem dzieciom poniżej 1 roku życia, ponieważ może to prowadzić do ostrej biegunki. Powinny go również unikać osoby cierpiące na nietolerancję fenyloketonurię, kobiety w ciąży oraz kobiety karmiące. Spożycie ponad 20 g produktów z E420 może wywołać biegunkę, dolegliwości jelit, problemy żołądkowo-jelitowe oraz wzdęcia. Może również przyczynić się do zmniejszania wchłanialności leków."
+    },
+    {
+        "id": 169,
+        "tiles": [
+            "E421",
+            "mannitol"
+        ],
+        "content": "alkohol wielowodorotlenowy, występujący naturalnie w takich roślinach, jak: drzewa iglaste, wodorosty, grzyby. W przemyśle pełni funkcję syntetycznej substancji słodzącej. Mannitol jest otrzymywany w procesie wytwarzania glukozy. Utrzymuje wilgotność i ma właściwości wiążące. Służy jako dodatek do deserów mlecznych, lodów, wyrobów piekarniczych, kakaowych, gum do żucia, likierów, musztard. Należy zachować ostrożność przy spożyciu, ponieważ nadmierna ilość mannitolu w organizmie wywołuje biegunkę, skurcze jelit, choroby żołądkowo-jelitowe, wzdęcia, a nawet może pogarszać pracę jelit. Dopuszczalne dzienne spożycie wynosi 160mg/kg masy ciała. Podobnie jak glukoza, mannitol jest w pewnej części metabolizowany w ludzkim organizmie. Pozostała część fermentuje w jelicie grubym, przez co może wywołać wzdęcia. Stosowanie produktów z E421 nie jest zalecane dla osób cierpiących na cukrzycę, kobiet w ciąży, kobiet karmiących oraz dzieci. Mannitol może działać przeczyszczająco."
+    },
+    {
+        "id": 170,
+        "tiles": [
+            "E422",
+            "glicero"
+        ],
+        "content": "jest to naturalny alkohol wielowodorotlenowy, który jest składnikiem wszystkich tłuszczy. W niewielkich stężeniach występuje także we krwi. W przemyśle otrzymuje się go syntetycznie poprzez wytwarzanie z propenu lub poprzez fermentację cukrów. Posiada właściwości wiążące, emulgacyjne, utrzymujące wilgotność. Pełni także rolę rozpuszczalnika. W produkcji spożywczej służy jako dodatek do wyrobów czekoladowych, kakaowych, suszonych owoców, gum do żucia, wyrobów tytoniowych. Gliceryna ma również zastosowanie w przemyśle kosmetycznym "
+    },
+    {
+        "id": 171,
+        "tiles": [
+            "E425",
+            "konjac",
+            "konjac guma",
+            "konjac glukomannan"
+        ],
+        "content": "jest to substancja występująca w naturze, wytwarzana z mączki konjac z korzenia rośliny Amorphophallus konjac. W przemyśle spożywczym jest używana jako emulgator, substancja żelująca i zagęszczająca. Służy jako dodatek do deserów mlecznych, jogurtów smakowych, lodów, słodyczy, dżemów, majonezu, sosów. Należy zachować ostrożność przy spożywaniu. Skutkami ubocznymi może być biegunka, bóle brzucha, zaburzenia trawienia, skurcze żołądka."
+    },
+    {
+        "id": 172,
+        "tiles": [
+            "E432",
+            "monolaurynian polioksyetylenosorbitolu"
+        ],
+        "content": "jest to związek syntetyczny produkowany z tlenu etylenowego, sorbitolu oraz naturalnego kwasu tłuszczowego "
+    },
+    {
+        "id": 173,
+        "tiles": [
+            "E433",
+            "monooleinian polioksyetylenosorbitolu"
+        ],
+        "content": "związek syntetyczny otrzymywany z tlenku etylowego, kwasu oleinowego oraz sorbitolu. W produkcji spożywczej wykorzystywana jest jako emulgator i służy jako dodatek do wyrobów pieczywa, wyrobów ciastkarskich, gum do żucia, lodów, aromatów, zup, sosów, napoi bezalkoholowych. Maksymalne dzienne spożycie wynosi 25 mg/kg masy ciała. Substancję E433 powinny unikać osoby, u których stwierdzono nietolerancję na glikol propylenowy."
+    },
+    {
+        "id": 174,
+        "tiles": [
+            "E434",
+            "monopalmitynian polioksyetylenosorbitolu",
+            "polisorbat 40"
+        ],
+        "content": "jest to substancja syntetyczna otrzymywana z tlenku etylenowego, sorbitolu oraz naturalnego kwasu tłuszczowego "
+    },
+    {
+        "id": 175,
+        "tiles": [
+            "E435",
+            "monostearynian polioksyetylenosorbitolu",
+            "polisorbat 60"
+        ],
+        "content": "jest to syntetyczny związek wytwarzany z kwasu stearynowego, tlenku etylenowego oraz sorbitolu. Wykorzystywany jest przy produkcji ciast. Pełni rolę substancji emulgującej. W produkcji spożywczej dodawana jest do aromatów, lodów, pieczywa cukierniczego, substytutów mleka i śmietany, zemulgowanych sosów. Dopuszczalna dawka żywieniowa w ciągu dnia wynosi 25 mg/kg masy ciała. Substancję E435 powinny unikać osoby, u których stwierdzono nietolerancję na glikol propylenowy."
+    },
+    {
+        "id": 176,
+        "tiles": [
+            "E436",
+            "tristearynian polioksyetylenosorbitolu",
+            "polisorbat 65"
+        ],
+        "content": "jest to substancja syntetyczna otrzymywana z sorbitolu, kwasu stearynowego oraz tlenku etylenowego. Stosowana jest jako emulgator i środek przeciw pianotwórczy. W produkcji spożywczej służy jako dodatek do pieczywa cukierniczego, wyrobów ciastkarskich, lodów, aromatów, substytutów mleka i śmietany, zemulgowanych sosów, zup oraz suplementów diety. Dopuszczalne dzienne spożycie wynosi 25 mg/kg masy ciała. Substancję E436 powinny unikać osoby, u których stwierdzono nietolerancję na glikol propylenowy."
+    },
+    {
+        "id": 177,
+        "tiles": [
+            "E440",
+            "pektyna",
+            "pektyna amidowana"
+        ],
+        "content": "kwasowy polisacharyd występujący w wielu owocach, np. w jabłkach, pigwach lub pomarańczach. W przemyśle wytwarzany jest z pulpy jabłkowej, skórki pomarańczy oraz buraków cukrowych. Pektyna pełni rolę substancji zagęszczającej, żelującej oraz emulgującej. Służy jako dodatek do soków z ananasem, wyrobów czekoladowych, wyrobów kakaowych, dżemów, galaretek, kompotów, kremów do smarowania oraz marmolad. Ma również zastosowanie w farmaceutyce, ponieważ występuje w lekach na biegunkę. Pektynę można spotkać także w produktach przeznaczonych dla niemowląt oraz dzieci, a także w produktach bezglutenowych. Osoby wrażliwe na glutaminian sodu powinny tę substancję unikać, ponieważ mogą wystąpić objawy niepożądane, np. bóle brzucha lub wzdęcia."
+    },
+    {
+        "id": 178,
+        "tiles": [
+            "E441",
+            "żelatyna"
+        ],
+        "content": "jest to substancja wytwarzana z produkcji ubocznej przetwórstwa mięsnego, np. z kości i skóry. Żelatyna ma duże zastosowanie w przemyśle spożywczym. Pełni rolę emulgatora oraz środka żelującego. Istnieją obawy, że żelatyna wieprzowa może być substancją zakaźną nieznanych dotąd chorób prionowych. Nie jest określone dopuszczalne dzienne spożycie żelatyny."
+    },
+    {
+        "id": 179,
+        "tiles": [
+            "E442",
+            "fosfatydy amonu"
+        ],
+        "content": "syntetyczna substancja otrzymywana z amoniaku i fosforyzowanych kwasów tłuszczowych (np. z oleju rzepakowego). W przemyśle spożywczym pełni rolę substancji emulgującej i stabilizującej. Służy jako dodatek do produkcji wyrobów czekoladowych, kakaowych, olejów do smażenia oraz pieczywa. Dopuszczalne dzienne spożycie to 30 mg/kg masy ciała. Spożywane w znacznych ilościach sole amonowe mogą przyczynić się do nadmiernego zakwaszenia organizmu, dlatego zalecana jest ostrożność w spożywaniu."
+    },
+    {
+        "id": 180,
+        "tiles": [
+            "E444",
+            "octan izomaślanu sacharozy"
+        ],
+        "content": "jest to substancja syntetyczna pełniąca rolę emulgatora oraz stabilizatora. Służy jako dodatek do nieklarowanych napojów aromatyzowanych: spirytusowych oraz bezalkoholowych. Nie określono dopuszczalnej dziennej dawki żywieniowo i nie zaobserwowano skutków ubocznych w jej nadmiernym spożywaniu, jednak zalecana jest ostrożność."
+    },
+    {
+        "id": 181,
+        "tiles": [
+            "E445",
+            "ester glicerolu i żywicy roślinnej"
+        ],
+        "content": "jest to związek syntetyczny pełniący funkcję emulgatora oraz stabilizatora. Jest wytwarzany z gliceryny spożywczej oraz kwasów żywicowych kalafonii ekstrakcyjnej. W przemyśle spożywczym stosowany jest do produkcji gum do żucia, wyrobów cukierniczych, nieklarowanych napojów bezalkoholowych i spirytusowych aromatyzowanych (np. likierów). Substancja wykorzystywana jest także do spryskania skórek owoców, przez co wydłuża czas ich świeżości. Nie określono dopuszczalnej dziennej dawki żywieniowo i nie zaobserwowano skutków ubocznych w jej nadmiernym spożywaniu, jednak zalecana jest ostrożność."
+    },
+    {
+        "id": 182,
+        "tiles": [
+            "E450",
+            "difosforan",
+            "difosforan disodowy",
+            "difosforan trisodowy",
+            "difosforan tetrasodowy",
+            "difosforan dipotasowy",
+            "difosforan tetrapotasowy",
+            "difosforan diwapniowy",
+            "diwodoro-difosforan wapnia"
+        ],
+        "content": "jest to związek syntetyczny otrzymywany z kwasu fosforowego i różnych węglanów. Pełni funkcję emulgatora, stabilizatora oraz regulatora kwasowości. Ma właściwości wiążące i spulchniające. W produkcji spożywczej dodawany jest do przetworów mięsnych, soli i jej zamienników, aromatyzowanych napojów bezalkoholowych, owoców kandyzowanych, zup i herbat w proszku, gum do żucia, cukru pudru, przetworów ze skorupiaków. Nadmierne spożywanie może przyczyniać się do zaburzeń wchłanialności wapnia, magnezu oraz żelaza. Skutkiem ubocznym regularnego spożywania produktów z E450 jest osteoporoza. Dopuszczalna dzienna dawka spożycia wynosi 70 mg/kg masy ciała."
+    },
+    {
+        "id": 183,
+        "tiles": [
+            "E451",
+            "trifosforan",
+            "trifosforan pentasodowy",
+            "trifosforan pentapotasowy"
+        ],
+        "content": "substancja syntetyczna powstała z kwasu fosforowego oraz węglanów. Ma właściwości emulgujące, stabilizujące oraz regulujące kwasowość. Jest także substancją wiążącą, co istotne jest w przemyśle spożywczym. Dodawana jest do przetworów mięsnych, serków topionych, soli, aromatyzowanych napojów bezalkoholowych, sosów, owoców kandyzowanych, chipsów, gum do żucia, przetworów ze skorupiaków, płynnej masy jaja kurzego, cukru pudru. Produkty z oznaczeniem E451 mogą powodować zaburzenia metaboliczne i przyczyniać się do zachorowalności na osteoporozę, ponieważ trifosforan negatywnie wpływa na wchłanialność wapnia i żelaza przez organizm. Dopuszczalne dzienne spożycie wynosi 70 mg/kg masy ciała."
+    },
+    {
+        "id": 184,
+        "tiles": [
+            "E452",
+            "polifosforan",
+            "polifosforan sodu",
+            "polifosforan sodowo-wapniowy",
+            "polifosforan wapnia"
+        ],
+        "content": "substancja syntetyczna otrzymywana z soli sodowych i wapniowych kwasów fosforowych. W produkcji spożywczej służy jako emulgator, stabilizator oraz regulator kwasowości. Polifosforan można spotkać w takich produktach, jak: serki topione, sól i jej zamiennik, przetwory mięsne, gumy do żucia, przetwory ze skorupiaków, zupy i herbaty w proszku, owoce kandyzowane, płynnej masy jaja kurzego, śmietanka pasteryzowana, napoje dla sportowców, lody, pieczywo cukiernicze. Nadmierne i regularne spożywanie może prowadzić do zaburzeń przyswajalności żelaza, magnezu oraz wapnia. Maksymalna dawka żywieniowa wynosi 70 mg/kg masy ciała."
+    },
+    {
+        "id": 185,
+        "tiles": [
+            "E460",
+            "celuloza",
+            "celuloza mikrokrystaliczna",
+            "celuloza sproszkowana"
+        ],
+        "content": "substancja pozyskiwana z drewna. Jest t polisacharyd, który jest podstawowym składnikiem drewna i roślin. Celuloza ma szerokie zastosowanie, ale służy głównie jako środek zagęszczający. Wykorzystywana jest jako wypełniacz, środek przeciw-zbrylający, emulgator. Służy jako dodatek do produkcji kremów, pianek, pieczywa oraz wyrobów cukierniczych. Celuloza jest substancją nierozpuszczalną. Ulega fermentacji w jelicie grubym. Duże stężenia powodują dolegliwości jelitowe, np. wzdęcia, biegunka lub zaparcia."
+    },
+    {
+        "id": 186,
+        "tiles": [
+            "E461",
+            "metyloceluloza"
+        ],
+        "content": "substancja otrzymywana z celulozy "
+    },
+    {
+        "id": 187,
+        "tiles": [
+            "E463",
+            "hydroksypropyloceluloza"
+        ],
+        "content": "substancja otrzymywana z celulozy, uważana za naturalny środek zagęszczający. Pełni funkcję stabilizatora. W organizmie ludzkim rozpuszcza się w jelicie grubym ulegając procesowi fermentacji. W przemyśle spożywczym służy do produkcji marynat do mięs, sosów, jogurtów. Składnik E463 ma również zastosowanie w kosmetyce "
+    },
+    {
+        "id": 188,
+        "tiles": [
+            "E464",
+            "hydroksypropylometyloceluloza"
+        ],
+        "content": "substancja wytwarzana z celulozy, która pełni funkcję emulgatora, stabilizatora oraz środka wypełniającego. Ma również zastosowanie przeciw-zbrylające. Jest rozpuszczalna w wodzie i ulega fermentacji w jelicie grubym u człowieka. Służy jako dodatek do sosów, zup, jogurtów, lodów, lukrów, mleka modyfikowanego dla niemowląt, suszonych owoców. Substancję stosuje się także przy produkcji emulsji do kąpieli, kosmetyków do włosów i skóry oraz kremów samoopalających. Regularne i nadmierne spożywanie może powodować dolegliwości przeczyszczające, zaparcia, wzdęcia, reakcje alergiczne, podrażnienia skóry i oczu."
+    },
+    {
+        "id": 189,
+        "tiles": [
+            "E465",
+            "etylom etyloceluloza"
+        ],
+        "content": "środek zagęszczający i stabilizujący, otrzymywany z polisacharydu wchodzącego w skład drewna i roślin. Używany jest jako składnik tłuszczy roślinnych, odtłuszczonej śmietany, śmietanki w sprayu, środków przeczyszczających, produktów tytoniowych. Jest to substancja rozpuszczalna w wodzie. Dzienne spożycie ten substancji nie zostało określone, jednak zaleca się ostrożność. Nadmierne stosowanie może prowadzić do dolegliwości jelitowych, np. biegunki, zaparć, wzdęć."
+    },
+    {
+        "id": 190,
+        "tiles": [
+            "E466",
+            "karboksymetyloceluloza",
+            "sól sodowa karboksymetyloceluloz"
+        ],
+        "content": "jest to naturalna substancja zagęszczająca i stabilizująca otrzymywana z celulozy. W przemyśle spożywczym służy jako składnik do śmietanek pasteryzowanych, losów, lukru, serków homogenizowanych, twarogów, mleka modyfikowanego dla niemowląt. Ma także zastosowanie w przemyśle kosmetycznym "
+    },
+    {
+        "id": 191,
+        "tiles": [
+            "E468",
+            "sól sodowa karboksymetylocelulozy usieciowana",
+            "guma celulozowa usieciowana"
+        ],
+        "content": "syntetyczny związek pełniący funkcję stabilizatora, nośnika oraz wypełniacza. Ma właściwości pęcznienia się. Substancja nie jest wchłaniania przez organizm człowieka. W przemyśle spożywczym używana jest jako dodatek do środków słodzących. Należy zachować rozwagę przy stosowaniu tej soli, ponieważ skutkiem ubocznym nadmiernego spożycia może być ból brzucha, biegunka lub wzdęcia."
+    },
+    {
+        "id": 192,
+        "tiles": [
+            "E469",
+            "enzymatycznie zhydrolizowana karboksymetyloceluloza"
+        ],
+        "content": "substancja syntetyczna, w przemyśle spożywczym używana jako emulgator i nośnik. Służy jako składnik gum do żucia, lodów, gotowych zup oraz tłustych produktów mięsnych."
+    },
+    {
+        "id": 193,
+        "tiles": [
+            "E470a",
+            "sole sodowe",
+            "potasowe i wapniowe kwasów tłuszczowych"
+        ],
+        "content": "są to sole naturalnych kwasów tłuszczowych, głównie pochodzących z roślin lub tłuszczów zwierzęcych. W przemyśle spożywczym służą jako środki emulgujące oraz przeciw-zbrylające. Dodawane są do ciast w proszków, mrożonych frytek oraz substancji glazurujących owoce."
+    },
+    {
+        "id": 194,
+        "tiles": [
+            "E470b",
+            "sole magnezowe kwasów tłuszczowych",
+            "w tym stearynian magnezu"
+        ],
+        "content": "są to sole naturalnych kwasów tłuszczowych, głównie pochodzących z roślin lub tłuszczów zwierzęcych. W przemyśle spożywczym służą jako środki emulgujące, wiążące oraz przeciw-zbrylające. Sole magnezowe kwasów tłuszczowych w przemyśle spożywczym wchodzą w skład barwników oraz przeciwutleniaczy rozpuszczalnych w tłuszczach. Organizm metabolizuje je podobnie, jak inne tłuszcze. Dodawane są do ciast w proszku oraz mrożonych frytek."
+    },
+    {
+        "id": 195,
+        "tiles": [
+            "E471",
+            "mono- i diglicerydy kwasów tłuszczowych"
+        ],
+        "content": "syntetyczne tłuszcze otrzymywane z glicerolu oraz kwasów tłuszczowych. Mają skład zbliżony do naturalnych tłuszczów. Pełnią funkcję emulgujące, wiążące oraz stabilizacyjne. W przemyśle spożywczym dodawane są do dżemów, marmolad, owocowych galaretek, budyniu, ryżu błyskawicznego, makaronu, żywności przeznaczonej dla niemowląt. Tłuszcze E471 ulepszają smarowność margaryn i past mięsnych. Poprawiają także objętość i trwałość pieczywa."
+    },
+    {
+        "id": 196,
+        "tiles": [
+            "E472a",
+            "mono- i diglicerydy kwasów tłuszczowych estryfikowane kwasem octowym"
+        ],
+        "content": "syntetyczne tłuszcze otrzymywane z glicerolu oraz kwasów tłuszczowych roślinnych z dodatkiem kwasu octowego. Mają skład zbliżony do naturalnych tłuszczów. Mają właściwości emulgujące, wiążące oraz stabilizujące. Służą jako dodatek do ryżu błyskawicznego, żywności przeznaczonej dla niemowląt lub małych dzieci, wyrobów cukierniczych, lodów, budyniu, ciast w proszku, herbatników, chleba na bazie mąki pszennej, drożdżach, soli, kremów."
+    },
+    {
+        "id": 197,
+        "tiles": [
+            "E472b",
+            "mono- i diglicerydy kwasów tłuszczowych estryfikowane kwasem mlekowym"
+        ],
+        "content": "syntetyczne tłuszcze otrzymywane z glicerolu oraz kwasów tłuszczowych roślinnych z dodatkiem kwasu mlekowego. W przemyśle spożywczym pełnią funkcję emulgatora, stabilizatora oraz nośnika. Substancja E472b dodawana jest do żywności dla niemowląt i malych dzieci, herbatników, sucharów, wyrobów cukierniczych, lodów, bitej śmietany oraz masła orzechowego."
+    },
+    {
+        "id": 198,
+        "tiles": [
+            "E472c",
+            "mono- i diglicerydy kwasów tłuszczowych estryfikowane kwasem cytrynowym"
+        ],
+        "content": "syntetyczne tłuszcze otrzymywane z glicerolu oraz kwasów tłuszczowych roślinnych z dodatkiem kwasu cytrynowego. W przemyśle spożywczym służą jako emulgatory, nośniki oraz stabilizatory. Substancję E472c można spotkać w takich produktach, jak: w żywności przeznaczone dla niemowląt lub dzieci, herbatnikach, sucharach, barwnikach, mleka modyfikowanego. U osób nietolerujących glutaminian sodu mogą wystąpić reakcje alergiczne."
+    },
+    {
+        "id": 199,
+        "tiles": [
+            "E472d",
+            "mono- i diglicerydy kwasów tłuszczowych estryfikowane kwasem winowym"
+        ],
+        "content": "są to syntetyczne tłuszcze o zawartości zbliżonej do tłuszczów naturalnych. W produkcji spożywczej pełnią funkcję emulgatora i nośnika. Otrzymywane są z glicerolu oraz naturalnych kwasów tłuszczowych, głównie pochodzenia roślinnego, ale także zwierzęcego. Służą jako dodatek do wyrobów cukierniczych, pieczywa, lodów, serników w proszku oraz budyniu. Skutkami ubocznymi nadmiernego spożywania produktów z E472d mogą być bóle głowy."
+    },
+    {
+        "id": 200,
+        "tiles": [
+            "E472e",
+            "mono- i diglicerydy kwasów tłuszczowych estryfikowane kwasem mono- i diacetylowinowym"
+        ],
+        "content": "są to syntetyczne tłuszcze o zawartości zbliżonej do tłuszczów naturalnych. W produkcji spożywczej pełnią funkcję emulgatora i nośnika. Otrzymywane są z glicerolu oraz naturalnych kwasów tłuszczowych (głównie pochodzenia roślinnego, ale także zwierzęcego) z dopełnieniem kwasu kwasem mono- i diacetylowinowym. Składnik E472e dodawany jest do herbatników, sucharów, pszennego pieczywa drożdżowego lub pieczywa na zakwasie, sosów, czekolady do picia na gorąco, kremów."
+    },
+    {
+        "id": 201,
+        "tiles": [
+            "E472f",
+            "mono- i diglicerydy kwasów tłuszczowych estryfikowane mieszaniną kwasu octowego i winowego"
+        ],
+        "content": "są to syntetyczne tłuszcze o zawartości zbliżonej do tłuszczów naturalnych. W produkcji spożywczej pełnią właściwości emulgujące. Otrzymywane są z glicerolu oraz naturalnych kwasów tłuszczowych (głównie pochodzenia roślinnego, ale także zwierzęcego) z dodatkiem kwasu octowego i kwasu winowego. Służą jako dodatek do pszennego drożdżowego pieczywa, pieczywa na zakwasie, drożdży lub kremów."
+    },
+    {
+        "id": 202,
+        "tiles": [
+            "E473",
+            "estry sacharozy i kwasów tłuszczowych"
+        ],
+        "content": "syntetyczne estry sacharozy i kwasów tłuszczowych, które posiadają skład zbliżony do tłuszczów naturalnych. Mają właściwości wiążące, emulgujące oraz stabilizujące. W przemyśle spożywczym dodawane są do wyrobów cukierniczych, naturalnej kawy w puszkach, lodów, deserów, gum do żucia, produktów na bazie mleka, margaryn, sosów, zup, bulionów, majonezów, przetworów mięsnych, napojów alkoholowych, żywności dla małych dzieci oraz niemowląt, suplementów diety. Zaleca się ostrożność przy stosowaniu, ponieważ nadmierne spożycie może wywołać dolegliwości jelitowe: wzdęcia, biegunkę, mdłości, wymioty. Dopuszczalne dzienne spożycie wynosi 16mg/kg masy ciała."
+    },
+    {
+        "id": 203,
+        "tiles": [
+            "E474",
+            "sacharoglicerydy"
+        ],
+        "content": "są to estry cukrów i tłuszczów, pełniące funkcję stabilizacyjne i emulgujące. Są to substancje półsyntetyczne, które są dodawane do naturalnej kawy w puszkach, sosów, bulionów, przetworów mięsnych, gum do żucia, substytutów śmietanki, produktów dietetycznych, żywności przeznaczonej dla niemowląt lub dzieci. Dopuszczalne dzienne spożycie w ciągu dnia wynosi 16 mg/kg masy ciała."
+    },
+    {
+        "id": 204,
+        "tiles": [
+            "E475",
+            "estry kwasów tłuszczowych i poliglicerolu"
+        ],
+        "content": "nieszkodliwe dla organizmu estry otrzymane w procesie połączenia poliglicerolu i naturalnych tłuszczów. Są to substancje półsyntetyczne o właściwościach emulgujących i stabilizujących. W przemyśle spożywczym służą jako dodatek do wyrobów piekarniczych, ciastkarskich, ciast w proszku, deserów lodowych, produktów jajecznych, majonezów, gum do żucia, substytutów mleka i śmietany. Dopuszczalne dzienne spożycie nie powinno przekraczać 25 mg/kg masy ciała."
+    },
+    {
+        "id": 205,
+        "tiles": [
+            "E476",
+            "polirycynoleinian poliglicerolu"
+        ],
+        "content": "jest to substancja półsyntetyczna z grupy estrów, otrzymywana przez połączenie poliglicerolu i olejku rycynowego "
+    },
+    {
+        "id": 206,
+        "tiles": [
+            "E477",
+            "estry kwasów tłuszczowych i glikolu propylenowego"
+        ],
+        "content": "są to estry kwasów tłuszczowych i glikolu propylenowego powstałe w wyniku połączenia propanediolu z naturalnymi tłuszczami. W przemyśle spożywczym dodawane są do wyrobów cukierniczych, deserów, lodów, śmietan, substytutów mleka, emulsji tłuszczowych. U osób wrażliwych może wywołać egzemę w przypadku dużych stężeniach glikolu propylenowego. Dopuszczalne dzienne spożycie wynosi 25 mg/kg masy ciała."
+    },
+    {
+        "id": 207,
+        "tiles": [
+            "E479b",
+            "termoutleniony olej sojowy z mono- i diglicerydami kwasów tłuszczowych"
+        ],
+        "content": "substancja półsyntetyczna emulgująca powstała w procesie podgrzewania oleju sojowego wraz z innymi tłuszczami. W przemyśle spożywczym służy jako dodatek do emulsji tłuszczowych przeznaczonych do smażenia i pieczenia oraz do margaryn. Skutkiem ubocznym bezpośredniego kontaktu E479b są dolegliwości alergiczne lub zniszczenie struktury włosów. Dopuszczalne dzienne spożycie wynosi 30 mg/kg masy ciała."
+    },
+    {
+        "id": 208,
+        "tiles": [
+            "E480",
+            "dioktylosulfobursztynian sodowy"
+        ],
+        "content": "substancja otrzymywana w procesie syntezy chemicznej. Pełni funkcję emulgującą przy produkcji wyrobów piekarniczych oraz preparatów farmaceutycznych. Przy spożywaniu należy zachować ostrożność, ponieważ może wywołać dolegliwości przeczyszczające. Maksymalna dzienna dawka żywieniowa wynosi 2,5 mg/kg masy ciała."
+    },
+    {
+        "id": 209,
+        "tiles": [
+            "E481",
+            "stearyoilomleczan sodu"
+        ],
+        "content": "substancja półsyntetyczna otrzymywana w wyniku połączenia kwasu stearynowego i mlekowego. W przemyśle spożywczym jest składnikiem wyrobów cukierniczych, ciastkarskich, gumy do żucia, ryżu błyskawicznego, konserw mięsnych w puszkach, emulgowanych likierów, przekąsek ziemniaczanych, napojów w proszkach. Dopuszczalne dzienne spożycie wynosi 20 mg/kg masy ciała. Do tej pory nie wykryto skutków ubocznych."
+    },
+    {
+        "id": 210,
+        "tiles": [
+            "E482",
+            "stearyoilomleczan wapnia"
+        ],
+        "content": "półsyntetyczna substancja otrzymywana w wyniku połączenia kwasu mlekowego i wapnia z kwasem stearynowym. Dodawana jest do wyrobów ciastkarskich, mąki, gumy do żucia, koncentratu pomidorowego, ryżu błyskawicznego, konserw mięsnych w puszkach, preparowanych produktów zbożowych. Ma także zastosowanie w przemyśle kosmetycznym i występuje w postaci pudru. Dopuszczalne dzienne spożycie wynosi 20mg/kg masy ciała."
+    },
+    {
+        "id": 211,
+        "tiles": [
+            "E491",
+            "monostearynian sorbitolu"
+        ],
+        "content": "substancja półsyntetyczna pełniąca rolę stabilizatora, emulgatora oraz nośnika. Powstaje w procesie połączenia sorbitolu i kwasu stearynowego. Służy jako dodatek do pieczywa cukierniczego, wyrobów na bazie kakao, drożdży piekarskich, gumy do żucia, substytutów mleka i śmietany, marmolady, ciast w proszku, czekolady. Ma także zastosowanie w przemyśle kosmetycznym. E491 wykorzystuje się przy produkcji toników kosmetycznych, kremów do ciała i samoopalających, a także dezodorantów. Dopuszczalne dzienne spożycie wynosi 25 mg/kg masy ciała. Przy spożywaniu należy zachować ostrożność, ponieważ może wywołać biegunkę, powodować powstanie kamieni na pęcherzu moczowym, powiększenia wątroby, a nawet do opóźnień wzrostu."
+    },
+    {
+        "id": 212,
+        "tiles": [
+            "E492",
+            "tristearynian sorbitolu"
+        ],
+        "content": "substancja półsyntetyczna pełniąca rolę stabilizatora, emulgatora oraz nośnika. Powstaje w procesie połączenia sorbitolu i kwasu stearynowego. Używany jest jako składnik pieczywa cukierniczego, wyrobów na bazie kakao, drożdży piekarskich, gumy do żucia, substytutów mleka i śmietany, marmolady, ciast w proszku, czekolady. Ma także zastosowanie w przemyśle kosmetycznym. E492 wykorzystuje się przy produkcji preparatów wzmacniających paznokcie. Przy spożywaniu należy zachować ostrożność, ponieważ może wywołać biegunkę, powodować powstanie kamieni na pęcherzu moczowym, powiększenia wątroby, opóźnień wzrostu. Dopuszczalne dzienne spożycie wynosi 25 mg/kg masy ciała."
+    },
+    {
+        "id": 213,
+        "tiles": [
+            "E493",
+            "monolaurynian sorbitolu"
+        ],
+        "content": "jest to połączenie kwasu laury nowego oraz sorbitolu. Półsyntetyczna substancja pełniąca funkcję emulgującą, stabilizacyjną oraz wiążącą. W przemyśle żywieniowym stosowana jest do wyrobów cukierniczych, ciast w proszku, substytutów mleka i śmietany, deserów, marmolady, zemulgowanych sosów, czekolady, gum do żucia, koncentratów płynnej herbaty. Dopuszczalne dzienne spożycie wynosi 25 mg/kg masy ciała. Skutkami ubocznymi nadmiernego spożywania produktów z E493 są: dolegliwości jelitowe, biegunka, kamienie moczowe."
+    },
+    {
+        "id": 214,
+        "tiles": [
+            "E494",
+            "monooleinian sorbitolu"
+        ],
+        "content": "półsyntetyczna substancja pełniąca funkcję emulgującą, stabilizacyjną oraz wiążącą. Otrzymywana jest w procesie połączenia sorbitolu i kwasu oleinowego. Dodawana jest do ciast w proszku, wyrobów cukierniczych, substytutów mleka i śmietany, deserów, marmolady, zemulgowanych sosów, czekolady, gum do żucia, koncentratów płynnej herbaty, suplementów diety. Substancja spożywana w dużej ilości może wywołać biegunkę lub przyczynić się do powstania kamieni nerkowych. Dopuszczalne dzienne spożycie wynosi 25 mg/kg masy ciała."
+    },
+    {
+        "id": 215,
+        "tiles": [
+            "E495",
+            "monopalmitynian sorbitolu"
+        ],
+        "content": "półsyntetyczna substancja pełniąca funkcję emulgującą, stabilizacyjną oraz wiążącą. Otrzymywana jest w procesie połączenia sorbitolu i kwasu palmitynowego. Dodawana jest do ciast w proszku, wyrobów na bazie kakao, wyrobów cukierniczych, substytutów mleka i śmietany, deserów, marmolady, zemulgowanych sosów, czekolady, gum do żucia, koncentratów płynnej. Substancja spożywana w dużej ilości może wywołać biegunkę lub przyczynić się do powstania kamieni nerkowych. Przy bezpośrednim kontakcie może wywołać reakcje alergiczne (np. zaczerwienienie lub zapalenie skóry). Dopuszczalne dzienne spożycie wynosi 25 mg/kg masy ciała."
+    },
+    {
+        "id": 216,
+        "tiles": [
+            "E500",
+            "węglan sodu",
+            "wodorowęglan sodu",
+            "soda oczyszczona",
+            "di węglan sodu",
+            "kwaśny węglan sodu",
+            "bikarbonat"
+        ],
+        "content": "jest to syntetyczna substancja spulchniająca pełniąca funkcję regulatora kwasowości. Węglan sodu jest głównym składnikiem wody. Ma właściwości przeciw-zbrylające. W przemyśle spożywczym służy jako dodatek do mleka w proszku, mleka zagęszczonego, śmietany, wyrobów czekoladowych i kakaowych. Przy nadmiernym spożywaniu może prowadzić do dolegliwości nerek lub dużego wydzielania soku żołądkowego"
+    },
+    {
+        "id": 217,
+        "tiles": [
+            "E501",
+            "węglan potasu",
+            "wodorowęglan potasu"
+        ],
+        "content": "jest to syntetyczny środek spulchniający i regulator kwasowości, uważany za środek nieszkodliwy dla zdrowia. Powstaje z chlorku potasu. Używa się go do produktów w proszku, produktów zbożowych lub wyrobów czekoladowych i kakaowych."
+    },
+    {
+        "id": 218,
+        "tiles": [
+            "E503",
+            "węglan amonu",
+            "wodorowęglan amonu"
+        ],
+        "content": "jest to syntetyczny środek spulchniający i regulator kwasowości, uważany za środek nieszkodliwy dla zdrowia. Powstaje z węglanu wapnia lub siarczanu amonu. Używa się go do produktów zbożowych lub wyrobów czekoladowych i kakaowych. W dużych ilościach poza żywnością, węglan amonu może przyczynić się do nadmiernego zakwaszenia krwi. Zalecana jest ostrożność przy spożywaniu, ponieważ substancja może wywołać wzdęcia."
+    },
+    {
+        "id": 219,
+        "tiles": [
+            "E504",
+            "węglan magnezu",
+            "wodorowęglan magnezu"
+        ],
+        "content": "dodatek spulchniający i syntetyczny regulator kwasowości. Jest uważany za nieszkodliwy dla zdrowia. Naturalnie występuje jako naturalny minerał. Chemicznie pozyskiwany jest z wodorotlenku magnezu. Służy jako dodatek do produkcji serów dojrzewających, tartych oraz plasterkowanych, wyrobów czekoladowych i kakaowych. Nadmierne spożywanie może powodować dolegliwości przeczyszczające."
+    },
+    {
+        "id": 220,
+        "tiles": [
+            "E507",
+            "kwas chlorowodorowy",
+            "kwas solny"
+        ],
+        "content": "jest to substancja syntetyczna, pełniąca rolę regulatora kwasowości. Otrzymywana jest z soli kwasu siarkowego. Kwas solny jest naturalnym składnikiem soku żołądkowego. W przemyśle spożywczym służy jako dodatek do produkcji przypraw i syropów. Kwas solny szkodliwy dla zdrowia nie jest dodawany do artykułów spożywczych."
+    },
+    {
+        "id": 221,
+        "tiles": [
+            "E508",
+            "chlorek potasu"
+        ],
+        "content": "chlorek potasu jest składnikiem soli morskiej i kamiennej. W przemyśle jest to substancja syntetyczna, pełniąca rolę regulatora kwasowości. Stosowana jest jako substytut soli kuchennej w wielu produktach o obniżonej zawartości sodu. Chlorek potasu nie jest szkodliwy dla zdrowia."
+    },
+    {
+        "id": 222,
+        "tiles": [
+            "E509",
+            "chlorek wapnia"
+        ],
+        "content": "jest to syntetyczny stabilizator nieszkodliwy dla organizmu. Pełni rolę regulatora kwasowości. W przyrodzie występuje w soli morskiej i kamiennej. Chlorek wapnia używa się w celu ulepszenia zwięzłości struktury warzyw i owoców i związania metali. Służy jako dodatek do suplementów diety."
+    },
+    {
+        "id": 223,
+        "tiles": [
+            "E511",
+            "chlorek magnezu"
+        ],
+        "content": "sól magnezowa kwasu solnego, substancja syntetyczna pełniąca rolę stabilizatora i regulatora kwasowości. Naturalnie występuje jako naturalna sól. Jest składnikiem soli morskiej i soli kamiennej. W przemyśle spożywczym chlorek magnezu używa się do warzyw. Nadmierne spożywanie chlorku magnezu może przyczynić się do dolegliwości przeczyszczających."
+    },
+    {
+        "id": 224,
+        "tiles": [
+            "E513",
+            "kwas siarkowy"
+        ],
+        "content": "substancja syntetyczna regulująca kwasowość. Jest to nieszkodliwy dla zdrowia składnik występujący w takich produktach, jak: piwo, żelatyna, sery, kazeina. Wytwarzany jest z dwutlenku siarki, tlenu oraz wody. Kwas siarkowy w artykułach spożywczych nie występuje w takich dawkach, które mogłyby zagrozić zdrowiu."
+    },
+    {
+        "id": 225,
+        "tiles": [
+            "E514",
+            "siarczan sodu",
+            "wodorosiarczan sodu"
+        ],
+        "content": "syntetyczna substancją regulująca kwasowość. W skali przemysłowej wytwarzany jest z soli i kwasu siarkowego. Dodawany jest do produkcji baz gum do żucia, przetwarzanych tuńczyków oraz herbatników. Zalecana jest ostrożność przy spożywaniu, ponieważ nadmiar siarczanu sodu w organizmie może powodować podrażnienia jelit i żołądka. Osoby cierpiące na choroby nerek lub wątroby powinny tej substancji unikać."
+    },
+    {
+        "id": 226,
+        "tiles": [
+            "E515",
+            "siarczan potasu",
+            "wodorosiarczan potasu"
+        ],
+        "content": "syntetyczna substancją regulująca kwasowość. W skali przemysłowej wytwarzany jest z soli potasowych i kwasu siarkowego. Służy jako substytut soli o niskiej zawartości sodu albo w przemyśle piwowarskim do przygotowania wody do warzenia piwa. Dodawany jest do produktów przeznaczonych dla osób chorujących na nadciśnienie tętnicze. Należy zachować ostrożność przy spożywaniu, ponieważ siarczan potasu może powodować krwawienie żołądkowo-jelitowe."
+    },
+    {
+        "id": 227,
+        "tiles": [
+            "E516",
+            "siarczan wapnia"
+        ],
+        "content": "jest to syntetyczny regulator kwasowości w wzmacniasz tekstury. Naturalnie można go spotkać jako minerał (znany jako gips). Otrzymywany jest z soli wapniowych i kwasu siarkowego. W przemyśle spożywczym służy jako składnik do wyrobów piekarniczych, produkcji mąki, pomidorów konserwowych. Nadmiar siarczanu wapnia w organizmie może powodować wzdęcia i zaparcia."
+    },
+    {
+        "id": 228,
+        "tiles": [
+            "E517",
+            "siarczan amonu"
+        ],
+        "content": "substancja syntetyczna otrzymywana w procesie rozpuszczenia amoniaku w kwasie siarkowym. Siarczan amonu jest składnikiem produktów piekarskich oraz pączków. Sole amonowe przyczyniają się do kwasowości krwi, przez co mogą powstawać dolegliwości żołądka lub jelit."
+    },
+    {
+        "id": 229,
+        "tiles": [
+            "E524",
+            "wodorotlenek sodu"
+        ],
+        "content": "jest to syntetyczny regulator kwasowości, określany jako ług sodowy. Ma właściwości emulgujące i rozpuszczające barwniki. W przemyśle spożywczym służy jako dodatek do pieczywa. Dodawany jest także do oliwek, bo dzięki temu usuwa ich gorzki smak. Bezpośredni kontakt z wodorotlenkiem sodu może powodować odczyny zapalne."
+    },
+    {
+        "id": 230,
+        "tiles": [
+            "E525",
+            "wodorotlenek potasu"
+        ],
+        "content": "jest to syntetyczny regulator kwasowości, określany jako ług potasowy. Chemicznie otrzymywany jest z chlorku potasu. W przemyśle żywieniowym dodawany jest do wyrobów czekoladowych, kakaowych, galaretek, demów, marmolad oraz produktów do smarowania."
+    },
+    {
+        "id": 231,
+        "tiles": [
+            "E526",
+            "wodorotlenek wapnia"
+        ],
+        "content": "jest to substancja syntetyczna pełniąca rolę regulatora kwasowości. Jest to środek nieszkodliwy dla zdrowia, otrzymany w drodze połączenia wody i wapna palonego. Służy jako dodatek do wyrobów czekoladowych, wyrobów kakaowych, galaretek, dżemów, marmolad, produktów do smarowania, groszku konserwowego, piwa i mleka modyfikowanego."
+    },
+    {
+        "id": 232,
+        "tiles": [
+            "E527",
+            "wodorotlenek amonu"
+        ],
+        "content": "substancja syntetyczna (znana jako amoniak) otrzymywana z gazowego amoniaku. Pełni funkcję regulatora kwasowości. W przemyśle spożywczym dodawana jest do wyrobów czekoladowych i kakaowych. Nadmiar soli amonowych w organizmie może powodować wzrost kwasowości krwi i przyczynić się do dolegliwości jelitowo-żołądkowych."
+    },
+    {
+        "id": 233,
+        "tiles": [
+            "E528",
+            "wodorotlenek magnezu"
+        ],
+        "content": "jest to regulator kwasowości uważany za nieszkodliwy dla organizmu człowieka. Na drodze przemysłowej otrzymuje się go poprzez połączenie wodorotlenku sodu i chlorku magnezu. Służy jako dodatek do karmelków, serów, groszku konserwowego, wyrobów czekoladowych oraz kakaowych."
+    },
+    {
+        "id": 234,
+        "tiles": [
+            "E529",
+            "tlenek wapnia"
+        ],
+        "content": "jest to substancja syntetyczna otrzymana w procesie prażenia kamienia wapiennego przy temperaturze 900 "
+    },
+    {
+        "id": 235,
+        "tiles": [
+            "E530",
+            "tlenek magnezu"
+        ],
+        "content": "jest to substancja syntetyczna uważana za nieszkodliwą dla zdrowia. Ma właściwości regulujące kwasowość, przeciw-zbrylające oraz utwardzające. Naturalnie występuje jako minerał peryklaz. W skali przemysłowej powstaje poprzez prażenie magnezytu. Służy jako dodatek do wyrobów kakaowych, czekoladowych, groszku konserwowego oraz mrożonych produktów mlecznych. Zalecana jest ostrożność przy spożywaniu, ponieważ nadmiar tlenku magnezu może wywołać biegunkę."
+    },
+    {
+        "id": 236,
+        "tiles": [
+            "E535",
+            "żelazocyjanek sodu"
+        ],
+        "content": "jest to nieszkodliwa dla zdrowia substancja zapobiegająca zbrylaniu. Nie występuje w przyrodzie. Pełni funkcję regulatora kwasowości. Powstaje w wyniku połączenia żelazocyjanku wodoru i wodorotlenku sodu. Służy jako dodatek do soli kuchennej oraz jej substytutów. Dopuszczalne dzienne spożycie wynosi nie więcej niż 0,02 mg/kg masy ciała."
+    },
+    {
+        "id": 237,
+        "tiles": [
+            "E536",
+            "żelazocyjanek potasu"
+        ],
+        "content": "jest to syntetyczna substancja, która ma właściwości przeciw-zbrylające. Jest to nieorganiczny związek chemiczny. Cząsteczki żelazocyjanku potasu pod wpływem silnych kwasów, np. kwasu żołądkowego, rozpada się w wyniku czego wydziela się cyjanowodór. Należy zachować ostrożność przy stosowaniu."
+    },
+    {
+        "id": 238,
+        "tiles": [
+            "E538",
+            "żelazocyjanek wapnia"
+        ],
+        "content": "jest to syntetyczna substancja uważana za nieszkodliwą dla zdrowia, niewystępująca w przyrodzie. Powstaje w wyniku połączenia żelazocyjanku wodoru i wodorotlenku wapnia. W przemyśle spożywczym dodawana jest do soli o niskiej zawartości sodu oraz jej substytutów. Dopuszczalne dzienne spożycie wynosi 0,02 mg/kg masy ciała."
+    },
+    {
+        "id": 239,
+        "tiles": [
+            "E551",
+            "amorficzny dwutlenek krzemu",
+            "kwas krzemowy",
+            "dwutlenek krzemu"
+        ],
+        "content": "jest to syntetyczna substancja przeciw-zbrylająca. Nie jest wchłaniana w organizmie, występuje w przyrodzie w postaci minerału "
+    },
+    {
+        "id": 240,
+        "tiles": [
+            "E552",
+            "krzemian wapnia"
+        ],
+        "content": "jest to substancja naturalna przeciw-zbrylająca. Powstaje w wyniku połączenia wapienia i ziemi okrzemkowej. Krzemian wapnia nie rozpuszcza się w wodzie. Jest uważany za nieszkodliwy dla organizmu człowieka. Służy jako dodatek do soli, jej zamienników, środków spożywczych w wysuszonej i sproszkowanej formie, przypraw, produktów natłuszczających blachy oraz serów (topionych, twardych, półtwardych, plasterkowanych). Krzemian wapnia dodaje się także do suplementów diety oraz powlekanych tabletek."
+    },
+    {
+        "id": 241,
+        "tiles": [
+            "E553b",
+            "talk"
+        ],
+        "content": "jest to substancja o właściwościach przeciw-zbrylających. Powstaje z talku, czyli pospolitego minerału z grupy krzemianów. Zwykle występuje w formie wysuszonego proszku. Substancja nie jest wchłaniana w organizmie. W przemyśle spożywczym służy jako dodatek do soli, jej zamienników, produktów natłuszczających blachy oraz serów (topionych, twardych, półtwardych, plasterkowanych). Talk dodaje się także do suplementów diety oraz powlekanych tabletek."
+    },
+    {
+        "id": 242,
+        "tiles": [
+            "E554",
+            "krzemian glinowo-sodowy"
+        ],
+        "content": "jest to naturalna substancja o właściwościach przeciw-zbrylających otrzymywana z minerałów. W przemyśle spożywczym dodawana jest do soli spożywczej i jej substytutów, produktów natłuszczających blachy, serów (topionych, twardych, półtwardych, plasterkowanych), , gumy do żucia, ryżu, suplementów diety oraz tabletek powlekanych. Należy zachować ostrożność przy spożywaniu, ponieważ jego nadmiar może powodować schorzenia związane z magazynowaniem glinu oraz chorobę Alzheimera."
+    },
+    {
+        "id": 243,
+        "tiles": [
+            "E555",
+            "krzemian glinowo-potasowy"
+        ],
+        "content": "jest to naturalna substancja o właściwościach przeciw-zbrylających otrzymywana z minerałów. Regularne spożywanie produktów z E555 może powodować rozwój choroby Alzheimera. W przemyśle spożywczym dodawana jest do soli spożywczej i jej substytutów, produktów natłuszczających blachy, serów (topionych, twardych, półtwardych, plasterkowanych), , gumy do żucia, ryżu, suplementów diety oraz tabletek powlekanych."
+    },
+    {
+        "id": 244,
+        "tiles": [
+            "E556",
+            "krzemian glinowo-wapniowy"
+        ],
+        "content": "jest to naturalna substancja o właściwościach przeciw-zbrylających otrzymywana z minerałów. W przemyśle spożywczym dodawana jest do soli spożywczej i jej substytutów, produktów natłuszczających blachy, serów (topionych, twardych, półtwardych, plasterkowanych), , gumy do żucia, ryżu, suplementów diety oraz tabletek powlekanych. . Należy zachować ostrożność przy spożywaniu, ponieważ jego nadmiar i regularne stosowanie powoduje choroby Alzheimera."
+    },
+    {
+        "id": 245,
+        "tiles": [
+            "E558",
+            "bentonit"
+        ],
+        "content": "jest to naturalna substancja klarująca, która powstaje z tufów i tufitów. Jej cechą charakterystyczną jest duża wchłanialność białka. W przemyśle spożywczym dodawana jest do barwników spożywczych i win, jako substancja klarująca."
+    },
+    {
+        "id": 246,
+        "tiles": [
+            "E559",
+            "krzemian glinu"
+        ],
+        "content": "naturalna substancja o właściwościach przeciw-zbrylających oraz klarujących. Otrzymywana jest w wyniku wietrzenia glinowych minerałów (skalenia, kwarcu, miki). Krzemian glinu odkłada się w organizmie człowieka, więc może prowadzić do powstawania różnych schorzeń. Istnieje podejrzenie, że glin jest jednym z czynników, które wywołują chorobę Alzheimera. W przemyśle spożywczym używa się go przy produkcji kawy rozpuszczalnej, mleka w proszku, aromatów, przypraw, soli spożywczej i jej substytutów, serów: topionych, plasterkowanych, półtwardych, twardych, gumy do żucia, ryżu oraz produktów przeznaczonych do natłuszczania blach."
+    },
+    {
+        "id": 247,
+        "tiles": [
+            "E570",
+            "kwasy tłuszczowe"
+        ],
+        "content": "są to emulgatory nieszkodliwe dla organizmu człowieka. Otrzymywane są z nasyconych kwasów tłuszczowych w większym stopniu pochodzenia roślinnego. Kwasy tłuszczowe występują w każdej żywej komórce. Dodawane są do produkcji pieczywa, gumy do życia, aromatów oraz substancji przeznaczonych do glazurowania owoców."
+    },
+    {
+        "id": 248,
+        "tiles": [
+            "E575",
+            "lakton kwasu glukonowego"
+        ],
+        "content": "jest to związek syntetyczny pełniący funkcję regulatora kwasowości i dodatku smakowego. W przemyśle spożywczym używany jest do serów dojrzewających oraz produktów sero-podobnych, mozzarelli, serów serwatkowych, owoców i warzyw w puszkach, świeżych makaronów, herbatników, wyrobów cukierniczych, proszku do pieczenia oraz produktów dla niemowląt oraz małych dzieci."
+    },
+    {
+        "id": 249,
+        "tiles": [
+            "E577",
+            "glukonian potasu"
+        ],
+        "content": "jest to sól potasowa kwasu glukonowego. Naturalna substancja pełniąca funkcję regulatora kwasowości i stabilizatora. Nie wpływa na smak produktów. Stosowana jest jako substytut dla sodu. W przemyśle spożywczym używana jest przy produkcji budyniów, kremów w proszku. Dopuszczalne dzienne spożycie wynosi 50 mg/kg masy ciała."
+    },
+    {
+        "id": 250,
+        "tiles": [
+            "E578",
+            "glukonian wapnia"
+        ],
+        "content": "sól wapniowa kwasu glukonowego. Jest to substancja naturalna występująca w formie białego i krystalicznego proszku. Dobrze rozpuszcza się w wodzie. W przemyśle spożywczym dodawana jest do wyrobów cukierniczych, piekarniczych, budyniów w proszku, kremów oraz konserwowanych warzyw i owoców w puszkach. Dopuszczalne dzienne spożycie w ciągu dnia wynosi 50 mg/kg masy ciała."
+    },
+    {
+        "id": 251,
+        "tiles": [
+            "E579",
+            "glukonian żelazawy"
+        ],
+        "content": "jest to sól żelazawa kwasu glukonowego. W przemyśle spożywczym występuje jako substancja syntetyczna o właściwościach emulgujących i stabilizacyjnych. Stosowana jest do wzmacniania barwy oliwek. Dopuszczalne dzienne spożycie wynosi 0,8 mg/kg masy ciała."
+    },
+    {
+        "id": 252,
+        "tiles": [
+            "E585",
+            "mleczan żelazawy"
+        ],
+        "content": "jest to nieszkodliwa dla zdrowia substancja syntetyczna pełniąca funkcję stabilizatora oraz emulgatora w przemyśle spożywczym. Używana jest do wzmocnienia barwy oliwek, suplementów diery o podwyższonej zawartości żela raz oraz produktów przeznaczonych dla niemowląt. Dopuszczalne dzienne spożycie wynosi 0,8 mg/kg masy ciała."
+    },
+    {
+        "id": 253,
+        "tiles": [
+            "E620",
+            "kwas glutaminowy"
+        ],
+        "content": "syntetyczna substancja powstała w wyniku fermentacji białka roślinnego. Służy jako dodatek do sosów w proszku, przypraw sypkich, sosu sojowego, koncentratów spożywczych, wędlin, konserw mięsnych, zup i dań typu instant. Nie może być podawany dzieciom poniżej 12 tygodnia życia. Regularne i nadmierne spożywanie produktów z E620 może powodować reakcje astmy, bóle głowy, nudności, przyspieszone bicie serca, sztywność w ramionach i karku."
+    },
+    {
+        "id": 254,
+        "tiles": [
+            "E621",
+            "glutaminian sodu"
+        ],
+        "content": "syntetyczny związek powstały w drodze fermentacji bakteryjnej. W przemyśle spożywczym dodawany jest do sosów w proszku, zup i dań typu instant, przypraw sypkich, koncentratów spożywczych, wędlin, konserw mięsnych. Ma szerokie zastosowanie w kuchni chińskiej. Nie może być podawany dzieciom poniżej 12 tygodnia życia. Regularne i nadmierne spożywanie produktów z E621 może powodować reakcje astmy, bóle głowy, nudności, przyspieszone bicie serca, sztywność w ramionach i karku. Skutkiem ubocznym nadmiernego spożywania tej substancji może być także pogorszenie wzroku oraz bezsenność. Regularne spożywanie produktów z E621 powoduje otyłość."
+    },
+    {
+        "id": 255,
+        "tiles": [
+            "E622",
+            "glutaminian potasu"
+        ],
+        "content": "syntetyczny związek powstały w drodze fermentacji bakteryjnej. W przemyśle spożywczym dodawany jest do sosów w proszku, zup i dań typu instant, przypraw sypkich, koncentratów spożywczych, wędlin, konserw mięsnych. Glutaminian potasu nie może być podawany dzieciom poniżej 12 tygodnia życia. Regularne i nadmierne spożywanie produktów z E622 może powodować reakcje astmy, bóle głowy, nudności, przyspieszone bicie serca, sztywność w ramionach i karku, bezsenność."
+    },
+    {
+        "id": 256,
+        "tiles": [
+            "E623",
+            "di glutaminian wapnia"
+        ],
+        "content": "syntetyczna substancja powstała w drodze fermentacji bakteryjnej. W przemyśle spożywczym dodawana jest do sosów w proszku, zup i dań typu instant, przypraw sypkich, koncentratów spożywczych, wędlin, konserw mięsnych. Diglutaminian wapnia nie może być podawany dzieciom poniżej 12 tygodnia życia. Regularne i nadmierne spożywanie produktów z E623 może powodować reakcje astmy, bóle głowy, nudności, przyspieszone bicie serca, sztywność w ramionach i karku, bezsenność."
+    },
+    {
+        "id": 257,
+        "tiles": [
+            "E624",
+            "glutaminian monoaminowy"
+        ],
+        "content": "syntetyczna substancja powstała w drodze fermentacji bakteryjnej. Ma właściwości wzmacniające smak. W przemyśle spożywczym dodawana jest do sosów w proszku, zup i dań typu instant, przypraw sypkich, koncentratów spożywczych, wędlin, konserw mięsnych. Di glutaminian monoaminowy nie może być podawany dzieciom poniżej 12 tygodnia życia. Regularne i nadmierne spożywanie produktów z E624 może powodować reakcje astmy, bóle głowy, nudności, przyspieszone bicie serca, sztywność w ramionach i karku, bezsenność."
+    },
+    {
+        "id": 258,
+        "tiles": [
+            "E625",
+            "di glutaminian magnezu"
+        ],
+        "content": "syntetyczna substancja powstała w drodze fermentacji bakteryjnej. Ma właściwości wzmacniające smak. W przemyśle spożywczym dodawana jest do sosów w proszku, zup i dań typu instant, przypraw sypkich, koncentratów spożywczych, wędlin, konserw mięsnych. Di glutaminian magnezu nie może być podawany dzieciom poniżej 12 tygodnia życia. Regularne i nadmierne spożywanie produktów z E625 może powodować reakcje astmy, bóle głowy, nudności, przyspieszone bicie serca, sztywność w ramionach i karku, bezsenność. Składnik E625 jest dosyć popularny w kuchni chińskiej."
+    },
+    {
+        "id": 259,
+        "tiles": [
+            "E626",
+            "kwas guanylowy"
+        ],
+        "content": "jest to syntetyczna substancja wzmacniająca smak otrzymywana z ekstraktu drożdżowego lub sardynek. W przemyśle żywieniowym służy jako dodatek do przypraw sypkich, sosu sojowego, koncentratów spożywczych, wędlin, konserw mięsnych lub do sosów w proszku. Nie może być stosowany w produkcji żywności przeznaczonej dla dzieci poniżej 12 tygodnia życia. Regularne i nadmierne spożywanie produktów z E626 może powodować nudności, przyspieszone bicie serca, bóle głowy, osłabienie, sztywność w ramionach i karku lub bezsenność."
+    },
+    {
+        "id": 260,
+        "tiles": [
+            "E627",
+            "guanylan disodowy"
+        ],
+        "content": "substancja syntetyczna wzmacniająca smak, która jest ok. 10-20 razy silniejsza niż glutaminian sodu. Służy jako dodatek do sosów w proszku, konserw mięsnych, przypraw sypkich, sosu sojowego, koncentratów spożywczych, wędlin. Nie może być stosowany w produkcji żywności przeznaczonej dla dzieci poniżej 12 tygodnia życia. Regularne spożywanie produktów z E627 może powodować bóle głowy, a u dzieci wzdęcia i problemy z wypróżnianiem się."
+    },
+    {
+        "id": 261,
+        "tiles": [
+            "E628",
+            "guanylan di potasowy"
+        ],
+        "content": "jest to syntetyczna substancja wzmacniająca smak otrzymywana z ekstraktu drożdżowego lub sardynek. W przemyśle żywieniowym służy jako dodatek do produktów o obniżonej zawartości soli, przypraw sypkich, sosu sojowego, koncentratów spożywczych, wędlin, konserw mięsnych lub do sosów w proszku. Nie może być stosowany w produkcji żywności przeznaczonej dla dzieci poniżej 12 tygodnia życia. Osoby z kamieniami nerkowymi nie powinny zażywać produktów z E628."
+    },
+    {
+        "id": 262,
+        "tiles": [
+            "E629",
+            "guanylan wapnia"
+        ],
+        "content": "substancja syntetyczna wzmacniająca smak w produktach spożywczym. Używana jest do sosów w proszku, przypraw sypkich, wędlin, konserw mięsnych oraz produktów o obniżonej zawartości soli. Nie można podawać produktów z E629 dzieciom poniżej 12 tygodnia życia."
+    },
+    {
+        "id": 263,
+        "tiles": [
+            "E630",
+            "kwas inozynowy"
+        ],
+        "content": "jest to naturalna substancja otrzymywana z ekstraktu mięsnego, sardynek albo poprzez fermentację cukrów. W przemyśle spożywczym służy jako dodatek do sosów, przypraw sypkich, sosu sojowego, koncentratów spożywczych, wędlin, konserw mięsnych oraz produktów o obniżonej zawartości soli. Nie można podawać produktów z E630 dzieciom poniżej 12 tygodnia życia."
+    },
+    {
+        "id": 264,
+        "tiles": [
+            "E631",
+            "inozynian di sodowy"
+        ],
+        "content": "jest to naturalna substancja otrzymywana z ekstraktu mięsnego, sardynek albo poprzez fermentację cukrów. Zawiera glutaminian sodu, od którego ma mocniejsze działanie. Pełni funkcję polepszacza smaku. W przemyśle spożywczym służy jako dodatek do sosów, przypraw sypkich, sosu sojowego, koncentratów spożywczych, wędlin, konserw mięsnych oraz produktów o obniżonej zawartości soli. Nie można podawać produktów z E631 dzieciom poniżej 12 tygodnia życia. Odradza się spożywania osób chorujących na kamicę nerkową."
+    },
+    {
+        "id": 265,
+        "tiles": [
+            "E632",
+            "inozynian di potasowy"
+        ],
+        "content": "jest to naturalna substancja otrzymywana z ekstraktu mięsnego, sardynek albo poprzez fermentację cukrów. W przemyśle spożywczym służy jako dodatek do sosów, przypraw sypkich, sosu sojowego, koncentratów spożywczych, wędlin, konserw mięsnych oraz produktów o obniżonej zawartości soli. Nie można podawać produktów z E632 dzieciom poniżej 12 tygodnia życia."
+    },
+    {
+        "id": 266,
+        "tiles": [
+            "E633",
+            "inozynian wapnia"
+        ],
+        "content": "naturalna substancja wzmacniająca smak otrzymywana z ekstraktu mięsnego, sardynek albo poprzez fermentację cukrów. W przemyśle spożywczym służy jako dodatek do sosów, przypraw sypkich, sosu sojowego, koncentratów spożywczych, wędlin, konserw mięsnych oraz produktów o obniżonej zawartości soli. Nie można podawać produktów z E633 dzieciom poniżej 12 tygodnia życia. Zalecana jest ostrożność przy spożywaniu."
+    },
+    {
+        "id": 267,
+        "tiles": [
+            "E634",
+            "rybonukleotydy wapnia"
+        ],
+        "content": "jest to naturalna substancja powstała w wyniku połączenia soli wapniowych, kwasu guanylowego (E626) oraz kwasu inozynowego (E630). W przemyśle spożywczym stosowana jest do chipsów smakowych, ciast owocowych w proszku, konserw mięsnych, koncentratów spożywczych, zupy instant oraz warzyw w puszkach. Nie należy podawać produktów z E634 dzieciom poniżej 12 tygodnia życia. Nadmierne spożywanie może wywołać skutki uboczne: nadpobudliwość lub nasilenie objawów astmy."
+    },
+    {
+        "id": 268,
+        "tiles": [
+            "E635",
+            "rybonukleotydy di sodow"
+        ],
+        "content": "substancja naturalna o właściwościach silniejszych, niż glutaminian sodu. W przemyśle żywieniowym pełni rolę składnika przy produkcji chipsów smakowych, ciast owocowych w proszku, konserw mięsnych, konserw grzybowych, warzyw w puszkach, koncentratów spożywczych, zupy instant. Nie należy podawać produktów z E635 dzieciom poniżej 12 tygodnia życia. Nadmierne spożywanie może wywołać nadpobudliwość, opuchliznę warg, gardła lub języka."
+    },
+    {
+        "id": 269,
+        "tiles": [
+            "E640",
+            "glicyna i jej sól sodowa"
+        ],
+        "content": "jest to substancja syntetyczna pełniąca funkcję regulatora smakowitości. Ma postać aminokwasów i cechuje ją słodki smak. Służy jako dodatek do wyrobów piekarniczych i drożdży piekarskich. Pełni rolę wzmacniacza smaku chleba. Glicyna uważana jest za nieszkodliwą substancję dla zdrowia człowieka."
+    },
+    {
+        "id": 270,
+        "tiles": [
+            "E900a",
+            "di metylopolisiloksan"
+        ],
+        "content": "jest to związek syntetyczny, który zapobiega pienieniu się. W przemyśle spożywczym używany jest jako dodatek do galaretek, dżemów, kremów do smarowania pieczywa, aromatyzowanych napojów, zup, budyniów, gum do żucia, tłuszczu do smażenia, aromatów, kawy rozpuszczalnej, owoców i warzyw w puszkach. Odradza się częste spożywanie, ponieważ nadmiar tej substancji może powodować nudności lub biegunkę. Dopuszczalne dzienne spożycie nie powinno przekraczać 1,5 mg/kg masy ciała."
+    },
+    {
+        "id": 271,
+        "tiles": [
+            "E901",
+            "wosk pszczeli biały i żółty"
+        ],
+        "content": "jest to naturalna substancja o właściwościach powlekających. Powstaje w wyniku topienia wosku z ula. Służy jako nabłyszczacz lub nośnik. Substancja E901 otrzymywana jest także drogą syntetyczną. Biały wosk zostaje wybielany przy pomocy nadtlenku wodoru lub słońca. W przemyśle spożywczym E901 dodaje się do wyrobów cukierniczych, ciastkarskich, orzechów, ziaren kawy, drożdżówek, słodkiego pieczywa. Służy także do nabłyszczania powierzchni świeżych owoców cytrusowych, jabłek, gruszek, brzoskwiń i ananasów. Nie ulega trawieniu. Nadmiar wosku może powodować reakcje alergiczne, a przy bezpośrednim kontakcie przyczynia się do zapalenia skóry."
+    },
+    {
+        "id": 272,
+        "tiles": [
+            "E902",
+            "wosk candelilla"
+        ],
+        "content": "jest to nieszkodliwa dla zdrowia substancja powlekająca, która powstaje z roślin Candelilla. Nie ulega trawieniu. Służy jako dodatek do wyrobów cukierniczych, ciastkarskich, ziaren kawy, orzechów, słodkiego pieczywa. Pełni rolę nabłyszczacza powierzchni owoców cytrusowych, jabłek, gruszek, brzoskwiń i ananasów. Nadmiar wosku może powodować reakcje alergiczne, a przy bezpośrednim kontakcie przyczynia się do zapalenia skóry."
+    },
+    {
+        "id": 273,
+        "tiles": [
+            "E903",
+            "wosk carnauba"
+        ],
+        "content": "jest to nieszkodliwa dla zdrowia substancja powlekająca, która powstaje z brazylijskiej palmy woskowej. Nie ulega trawieniu. Służy jako dodatek do wyrobów cukierniczych, ciastkarskich, ziaren kawy, orzechów, słodkiego pieczywa. Pełni rolę nabłyszczacza powierzchni owoców cytrusowych, jabłek, gruszek, brzoskwiń, ananasów, gumy do żucia, ziaren kawy. Nadmiar wosku może powodować reakcje alergiczne, a przy bezpośrednim kontakcie przyczynia się do zapalenia skóry."
+    },
+    {
+        "id": 274,
+        "tiles": [
+            "E904",
+            "szelak"
+        ],
+        "content": "jest to substancja powlekająca uważana za nieszkodliwą dla zdrowia. Powstaje z żywicy wytwarzanej przez pluskwiaki żyjące w Indiach. Substancję E904 wykorzystuje się do nabłyszczania powierzchni produktów spożywczych i służy do powlekania słodyczy, owoców, ziaren kawy, orzechów lub pieczywa. Nadmiar E904 może powodować reakcje alergiczne, a przy bezpośrednim kontakcie przyczynia się do zapalenia skóry."
+    },
+    {
+        "id": 275,
+        "tiles": [
+            "E905",
+            "wosk mikrokrystaliczny"
+        ],
+        "content": "jest to syntetyczna substancja, która posiada właściwości nabłyszczające. Używana jest przy produkcji wyrobów cukierniczych (z wyjątkiem czekolad), gum do żucia, melonów, mango oraz awokado."
+    },
+    {
+        "id": 276,
+        "tiles": [
+            "E938",
+            "argon"
+        ],
+        "content": "gaz ochronny występujący w powietrzu. W przemyśle żywieniowym pełni rolę ochronną. Stosowanie argonu powoduje długotrwałość świeżości dla produktów. Ma cechy spowalniające procesy oddychania tlenowego. Takim gazem wypełnia się opakowania z produktami spożywczymi (głównie puszki)."
+    },
+    {
+        "id": 277,
+        "tiles": [
+            "E939",
+            "hel"
+        ],
+        "content": "jest to naturalny gaz, występujący w powietrzu. Takim gazem wypełnia się produkty spożywcze (głównie puszki). Ma właściwości spowalniające procesy oddychania tlenowego, dzięki czemu żywność zachowuje świeżość na dłużej."
+    },
+    {
+        "id": 278,
+        "tiles": [
+            "E941",
+            "azot"
+        ],
+        "content": "jest to naturalny gaz ochronny i środek zamrażający występujący w powietrzu. Stosuje się go do pakowania żywności. Spowalnia proces oddychania tlenowego, dzięki czemu produkty zachowują świeżość na dłuższy czas. Takim gazem wypełnia się opakowania z mrożonkami oraz żywnością pakowaną próżniowo."
+    },
+    {
+        "id": 279,
+        "tiles": [
+            "E942",
+            "podtlenek azotu"
+        ],
+        "content": "Zwany jest także gazem rozśmieszającym. Stosuje się w medycynie jako środek do narkozy. Używany jest także jako gaz rozprężający do spienienia m.in. produktów mleczarskich, bitej śmietany w sprayu. Substancję E942 używa się do wybielania mąki. Podtlenkiem azotu wypełnia się opakowania, które zawierają szybko utleniające produkty, np. chipsy."
+    },
+    {
+        "id": 280,
+        "tiles": [
+            "E948",
+            "tlen"
+        ],
+        "content": "jest to naturalny gaz ochronny występujący w powietrzu. Używany jest przy pakowaniu produktów spożywczych. Jest to pierwiastek niezbędny do przeprowadzania różnych reakcji chemicznych."
+    },
+    {
+        "id": 281,
+        "tiles": [
+            "E950",
+            "acesulfam-K"
+        ],
+        "content": "syntetyczna substancja słodząca, która jest o ok. 200 razy słodsza niż cukier. Jest odporna na działanie wysokiej temperatury. Ma postać biały kryształków rozpuszczających się w wodzie. W dużych stężeniach smak E950 może być gorzki. W przemyśle spożywczym służy jako dodatek do napojów bezalkoholowych bez dodatku cukru, dietetycznych produktów mlecznych, soków owocowych o obniżonej kaloryczności, deserów, wyrobów cukierniczych, gumy do żucia, piwa bezalkoholowego, dżemów, marmolad, galaretek, wafli śniadaniowych przetworów zbożowych, musztardy, sosów, słodko-kwaśnych konserw rybnych i skorupiaków, gum do żucia. Dopuszczalna dzienna dawka wynosi 15mg/kg masy ciała. Nadmiar spożywania produktów z tą substancją prowadzi do białaczki, chorób układu nerwowego, raka płuc oraz raka piersi."
+    },
+    {
+        "id": 282,
+        "tiles": [
+            "E951",
+            "aspartam"
+        ],
+        "content": "związek syntetyczny powstały z i kwasu asparaginowego. Jest ok. 200 razy słodszy niż cukier i nie jest odporny na działania w wysokich temperaturach. E951 jest składnikiem wielu słodzików dostępnych na rynku oraz produktów przeznaczonych dla diabetyków. W przemyśle spożywczym służy jako dodatek do napojów bezalkoholowych bez dodatku cukru, dietetycznych produktów mlecznych, soków owocowych o obniżonej kaloryczności, deserów, wyrobów cukierniczych, gumy do żucia, piwa bezalkoholowego, dżemów, marmolad, galaretek, wafli śniadaniowych przetworów zbożowych, musztardy, sosów, słodko-kwaśnych konserw rybnych i skorupiaków, gum do żucia. Dopuszczalna dzienna dawka wynosi 40 mg/kg masy ciała. Osoba ważąca 60 kg po zjedzeniu ok. 1200 g jogurtu light i 8 filiżankach herbaty słodzonej aspartamem może już osiągnąć wartość dopuszczalnej dziennej dawki. Nadmiar spożywania produktów z tą substancją prowadzi do białaczki, chorób układu nerwowego, raka płuc oraz raka piersi. Osoby wrażliwe na fenyloketonurię nie powinny spożywać produktów z aspartamem."
+    },
+    {
+        "id": 283,
+        "tiles": [
+            "E952",
+            "kwas cyklaminowy i jego sole: sodowa i wapniowa"
+        ],
+        "content": "substancja syntetyczna, która jest o ok. 30 razy słodsza od sacharozy. Cechuje się wysoką odpornością na podgrzewanie. Przy dużych stężeniach substancja E952 może przybrać słony smak. W przemyśle spożywczym służy jako dodatek do dietetycznych produktów mlecznych, soków owocowych o obniżonej kaloryczności, deserów, wyrobów cukierniczych, bezalkoholowych napojów bez dodatku cukru, gumy do żucia, dżemów, marmolad, śniadaniowych przetworów zbożowych, galaretek, pieczywa. Dopuszczalne dzienne spożycie wynosi 11 mg/kg masy ciała. Nie wolno podawać dzieciom produktów z E952. Regularne i nadmierne spożywanie przyczynia się do raka płuc i zaburzeń płodności."
+    },
+    {
+        "id": 284,
+        "tiles": [
+            "E953",
+            "izomalt"
+        ],
+        "content": "syntetyczny związek. W przemyśle żywieniowym pełni rolę składnika przy produkcji • dżemów, marmolad, galaretek, wafli, pieczywa, śniadaniowych przetworów zbożowych, musztardy, sosów i likierów, bezalkoholowych napojów bez dodatku cukru, dietetycznych produktów mlecznych, soków owocowych o obniżonej kaloryczności, deserów, wyrobów cukierniczych, gumy do żucia, piwa bezalkoholowego. Dopuszczalne dzienne spożycie wynosi 50g/kg masy ciała. Nadmierne spożywanie produktów z tym oznaczeniem może prowadzić do zaburzeń trawienia (biegunki), a także podrażnień żołądka."
+    },
+    {
+        "id": 285,
+        "tiles": [
+            "E954",
+            "sacharyna i jej sole: sodowa",
+            "potasowa i wapniowa"
+        ],
+        "content": "substancja syntetyczna otrzymywana z toulenu. E954 nie ma wartości odżywczych i jest ok. 300-500 razy słodsza od cukru. Nie jest wchłaniana przez organizm i nie powoduje próchnicy. Posiada metaliczno-gorzki smak. W przemyśle spożywczym dodawana jest do takich produktów, jak: dietetyczne produkty mleczne, bezalkoholowe napoje bez dodatku cukru, soki owocowe o obniżonej kaloryczności, desery, wyroby cukiernicze, , gumy do żucia, piwo bezalkoholowe, dżemy, marmolady, galaretki, wafle, pieczywo, musztardy, sosy, słodko-kwaśne konserwy rybne. Dopuszczalne dzienne spożycie wynosi 5mg/kg masy ciała. Substancja E954 dodawana jest do produktów przeznaczonych dla diabetyków. Takiej substancji nie powinno się podawać dzieciom. Skutkiem ubocznym nadmiernego spożywania produktów z E954 jest rozwój nowotworu pęcherza moczowego."
+    },
+    {
+        "id": 286,
+        "tiles": [
+            "E957",
+            "taumatyna"
+        ],
+        "content": "substancja naturalna powstała z ekstraktu z owoców afrykańskiej rośliny. Jest trawiona przez organizm ludzki. Substancja E957 jest uważana za najsłodszy środek wśród produktów spożywczych. Jest ok. 2000-2500 krotnie słodsza od sacharozy. W przemyśle spożywczym służy jako dodatek do wyrobów kakaowych i lodów o obniżonej kaloryczności, gum do żucia, wyrobów cukierniczych bez dodatku cukru. Dopuszczalna dzienna dawka w ciągu dnia wynosi 3mg/kg masy ciała."
+    },
+    {
+        "id": 287,
+        "tiles": [
+            "E959",
+            "neohesperydyna DC"
+        ],
+        "content": "syntetyczna substancja pełniąca funkcję naturalnego słodzika, którego można otrzymać z pomarańczy Seville. W przemyśle żywieniowym na zastosowanie wzmacniające zapach i smak. Jest ok. 600 razy słodsza od sacharozy. Występuje w produktach o obniżonej zawartości kalorycznej lub pozbawionych cukru, tj.: bezalkoholowych napoi na bazie wody, mleka czy soków, deserów, gum do żucia, wafli, pastylek odświeżających oddech i suplementów diety, wyrobów kakaowych, kremów do smarowania pieczywa, galaretek, dżemów, marmolad, owoców w puszkach, musztard. Dopuszczalne dzienne spożycie wynosi 5mg/kg masy ciała."
+    },
+    {
+        "id": 288,
+        "tiles": [
+            "E965",
+            "maltitol",
+            "Syrop maltitolowy"
+        ],
+        "content": "związek syntetyczny powstały z maltozy. Cechuje się mniej słodkim smakiem od białego cukru. W przemyśle spożywczym pełni rolę składnika w deserach, sosach, musztardach, marmoladach, owocach suszonych, skrobi. Ma także zastosowanie przy produkcji suplementów diery, likierów, gum do żucia. Maltitol można spotkać także w likierach, mrożonych rybach i owocach morza. Nadużywanie substancji może powodować wzdęcia lub biegunkę. Dopuszczalne dzienne spożycie w ciągu dnia nie powinno przekraczać 30g w przypadku osób dorosłych, a w przypadku dzieci "
+    },
+    {
+        "id": 289,
+        "tiles": [
+            "E966",
+            "laktitol"
+        ],
+        "content": "syntetyczna substancja otrzymywana z laktozy "
+    },
+    {
+        "id": 290,
+        "tiles": [
+            "E967",
+            "ksylitol"
+        ],
+        "content": "substancja syntetyczna powstała z odpadów przemysłu drzewnego. W przemyśle spożywczym służy jako dodatek do owoców suszonych, dżemów, marmolady, wyrobów cukierniczych kakaowych, sosów, skrobi, kremów do smarowania pieczywa, suplementów diety, gum do żucia. Ma także zastosowanie przy produkcji likierów, mrożonych ryb oraz owoców morza. Nadużywanie produktów z E967 może przyczynić się do wzdęć i biegunki. Dopuszczalne dzienne spożycie w ciągu dnia wynosi 20 g na osobę."
+    },
+    {
+        "id": 291,
+        "tiles": [
+            "E999",
+            "ekstrakty Quillaia"
+        ],
+        "content": "naturalny ekstrakt pochodzący z kory drzewa quillaja. W przemyśle spożywczym dodaje się go do aromatyzowanych napojów. Przy jego spożywaniu należy zachować ostrożność, gdyż nadmierna ilość w organizmie przyczynia się do podrażnień żołądka, jelit, uszkodzeń wątroby, a nawet niewydolności układu oddechowego."
+    },
+    {
+        "id": 292,
+        "tiles": [
+            "E1105",
+            "lizozym"
+        ],
+        "content": "naturalna substancja bakteriobójcza otrzymywana z białka jajka kurzego. Substancja E1105 stanowi składnik łez, krwi, śliny i ludzkiego mleka. Lizozym dodawany jest m.in. do dojrzewających serów, sero-podobnych produktów, produktów przeznaczonych dla niemowląt. Ma także zastosowanie w przemyśle farmaceutycznym, ponieważ służy jako dodatek o produkcji wielu preparatów farmaceutycznych."
+    },
+    {
+        "id": 293,
+        "tiles": [
+            "E1200",
+            "spolimeryzowana glukoza",
+            "polidekstroza"
+        ],
+        "content": "substancja syntetyczna chroniąca produkty przed skutkami ubocznymi podczas ich zamrażania. Powstaje przez ogrzewanie glukozy, surbitu i kwasu cytrynowego. Służy jako dodatek do produktów niskokalorycznych, napojów bezalkoholowych i mlecznych, serków, budyniów w proszku, wyrobów cukierniczych, jogurtów. Przy nadmiernym spożywaniu wywołuje efekty przeczyszczające. Dopuszczalne dzienne spożycie nie powinno przekraczać 90 g na osobę."
+    },
+    {
+        "id": 294,
+        "tiles": [
+            "E1201",
+            "poliwinylopirolidon"
+        ],
+        "content": "substancja syntetyczna. W produkcji żywieniowej jest składnikiem win, substancji słodzących oraz produktów przeznaczonych dla diabetyków. Zaleca się ostrożność przy spożywaniu, gdyż jej nadmiar prowadzi do zaburzeń pracy nerek, płuc a także do alergicznego zapalenia skóry. Dopuszczalne dzienne spożycie nie powinno przekraczać 50 mg na osobę."
+    },
+    {
+        "id": 295,
+        "tiles": [
+            "E1202",
+            "poliwinylopolipirolidon"
+        ],
+        "content": "jest to substancja syntetyczna o właściwościach stabilizujących oraz klarujących. W przemyśle spożywczym dodawana jest do wina, piwa, substancji słodzących, produktów przeznaczonych dla diabetyków, suplementów diety. Zaleca się ostrożność przy spożywaniu, gdyż jej nadmiar prowadzi do zaburzeń pracy nerek, płuc a także do alergicznego zapalenia skóry."
+    },
+    {
+        "id": 296,
+        "tiles": [
+            "E1404",
+            "skrobia utleniona"
+        ],
+        "content": "substancja stabilizująca i zagęszczająca. Powstaje w wyniku rozkładania i utleniania skrobi. Używa się przy produkcji gotowych dań mrożonych, keczupu, konserw mięsno-warzywnych, deserów błyskawicznych, sproszkowanych ciast na naleśniki, gofrów, śmietanki niskokalorycznej oraz żywności przeznaczonej dla małych dzieci i niemowląt. Dopuszczalne dzienne spożycie nie powinno przekraczać 50 mg/kg masy ciała."
+    },
+    {
+        "id": 297,
+        "tiles": [
+            "E1410",
+            "fosforan monoskrobiowy"
+        ],
+        "content": "substancja syntetyczna rozpuszczalna w zimnej i gorącej widzie. Fosforan monoskrobiowy otrzymywany jest w wyniku obróbki skrobi kwasem ortofosforowym. W przemyśle spożywczym dodaje się go do deserów błyskawicznych, smakowych jogurtów, żywności przeznaczonej dla małych dzieci i niemowląt, konserw mięsno-warzywnych, zup w proszku, gotowych dań mrożonych. Regularne i nadmierne spożywanie tej substancji może powodować obniżenie się poziomu przyswajalności magnezu, żelaza i wapnia w organizmie."
+    },
+    {
+        "id": 298,
+        "tiles": [
+            "E1412",
+            "fosforan di skrobiowy"
+        ],
+        "content": "syntetyczna substancja o właściwościach lepszych, niż skrobia. Jest rozpuszczalna w wodzie gorącej i zimnej. W przemyśle spożywczym pełni funkcję składnika przy produkcji dressingów, majonezów, konserw mięsno-warzywnych, zup w proszku, gotowych dań mrożonych, deserów błyskawicznych, smakowych jogurtów, sosów sałatkowych. Regularne i nadmierne spożywanie przyczynia się do niskiej przyswajalności magnezu, żelaza i wapnia w organizmie."
+    },
+    {
+        "id": 299,
+        "tiles": [
+            "E1413",
+            "fosforowany fosforan di skrobiowy"
+        ],
+        "content": "substancja syntetyczna, która nie jest wrażliwa na wysokie wahania temperatury i kwaśne środowisko. Służy jako składnik do sosów sałatkowych, dressingów, majonezów, konserw mięsno-warzywnych, gotowych dań mrożonych, żywności dla niemowląt i małych dzieci. Regularne i nadmierne spożywanie przyczynia się do niskiej przyswajalności magnezu, żelaza i wapnia w organizmie."
+    },
+    {
+        "id": 300,
+        "tiles": [
+            "E1414",
+            "acetylowany fosforan di skrobiowy"
+        ],
+        "content": "jest to związek syntetyczny, który nie jest wrażliwy na wysokie wahania temperatury oraz kwaśne środowisko. W przemyśle spożywczym pełni funkcję składnika przy produkcji sosów majonezowych, owocowych nadzień cukierniczych, zup i dań w proszku, jogurtów, produktów garmażeryjnych, konserw rybnych, produktów przeznaczonych dla małych dzieci oraz niemowląt. Regularne i nadmierne spożywanie przyczynia się do niskiej przyswajalności magnezu, żelaza i wapnia w organizmie. Dopuszczalne dzienne spożycie wynosi 50 mg/kg masy ciała."
+    },
+    {
+        "id": 301,
+        "tiles": [
+            "E1420",
+            "skrobia acetylowana"
+        ],
+        "content": "jest to substancja zagęszczająca i stabilizująca. Nie jest wrażliwa na duże wahania temperatur oraz niskie pH. W przemyśle spożywczym służy jako dodatek do ciast mrożonych, nadzień cukierniczych, koncentratów, zup w proszku, produktów ciastkarskich i piekarskich oraz produktów przeznaczonych dla niemowląt i małych dzieci. Ma właściwości powlekające, np. przy produkcji suszonych owoców."
+    },
+    {
+        "id": 302,
+        "tiles": [
+            "E1422",
+            "acetylowany adypinian di skrobiowy"
+        ],
+        "content": "jest to substancja syntetyczna pełniąca funkcję zagęszczającą oraz stabilizującą. Inna nazwa tej substancji, to skrobia modyfikowana. Nie wykazuje dużej wrażliwości na spore wahania temperatury i na zamrażanie. Powstaje w procesie estryfikowania skrobi bezwodnikami kwasów adypinowego i octowego. Służy jako dodatek do keczupów, dresingów, sosów majonezowych, margaryn o niskiej kaloryczności, konserw, deserów mlecznych, przetworów rybnych, zup i sosów w proszku, produktów przeznaczonych dla niemowląt i małych dzieci. Dopuszczalne dzienne spożycie wynosi 50 mg/kg masy ciała."
+    },
+    {
+        "id": 303,
+        "tiles": [
+            "E1440",
+            "hydroksypropyloskrobia"
+        ],
+        "content": "jest to substancja syntetyczna, która wpływa na działanie enzymów i zmiany pH. W przemyśle spożywczym służy do nabłyszczania produktów. E1440 dodaje się do gotowych zup, sosów w proszku, marynat, ciast, naleśników i konserwowanych nadzieniach owocowych do pierogów. Nadmiar substancji w organizmie może powodować zaburzenia pracy nerek."
+    },
+    {
+        "id": 304,
+        "tiles": [
+            "E1442",
+            "hydroksypropylofosforan di skrobiowy"
+        ],
+        "content": "jest to substancja syntetyczna, która wpływa na działanie enzymów i zmiany pH. W przemyśle spożywczym ulepsza kolor i nabłyszcza produkty. Służy jako dodatek do gotowych zup oraz sosów w proszku. Składnik E1442 można spotkać także w konserwowanych nadzieniach owocowych do pierogów i jogurtów. Przy dużych stężeniach spowalnia trawienie w organizmie."
+    },
+    {
+        "id": 305,
+        "tiles": [
+            "E1450",
+            "sól sodowa oktenylobursztynianu skrobiowego"
+        ],
+        "content": "substancja otrzymywana ze skrobi pełniąca funkcję zagęszczacza i stabilizatora. Służy jako dodatek do zup i sosów w proszku oraz żywności przeznaczonej dla niemowląt i małych dzieci. Składnik E1450 stanowi zamiennik dla gumy arabskiej występującej w sosach i napojach. Osoby u których stwierdzono podwyższoną zawartość wapnia organizmie, powinny unikać produktów z takim oznaczeniem. W przeciwnym wypadku E1450 może powodować zaburzenia pracy nerek."
+    },
+    {
+        "id": 306,
+        "tiles": [
+            "E1451",
+            "acetylowana skrobia utleniona"
+        ],
+        "content": "jest to syntetyczny związek otrzymywany ze skrobi modyfikowanej. W przemyśle spożywczym ma właściwości stabilizacyjne, emulgujące, zagęszczające oraz wiążące. Powstaje podczas utleniania i estryfikacji. Służy jako dodatek do żywności dla niemowląt i małych dzieci, konserwowanych owoców oraz produktów cukierniczych. Octan etylu stanowi substytut dla żelatyny i gumy arabskiej."
+    },
+    {
+        "id": 307,
+        "tiles": [
+            "E1504",
+            "octan etylu"
+        ],
+        "content": "substancja syntetyczna, która jest otrzymywana ze skrobi modyfikowanej. Powstaje podczas utleniania i estryfikacji. Służy jako dodatek do żywności dla niemowląt i małych dzieci, konserwowanych owoców oraz produktów cukierniczych. Octan etylu stanowi substytut dla żelatyny i gumy arabskiej."
+    },
+    {
+        "id": 308,
+        "tiles": [
+            "E1505",
+            "cytrynian tri etylowy"
+        ],
+        "content": "bezbarwna i bezwonna płynna substancja syntetyczna która powstaje z kwasu cytrynowego oraz alkoholu etylowego. W przemyśle spożywczym służy jako nośnik oraz substancja sprzyjająca ubijanie piany. Występuje w wysuszonym białku kurzym w proszku. Częste i nadmierne spożywanie może przyczynić się do zaburzeń pracy trzustki i wątroby. Dopuszczalne dzienne spożycie wynosi 20 mg/kg masy ciała,"
+    },
+    {
+        "id": 309,
+        "tiles": [
+            "E1517",
+            "diacetyna"
+        ],
+        "content": "jest to syntetyczny związek w postaci oleistej cieczy. Powstaje w wyniku reakcji kwasu octowego i glicerolu. W przemyśle spożywczym dodawany jest do aromatów i substancji aromatycznych."
+    },
+    {
+        "id": 310,
+        "tiles": [
+            "E1518",
+            "trioctan glicerolu",
+            "triacetyna"
+        ],
+        "content": "substancja syntetyczna, która powstaje w wyniku połączenia kwasu octowego i glicerolu. Służy jako dodatek przy produkcji gum do żucia, aromatów i środków aromatycznych. Substancję E1518 stosuje się także do spryskiwania powierzchni warzyw i owoców, dzięki czemu zachowują odpowiednią wilgotność."
+    }
+]

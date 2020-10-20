@@ -18,7 +18,7 @@ class apiController extends Controller
     }
     public function shortSearch() {
         return response() -> json(
-            Product::where('name', 'LIKE', '%'.$_REQUEST['query'].'%')->take(10)->get()
+            Product::select('name', 'id')->where('name', 'LIKE', '%'.$_REQUEST['query'].'%')->take(10)->get()
         );
     }
     public function test() {
