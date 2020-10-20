@@ -7,6 +7,7 @@ import 'package:barcode_food_scaner/drawer.dart';
 import 'package:barcode_food_scaner/apiController.dart';
 import 'package:barcode_food_scaner/userLibrary.dart' as user;
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:barcode_food_scaner/searchScreen.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -46,17 +47,18 @@ class _HomeState extends State<Home> {
                       crossAxisAlignment: CrossAxisAlignment.baseline,
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Form(
-                          child: ListTile(
+                        FlatButton(
+                            padding: EdgeInsets.zero,
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => SearchScreen()));
+                            },
+                            child: ListTile(
                               leading: Icon(Icons.search),
-                              title: TextFormField(
-                                controller: searchFieldController,
-                                keyboardType: TextInputType.text,
-                                decoration: InputDecoration(
-                                    border: InputBorder.none,
-                                    hintText: "Wyszukaj produkt..."),
-                              )),
-                        ),
+                              title: Text("Wyszukaj produkt"),
+                            )),
                         Divider(
                           thickness: 1,
                           indent: 30,
@@ -155,8 +157,7 @@ class _HomeState extends State<Home> {
     await FlutterBarcodeScanner.scanBarcode(
             "#4caf50", "Anuluj", true, ScanMode.BARCODE)
         .then((value) => setState(() => {_data = value}));
-    var product = await Api().getProduct(_data);
-    Navigator.push(
-        context, MaterialPageRoute(builder: (context) => Product(product[0])));
+    Navigator.push(context,
+        MaterialPageRoute(builder: (context) => Product(_data, false)));
   }
 }

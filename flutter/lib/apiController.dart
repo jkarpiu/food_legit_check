@@ -5,12 +5,23 @@ import 'dart:convert';
 import 'package:barcode_food_scaner/userLibrary.dart' as user;
 
 class Api {
-  String adress = "192.168.8.125:8000";
-  getProduct(String barcode) async {
-    final params = {"barcode": barcode};
+  String adress = "192.168.43.192:8000";
+  getProduct(String content, bool byId) async {
+    print("dupga");
+    print(content);
+    _setParams() {
+      if (byId) {
+        return {'id': content};
+      } else {
+        return {'barcode': content};
+      }
+    }
+
+    final _params = _setParams();
+    String fullUrl = Uri.http(adress, "/api/get_product", _params).toString();
     var data = await http.get(
-      Uri.http(adress, "/api/get_product", params),
-      headers: _setHeaders(true),
+      fullUrl,
+      headers: await _setHeaders(true),
     );
     return jsonDecode(data.body);
   }
@@ -18,6 +29,14 @@ class Api {
   test() async {
     String fullUrl = adress + "test";
     var data = await http.get(fullUrl, headers: _setHeaders(false));
+    return jsonDecode(data.body);
+  }
+
+  search(String text) async {
+    final params = {"query": text};
+    var data = await http.get(Uri.http(adress, '/api/search', params),
+        headers: await _setHeaders(false));
+
     return jsonDecode(data.body);
   }
 
