@@ -6,7 +6,7 @@
 @section('content')
 <article class="activity-center @if (count($products) > 0)founded @endif">
     <section class="user-section">
-        <img data-aos='fade-right' src="https://ocdn.eu/pulscms-transforms/1/ILLk9kqTURBXy9iMzI2YTkzMzZjOTI3NjhkNTFjY2EyNGFiYTUyMzgxZi5qcGVnkpUDACDNBADNAkCVAs0B4ADCw4KhMAWhMQE"
+    <img data-aos='fade-right' src="{{ Auth::user()->avatar}}"
             alt="">
         <h2 data-aos='fade-right' data-aos-delay='400'>Cześć, {{ Auth::user()->name }}!</h2>
         <h3 data-aos='fade-right' data-aos-delay='800'>Poniżej znajduje się twój osobisty notatnik.</h3>
@@ -19,7 +19,11 @@
         </form>
     </section>
     <section class="@if (count($products) == 0)null-products @else new-products-to-approve @endif">
+        @if (Auth::user()->role == 'Admin')
         <h2 data-aos='fade-up'>Ostatnio dodane produkty do zatwierdzenia:</h2>
+        @else
+        <h2 data-aos='fade-up'>Ostatnie dodane przez ciebie produkty do zatwierdzenia:</h2>
+        @endif
         @if (count($products) > 0)
         <section class="approvement-list">
             @foreach ($products as $item)
@@ -43,6 +47,7 @@
             </section>
             @endforeach
         </section>
+        {{-- <span class="other-count">+5 więcej</span> --}}
         <div data-aos='fade-up' data-aos-delay="1600">
             <a href="{{url('/dashboard/approve')}}" class="showAll">Zobacz wszystkie</a>
         </div>

@@ -7,7 +7,7 @@
     <form action="{{ route('uploadfile') }}" method="POST" autocomplete="off" enctype="multipart/form-data">
         <span class="first-part">
             <label for="name" @error('name') style="color: #a32a14" @enderror>Nazwa produktu: </label>
-        <input type="text" name="name" maxlength="50" minlength="10" @error('name') class="error" placeholder="Podaj nazwę produktu" @enderror value={{ old('name') }}>
+        <input type="text" name="name" maxlength="50" minlength="10" @error('name') class="error" placeholder="Podaj nazwę produktu" @enderror value="{{ old('name') }}">
             <span class="barcode-box">
                 <label for="barcode" @error('barcode') style="color: #a32a14" @enderror>Kod kreskowy: </label>
                 <input type="text" name="barcode" maxlength="14" @error('barcode') class="error" placeholder="Podaj kod kreskowy" @enderror value={{ old('barcode') }}>
@@ -21,7 +21,7 @@
             <label for="components">Składniki: </label>
             <textarea name="components" id="components">{{ old('components') }}</textarea>
             <label for="effects">Efekty stosowania: </label>
-            <textarea name="effects" id="effects">{{ old('effects') }}</textarea>
+            <textarea name="effects" id="effects" maxlength="255">{{ old('effects') }}</textarea>
         </span>
         <span class="third-part">
             <label for="price" @error('price') style="color: #a32a14" @enderror>Cena: </label>

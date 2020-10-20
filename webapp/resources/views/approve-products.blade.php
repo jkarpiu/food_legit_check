@@ -21,14 +21,16 @@
                 <h6>Czas dodania:
                     @if ($item -> created_at)
                     <span>{{$item -> created_at -> format('d M Y')}}&nbsp;{{$item -> created_at -> format('H:i:s')}}</span>
-                    @else
-                    12 Sep 2020 14:20:04
-                    @endif
-                    </span></h6>
+                    @endif</h6>
             </div>
         </a>
     </section>
     @endforeach
+    @else
+    <div class="emptyApprovements" data-aos='fade-up' data-aos-delay="400">
+        <h3>Brak nowych produktów do zatwierdzenia.</h3>
+        <h4>Jak tylko pojawi się nowy produkt to zostaniesz o tym poinformowany!</h4>
+    </div>
     @endif
 </article>
 

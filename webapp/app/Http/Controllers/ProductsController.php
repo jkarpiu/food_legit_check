@@ -1,13 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
 use App\Product;
-use App\ToAddProduct;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
-
 
 class ProductsController extends Controller
 {
@@ -17,7 +14,7 @@ class ProductsController extends Controller
         return view('catalog', compact('products', 'labels'));
     }
 
-    public function singleProduct($id) {
+    public function find($id) {
         $product = Product::find($id);
         return view('singleProduct')->with('product', $product);
     }
@@ -34,45 +31,34 @@ class ProductsController extends Controller
         return view('catalog', compact('products', 'labels'));
     }
 
-    public function add(Request $req) {
-        $price = $req -> price;
-        $price = Str::replaceArray(',', ['.'], $price);
-            $req->validate([
-                'name' => 'required',
-                'barcode' => 'nullable|numeric',
-                'price' => ['required', 'regex:/^[0-9][0-9]{0,2}[.|,][0-9][0-9]$/'],
-                'image' => 'required|image|max:2048'
-            ]);
-        $img_name = Str::random(30);
-        $extension = $req -> image -> extension();
-        $req -> image -> storeAs('/public', $img_name.".".$extension);
-        $url = Storage::url($img_name.".".$extension);
-        $product = new ToAddProduct;
-        $product -> category = 'Inne';
+    public function edit(Request $req) {
+        $req->validate([
+            'name' => 'required',
+            'barcode' => 'nullable|numeric',
+            'price' => ['required', 'regex:/^[0-9][0-9]{0,2}[.|,][0-9][0-9]$/'],
+            'components' => 'nullable|max:1000|string',
+            'image' => 'nullable|image|max:2048',
+        ]);
+        $product = Product::find($req -> id);
+        $product -> category = $req -> categories;
         $product -> name = $req -> name;
         $product -> barcode = $req -> barcode;
-        $product -> image = $url;
+        if($req -> image != null) {
+            $img_name = Str::random(30);
+            $extension = $req -> image -> extension();
+            $req -> image -> storeAs('/public', $img_name.".".$extension);
+            $url = Storage::url($img_name.".".$extension);
+            $product -> image = $url;
+        }
         $product -> components = $req -> components;
-        $product -> effects = $req -> effects;
-        $product -> price = $price;
+        $product -> price = $req -> price;
         $product -> save();
-        return view('success');
-    }
-
-    public function approveList() {
-        $products = ToAddProduct::orderBy('created_at', 'desc')->get();
-        return view('approve-products', compact('products'));
-    }
-
-    public function singleApprove($id) {
-        $product = ToAddProduct::find($id);
-        return view('singleApprove', compact('product'));
+        return redirect('/product/'.$product -> id);
     }
 
     public function delete($id) {
-        $product = ToAddProduct::find($id);
-        $product -> delete();
-        return redirect('/dashboard/approve');
+        Product::find($id)->delete();
+        return redirect('/catalog');
     }
 
     // public function load_data(Request $request) {

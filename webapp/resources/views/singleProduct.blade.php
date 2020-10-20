@@ -1,5 +1,5 @@
 <?php
-    $activeSite = '';
+    $activeSite = 'single-product';
 ?>
 @extends('layouts.master')
 @section('content')
@@ -15,6 +15,14 @@
         @if ($product -> components != NULL)
         <h3>Składniki: <span class="components">{{ $product -> components}}</span></h3>
         @endif
+        @auth
+            @if (Auth::user()->role == 'Admin')
+            <section class="operations">
+                <a href="{{ url('/product/'.$product-> id.'/edit') }}" class="edit">Edytuj</a>
+                <a href="{{ url('/product/'.$product -> id.'/delete') }}" class="delete">Usuń</a>
+            </section>
+            @endif
+        @endauth
     </div>
 </article>
 @endsection

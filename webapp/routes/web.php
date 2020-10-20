@@ -1,5 +1,7 @@
 <?php
 
+use App\ToAddProduct;
+use App\Product;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -15,18 +17,40 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::view('/', 'home');
-Route::view('/add_product', 'add-product');
+Route::get('/add_product', 'ApprovementsController@add');
 Route::view('/our_app', 'our-app');
 
 Route::get('/catalog', 'ProductsController@index');
 Route::get('/catalog/{q}', 'ProductsController@categories');
-Route::get('/product/{id}', 'ProductsController@singleProduct');
+Route::get('/product/{id}', 'ProductsController@find');
+Route::get('/product/{id?}/delete', function ($id = null) {
+    return view('confirm_delete_product');
+});
+Route::get('/product/{id?}/delete/confirmed', 'ProductsController@delete')->name('deleteProduct');
 
-Route::get('dashboard/approve', 'ProductsController@approveList');
-Route::get('dashboard/approve/{id}', 'ProductsController@singleApprove');
-Route::get('dashboard/approve/{id}/delete', 'ProductsController@delete');
+Route::get('dashboard/approve', 'ApprovementsController@index');
+Route::get('dashboard/approve/{id}/edit', function($id) {
+    $product = ToAddProduct::find($id);
+    return view('edit-approvement')->with('product', $product);
+});
+
+Route::get('product/{id}/edit', function($id) {
+    $product = Product::find($id);
+    return view('edit-product')->with('product', $product);
+});
+
+Route::post('edit-approvement', 'ApprovementsController@edit')->name('editApprovement');
+Route::post('edit-product', 'ProductsController@edit')->name('editProduct');
+Route::get('dashboard/approve/{id}/delete', 'ApprovementsController@delete');
+Route::get('dashboard/approve/{id}', 'ApprovementsController@find');
 
 Route::get('dashboard/account', 'UserController@options');
+Route::view('/dashboard/account/edit', 'edit-user');
+Route::post('edit-user', 'UserController@edit')->name('editUser');
+Route::view('/dashboard/account/delete', 'confirm_delete_account');
+Route::get('dashboard/account/delete/confirmed', 'UserController@delete')->name('deleteUser');
+Route::get('/dashboard/account/change-password', 'ChangePasswordController@index');
+Route::post('change-password', 'ChangePasswordController@store')->name('change.password');
 
 Route::get('/search', 'ProductsController@search');
 Route::post('/add', 'ProductsController@add')->name('uploadfile');
