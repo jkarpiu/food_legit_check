@@ -29,15 +29,36 @@ class _ProductState extends State<Product> {
   Widget build(BuildContext context) {
     if (_isLoading) loadData();
     return Scaffold(
-      appBar: new AppBar(
-        leading: IconButton(
-            icon: Icon(Icons.arrow_back),
-            onPressed: () {
-              Navigator.pop(context, false);
-            }),
-        title: Text("Produkt"),
+      body: Center(
+        child: CustomScrollView(
+          slivers: [
+            SliverAppBar(
+              actions: [
+                IconButton(icon: Icon(Icons.more_vert), onPressed: () {})
+              ],
+              backgroundColor: Colors.white,
+              expandedHeight: 350,
+              iconTheme: IconThemeData(color: Colors.green[800]),
+              flexibleSpace: FlexibleSpaceBar(
+                background: _isLoading
+                    ? SpinKitWanderingCubes(
+                        size: 50.0,
+                        color: Colors.green[800],
+                      )
+                    : Image.network(
+                        _product['image'],
+                        fit: BoxFit.cover,
+                      ),
+              ),
+            ),
+            SliverFixedExtentList(
+                delegate: SliverChildListDelegate(
+                    [_isLoading ? loading() : loaded(_product)]),
+                itemExtent: 1000.0)
+          ],
+        ),
       ),
-      body: _isLoading ? loading() : loaded(_product),
+      // body: _isLoading ? loading() : loaded(_product),
     );
   }
 
@@ -49,20 +70,35 @@ class _ProductState extends State<Product> {
           elevation: 2,
           child: Row(
             children: [
-              SizedBox(width: 120, child: Image.network(product["image"])),
-              Column(children: <Widget>[
-                Text(product["name"]),
-                Align(
-                  alignment: Alignment.bottomRight,
-                  child: Text("Orientacyjna cena: " + product["price"]),
-                )
-              ])
+              Container(
+                  padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+                  child: Column(children: <Widget>[
+                    Text(
+                      product["name"],
+                      softWrap: true,
+                    ),
+                    Text(product['category']),
+                    Align(
+                      alignment: Alignment.bottomRight,
+                      child: Text("Orientacyjna cena: " + product["price"]),
+                    )
+                  ]))
             ],
           ),
         ),
         Card(
-          elevation: 2,
-          child: Text(product['components']),
+            elevation: 2,
+            child: Container(
+              padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+              child: Text(product['components'] != null
+                  ? product['components']
+                  : "Niestety, jeszcze nie znamy składu tego produktu :-("),
+            )),
+        Card(
+          child: Container(
+            padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+            child: Text("Choróbska"),
+          ),
         )
       ],
     );

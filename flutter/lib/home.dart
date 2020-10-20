@@ -29,9 +29,36 @@ class _HomeState extends State<Home> {
     userdata();
     return Scaffold(
         appBar: new AppBar(
-          title: Text(
-            "Food Legit Check",
-          ),
+          title: Align(
+              alignment: Alignment.center,
+              child: RichText(
+                text: TextSpan(
+                    style: TextStyle(
+                        color: Colors.grey[800],
+                        fontSize: 22,
+                        fontFamily: 'Monospace'),
+                    children: [
+                      TextSpan(
+                          text: "F",
+                          style: TextStyle(color: Colors.green[800])),
+                      TextSpan(text: "ood"),
+                      TextSpan(
+                          text: " L",
+                          style: TextStyle(color: Colors.green[800])),
+                      TextSpan(text: "egit"),
+                      TextSpan(
+                          text: " C",
+                          style: TextStyle(color: Colors.green[800])),
+                      TextSpan(text: "heck"),
+                    ]),
+              )),
+          backgroundColor: Colors.white,
+          iconTheme: IconThemeData(color: Colors.green[800]),
+          actions: <Widget>[
+            SizedBox(
+              width: 48,
+            )
+          ],
         ),
         drawer: AppDrawer(),
         body: ListView(
@@ -157,7 +184,9 @@ class _HomeState extends State<Home> {
     await FlutterBarcodeScanner.scanBarcode(
             "#4caf50", "Anuluj", true, ScanMode.BARCODE)
         .then((value) => setState(() => {_data = value}));
-    Navigator.push(context,
-        MaterialPageRoute(builder: (context) => Product(_data, false)));
+    if (_data != "-1") {
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => Product(_data, false)));
+    }
   }
 }
