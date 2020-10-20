@@ -226,8 +226,12 @@ header.admin {
 }
 
 header.admin section {
-    display: block;
-    margin: 150px auto;
+    width: 100%;
+    height: calc(100% - 58px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 header.admin h2.header-title {
@@ -237,12 +241,13 @@ header.admin h2.header-title {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
+    padding: 0 20px;
 }
 
 article.activity-center {
     display: flex;
     width: 100%;
-    height: 80vh;
+    height: 75vh;
     padding: 100px;
 }
 
@@ -562,6 +567,34 @@ article.add-product-section {
     margin: 100px;
 }
 
+article.approvement {
+    margin: 0;
+    padding: 200px;
+}
+
+article.approvement h2 {
+    text-align: center;
+    padding: 0 40px;
+    font-size: 2em;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    color: #109137;
+}
+
+article.approvement select {
+    margin-left: 10px;
+    margin-right: 20px;
+    outline: none;
+    border-radius: .5em;
+    background-color: #fff;
+    font-size: 1em;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+}
+
+article.approvement select:hover {
+    border-color: #0e7e30;
+}
+
 article.add-product-section form {
     text-align: center;
 }
@@ -751,6 +784,11 @@ article.user-options {
     justify-content: center;
 }
 
+article.user-options section.user-container {
+    text-align: center;
+    padding: 0 100px;
+}
+
 article.user-options img {
     margin-bottom: 15px;
 }
@@ -772,6 +810,82 @@ article.user-options h3 {
 
 article.user-options .operations {
     margin-top: 20px;
+}
+
+article.user-options.chpass h2 {
+    text-align: center;
+    padding: 0 40px;
+    font-size: 2em;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #109137;
+}
+
+article.user-options .user-form {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 50px;
+}
+
+article.user-options .user-form label {
+    display: block;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #109137af;
+    margin: 15px 0px 10px 0px;
+}
+
+article.user-options .user-form input[type="text"],
+article.user-options .user-form input[type="password"],
+article.user-options .user-form input[type="email"] {
+    width: 90%;
+    background-color: transparent;
+    border: 0;
+    padding: 2px 10px;
+    margin-left: 5px;
+    transform: translateY(-3px);
+    font-size: 1em;
+    border-bottom: 1px solid #888;
+}
+
+article.user-options .user-form button {
+    display: block;
+    font-size: 1.1em;
+    margin: 30px auto;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 2px solid #109137;
+    text-transform: uppercase;
+    color: #109137;
+    cursor: pointer;
+    transition: .6s background-color, .6s color;
+}
+
+article.user-options .user-form button:hover,
+article.user-options .user-form button:active,
+article.user-options .user-form button:focus {
+    background-color: #109137;
+    color: #fff;
+    outline: none;
+}
+
+article.user-options ul {
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0 50px;
+}
+
+article.user-options ul li {
+    margin-bottom: 5px;
+}
+
+article.user-options ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 nav {
@@ -1445,6 +1559,10 @@ footer .copyright {
         grid-row: 3;
         grid-column: 2;
     }
+    header.admin section h2.header-title {
+        font-size: 1.8em;
+        padding: 0 50px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -1453,6 +1571,9 @@ footer .copyright {
         padding: 200px 50px 50px 50px;
     }
     article.activity-center .approvement-list {
+        padding: 0 50px;
+    }
+    article.user-options section.user-container {
         padding: 0 50px;
     }
 }
@@ -1480,6 +1601,9 @@ footer .copyright {
     }
     article.activity-center section.user-section {
         padding: 0 30px;
+    }
+    article.user-options section.user-container {
+        font-size: 14px;
     }
     article.activity-center .null-products {
         padding: 0 20px;
@@ -1553,6 +1677,9 @@ footer .copyright {
     article.activity-center.founded {
         padding: 100px 10px;
     }
+    article.user-options {
+        height: 100vh;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1608,6 +1735,13 @@ footer .copyright {
     }
     section.errors-box {
         padding: 20px 40px!important;
+    }
+    article.user-options section.user-container {
+        padding: 0 10px;
+    }
+    header.admin section h2.header-title {
+        font-size: 1.5em;
+        padding: 0 20px;
     }
 }
 
@@ -1669,7 +1803,7 @@ footer .copyright {
         height: 130vh;
     }
     article.activity-center.founded {
-        height: 280vh;
+        height: 290vh;
     }
     header.register,
     header.login {

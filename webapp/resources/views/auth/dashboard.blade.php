@@ -6,7 +6,7 @@
 @section('content')
 <article class="activity-center @if (count($products) > 0)founded @endif">
     <section class="user-section">
-        <img data-aos='fade-right' src="https://ocdn.eu/pulscms-transforms/1/ILLk9kqTURBXy9iMzI2YTkzMzZjOTI3NjhkNTFjY2EyNGFiYTUyMzgxZi5qcGVnkpUDACDNBADNAkCVAs0B4ADCw4KhMAWhMQE"
+    <img data-aos='fade-right' src="{{ Auth::user()->avatar}}"
             alt="">
         <h2 data-aos='fade-right' data-aos-delay='400'>Cześć, {{ Auth::user()->name }}!</h2>
         <h3 data-aos='fade-right' data-aos-delay='800'>Poniżej znajduje się twój osobisty notatnik.</h3>
