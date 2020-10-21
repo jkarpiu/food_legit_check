@@ -17,5 +17,5 @@ Route::group([
 });
 
 Route::get("/search", "apiController@shortSearch");
-Route::get('/get_product', "apiController@get");
+Route::middleware('auth:api')->get('/get_product', "apiController@get");
 Route::get("/test", "apiController@test");

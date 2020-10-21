@@ -12,14 +12,26 @@ class SearchScreen extends StatefulWidget {
 
 class _SearchSceenState extends State<SearchScreen> {
   bool isLoading = false;
+  TextEditingController _controller = new TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: new AppBar(
           title: Form(
               child: TextFormField(
+            controller: _controller,
             autofocus: true,
-            decoration: InputDecoration(prefixIcon: Icon(Icons.search)),
+            decoration: InputDecoration(
+                prefixIcon: Icon(Icons.search),
+                suffixIcon: IconButton(
+                  icon: Icon(Icons.cancel),
+                  onPressed: () {
+                    _controller.text = "";
+                    setState(() {
+                      widget.foundItem = [];
+                    });
+                  },
+                )),
             onChanged: (String value) async {
               isLoading = true;
               List data = await Api().search(value);

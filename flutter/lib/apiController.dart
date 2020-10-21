@@ -7,8 +7,6 @@ import 'package:barcode_food_scaner/userLibrary.dart' as user;
 class Api {
   String adress = "192.168.8.125:8000";
   getProduct(String content, bool byId) async {
-    print("dupga");
-    print(content);
     _setParams() {
       if (byId) {
         return {'id': content};
@@ -23,6 +21,7 @@ class Api {
       fullUrl,
       headers: await _setHeaders(true),
     );
+    print(data.body);
     return jsonDecode(data.body);
   }
 
