@@ -89,7 +89,7 @@
     crossorigin="anonymous"></script>
 <script defer>
     AOS.init({
-        delay: 200,
+        delay: 400,
         duration: 1200,
         once: false,
     });

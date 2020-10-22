@@ -4,23 +4,33 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\ToAddProduct;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class ApprovementsController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
     public function __construct()
     {
         $this->middleware('auth');
     }
 
     public function index() {
-        $products = ToAddProduct::orderBy('created_at', 'desc')->get();
+        if (Auth::user()-> role == 'Admin') {
+            $products = ToAddProduct::orderBy('created_at', 'desc')->get();
+        } else {
+            $products = Auth::user()->approvements;
+        }
         return view('approve-products', compact('products'));
     }
 
     public function addSite() {
-        return view('add_product');
+        return view('add-product');
     }
 
     public function add(Request $req) {
@@ -39,6 +49,7 @@ class ApprovementsController extends Controller
         $req -> image -> storeAs('/public', $img_name.".".$extension);
         $url = Storage::url($img_name.".".$extension);
         $product = new ToAddProduct;
+        $product -> user_id = Auth::user()->id;
         $product -> category = 'Inne';
         $product -> name = $req -> name;
         $product -> barcode = $req -> barcode;
@@ -51,18 +62,23 @@ class ApprovementsController extends Controller
     }
 
     public function find($id) {
-        $product = ToAddProduct::find($id);
-        return view('singleApprove', compact('product'));
+            $product = ToAddProduct::find($id);
+            if (Auth::user()->role == 'Admin' or $product->user->id == Auth::user()->id) {
+                return view('singleApprove', compact('product'));
+            } else {
+                return redirect('/dashboard/approve');
+            }
     }
 
     public function delete($id) {
-        $product = ToAddProduct::find($id);
-        $product -> delete();
+        if (Auth::user() -> role == 'Admin') {
+            $product = ToAddProduct::find($id);
+            $product -> delete();
+        }
         return redirect('/dashboard/approve');
     }
 
     public function edit(Request $req) {
-        // dd($req);
         $price = $req -> price;
         $price = Str::replaceArray(',', ['.'], $price);
         $req->validate([

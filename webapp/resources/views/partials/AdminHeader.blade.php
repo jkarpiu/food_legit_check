@@ -13,7 +13,12 @@
             <ul>
                 <li><a @if ($activeSite=='dashboard') class="active" @endif href="/dashboard">Panel</a>
                 </li>
-                <li><a @if (stristr($activeSite, 'approve'))class="active" @endif href="/dashboard/approve">Produkty do zatwierdzenia</a>
+                <li>
+                    @if (Auth::user()->role == 'Admin')
+                    <a @if (stristr($activeSite, 'approve'))class="active" @endif href="/dashboard/approve">Produkty do zatwierdzenia</a>
+                    @else
+                    <a @if (stristr($activeSite, 'approve'))class="active" @endif href="/dashboard/approve">Oczekujące produkty</a>
+                    @endif
                 </li>
                 <li><a @if ($activeSite=='account') class="active" @endif href="/dashboard/account">Ustawienia
                         konta</a></li>
@@ -28,7 +33,11 @@
     </nav>
     @if (strpos($activeSite, 'approve-list'))
     <section>
-        <h2 class="header-title">Produkty do zatwierdzenia</h2>
+        @if (Auth::user()->role == 'Admin')
+        <h2 class="header-title" data-aos="fade-up">Produkty do zatwierdzenia</h2>
+        @else
+        <h2 class="header-title" data-aos="fade-up">Oczekujące produkty na zatwierdzenie</h2>
+        @endif
     </section>
     @endif
 </header>

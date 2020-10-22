@@ -1,4 +1,5 @@
-const activeCategory = decodeURIComponent(window.location.pathname).replace('/catalog/', '')
+const activeCategory = decodeURIComponent(window.location.pathname).replace('/catalog/', '').replace('/catalog', '')
+console.log(activeCategory)
 if (!activeCategory == '') {
     document.querySelectorAll('.products-label a').forEach(el => {
         if (el.textContent == activeCategory) {

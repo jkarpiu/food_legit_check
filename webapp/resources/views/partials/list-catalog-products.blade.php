@@ -1,9 +1,9 @@
 <article class="catalog-products bss">
     <section class="products-label">
-        <a href="{{ url('/catalog') }}" class="list">Wszystko</a>
+        <a href="{{ url('/catalog') }}" class="product-tag" class="product-tag" data-aos="fade-up" data-aos-delay="100">Wszystko</a>
         @foreach($labels as $label)
         @if (!$loop->first)
-        <a href="{{ url('/catalog/'.$label->category) }}" class="list">{{ $label -> category }}</a>
+        <a href="{{ url('/catalog/'.$label->category) }}" class="product-tag" data-aos="fade-up" data-aos-delay="{{100 * $loop->iteration}}">{{ $label -> category }}</a>
         @endif
         @endforeach
     </section>

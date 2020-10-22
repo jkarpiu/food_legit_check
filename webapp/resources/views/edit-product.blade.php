@@ -8,7 +8,7 @@
     <form action="{{ route('editProduct') }}" method="POST" autocomplete="off" enctype="multipart/form-data">
         @csrf
         <input type="hidden" name="id" value="{{ $product -> id }}">
-        <span class="first-part">
+        <span class="first-part" data-aos="fade-up">
             <label for="name" @error('name') style="color: #a32a14" @enderror>Nazwa produktu: </label>
         <input type="text" name="name" maxlength="50" minlength="10" @error('name') class="error" placeholder="Podaj nazwę produktu" @enderror value="{{ $product -> name }}">
             <span class="barcode-box">
@@ -20,13 +20,13 @@
                 <input type="file" name="image" id="image">
             </span>
         </span>
-        <span class="second-part">
+        <span class="second-part" data-aos="fade-in" data-aos-delay="800">
             <label for="components">Składniki: </label>
             <textarea name="components" id="components">{{ $product -> components  }}</textarea>
             <label for="effects">Efekty stosowania: </label>
             <textarea name="effects" id="effects" maxlength="255">{{ $product -> effects  }}</textarea>
         </span>
-        <span class="third-part">
+        <span class="third-part" data-aos="fade-up" data-aos-delay="1200">
             <label for="category">Kategoria: </label>
             <select name="categories" id="categories">
                 <option value="Alkohol" @if ($product -> category == 'Alkohol') selected @endif>Alkohol</option>
@@ -54,7 +54,9 @@
             <input type="text" name="price" @error('price') class="error" placeholder="Podaj cenę" @enderror minlength="4" maxlength="9" value={{ $product -> price }}>
         </span>
         @csrf
-        <input type="submit" value="Zedytuj">
+        <div data-aos="fade-up" data-aos-delay="1600">
+            <input type="submit" value="Zedytuj">
+        </div>
     </form>
 </article>
 @endsection

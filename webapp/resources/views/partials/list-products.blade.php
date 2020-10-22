@@ -18,13 +18,13 @@
     @endif
     @endforeach
     @else
-    <article class="empty-box">
+    <article class="empty-box" data-aos="fade-up">
         <h2>Brak produktów o podanej frazie.</h2>
         <h3>Spróbuj wyszukać coś innnego.</h3>
     </article>
     @endif
     @else
-    <article class="empty-box">
+    <article class="empty-box" data-aos="fade-up">
         <h2>Wpisz frazę, aby znaleźć produkt, który cię interesuje.</h2>
     </article>
     @endif
