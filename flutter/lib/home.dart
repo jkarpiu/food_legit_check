@@ -8,6 +8,7 @@ import 'package:barcode_food_scaner/apiController.dart';
 import 'package:barcode_food_scaner/userLibrary.dart' as user;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:barcode_food_scaner/searchScreen.dart';
+import 'historyWidget.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -128,46 +129,11 @@ class _HomeState extends State<Home> {
                                       Icon(Icons.arrow_forward)
                                     ])),
                           ),
-                          onPressed: () => {print("test")},
+                          onPressed: () =>
+                              {Navigator.pushNamed(context, "/stats")},
                         )
                       ])),
-                  Card(
-                      elevation: 4,
-                      child: Flex(direction: Axis.vertical, children: [
-                        SizedBox(
-                            height: 225,
-                            child: ListView.builder(
-                                physics: NeverScrollableScrollPhysics(),
-                                itemCount: 4,
-                                itemBuilder: (BuildContext ctxt, int index) {
-                                  return ListTile(
-                                    title: Text(
-                                        "produkt " + (index + 1).toString()),
-                                    trailing: Text("2012-21-12"),
-                                  );
-                                })),
-                        Divider(
-                          height: 1,
-                          thickness: 1,
-                          indent: 30,
-                          endIndent: 30,
-                        ),
-                        FlatButton(
-                          padding: EdgeInsets.zero,
-                          child: ListTile(
-                            contentPadding: EdgeInsets.zero,
-                            trailing: SizedBox(
-                                width: 125,
-                                child: Flex(
-                                    direction: Axis.horizontal,
-                                    children: [
-                                      Text("Pokaż więcej"),
-                                      Icon(Icons.arrow_forward)
-                                    ])),
-                          ),
-                          onPressed: () => {print("test")},
-                        )
-                      ])),
+                  HistoryWidget(),
                   Card(
                     elevation: 4,
                     child: ListTile(

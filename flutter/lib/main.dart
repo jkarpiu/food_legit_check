@@ -7,6 +7,7 @@ import 'package:barcode_food_scaner/settings.dart';
 import 'profile.dart';
 import 'loginPage.dart';
 import 'package:barcode_food_scaner/registerPage.dart';
+import 'package:barcode_food_scaner/historyPage.dart';
 
 void main() => runApp(MaterialApp(
       theme: ThemeData(
@@ -16,6 +17,7 @@ void main() => runApp(MaterialApp(
         '/': (context) => Home(),
         "/add": (context) => Add(),
         "/stats": (context) => Stats(),
+        "/history": (context) => HistoryScreen(),
         "/settings": (context) => Settings(),
         "/settings/profile": (context) => ProfileSettings(),
         "/login": (context) => LoginPage(),

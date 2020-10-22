@@ -6,11 +6,14 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Product;
 use App\userQueries;
+use App\User;
 
 class apiController extends Controller
 {
     public function get(Request $request)
     {
+        Auth::shouldUse('api');
+
         if ($_REQUEST['id'] == null)
             $product = Product::where('barcode', $_REQUEST['barcode'])->get();
         else
@@ -18,9 +21,9 @@ class apiController extends Controller
 
         if ($product == null)
             return response()->json(404);
-
+        $user = User::where('id', Auth::id())->get();
         if (Auth::user()) {
-            userQueries::create([
+            $user[0]->queries()->create([
                 'user_id' => Auth::id(),
                 'product_id' => $product[0]['id'],
                 'eaten' => false
@@ -35,10 +38,12 @@ class apiController extends Controller
         );
     }
 
-    public function productsHistory(Request $request) {
+    public function productsHistory(Request $request)
+    {
         $offset = $request['offset'] != null ? $request['offset'] : 0;
         $limit = $request['limit'];
-        return response() -> json(userQueries::where('user_id', Auth::id())->skip($offset)->take(null)->get());
+        // return response() -> json(userQueries::first() ->with('product')->get()); 
+        return response()->json(userQueries::where('user_id', Auth::id())->orderBy('id', 'desc')->skip($offset)->take($limit)->with('product')->get());
     }
 
     public function test()

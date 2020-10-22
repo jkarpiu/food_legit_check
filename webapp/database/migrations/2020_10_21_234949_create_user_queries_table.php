@@ -15,8 +15,8 @@ class CreateUserQueriesTable extends Migration
     {
         Schema::create('user_queries', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('product_id');
+            $table->integer('user_id');
+            $table->integer('product_id');
             $table->boolean('eaten');
             $table->timestamps();
         });

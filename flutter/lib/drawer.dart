@@ -58,9 +58,8 @@ class AppDrawer extends StatelessWidget {
             title: Text('Historia'),
             leading: Icon(Icons.history),
             onTap: () {
-              // Update the state of the app.
-              // ...
               Navigator.pop(context);
+              Navigator.pushNamed(context, "/history");
             },
           ),
           ListTile(

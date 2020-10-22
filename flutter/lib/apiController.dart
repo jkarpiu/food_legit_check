@@ -74,6 +74,18 @@ class Api {
     }
   }
 
+  getHistory(int offset, int limit) async {
+    _params() {
+      return {"offset": offset.toString(), "limit": limit.toString()};
+    }
+
+    ;
+    String fullUrl = Uri.http(adress, "/api/get_history", _params()).toString();
+    var data = await http.get(fullUrl, headers: await _setHeaders(true));
+    print(data.body);
+    return jsonDecode(data.body);
+  }
+
   logout() async {
     String fullUrl = "http://" + adress + "/api/auth/logout";
     SharedPreferences localStorage = await SharedPreferences.getInstance();
