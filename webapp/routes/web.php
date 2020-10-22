@@ -17,31 +17,50 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::view('/', 'home');
-Route::get('/add_product', 'ApprovementsController@add');
+Route::get('/add_product', 'ApprovementsController@addSite')->name('add-product');
 Route::view('/our_app', 'our-app');
 
 Route::get('/catalog', 'ProductsController@index');
 Route::get('/catalog/{q}', 'ProductsController@categories');
 Route::get('/product/{id}', 'ProductsController@find');
 Route::get('/product/{id?}/delete', function ($id = null) {
-    return view('confirm_delete_product');
+    if (Auth::user()->role == 'Admin') {
+        return view('confirm_delete_product');
+    } else {
+        return redirect('/catalog');
+    }
 });
 Route::get('/product/{id?}/delete/confirmed', 'ProductsController@delete')->name('deleteProduct');
 
 Route::get('dashboard/approve', 'ApprovementsController@index');
 Route::get('dashboard/approve/{id}/edit', function($id) {
     $product = ToAddProduct::find($id);
-    return view('edit-approvement')->with('product', $product);
+    if (Auth::user() -> role != 'Admin') {
+        return redirect('/dashboard/approve');
+    } else {
+        return view('edit-approvement')->with('product', $product);
+    }
 });
 
 Route::get('product/{id}/edit', function($id) {
     $product = Product::find($id);
-    return view('edit-product')->with('product', $product);
+    if (Auth::user() -> role != 'Admin') {
+        return redirect('/product/'.$id);
+    } else {
+        return view('edit-product')->with('product', $product);
+    }
 });
 
 Route::post('edit-approvement', 'ApprovementsController@edit')->name('editApprovement');
 Route::post('edit-product', 'ProductsController@edit')->name('editProduct');
-Route::get('dashboard/approve/{id}/delete', 'ApprovementsController@delete');
+Route::get('dashboard/approve/{id}/delete', function($id = null) {
+    if (ToAddProduct::find($id)->user->id == Auth::user()->id) {
+        return view('confirm_delete_approvement');
+    } else {
+        return redirect('/dashboard/approve');
+    }
+});
+Route::get('dashboard/approve/{id}/delete/confirmed', 'ApprovementsController@delete');
 Route::get('dashboard/approve/{id}', 'ApprovementsController@find');
 
 Route::get('dashboard/account', 'UserController@options');
@@ -53,7 +72,7 @@ Route::get('/dashboard/account/change-password', 'ChangePasswordController@index
 Route::post('change-password', 'ChangePasswordController@store')->name('change.password');
 
 Route::get('/search', 'ProductsController@search');
-Route::post('/add', 'ProductsController@add')->name('uploadfile');
+Route::post('/add', 'ApprovementsController@add')->name('uploadfile');
 Route::post('/dashboard/save', 'UserController@saveNote')->name('saveNote');
 
 // Route::get('/catalog', 'ProductsController@load_data');

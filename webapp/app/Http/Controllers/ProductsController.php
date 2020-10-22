@@ -3,11 +3,23 @@
 namespace App\Http\Controllers;
 use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class ProductsController extends Controller
 {
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['index', 'find', 'search', 'categories']]);
+    }
+
     public function index() {
         $products = Product::orderBy('name', 'asc')->paginate(100);
         $labels = Product::orderBy('category', 'asc')->get()->unique('category');
@@ -57,7 +69,9 @@ class ProductsController extends Controller
     }
 
     public function delete($id) {
-        Product::find($id)->delete();
+        if (Auth::user()->role == 'Admin') {
+            Product::find($id)->delete();
+        }
         return redirect('/catalog');
     }
 

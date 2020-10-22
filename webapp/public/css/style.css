@@ -278,7 +278,7 @@ article.activity-center section.user-section h3 {
 article.activity-center section.user-section form textarea {
     width: 360px;
     height: 120px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     font-size: 1em;
     resize: none;
 }
@@ -421,6 +421,28 @@ article.activity-center div.emptyApprovements {
 article.activity-center div.emptyApprovements h3 {
     margin-top: 10px;
     font-size: 1.2em;
+}
+
+article.activity-center div.emptyApprovements a {
+    display: block;
+    font-size: 1.1em;
+    width: 300px;
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 2px solid #109137;
+    text-transform: uppercase;
+    text-align: center;
+    color: #109137;
+    cursor: pointer;
+    transition: .6s background-color, .6s color;
+}
+
+article.activity-center div.emptyApprovements a:hover {
+    background-color: #109137;
+    color: #fff;
+    outline: none;
 }
 
 article.product-approve {
@@ -1133,6 +1155,28 @@ article.list-products div.emptyApprovements h3 {
     font-size: 1.2em;
 }
 
+article.list-products div.emptyApprovements a {
+    display: block;
+    font-size: 1.1em;
+    width: 300px;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 2px solid #109137;
+    text-transform: uppercase;
+    color: #109137;
+    cursor: pointer;
+    transition: .6s background-color, .6s color;
+}
+
+article.list-products div.emptyApprovements a:hover {
+    background-color: #109137;
+    color: #fff;
+    outline: none;
+}
+
 article.list-products .single-product-outer {
     display: block;
     width: 25%;
@@ -1703,6 +1747,9 @@ footer .copyright {
     article.list-products div.emptyApprovements {
         padding: 50px 30px;
     }
+    div.emptyApprovements a {
+        width: 250px;
+    }
 }
 
 @media (max-width: 450px) and (max-height: 850px) {
@@ -1799,12 +1846,15 @@ footer .copyright {
         max-width: 280px;
     }
     article.list-products div.emptyApprovements {
-        padding: 50px 20px;
+        padding: 50px 10px;
     }
     article.list-products div.emptyApprovements h3 {
         font-size: 1em;
     }
     article.list-products div.emptyApprovements h4 {
+        font-size: 1em;
+    }
+    div.emptyApprovements a {
         font-size: 1em;
     }
 }
@@ -1830,6 +1880,9 @@ footer .copyright {
     header.register,
     header.login {
         height: 130vh;
+    }
+    div.emptyApprovements a {
+        width: 200px;
     }
 }
 

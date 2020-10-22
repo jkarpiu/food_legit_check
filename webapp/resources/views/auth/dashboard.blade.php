@@ -6,13 +6,13 @@
 @section('content')
 <article class="activity-center @if (count($products) > 0)founded @endif">
     <section class="user-section">
-    <img data-aos='fade-right' src="{{ Auth::user()->avatar}}"
-            alt="">
+        <img data-aos='fade-right' src="{{ Auth::user()->avatar}}" alt="">
         <h2 data-aos='fade-right' data-aos-delay='400'>Cześć, {{ Auth::user()->name }}!</h2>
         <h3 data-aos='fade-right' data-aos-delay='800'>Poniżej znajduje się twój osobisty notatnik.</h3>
         <form action="{{ route('saveNote') }}" method="POST">
             @csrf
-            <textarea name="notes" data-aos='fade-right' data-aos-delay="1200" maxlength="150"> {{ Auth::user()->note }} </textarea>
+            <textarea name="notes" data-aos='fade-right' data-aos-delay="1200"
+                maxlength="150">{{ Auth::user()->note }}</textarea>
             <div class="button" data-aos='fade-right' data-aos-delay='1600'>
                 <input type="submit" value="Zapisz">
             </div>
@@ -48,13 +48,27 @@
             @endforeach
         </section>
         {{-- <span class="other-count">+5 więcej</span> --}}
+        @if (count(Auth::user()->approvements) > 3)
         <div data-aos='fade-up' data-aos-delay="1600">
             <a href="{{url('/dashboard/approve')}}" class="showAll">Zobacz wszystkie</a>
         </div>
+        @endif
         @else
-        <div class="emptyApprovements" data-aos='fade-up' data-aos-delay="400">
+        <div class="emptyApprovements">
+            @if (Auth::user()->role == 'Admin')
+            <div data-aos='fade-up' data-aos-delay="400">
             <h3>Brak nowych produktów do zatwierdzenia.</h3>
             <h4>Jak tylko pojawi się nowy produkt to zostaniesz o tym poinformowany!</h4>
+            </div>
+            @else
+            <div data-aos='fade-up' data-aos-delay="400">
+            <h3>Brak czekujących produktów na zatwierdzenie.</h3>
+            <h4>Jak tylko dodasz nowy produkt pojawi on się tutaj!</h4>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="800">
+                <a href="{{ route('add-product') }}">Dodaj nowy produkt</a>
+            </div>
+            @endif
         </div>
         @endif
     </section>

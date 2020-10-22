@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\ToAddProduct;
-
+use Illuminate\Support\Facades\Auth;
 class DashboardController extends Controller
 {
     /**
@@ -22,9 +22,12 @@ class DashboardController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
-    {
-        $products = ToAddProduct::orderBy('created_at', 'desc')->paginate(3);
+    public function index() {
+        if (Auth::user()->role == 'Admin') {
+            $products = ToAddProduct::orderBy('created_at', 'desc')->paginate(3);
+        } else {
+            $products = Auth::user()->approvements()->paginate(3);
+        }
         return view('auth.dashboard')->with('products', $products);
     }
 }
