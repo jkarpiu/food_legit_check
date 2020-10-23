@@ -90,6 +90,19 @@ form.login-box {
     min-width: 400px;
 }
 
+header.resent-password form.login-box {
+    height: 80%;
+}
+
+header.resent-password .success {
+    height: 50%;
+}
+
+header.resent-password form.login-box button,
+header.reset-password form.login-box button {
+    margin-top: 30px!important;
+}
+
 section.verify-box {
     text-align: center;
     grid-row: 2;
@@ -124,6 +137,7 @@ section.errors-box ul li::before {
 }
 
 section.login-section form.login-box,
+section.resent form.login-box,
 section.errors-box,
 section.verify-box {
     padding: 30px 40px;
@@ -134,6 +148,7 @@ section.verify-box {
 }
 
 section.login-section form.login-box h3,
+section.resent form.login-box h3,
 section.errors-box h3,
 section.verify-box h3 {
     text-align: center;
@@ -179,7 +194,8 @@ section.login-section form.login-box label[for="remember"] {
 }
 
 section.login-section form.login-box button,
-section.verify-box form button {
+section.verify-box form button,
+article.report-product form button {
     display: block;
     font-size: 1.1em;
     margin-top: 5px;
@@ -202,7 +218,10 @@ section.login-section form.login-box button:active,
 section.login-section form.login-box button:focus,
 section.verify-box form button:hover,
 section.verify-box form button:active,
-section.verify-box form button:focus {
+section.verify-box form button:focus,
+article.report-product form button:hover,
+article.report-product form button:active,
+article.report-product form button:focus {
     background-color: #109137;
     color: #fff;
     outline: none;
@@ -1324,6 +1343,39 @@ article.single-product-site .right-part h3 .components {
     text-transform: lowercase;
 }
 
+article.report-product {
+    display: flex;
+    width: 100%;
+    height: calc(90vh - 58px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+article.report-product h2 {
+    color: #109137;
+    display: block;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+article.report-product form textarea {
+    width: 360px;
+    height: 120px;
+    padding: 15px 20px;
+    font-size: 1em;
+    resize: none;
+}
+
+article.report-product form button {
+    margin: 20px auto;
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1649,9 +1701,16 @@ footer .copyright {
         grid-row: 3;
         grid-column: 2;
     }
-    header.admin section h2.header-title {
+    header.admin section h2.header-title,
+    article.report-product h2 {
         font-size: 1.8em;
         padding: 0 50px;
+    }
+    header.resent-password form.login-box {
+        height: 100%;
+    }
+    header.resent-password .success {
+        height: 90%;
     }
 }
 
@@ -1708,7 +1767,8 @@ footer .copyright {
     article.list-products .single-product-outer .single-product-inner {
         padding: 5px 15px 20px 15px;
     }
-    article.add-product-section textarea {
+    article.add-product-section textarea,
+    article.report-product form textarea {
         max-width: 90%;
     }
     article.add-product-section {
@@ -1843,12 +1903,19 @@ footer .copyright {
     article.user-options section.user-container {
         padding: 0 10px;
     }
-    header.admin section h2.header-title {
+    header.admin section h2.header-title,
+    article.report-product h2 {
         font-size: 1.5em;
         padding: 0 20px;
     }
     section.verify-box {
         margin: 0 20px;
+    }
+    article.report-product form {
+        width: 100%;
+    }
+    article.report-product form textarea {
+        width: 80%;
     }
 }
 

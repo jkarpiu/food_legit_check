@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductsController;
 use App\ToAddProduct;
 use App\Product;
 use Illuminate\Support\Facades\Route;
@@ -35,6 +36,8 @@ Route::get('/product/{id?}/delete', function ($id = null) {
     }
 });
 Route::get('/product/{id?}/delete/confirmed', 'ProductsController@delete')->name('deleteProduct');
+Route::get('/product/{id}/report', 'ProductsController@reportSite');
+Route::post('report', 'ProductsController@report')->name('report');
 
 Route::get('dashboard/approve', 'ApprovementsController@index');
 Route::get('dashboard/approve/{id}/edit', function($id) {
@@ -64,6 +67,7 @@ Route::get('product/{id}/edit', function($id) {
 });
 
 Route::post('edit-approvement', 'ApprovementsController@edit')->name('editApprovement');
+Route::get('dashboard/approve/{id}/add', 'ProductsController@add')->name('approve');
 Route::post('edit-product', 'ProductsController@edit')->name('editProduct');
 Route::get('dashboard/approve/{id}/delete', function($id = null) {
     if (Auth::user()) {

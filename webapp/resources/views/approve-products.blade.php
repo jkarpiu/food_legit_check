@@ -16,12 +16,7 @@
             </div>
             <div class="single-product-inner">
                 <h3 class="toap">{{ $item -> name }}</h3>
-                <h5>Kod kreskowy: {{ $item -> barcode ?? 'Brak'}}</h5>
-                <h4>Cena: {{ $item -> price}} zł</h4>
-                <h6>Czas dodania:
-                    @if ($item -> created_at)
-                    <span>{{$item -> created_at -> format('d M Y')}}&nbsp;{{$item -> created_at -> format('H:i:s')}}</span>
-                    @endif</h6>
+                <h4>Zatwierdzone: @if ($item -> isApproved == 0) <span style="color:red;">NIE</span>@else <span style="color: green;">TAK</span>@endif</h4>
             </div>
         </a>
     </section>
