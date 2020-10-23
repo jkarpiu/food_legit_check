@@ -59,19 +59,14 @@ header.approve-list {
 }
 
 header.login,
-header.register {
-    z-index: 100000;
+header.register,
+header.verify {
     width: 100%;
     height: 100vh;
     background: url('/img/bg-login.jpg');
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
-    background-attachment: scroll;
-}
-
-header.login nav .logo,
-header.register nav .logo {
-    z-index: 99999;
+    background-attachment: fixed;
 }
 
 section.login-section {
@@ -93,6 +88,13 @@ form.login-box {
     justify-content: center;
     align-items: center;
     min-width: 400px;
+}
+
+section.verify-box {
+    text-align: center;
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: 5;
 }
 
 section.errors-box {
@@ -122,7 +124,8 @@ section.errors-box ul li::before {
 }
 
 section.login-section form.login-box,
-section.errors-box {
+section.errors-box,
+section.verify-box {
     padding: 30px 40px;
     background-color: rgba(255, 255, 255, .8);
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.8);
@@ -131,7 +134,8 @@ section.errors-box {
 }
 
 section.login-section form.login-box h3,
-section.errors-box h3 {
+section.errors-box h3,
+section.verify-box h3 {
     text-align: center;
     font-size: 1.5em;
     margin: 10px 0px 20px 0px;
@@ -174,7 +178,8 @@ section.login-section form.login-box label[for="remember"] {
     margin-right: 5px;
 }
 
-section.login-section form.login-box button {
+section.login-section form.login-box button,
+section.verify-box form button {
     display: block;
     font-size: 1.1em;
     margin-top: 5px;
@@ -187,13 +192,17 @@ section.login-section form.login-box button {
     transition: .6s background-color, .6s color;
 }
 
-section.login-section form.login-box.register button {
+section.login-section form.login-box.register button,
+section.verify-box form button {
     margin-top: 15px;
 }
 
 section.login-section form.login-box button:hover,
 section.login-section form.login-box button:active,
-section.login-section form.login-box button:focus {
+section.login-section form.login-box button:focus,
+section.verify-box form button:hover,
+section.verify-box form button:active,
+section.verify-box form button:focus {
     background-color: #109137;
     color: #fff;
     outline: none;
@@ -218,6 +227,26 @@ section.login-section form.login-box a.new_account:hover,
 section.login-section form.login-box a.already:hover {
     color: #0e7e30;
     text-decoration: underline;
+}
+
+section.verify-box h3 {
+    margin-bottom: 60px;
+}
+
+section.verify-box h4 {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+section.verify-box h5 {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+section.verify-box form button {
+    margin: 15px auto;
 }
 
 header.admin {
@@ -1605,6 +1634,13 @@ footer .copyright {
         grid-row: 2;
         grid-column: 2;
     }
+    section.verify-box {
+        display: grid;
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 50px;
+    }
     section.errors-box {
         min-width: 350px;
         margin: 0;
@@ -1734,6 +1770,14 @@ footer .copyright {
     article.user-options {
         height: 100vh;
     }
+    section.verify-box {
+        margin: 0 40px;
+        font-size: 14px;
+        padding: 30px 20px;
+    }
+    section.verify-box h3 {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1802,6 +1846,9 @@ footer .copyright {
     header.admin section h2.header-title {
         font-size: 1.5em;
         padding: 0 20px;
+    }
+    section.verify-box {
+        margin: 0 20px;
     }
 }
 

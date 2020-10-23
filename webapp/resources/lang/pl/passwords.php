@@ -14,7 +14,7 @@ return [
     */
 
     'reset' => 'Twoje hasło zostało zresetowane!',
-    'sent' => 'Wysłaliśmy potwierdzenie utworzenia konta na twój adres email!',
+    'sent' => 'Wysłaliśmy prośbę zmiany hasła na twój adres email!',
     'throttled' => 'Proszę poczekaj, zanim spróbujesz ponownie.',
     'token' => 'Kod uwierzytelniający zmianę hasła jest niepoprawny',
     'user' => "Nie możemy znaleźć twój adres email w bazie.",

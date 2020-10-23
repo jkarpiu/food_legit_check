@@ -22,7 +22,15 @@
                 <li><a class="active" href="{{ route('register') }}">Rejestracja</a></li>
                 @endif
                 @else
+                @if ($activeSite == 'verify')
+                <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">{{ __('Wyloguj') }}</a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form></li>
+                @else
                 <li><a href="{{ route('dashboard') }}">Konto</a></li>
+                @endif
                 @endguest
             </ul>
         </div>
@@ -54,7 +62,7 @@
             </button>
             @if (Route::has('password.request'))
             <a class="remember" href="{{ route('password.request') }}">
-                {{ __('Przypomnij hasło')}}
+                {{ __('Zresetuj hasło')}}
             </a>
             @endif
             <a class="new_account" href="{{ route('register') }}">
@@ -105,6 +113,21 @@
                     </ul>
                 </section>
                 @endif
+    </section>
+    @endif
+    @if ($activeSite == 'verify')
+    <section class="login-section">
+        <section class="verify-box">
+            <h3>Weryfikacja adresu email</h3>
+            @if (session('resent'))
+            <h4>Na twój adres email został właśnie wysłany link aktywacyjny.</h4>
+            @endif
+            <h5>Sprawdź swoją skrzynkę email zanim będziesz kontunuował.</h5>
+            <form method="POST" action="{{ route('verification.resend') }}">
+                @csrf
+                <button type="submit">Wyślij ponownie</button>
+            </form>
+        </section>
     </section>
     @endif
 </header>
