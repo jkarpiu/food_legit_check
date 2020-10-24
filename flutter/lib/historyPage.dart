@@ -41,10 +41,10 @@ class _HistoryScreenState extends State<HistoryScreen> {
                           child: Container(
                         padding: EdgeInsets.fromLTRB(2, 2, 2, 2),
                         child: ListTile(
-                          leading: Text(_data[index]['product']['category']),
                           trailing:
                               Text(_data[index]['created_at'].substring(0, 10)),
                           title: Text(_data[index]['product']['name']),
+                          subtitle: Text(_data[index]['product']['category']),
                         ),
                       )));
                 }),

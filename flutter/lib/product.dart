@@ -17,6 +17,7 @@ class _ProductState extends State<Product> {
   var _product;
 
   loadData() async {
+    print("test");
     _product = await Api().getProduct(widget.content, widget.byId);
     setState(() {
       _isLoading = false;

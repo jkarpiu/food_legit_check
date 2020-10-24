@@ -24,10 +24,12 @@ class _HomeState extends State<Home> {
       Navigator.pushNamedAndRemoveUntil(context, "/login", (r) => false);
   }
 
+  @override
   final searchFieldController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     userdata();
+    print(user.userData);
     return Scaffold(
         appBar: new AppBar(
           title: Align(

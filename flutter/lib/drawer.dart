@@ -69,6 +69,7 @@ class AppDrawer extends StatelessWidget {
               // Update the state of the app.
               // ...
               Navigator.pop(context);
+              Navigator.pushNamed(context, '/catalog');
             },
           ),
           Divider(

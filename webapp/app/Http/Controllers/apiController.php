@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Product;
 use App\userQueries;
 use App\User;
+use Mockery\Undefined;
 
 class apiController extends Controller
 {
@@ -44,6 +45,19 @@ class apiController extends Controller
         $limit = $request['limit'];
         // return response() -> json(userQueries::first() ->with('product')->get()); 
         return response()->json(userQueries::where('user_id', Auth::id())->orderBy('id', 'desc')->skip($offset)->take($limit)->with('product')->get());
+    }
+
+    public function catalog(Request $request)
+    {
+        $offset = $request['offset'] != null ? $request['offset'] : 0;
+        $limit = $request['limit'];
+        $category = $request['category'];
+        if ($category) {
+            $response = Product::where('category', $category)->orderBy('name', 'asc')->skip($offset)->take($limit)->get();
+        } else {
+            $response = Product::orderBy('name', 'asc')->skip($offset)->take($limit)->get();
+        }
+        return response()->json($response);
     }
 
     public function test()

@@ -133,7 +133,7 @@ class _LoginPageState extends State<LoginPage> {
                               onPressed: () async {
                                 SharedPreferences localStorage =
                                     await SharedPreferences.getInstance();
-                                localStorage.setBool(
+                                await localStorage.setBool(
                                     "disableLogOnStartup", true);
                                 Navigator.pushNamed(context, "/");
                               },
