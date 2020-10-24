@@ -50,8 +50,10 @@
                 <option value="Zdrowa żywność" @if ($product -> category == 'Zdrowa żywność') selected @endif>Zdrowa żywność</option>
                 <option value="Żywność dla dzieci" @if ($product -> category == 'Źywność dla dzieci') selected @endif>Żywność dla dzieci</option>
             </select>
+            <span class="price">
             <label for="price" @error('price') style="color: #a32a14" @enderror>Cena: </label>
             <input type="text" name="price" @error('price') class="error" placeholder="Podaj cenę" @enderror minlength="4" maxlength="9" value={{ $product -> price }}>
+            </span>
         </span>
         @csrf
         <div data-aos="fade-up" data-aos-delay="1600">

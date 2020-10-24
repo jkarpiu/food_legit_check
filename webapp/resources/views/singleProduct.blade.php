@@ -16,7 +16,7 @@
         <h3  data-aos="fade-up" data-aos-delay="2000">Składniki: <span class="components">{{ $product -> components}}</span></h3>
         @endif
         @auth
-            @if (Auth::user()->role == 'Admin')
+            @if (Auth::user()->role == 'Administrator')
             <section class="operations">
                 <a data-aos="fade-up" data-aos-delay="2200" href="{{ url('/product/'.$product-> id.'/report') }}" class="back">Zgłoś</a>
                 <a  data-aos="fade-up" data-aos-delay="2400" href="{{ url('/product/'.$product-> id.'/edit') }}" class="edit">Edytuj</a>

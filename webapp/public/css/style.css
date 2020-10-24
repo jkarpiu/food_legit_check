@@ -15,6 +15,24 @@ body {
     font-size: 16px;
 }
 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #109137;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0e7e30;
+}
+
 header.home {
     width: 100%;
     height: 40vh;
@@ -38,15 +56,6 @@ header.catalog {
     height: 40vh;
     background: url('/img/bg-catalog.jpg');
     background-position: center;
-    background-size: cover;
-    background-attachment: scroll;
-}
-
-header.our-app {
-    width: 100%;
-    height: 40vh;
-    background: url('/img/bg-our-app.jpg');
-    background-position: 0% 60%;
     background-size: cover;
     background-attachment: scroll;
 }
@@ -530,6 +539,15 @@ section.operations a {
     transition: .6s background-color;
 }
 
+section.operations a.undo {
+    margin-left: 0;
+    background-color: #ca9926;
+}
+
+section.operations a.undo:hover {
+    background-color: #b18829;
+}
+
 section.operations a.approve {
     margin-left: 0;
     background-color: #109137;
@@ -561,10 +579,6 @@ section.operations a.back {
 
 section.operations a.back:hover {
     background-color: #a3a116;
-}
-
-.toap {
-    word-break: break-all;
 }
 
 article.products-to-approve .single-product-outer .single-product-inner h6 {
@@ -637,8 +651,7 @@ article.add-product-section {
 }
 
 article.product {
-    margin: 0;
-    padding: 200px;
+    margin: 200px 0;
 }
 
 article.product h2 {
@@ -783,6 +796,24 @@ article.add-success {
     text-align: center;
 }
 
+article.add-success.rate-page {
+    height: calc(80vh - 58px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+article.add-success img {
+    width: 128px;
+    border-radius: 50%;
+    margin-bottom: 0px;
+}
+
+article.add-success h2.rate {
+    margin-top: 10px;
+}
+
 article.add-success h2 {
     margin-top: 50px;
     font-size: 3em;
@@ -917,7 +948,8 @@ article.user-options .user-form input[type="email"] {
     border-bottom: 1px solid #888;
 }
 
-article.user-options .user-form button {
+article.user-options .user-form button,
+article.mobile-app section.rate-app form button {
     display: block;
     font-size: 1.1em;
     margin: 30px auto;
@@ -932,7 +964,10 @@ article.user-options .user-form button {
 
 article.user-options .user-form button:hover,
 article.user-options .user-form button:active,
-article.user-options .user-form button:focus {
+article.user-options .user-form button:focus,
+article.mobile-app section.rate-app form button:hover,
+article.mobile-app section.rate-app form button:active,
+article.mobile-app section.rate-app form button:focus {
     background-color: #109137;
     color: #fff;
     outline: none;
@@ -955,6 +990,108 @@ article.user-options ul li::before {
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+}
+
+article.mobile-app {
+    width: 100%;
+    height: calc(100vh - 58px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article.mobile-app section {
+    text-align: center;
+    width: 33%;
+}
+
+article.mobile-app section h2 {
+    color: #109137;
+    display: block;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+article.mobile-app section.download-app img {
+    margin: 30px auto;
+    width: 20%;
+    min-width: 96px;
+    transition: border-radius .5s, box-shadow 1s;
+}
+
+article.mobile-app section.download-app img:hover {
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(16, 145, 55, 0.5);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(16, 145, 55, 0.5);
+    box-shadow: 0px 0px 15px 3px rgba(16, 145, 55, 0.5);
+    cursor: pointer;
+}
+
+article.mobile-app section.gallery img {
+    margin-top: 0px;
+    width: 90%;
+    min-width: 256px;
+}
+
+article.mobile-app section.rate-app .rating {
+    margin-top: 30px;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+}
+
+article.mobile-app section.rate-app .rating input {
+    display: none;
+}
+
+article.mobile-app section.rate-app .rating label {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+}
+
+article.mobile-app section.rate-app .rating label:before {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: #10101010;
+}
+
+article.mobile-app section.rate-app .rating label:after {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    color: #e9df56;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+article.mobile-app section.rate-app .rating label:hover:after,
+article.mobile-app section.rate-app .rating label:hover~label:after,
+article.mobile-app section.rate-app .rating input:checked~label:after {
+    opacity: 1;
+}
+
+article.mobile-app section.rate-app form textarea {
+    margin-top: 20px;
+    height: 180px!important;
+}
+
+article.mobile-app section.rate-app form button {
+    margin-top: 20px;
+}
+
+article.mobile-app section.rate-app form button.off {
+    opacity: .5;
 }
 
 nav {
@@ -1364,7 +1501,8 @@ article.report-product h2 {
     margin-bottom: 50px;
 }
 
-article.report-product form textarea {
+article.report-product form textarea,
+article.mobile-app section.rate-app form textarea {
     width: 360px;
     height: 120px;
     padding: 15px 20px;
@@ -1485,6 +1623,9 @@ footer .copyright {
     article.activity-center .single-product-outer .single-product-inner {
         padding: 10px 30px 30px 30px;
     }
+    article.mobile-app section.rate-app form textarea {
+        width: 320px;
+    }
 }
 
 @media (max-width: 1320px) {
@@ -1534,6 +1675,10 @@ footer .copyright {
         text-align: center!important;
         margin-top: 50px;
     }
+    article.mobile-app section.rate-app form textarea {
+        width: 280px;
+        height: 160px!important;
+    }
 }
 
 @media (max-width: 1150px) {
@@ -1573,6 +1718,15 @@ footer .copyright {
     article.add-product-section form span.first-part input[type="file"] {
         margin-top: 10px;
     }
+    article.add-product-section form span.first-part input,
+    article.add-product-section form span.first-part input {
+        margin-right: 0!important;
+        margin-left: 0!important;
+    }
+    article.add-product-section form span.second-part label {
+        margin-right: 0!important;
+        margin-left: 0!important;
+    }
     article.add-product-section form span.first-part label {
         display: block;
         margin: 15px 0px;
@@ -1598,6 +1752,23 @@ footer .copyright {
     }
     article.activity-center.founded .new-products-to-approve {
         padding: 0 50px;
+    }
+    article.mobile-app {
+        height: calc(120vh - 56px);
+        font-size: 14px;
+        flex-direction: column;
+        padding: 100px 30px;
+    }
+    article.mobile-app section {
+        width: 50%;
+        margin-top: 40px;
+    }
+    article.mobile-app section:first-child {
+        margin-top: 0;
+    }
+    article.mobile-app section.rate-app form textarea {
+        width: 260px;
+        height: 140px!important;
     }
 }
 
@@ -1712,6 +1883,16 @@ footer .copyright {
     header.resent-password .success {
         height: 90%;
     }
+    article.mobile-app {
+        height: calc(130vh - 44px);
+        padding: 0px 20px;
+    }
+    article.mobile-app section {
+        width: 60%;
+    }
+    article.mobile-app section.rate-app form textarea {
+        width: 280px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -1724,6 +1905,13 @@ footer .copyright {
     }
     article.user-options section.user-container {
         padding: 0 50px;
+    }
+    article.product form span.price {
+        display: block;
+        margin-top: 30px;
+    }
+    article.add-product-section form input[type="submit"] {
+        margin-top: 30px;
     }
 }
 
@@ -1760,6 +1948,13 @@ footer .copyright {
     article.activity-center .approvement-list {
         flex-direction: column;
         padding: 0 10px;
+    }
+    article.mobile-app {
+        height: calc(120vh - 44px);
+        padding: 0px;
+    }
+    article.mobile-app section {
+        width: 70%;
     }
 }
 
@@ -1854,6 +2049,12 @@ footer .copyright {
     div.emptyApprovements a {
         width: 250px;
     }
+    article.mobile-app section {
+        width: 90%;
+    }
+    article.mobile-app section.rate-app form textarea {
+        width: 260px;
+    }
 }
 
 @media (max-width: 450px) and (max-height: 850px) {
@@ -1871,6 +2072,9 @@ footer .copyright {
     header.register,
     header.login {
         height: 110vh;
+    }
+    article.mobile-app {
+        height: calc(140vh - 44px);
     }
 }
 
@@ -1917,6 +2121,13 @@ footer .copyright {
     article.report-product form textarea {
         width: 80%;
     }
+    article.product form label[for="category"] {
+        display: block;
+        margin-top: 30px;
+    }
+    article.product form select {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 400px) and (max-height: 820px) {
@@ -1943,6 +2154,9 @@ footer .copyright {
     header.register,
     header.login {
         height: 130vh;
+    }
+    article.mobile-app {
+        height: calc(180vh - 44px);
     }
 }
 
@@ -1971,6 +2185,9 @@ footer .copyright {
     div.emptyApprovements a {
         font-size: 1em;
     }
+    article.mobile-app section {
+        width: 100%;
+    }
 }
 
 @media (max-width: 350px) and (max-height: 800px) {
@@ -1997,6 +2214,13 @@ footer .copyright {
     }
     div.emptyApprovements a {
         width: 200px;
+    }
+    article.mobile-app {
+        height: calc(200vh - 44px);
+        padding: 0px;
+    }
+    article.empty-box h2 {
+        margin-top: 60px;
     }
 }
 

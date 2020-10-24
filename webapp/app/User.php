@@ -45,4 +45,8 @@ class User extends Authenticatable implements MustVerifyEmail
     public function approvements() {
         return $this->hasMany('App\ToAddProduct');
     }
+
+    public function rate() {
+        return $this->hasOne('App\Rate');
+    }
 }

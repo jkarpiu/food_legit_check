@@ -16,14 +16,14 @@
             </div>
             <div class="single-product-inner">
                 <h3 class="toap">{{ $item -> name }}</h3>
-                <h4>Zatwierdzone: @if ($item -> isApproved == 0) <span style="color:red;">NIE</span>@else <span style="color: green;">TAK</span>@endif</h4>
+                <h4>Zatwierdzone: @if ($item -> is_approved == 0) <span style="color:red;">NIE</span>@else <span style="color: green;">TAK</span>@endif</h4>
             </div>
         </a>
     </section>
     @endforeach
     @else
     <div class="emptyApprovements" data-aos='fade-up' data-aos-delay="400">
-        @if (Auth::user()->role == 'Admin')
+        @if (Auth::user()->role == 'Administrator')
         <div data-aos='fade-up' data-aos-delay="800">
         <h3>Brak nowych produktów do zatwierdzenia.</h3>
         <h4>Jak tylko pojawi się nowy produkt to zostaniesz o tym poinformowany!</h4>
