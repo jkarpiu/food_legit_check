@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use App\Report;
+use App\ToAddProduct;
 
 class ProductsController extends Controller
 {
@@ -17,7 +19,7 @@ class ProductsController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['index', 'find', 'search', 'categories']]);
+        $this->middleware(['auth', 'verified'], ['except' => ['index', 'find', 'search', 'categories']]);
     }
 
     public function index() {
@@ -29,6 +31,22 @@ class ProductsController extends Controller
     public function find($id) {
         $product = Product::find($id);
         return view('singleProduct')->with('product', $product);
+    }
+
+    public function add($id) {
+        $approvement = ToAddProduct::find($id);
+        $approvement -> isApproved = True;
+        $approvement -> save();
+        $product = new Product();
+        $product -> category = $approvement -> category;
+        $product -> name = $approvement -> name;
+        $product -> barcode = $approvement -> barcode;
+        $product -> image = $approvement -> image;
+        $product -> components = $approvement -> components;
+        $product -> illness = $approvement -> effects;
+        $product -> price = $approvement -> price;
+        $product -> save();
+        return redirect('/product/'.$product -> id);
     }
 
     public function search() {
@@ -73,6 +91,20 @@ class ProductsController extends Controller
             Product::find($id)->delete();
         }
         return redirect('/catalog');
+    }
+
+    public function reportSite($id) {
+        $product_id = $id;
+        return view('report-product', compact('product_id'));
+    }
+
+    public function report(Request $req) {
+        $report = new Report;
+        $report -> user_id = Auth::user()->id;
+        $report -> product_id = $req -> product_id;
+        $report -> content = $req -> content;
+        $report -> save();
+        return redirect('/product/'.$req -> product_id);
     }
 
     // public function load_data(Request $request) {
