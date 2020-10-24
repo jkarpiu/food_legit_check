@@ -34,19 +34,23 @@ class ProductsController extends Controller
     }
 
     public function add($id) {
-        $approvement = ToAddProduct::find($id);
-        $approvement -> isApproved = True;
-        $approvement -> save();
-        $product = new Product();
-        $product -> category = $approvement -> category;
-        $product -> name = $approvement -> name;
-        $product -> barcode = $approvement -> barcode;
-        $product -> image = $approvement -> image;
-        $product -> components = $approvement -> components;
-        $product -> illness = $approvement -> effects;
-        $product -> price = $approvement -> price;
-        $product -> save();
-        return redirect('/product/'.$product -> id);
+        if (Auth::user() -> role == 'Administrator') {
+            $approvement = ToAddProduct::find($id);
+            $approvement -> is_approved = True;
+            $approvement -> save();
+            $product = new Product();
+            $product -> category = $approvement -> category;
+            $product -> name = $approvement -> name;
+            $product -> barcode = $approvement -> barcode;
+            $product -> image = $approvement -> image;
+            $product -> components = $approvement -> components;
+            $product -> illness = $approvement -> effects;
+            $product -> price = $approvement -> price;
+            $product -> save();
+            return redirect('/product/'.$product -> id);
+        } else {
+            return redirect(url()->previous());
+        }
     }
 
     public function search() {
@@ -87,7 +91,7 @@ class ProductsController extends Controller
     }
 
     public function delete($id) {
-        if (Auth::user()->role == 'Admin') {
+        if (Auth::user()->role == 'Administrator') {
             Product::find($id)->delete();
         }
         return redirect('/catalog');

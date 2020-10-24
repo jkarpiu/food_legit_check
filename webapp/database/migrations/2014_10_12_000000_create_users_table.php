@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('avatar')->default('/storage/default.jpg');
             $table->string('role')->default('Użytkownik');
             $table->mediumText('note')->nullable();
+            // $table->bigInteger('added_products')->default(0);
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

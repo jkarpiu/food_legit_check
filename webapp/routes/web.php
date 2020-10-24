@@ -26,7 +26,7 @@ Route::get('/catalog/{q}', 'ProductsController@categories');
 Route::get('/product/{id}', 'ProductsController@find');
 Route::get('/product/{id?}/delete', function ($id = null) {
     if (Auth::user()) {
-        if (Auth::user()->role == 'Admin' and Auth::user() -> email_verified_at != null) {
+        if (Auth::user()->role == 'Administrator' and Auth::user() -> email_verified_at != null) {
             return view('confirm_delete_product');
         } else {
             return redirect('/catalog');
@@ -43,7 +43,7 @@ Route::get('dashboard/approve', 'ApprovementsController@index');
 Route::get('dashboard/approve/{id}/edit', function($id) {
     if (Auth::user()) {
         $product = ToAddProduct::find($id);
-        if (Auth::user() -> role == 'Admin' and Auth::user() -> email_verified_at != null) {
+        if (Auth::user() -> role == 'Administrator' or Auth::user() -> email_verified_at != null and Auth::user()->id == $product->user->id) {
             return view('edit-approvement')->with('product', $product);
         } else {
             return redirect('/dashboard/approve');
@@ -56,7 +56,7 @@ Route::get('dashboard/approve/{id}/edit', function($id) {
 Route::get('product/{id}/edit', function($id) {
     if (Auth::user()) {
         $product = Product::find($id);
-        if (Auth::user() -> role == 'Admin' and Auth::user() -> email_verified_at != null) {
+        if (Auth::user() -> role == 'Administrator' and Auth::user() -> email_verified_at != null) {
             return view('edit-product')->with('product', $product);
         } else {
             return redirect('/product/'.$id);
@@ -66,8 +66,11 @@ Route::get('product/{id}/edit', function($id) {
     }
 });
 
+Route::post('/our_app/rate', 'RateController@add')->name('rate');
+
 Route::post('edit-approvement', 'ApprovementsController@edit')->name('editApprovement');
-Route::get('dashboard/approve/{id}/add', 'ProductsController@add')->name('approve');
+Route::get('dashboard/approve/{id}/add', 'ProductsController@add');
+Route::get('dashboard/approve/{id}/undo', 'ApprovementsController@undo');
 Route::post('edit-product', 'ProductsController@edit')->name('editProduct');
 Route::get('dashboard/approve/{id}/delete', function($id = null) {
     if (Auth::user()) {

@@ -7,6 +7,7 @@ use App\ToAddProduct;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use App\Product;
 
 class ApprovementsController extends Controller
 {
@@ -21,7 +22,7 @@ class ApprovementsController extends Controller
     }
 
     public function index() {
-        if (Auth::user()-> role == 'Admin') {
+        if (Auth::user()-> role == 'Administrator') {
             $products = ToAddProduct::orderBy('created_at', 'desc')->get();
         } else {
             $products = Auth::user()->approvements;
@@ -63,7 +64,7 @@ class ApprovementsController extends Controller
 
     public function find($id) {
             $product = ToAddProduct::find($id);
-            if (Auth::user()->role == 'Admin' or $product->user->id == Auth::user()->id) {
+            if (Auth::user()->role == 'Administrator' or $product->user->id == Auth::user()->id) {
                 return view('singleApprove', compact('product'));
             } else {
                 return redirect('/dashboard/approve');
@@ -71,8 +72,8 @@ class ApprovementsController extends Controller
     }
 
     public function delete($id) {
-        if (Auth::user() -> role == 'Admin') {
-            $product = ToAddProduct::find($id);
+        $product = ToAddProduct::find($id);
+        if (Auth::user() -> role == 'Administrator' or Auth::user() -> id == $product -> user -> id) {
             $product -> delete();
         }
         return redirect('/dashboard/approve');
@@ -105,6 +106,18 @@ class ApprovementsController extends Controller
         $product -> price = $price;
         $product -> save();
         return redirect('/dashboard/approve/'.$product -> product_id);
+    }
+
+    public function undo($id) {
+        if (Auth::user() -> role == 'Administrator') {
+            $product = ToAddProduct::find($id);
+            if ($product -> is_approved == True) {
+                $product -> is_approved = False;
+                $product -> save();
+                Product::where('barcode', $product -> barcode)->delete();
+            }
+        }
+        return redirect(url()->previous());
     }
 
 }

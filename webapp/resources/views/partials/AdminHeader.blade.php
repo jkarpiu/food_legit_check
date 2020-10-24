@@ -14,7 +14,7 @@
                 <li><a @if ($activeSite=='dashboard') class="active" @endif href="/dashboard">Panel</a>
                 </li>
                 <li>
-                    @if (Auth::user()->role == 'Admin')
+                    @if (Auth::user()->role == 'Administrator')
                     <a @if (stristr($activeSite, 'approve'))class="active" @endif href="/dashboard/approve">Produkty do zatwierdzenia</a>
                     @else
                     <a @if (stristr($activeSite, 'approve'))class="active" @endif href="/dashboard/approve">Oczekujące produkty</a>
@@ -33,7 +33,7 @@
     </nav>
     @if (strpos($activeSite, 'approve-list'))
     <section>
-        @if (Auth::user()->role == 'Admin')
+        @if (Auth::user()->role == 'Administrator')
         <h2 class="header-title" data-aos="fade-up">Produkty do zatwierdzenia</h2>
         @else
         <h2 class="header-title" data-aos="fade-up">Oczekujące produkty na zatwierdzenie</h2>

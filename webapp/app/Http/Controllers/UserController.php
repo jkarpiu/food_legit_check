@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class UserController extends Controller
 {
@@ -28,14 +29,14 @@ class UserController extends Controller
     public function edit(Request $req) {
         $req->validate([
             'name' => 'required|min:2|max:16|alpha_num',
-            'email' => 'required|email',
+            // 'email' => 'required|email',
             'image' => 'nullable|image|max:2048'
         ]);
         $user = User::find(Auth::id());
         $user->name = $req -> name;
-        $user->email = $req -> email;
+        // $user->email = $req -> email;
         if($req -> image != null) {
-            $img_name = Auth::user()->email;
+            $img_name = Str::random(30);
             $extension = $req -> image -> extension();
             $req -> image -> storeAs('/public', $img_name.".".$extension);
             $avatar = Storage::url($img_name.".".$extension);

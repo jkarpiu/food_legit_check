@@ -23,7 +23,7 @@ class DashboardController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index() {
-        if (Auth::user()->role == 'Admin') {
+        if (Auth::user()->role == 'Administrator') {
             $products = ToAddProduct::orderBy('created_at', 'desc')->paginate(3);
         } else {
             $products = Auth::user()->approvements()->paginate(3);
