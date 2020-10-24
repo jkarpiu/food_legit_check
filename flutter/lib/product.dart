@@ -30,6 +30,7 @@ class _ProductState extends State<Product> {
         duration: Duration(seconds: 3),
         mainButton: FlatButton(
             onPressed: () {
+              Navigator.pop(context);
               Navigator.pushNamed(context, '/add');
             },
             child: Text(

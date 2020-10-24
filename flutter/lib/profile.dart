@@ -38,6 +38,7 @@ class _ProfileSettingsState extends State<ProfileSettings> {
                 onPressed: () async {
                   await Api().logout();
                   Navigator.pop(context);
+                  Navigator.pushNamed(context, "/");
                 },
                 child: Text(
                   "Wyloguj się",

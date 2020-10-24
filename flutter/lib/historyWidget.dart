@@ -12,15 +12,12 @@ class HistoryWidget extends StatefulWidget {
 class _HistoryWidgetState extends State<HistoryWidget> {
   bool _isLoading = true;
   List _data;
+  bool logged = false;
   Widget build(BuildContext context) {
-    if (user.userData != null)
-      _getData();
-    else
-      setState(() {
-        _isLoading = false;
-      });
+    if (_isLoading) _getData();
     if (_isLoading) {
       return Card(
+        elevation: 4,
         child: Center(
             child: SizedBox(
                 height: 45,
@@ -32,7 +29,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
     } else {
       return Card(
           elevation: 4,
-          child: ((user.userData != null)
+          child: (logged
               ? Flex(direction: Axis.vertical, children: [
                   SizedBox(
                       height: 225,
@@ -41,12 +38,14 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                           itemCount: 4,
                           itemBuilder: (BuildContext ctxt, int index) {
                             return ListTile(
-                              title: Text(_data[index]['product']['name']
-                                      .toString()
-                                      .substring(0, 20) +
+                              title:
                                   (_data[index]['product']['name'].length > 20
-                                      ? "..."
-                                      : "")),
+                                      ? Text(_data[index]['product']['name']
+                                              .toString()
+                                              .substring(0, 20) +
+                                          "...")
+                                      : Text(_data[index]['product']['name']
+                                          .toString())),
                               trailing: Text(
                                   _data[index]['created_at'].substring(0, 10)),
                             );
@@ -85,12 +84,15 @@ class _HistoryWidgetState extends State<HistoryWidget> {
 
   _getData() async {
     await Api().getUser();
-    if (_isLoading) {
+    if (user.userData != null) {
+      logged = true;
       var response = await Api().getHistory(0, 4);
       setState(() {
         _data = response;
-        _isLoading = false;
       });
     }
+    setState(() {
+      _isLoading = false;
+    });
   }
 }

@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Product;
 use App\userQueries;
 use App\User;
+use App\Report;
 use Mockery\Undefined;
 
 class apiController extends Controller
@@ -14,7 +15,7 @@ class apiController extends Controller
     public function get(Request $request)
     {
         Auth::shouldUse('api');
-        
+
         if ($request['id'] == null)
             $product = Product::where('barcode', $request['barcode'])->get();
         else
@@ -60,6 +61,20 @@ class apiController extends Controller
             $response = Product::orderBy('name', 'asc')->skip($offset)->take($limit)->get();
         }
         return response()->json($response);
+    }
+    public function report(Request $req)
+    {
+        $report = new Report;
+        $report->user_id = Auth::user()->id;
+        $report->product_id = $req->product_id;
+        $report->content = $req->content;
+        $report->save();
+        return response()->json('success', 200);
+    }
+
+    public function categories()
+    {
+        return response()->json(Product::select('category')->orderBy('category', 'asc')->get()->unique('category'));
     }
 
     public function test()

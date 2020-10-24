@@ -5,7 +5,7 @@ import 'dart:convert';
 import 'package:barcode_food_scaner/userLibrary.dart' as user;
 
 class Api {
-  String adress = "192.168.8.149:8000";
+  String adress = user.serverIp;
   getProduct(String content, bool byId) async {
     _setParams() {
       if (byId) {
@@ -101,6 +101,17 @@ class Api {
     var data = await http.get(fullUrl, headers: await _setHeaders(false));
     print(data.statusCode);
     return jsonDecode(data.body);
+  }
+
+  report(String productId, String content) async {
+    String fullUrl = "http://" + adress + "/api/report";
+    var data = await http.post(
+      fullUrl,
+      body: jsonEncode({"product_id": productId, "content": content}),
+      headers: await _setHeaders(true),
+    );
+    print(data.body);
+    return data.statusCode;
   }
 
   logout() async {

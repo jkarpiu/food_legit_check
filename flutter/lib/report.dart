@@ -4,6 +4,8 @@ import 'package:barcode_food_scaner/defaultAppBar.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:barcode_food_scaner/userLibrary.dart' as user;
+import 'package:barcode_food_scaner/apiController.dart';
+import 'package:flushbar/flushbar.dart';
 
 class ReportPage extends StatefulWidget {
   final String product;
@@ -15,7 +17,7 @@ class ReportPage extends StatefulWidget {
 class _ReportPageState extends State<ReportPage> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   bool _isloading = false;
-  String content;
+  String _content;
   @override
   Widget build(BuildContext context) {
     if (user.userData != null)
@@ -45,7 +47,7 @@ class _ReportPageState extends State<ReportPage> {
                                     return "To pole nie może być puste";
                                 },
                                 onSaved: (String value) {
-                                  content = value;
+                                  _content = value;
                                 },
                                 onEditingComplete: () {
                                   _sendData();
@@ -93,10 +95,29 @@ class _ReportPageState extends State<ReportPage> {
       );
   }
 
-  _sendData() {
+  _sendData() async {
     setState(() {
       _isloading = true;
       _formKey.currentState.save();
     });
+    var _data = await Api().report(widget.product, _content);
+    if (_data == 200) {
+      setState(() {
+        _isloading = false;
+      });
+      Navigator.pop(context);
+      Flushbar(
+        message: "Dziękujemy za zgłoszenie",
+        duration: Duration(seconds: 3),
+      )..show(context);
+    } else {
+      setState(() {
+        _isloading = false;
+      });
+      Flushbar(
+        message: "Coś poszło nie tak",
+        duration: Duration(seconds: 3),
+      )..show(context);
+    }
   }
 }
