@@ -2,6 +2,8 @@ import 'package:barcode_food_scaner/apiController.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter/material.dart';
+import 'package:flushbar/flushbar.dart';
+import 'package:barcode_food_scaner/report.dart';
 
 class Product extends StatefulWidget {
   final String content;
@@ -19,10 +21,29 @@ class _ProductState extends State<Product> {
   loadData() async {
     print("test");
     _product = await Api().getProduct(widget.content, widget.byId);
-    setState(() {
-      _isLoading = false;
-    });
-    _product = _product[0];
+    print(_product);
+    if (_product.isEmpty) {
+      Navigator.pop(context);
+      Flushbar(
+        title: "Nie znaleziono produktu ://",
+        message: "Może zechciałbyś go dodać do naszej bazy?",
+        duration: Duration(seconds: 3),
+        mainButton: FlatButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/add');
+            },
+            child: Text(
+              "Dodaj produkt",
+              style: TextStyle(color: Colors.green[800]),
+            )),
+      )..show(context);
+      return;
+    } else {
+      setState(() {
+        _isLoading = false;
+      });
+      _product = _product[0];
+    }
     print(_product);
   }
 
@@ -35,7 +56,26 @@ class _ProductState extends State<Product> {
           slivers: [
             SliverAppBar(
               actions: [
-                IconButton(icon: Icon(Icons.more_vert), onPressed: () {})
+                PopupMenuButton<String>(
+                  onSelected: handleClick,
+                  itemBuilder: (BuildContext context) {
+                    return {'Zgłoś produkt'}.map((String choice) {
+                      return PopupMenuItem<String>(
+                        value: choice,
+                        child: FlatButton(
+                          child: Text("Zgłoś produkt"),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        ReportPage(_product['id'].toString())));
+                          },
+                        ),
+                      );
+                    }).toList();
+                  },
+                ),
               ],
               backgroundColor: Colors.white,
               expandedHeight: 350,
@@ -61,6 +101,13 @@ class _ProductState extends State<Product> {
       ),
       // body: _isLoading ? loading() : loaded(_product),
     );
+  }
+
+  void handleClick(String value) {
+    switch (value) {
+      case 'Zgłoś produkt':
+        break;
+    }
   }
 
   loaded(product) {

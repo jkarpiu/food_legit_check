@@ -143,7 +143,6 @@ class _HomeState extends State<Home> {
                             "na podstawie twoich ostatnich zdrowe jedzeinie")),
                   )
                 ])),
-            Text(_data)
           ],
         ));
   }

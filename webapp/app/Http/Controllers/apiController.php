@@ -14,14 +14,16 @@ class apiController extends Controller
     public function get(Request $request)
     {
         Auth::shouldUse('api');
-
-        if ($_REQUEST['id'] == null)
-            $product = Product::where('barcode', $_REQUEST['barcode'])->get();
+        
+        if ($request['id'] == null)
+            $product = Product::where('barcode', $request['barcode'])->get();
         else
-            $product =  Product::where('id', $_REQUEST['id'])->get();
+            $product =  Product::where('id', $request['id'])->get();
 
         if ($product == null)
             return response()->json(404);
+
+
         $user = User::where('id', Auth::id())->get();
         if (Auth::user()) {
             $user[0]->queries()->create([

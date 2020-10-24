@@ -36,6 +36,7 @@ dependencies:
   google_sign_in: any
   flutter_signin_button: any
   lazy_load_scrollview: any
+  flushbar: any
 
 dev_dependencies:
   flutter_test:
