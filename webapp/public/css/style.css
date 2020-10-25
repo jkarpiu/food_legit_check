@@ -1049,7 +1049,7 @@ article.mobile-app section.download-app img:hover {
 }
 
 article.mobile-app section.gallery img {
-    margin-top: 0px;
+    margin-top: 5px;
     width: 90%;
     min-width: 256px;
 }
