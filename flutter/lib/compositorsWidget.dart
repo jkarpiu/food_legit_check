@@ -42,7 +42,6 @@ class _CompositorsState extends State<Compositors> {
                             iconSize: 16,
                             color: Colors.red[900],
                             onPressed: () {
-                              print("remove" + index.toString());
                               setState(() {
                                 widget.Composition.removeAt(index);
                               });
@@ -97,7 +96,6 @@ class _CompositorsState extends State<Compositors> {
 
   addCompositor(execution) {
     if (widget.execute || execution) {
-      print("tst");
       setState(() {
         widget.Composition.add(new _CompositionElement().element);
       });

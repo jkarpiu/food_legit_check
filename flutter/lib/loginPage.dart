@@ -58,7 +58,7 @@ class _LoginPageState extends State<LoginPage> {
                             ),
                             TextFormField(
                               decoration: InputDecoration(
-                                  hintText: "Hasełko",
+                                  hintText: "Hasło",
                                   prefixIcon: Icon(Icons.lock)),
                               obscureText: true,
                               validator: (String value) {
@@ -110,9 +110,8 @@ class _LoginPageState extends State<LoginPage> {
                         Future<void> _handleSignIn() async {
                           try {
                             var google = await _googleSignIn.signIn();
-                            print(google);
                           } catch (error) {
-                            print(error);
+                            (error);
                           }
                         }
 

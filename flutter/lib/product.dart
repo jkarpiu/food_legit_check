@@ -19,9 +19,7 @@ class _ProductState extends State<Product> {
   var _product;
 
   loadData() async {
-    print("test");
     _product = await Api().getProduct(widget.content, widget.byId);
-    print(_product);
     if (_product.isEmpty) {
       Navigator.pop(context);
       Flushbar(
@@ -45,7 +43,6 @@ class _ProductState extends State<Product> {
       });
       _product = _product[0];
     }
-    print(_product);
   }
 
   @override
@@ -96,7 +93,7 @@ class _ProductState extends State<Product> {
             SliverFixedExtentList(
                 delegate: SliverChildListDelegate(
                     [_isLoading ? loading() : loaded(_product)]),
-                itemExtent: 1000.0)
+                itemExtent: 500.0)
           ],
         ),
       ),
@@ -117,32 +114,46 @@ class _ProductState extends State<Product> {
       children: <Widget>[
         Card(
           elevation: 2,
-          child: Row(
-            children: [
-              Container(
-                  padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
-                  child: Column(children: <Widget>[
-                    Text(
-                      product["name"],
-                      softWrap: true,
-                    ),
-                    Text(product['category']),
-                    Align(
-                      alignment: Alignment.bottomRight,
-                      child: Text("Orientacyjna cena: " + product["price"]),
-                    )
-                  ]))
-            ],
-          ),
+          child: Container(
+              padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+              child: Column(children: <Widget>[
+                RichText(
+                  text: TextSpan(
+                      style: TextStyle(
+                        color: Colors.grey[800],
+                      ),
+                      children: [
+                        TextSpan(
+                            text: product['name'] + "\n",
+                            style: TextStyle(fontSize: 22)),
+                        TextSpan(
+                            text: product['category'] + "\n",
+                            style: TextStyle(color: Colors.grey, fontSize: 16)),
+                      ]),
+                ),
+                Align(
+                  alignment: Alignment.bottomRight,
+                  child: Text(product['price'] + " zł",
+                      style: TextStyle(fontSize: 20)),
+                )
+              ])),
         ),
         Card(
             elevation: 2,
             child: Container(
-              padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
-              child: Text(product['components'] != null
-                  ? product['components']
-                  : "Niestety, jeszcze nie znamy składu tego produktu :-("),
-            )),
+                padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+                child: Column(children: [
+                  Align(
+                      alignment: Alignment.topLeft,
+                      child: Text("Składniki: ",
+                          style: TextStyle(fontSize: 14, color: Colors.grey))),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(product['components'] != null
+                      ? product['components']
+                      : "Niestety, jeszcze nie znamy składu tego produktu :-("),
+                ]))),
         Card(
           child: Container(
             padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
