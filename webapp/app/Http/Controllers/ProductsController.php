@@ -34,11 +34,12 @@ class ProductsController extends Controller
         $illness_ids = explode(",", $product -> illness);
         $illness_contents = [];
         foreach ($illness_ids as $ill) {
-            // array_push($illness_contents, Illness::find($ill)->content);
-            array_combine($ill, Illness::find($ill)->content);
+            $a = array(Illness::find($ill)->titles0, Illness::find($ill)->content);
+            array_push($illness_contents, $a);
         }
-        dd($illness_contents);
-        return view('singleProduct')->with('product', $product);
+        $illness = $illness_contents;
+        // dd($illness);
+        return view('singleProduct', compact('product', 'illness'));
     }
 
     public function add($id) {

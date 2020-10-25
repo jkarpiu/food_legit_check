@@ -39,8 +39,7 @@
     </nav>
     @if ($activeSite == 'home')
     <form action="{{ url('/search') }}" method="get">
-        <input type="text" name="query" id="search" placeholder="Mleko" autocomplete="off" value="{{ $search ?? '' }}"
-            autofocus>
+        <input type="text" name="query" id="search" placeholder="Mleko" autocomplete="off" value="{{ $search ?? '' }}">
     </form>
     @endif
     @if ($activeSite == 'login')
