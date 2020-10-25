@@ -14,3 +14,10 @@ window.addEventListener('scroll', () => {
 arrow.addEventListener('click', () => {
     window.scrollTo(0, 0)
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (document.querySelector('.bss').getBoundingClientRect().top < 0) {
+        arrow.style.opacity = '1'
+        arrow.style.display = 'block'
+    }
+})
