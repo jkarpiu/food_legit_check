@@ -9,6 +9,7 @@ import 'loginPage.dart';
 import 'package:barcode_food_scaner/registerPage.dart';
 import 'package:barcode_food_scaner/historyPage.dart';
 import 'package:barcode_food_scaner/catalogPage.dart';
+import 'package:barcode_food_scaner/about.dart';
 
 void main() => runApp(MaterialApp(
       theme: ThemeData(
@@ -23,6 +24,7 @@ void main() => runApp(MaterialApp(
         "/settings/profile": (context) => ProfileSettings(),
         "/login": (context) => LoginPage(),
         "/register": (context) => RegisterPage(),
-        "/catalog": (context) => Catalog()
+        "/catalog": (context) => Catalog(),
+        "/about": (context) => AboutPage()
       },
     ));

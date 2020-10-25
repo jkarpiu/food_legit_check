@@ -19,6 +19,7 @@ Route::group([
 Route::get("/search", "apiController@shortSearch");
 Route::get('/get_product', "apiController@get");
 Route::get('/get_catalog', "apiController@catalog");
+Route::get("/get_ill", 'apiController@get_illnesses'); 
 Route::middleware('auth:api')->get('/get_history', "apiController@productsHistory");
 Route::middleware('auth:api')->post('/report', 'apiController@report');
 Route::middleware('auth:api')->post('/add_product', 'apiController@add_product');

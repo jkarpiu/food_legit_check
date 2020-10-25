@@ -26,6 +26,15 @@ class Api {
     return jsonDecode(data.body);
   }
 
+  get_ill(String id) async {
+    String fullUrl = Uri.http(adress, "/api/get_ill", {"id": id}).toString();
+    var data = await http.get(
+      fullUrl,
+      headers: await _setHeaders(false),
+    );
+    return jsonDecode(data.body);
+  }
+
   test() async {
     String fullUrl = adress + "test";
     var data = await http.get(fullUrl, headers: _setHeaders(false));

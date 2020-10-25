@@ -17,7 +17,7 @@ class Product extends StatefulWidget {
 class _ProductState extends State<Product> {
   bool _isLoading = true;
   var _product;
-
+  var _ill;
   loadData() async {
     _product = await Api().getProduct(widget.content, widget.byId);
     if (_product.isEmpty) {
@@ -38,6 +38,8 @@ class _ProductState extends State<Product> {
       )..show(context);
       return;
     } else {
+      _ill = await Api().get_ill(_product[0]['id'].toString());
+      print(_ill);
       setState(() {
         _isLoading = false;
       });
@@ -155,11 +157,43 @@ class _ProductState extends State<Product> {
                       : "Niestety, jeszcze nie znamy składu tego produktu :-("),
                 ]))),
         Card(
-          child: Container(
-            padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
-            child: Text("Choróbska"),
-          ),
-        )
+            child: !_ill.isEmpty
+                ? ListView.builder(
+                    physics: NeverScrollableScrollPhysics(),
+                    shrinkWrap: true,
+                    itemCount: _ill.length,
+                    itemBuilder: (context, index) {
+                      return Container(
+                          padding: EdgeInsets.all(10),
+                          child: Column(
+                            children: [
+                              RichText(
+                                  text: TextSpan(
+                                      style: TextStyle(
+                                          color: Colors.black, fontSize: 15),
+                                      children: [
+                                    TextSpan(
+                                        text: (_ill[index][0]['titles0'] + " "),
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold)),
+                                    _ill[index][0]['titles1'] != null
+                                        ? TextSpan(
+                                            text: "(" +
+                                                _ill[index][0]['titles1'] +
+                                                ") ")
+                                        : TextSpan(),
+                                    TextSpan(
+                                        text: "- " + _ill[index][0]['content'])
+                                  ]))
+                            ],
+                          ));
+                    })
+                : Container(
+                    padding: EdgeInsets.all(10),
+                    child: Center(
+                      child: Text(
+                          "Nie znamy lub nie ma żanych skutków zdrowotnych związanych z tym produktem "),
+                    )))
       ],
     );
   }

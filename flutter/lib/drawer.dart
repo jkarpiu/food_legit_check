@@ -129,6 +129,7 @@ class AppDrawer extends StatelessWidget {
                       icon: Icon(Icons.info_outline),
                       onPressed: () {
                         Navigator.pop(context);
+                        Navigator.pushNamed(context, "/about");
                       },
                     ),
                     IconButton(

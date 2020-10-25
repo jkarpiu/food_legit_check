@@ -146,7 +146,7 @@ class _HomeState extends State<Home> {
                     elevation: 4,
                     child: ListTile(
                         title: Text(
-                            "na podstawie twoich ostatnich zdrowe jedzeinie")),
+                            "Sugestie zdrowego jedzenia na podstawie aktywności użytkownika")),
                   )
                 ])),
           ],

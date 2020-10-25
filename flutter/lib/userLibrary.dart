@@ -24,4 +24,4 @@ List catagories = [
   'Żywność dla dzieci',
 ];
 
-String serverIp = "139.162.153.84";
+String serverIp = "192.168.8.125:8000";

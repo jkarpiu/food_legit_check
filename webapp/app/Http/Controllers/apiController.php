@@ -13,6 +13,7 @@ use Illuminate\Support\Str;
 use App\ToAddProduct;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
+use App\Illness;
 
 
 class apiController extends Controller
@@ -38,8 +39,28 @@ class apiController extends Controller
                 'eaten' => false
             ]);
         }
+        $illnesses = [];
+
+
+
         return response()->json($product);
     }
+
+    public function get_illnesses(Request $request)
+    {
+        $product =  Product::where('id', $request['id'])->get();
+        if ($product[0]['illness'] != null && $product[0]['illness'] != '') {
+            $ilnessIds = explode(',', $product[0]['illness']);
+            $i = 0;
+            foreach ($ilnessIds as $ill) {
+                $illnesses[$i] = Illness::where('id', $ill)->get();
+                $i++;
+            }
+        return response() -> json($illnesses);
+        }
+        return response() -> json([]);
+    }
+
     public function shortSearch()
     {
         return response()->json(
@@ -96,7 +117,7 @@ class apiController extends Controller
         $img_name = Str::random(30);
         $extension = $req->imageExt;
         $b64 = $req->image;
-        Image::make($b64)->save(public_path('storage/'). $img_name . "." . $extension);
+        Image::make($b64)->save(public_path('storage/') . $img_name . "." . $extension);
         $url = Storage::url($img_name . "." . $extension);
         $product = new ToAddProduct;
         $product->user_id = Auth::user()->id;
