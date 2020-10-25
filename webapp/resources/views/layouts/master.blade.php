@@ -6,23 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="apple-mobile-web-app-title" content="XXX" />
+    <meta name="description" content="Witryna internetowa poświęcona zdobywaniu wiedzy na temat produktów spożywczych" />
+    <meta name="keywords" content="Food-legit-check, zdrowe jedzenie, niezdrowe jedzenie, produkty spożywcze, aplikacja mobilna, flc, produkty, katalog produktów" />
+    <meta name="apple-mobile-web-app-title" content="Food Legit Check"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="XXX" />
-    <meta property="og:description" content="" />
+    <meta property="og:title" content="Food Legit Check" />
+    <meta property="og:description" content="Witryna internetowa poświęcona zdobywaniu wiedzy na temat produktów spożywczych" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="XXX" />
+    <meta property="og:image" content={{ asset("/img/favicon.png") }} />
+    <meta property="og:url" content="foodlegitcheck.online" />
+    <meta property="og:site_name" content="Food Legit Check" />
 
     <title>Food Legit Check</title>
 
     <!-- Canonical link -->
-    <link rel="canonical" href="" />
+    <link rel="canonical" href="foodlegitcheck.online" />
     <!-- Favicon -->
     <link rel="shortcut icon" href={{ asset("/img/favicon.png") }} />
     <link rel="apple-touch-icon" sizes="192x192" href={{ asset("/img/favicon.png") }} />

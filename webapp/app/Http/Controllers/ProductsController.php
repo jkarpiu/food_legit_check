@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use App\Report;
 use App\ToAddProduct;
+use App\Illness;
 
 class ProductsController extends Controller
 {
@@ -30,6 +31,13 @@ class ProductsController extends Controller
 
     public function find($id) {
         $product = Product::find($id);
+        $illness_ids = explode(",", $product -> illness);
+        $illness_contents = [];
+        foreach ($illness_ids as $ill) {
+            // array_push($illness_contents, Illness::find($ill)->content);
+            array_combine($ill, Illness::find($ill)->content);
+        }
+        dd($illness_contents);
         return view('singleProduct')->with('product', $product);
     }
 

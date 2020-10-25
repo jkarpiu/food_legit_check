@@ -15,6 +15,9 @@
         @if ($product -> components != NULL)
         <h3  data-aos="fade-up" data-aos-delay="2000">Składniki: <span class="components">{{ $product -> components}}</span></h3>
         @endif
+        @if ($product -> illness != NULL)
+        <h3  data-aos="fade-up" data-aos-delay="2400">Znane efekty spożycia: <span class="components">{{ $product -> illness}}</span></h3>
+        @endif
         @auth
             @if (Auth::user()->role == 'Administrator')
             <section class="operations">
@@ -24,7 +27,7 @@
             </section>
             @else
             <section class="operations">
-                <a data-aos="fade-up" data-aos-delay="2200"href="{{ url('/product/'.$product-> id.'/report') }}" class="back">Zgłoś produkt</a>
+                <a data-aos="fade-up" data-aos-delay="2500"href="{{ url('/product/'.$product-> id.'/report') }}" class="back">Zgłoś produkt</a>
             </section>
             @endif
         @else
