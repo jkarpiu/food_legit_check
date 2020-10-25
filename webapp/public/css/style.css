@@ -595,6 +595,7 @@ i.fa-arrow-circle-up {
     font-size: 3.5em;
     color: #262626;
     transition: color .6s, opacity .6s;
+    mix-blend-mode: exclusion;
 }
 
 i.fa-arrow-circle-up:hover {
@@ -609,13 +610,26 @@ article.empty-box {
     color: #aaa;
 }
 
-article.ShowMore {
+article.pagination {
     width: 100%;
     height: 5vh;
     text-align: center;
 }
 
-article.ShowMore a {
+article.pagination span {
+    margin-top: -20px;
+    font-size: 1.1em;
+    color: #FFF;
+    background-color: #ccc;
+    border: 0;
+    padding: 10px 20px;
+}
+
+article.pagination span:first-child {
+    margin-right: 10px;
+}
+
+article.pagination a {
     text-decoration: none;
     margin-top: -20px;
     font-size: 1.1em;
@@ -626,9 +640,13 @@ article.ShowMore a {
     transition: .6s background-color;
 }
 
-article.ShowMore a:hover,
-article.ShowMore a:active,
-article.ShowMore a:focus {
+article.pagination a:first-child {
+    margin-right: 10px;
+}
+
+article.pagination a:hover,
+article.pagination a:active,
+article.pagination a:focus {
     outline: none;
     cursor: pointer;
     background-color: #10913798;
