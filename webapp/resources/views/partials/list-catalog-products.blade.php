@@ -26,7 +26,7 @@
         @endif
         @endforeach
     </article>
-    <article class="ShowMore">
-        <a href="" class="load_more" data-aos="fade-in">Pokaż więcej</a>
+    <article class="pagination">
+        @include('pagination', ['paginator' => $products])
     </article>
 </article>

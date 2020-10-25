@@ -87,9 +87,21 @@ Route::get('dashboard/approve/{id}/delete/confirmed', 'ApprovementsController@de
 Route::get('dashboard/approve/{id}', 'ApprovementsController@find');
 
 Route::get('dashboard/account', 'UserController@options');
-Route::view('/dashboard/account/edit', 'edit-user');
+Route::get('/dashboard/account/edit', function() {
+    if (Auth::user()) {
+        return view('edit-user');
+    } else {
+        return redirect('/login');
+    }
+});
 Route::post('edit-user', 'UserController@edit')->name('editUser');
-Route::view('/dashboard/account/delete', 'confirm_delete_account');
+Route::get('/dashboard/account/delete', function() {
+    if (Auth::user()) {
+        return view('confirm_delete_account');
+    } else {
+        return redirect('/login');
+    }
+});
 Route::get('dashboard/account/delete/confirmed', 'UserController@delete')->name('deleteUser');
 Route::get('/dashboard/account/change-password', 'ChangePasswordController@index');
 Route::post('change-password', 'ChangePasswordController@store')->name('change.password');
