@@ -7,7 +7,9 @@
     <section class="download-app">
         <h2 data-aos="fade-up">Pobierz naszą aplikację</h2>
         <div data-aos="fade-up" data-aos-delay="800">
-            <img src="/img/mobile-logo.png" alt="">
+            <a href="/our_app/download">
+                <img src="/img/mobile-logo.png" alt="">
+            </a>
         </div>
     </section>
     <section class="gallery">

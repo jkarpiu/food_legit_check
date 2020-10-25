@@ -128,11 +128,13 @@ section.errors-box {
     align-items: center;
 }
 
-section.errors-box ul {
+section.errors-box ul,
+h3.effects ul {
     list-style-type: none;
 }
 
-section.errors-box ul li {
+section.errors-box ul li,
+h3.effects ul li {
     margin-bottom: 5px;
 }
 
@@ -142,7 +144,14 @@ section.errors-box ul li::before {
     font-weight: bold;
     display: inline-block;
     width: 1em;
-    margin-left: -1em;
+}
+
+h3.effects ul li::before {
+    content: "\2022";
+    color: #109137;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
 }
 
 section.login-section form.login-box,
@@ -301,10 +310,14 @@ header.admin h2.header-title {
     padding: 0 20px;
 }
 
+.toap {
+    word-break: break-all;
+}
+
 article.activity-center {
     display: flex;
     width: 100%;
-    height: 75vh;
+    height: auto;
     padding: 100px;
 }
 
@@ -608,6 +621,9 @@ article.empty-box {
     height: 30vh;
     text-align: center;
     color: #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 article.pagination {
@@ -650,10 +666,6 @@ article.pagination a:focus {
     outline: none;
     cursor: pointer;
     background-color: #10913798;
-}
-
-article.empty-box h2 {
-    margin-top: 100px;
 }
 
 article.empty-box h3 {
@@ -1449,7 +1461,7 @@ article.list-products .single-product-outer:hover .img-box {
 article.single-product-site {
     width: 100%;
     height: 100vh;
-    padding: 100px 50px;
+    padding: 60px 50px;
 }
 
 article.single-product-site .left-part {
@@ -1471,31 +1483,54 @@ article.single-product-site .right-part {
 }
 
 article.single-product-site .right-part h1 {
-    font-size: 2em;
+    font-size: 1.7em;
     color: #109137;
     text-transform: uppercase;
     margin-bottom: 5px;
 }
 
+article.single-product-site .right-part hr {
+    background: #eee;
+}
+
 article.single-product-site .right-part h2 {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 5px;
-    font-size: 1.6em;
+    font-size: 1.3em;
     text-transform: uppercase;
 }
 
 article.single-product-site .right-part h3 {
+    font-size: 1.1em;
     color: #aaa;
     text-transform: uppercase;
 }
 
 article.single-product-site .right-part h3.barcode {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+    font-size: 1.1em;
+    margin-bottom: 5px;
 }
 
 article.single-product-site .right-part h3 .components {
     text-transform: lowercase;
+}
+
+article.single-product-site .right-part h3 .illness {
+    text-transform: lowercase;
+}
+
+article.single-product-site .right-part h3.effects {
+    margin-top: 5px;
+}
+
+article.single-product-site .right-part h3.effects ul {
+    margin-top: 5px;
+    padding-left: 40px;
+}
+
+article.single-product-site .right-part h3.effects ul li span.ename {
+    text-transform: uppercase;
+    color: #109137;
 }
 
 article.report-product {
@@ -1674,7 +1709,6 @@ footer .copyright {
     }
     article.activity-center.founded {
         flex-direction: column;
-        height: 120vh;
     }
     article.activity-center.founded .new-products-to-approve {
         margin-top: 50px;
@@ -1695,7 +1729,6 @@ footer .copyright {
     }
     article.mobile-app section.rate-app form textarea {
         width: 280px;
-        height: 160px!important;
     }
 }
 
@@ -1834,6 +1867,9 @@ footer .copyright {
     form.login-box {
         min-width: 350px;
     }
+    article.single-product-site .right-part h3.effects ul {
+        padding-left: 0px;
+    }
 }
 
 @media (max-width: 786px) {
@@ -1861,9 +1897,6 @@ footer .copyright {
     }
     article.activity-center.founded .new-products-to-approve .single-product-outer {
         width: 100%;
-    }
-    article.activity-center.founded {
-        height: 160vh;
     }
     section.login-section {
         display: grid;
@@ -2081,11 +2114,7 @@ footer .copyright {
         font-size: 14px;
     }
     article.activity-center {
-        height: 100vh;
         padding: 40px 20px;
-    }
-    article.activity-center.founded {
-        height: 210vh;
     }
     header.register,
     header.login {
@@ -2154,21 +2183,11 @@ footer .copyright {
         font-size: 13px;
     }
     article.activity-center {
-        height: 90vh;
         padding: 40px 20px;
-    }
-    article.activity-center.founded {
-        height: 190vh;
     }
 }
 
 @media (max-width: 400px) and (max-height: 700px) {
-    article.activity-center.founded {
-        height: 240vh;
-    }
-    article.activity-center {
-        height: 110vh;
-    }
     header.register,
     header.login {
         height: 130vh;
@@ -2219,12 +2238,6 @@ footer .copyright {
     }
     section.login-section .login-box {
         padding: 20px 30px!important;
-    }
-    article.activity-center {
-        height: 130vh;
-    }
-    article.activity-center.founded {
-        height: 290vh;
     }
     header.register,
     header.login {

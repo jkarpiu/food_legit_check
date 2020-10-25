@@ -16,7 +16,13 @@
         <h3  data-aos="fade-up" data-aos-delay="2000">Składniki: <span class="components">{{ $product -> components}}</span></h3>
         @endif
         @if ($product -> illness != NULL)
-        <h3  data-aos="fade-up" data-aos-delay="2400">Znane efekty spożycia: <span class="components">{{ $product -> illness}}</span></h3>
+        <h3 data-aos="fade-up" data-aos-delay="2400" class="effects">Znane efekty spożycia: <span class="illness">
+        <ul class="list-effects">
+        @foreach ($illness as $ill)
+            <li> <span class="ename">{{$ill[0]}}</span> - {{$ill[1]}}</li>
+        @endforeach
+        </ul>
+        </span></h3>
         @endif
         @auth
             @if (Auth::user()->role == 'Administrator')

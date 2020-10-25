@@ -23,7 +23,7 @@
         <span class="second-part" data-aos="fade-in" data-aos-delay="800">
             <label for="components">Składniki: </label>
             <textarea name="components" id="components">{{ $product -> components  }}</textarea>
-            <label for="effects">Efekty stosowania: </label>
+            <label for="effects">Efekty spożycia: </label>
             <textarea name="effects" id="effects" maxlength="255">{{ $product -> effects  }}</textarea>
         </span>
         <span class="third-part" data-aos="fade-up" data-aos-delay="1200">
