@@ -23,7 +23,6 @@ class Api {
       fullUrl,
       headers: await _setHeaders(true),
     );
-    print(data.body);
     return jsonDecode(data.body);
   }
 
@@ -83,7 +82,6 @@ class Api {
 
     String fullUrl = Uri.http(adress, "/api/get_history", _params()).toString();
     var data = await http.get(fullUrl, headers: await _setHeaders(true));
-    print(data.body);
     return jsonDecode(data.body);
   }
 
@@ -101,7 +99,6 @@ class Api {
 
     String fullUrl = Uri.http(adress, "/api/get_catalog", _params()).toString();
     var data = await http.get(fullUrl, headers: await _setHeaders(false));
-    print(data.statusCode);
     return jsonDecode(data.body);
   }
 
@@ -112,17 +109,14 @@ class Api {
       body: jsonEncode({"product_id": productId, "content": content}),
       headers: await _setHeaders(true),
     );
-    print(data.body);
     return data.statusCode;
   }
 
   addProduct(var product) async {
     String fullUrl = "http://" + adress + "/api/add_product";
     SharedPreferences localStorage = await SharedPreferences.getInstance();
-    print(product);
     var data = await http.post(fullUrl,
         body: jsonEncode(product), headers: await _setHeaders(true));
-    print(data.body);
     return data.statusCode;
   }
 

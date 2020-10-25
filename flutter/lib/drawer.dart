@@ -17,6 +17,29 @@ class AppDrawer extends StatelessWidget {
           DrawerHeader(
             child: Column(
               children: <Widget>[
+                Align(
+                    alignment: Alignment.centerLeft,
+                    child: RichText(
+                      text: TextSpan(
+                          style: TextStyle(
+                              color: Colors.grey[800],
+                              fontSize: 27,
+                              fontFamily: 'Monospace'),
+                          children: [
+                            TextSpan(
+                                text: "F",
+                                style: TextStyle(color: Colors.green[800])),
+                            TextSpan(text: "ood \n"),
+                            TextSpan(
+                                text: "L",
+                                style: TextStyle(color: Colors.green[800])),
+                            TextSpan(text: "egit \n"),
+                            TextSpan(
+                                text: "C",
+                                style: TextStyle(color: Colors.green[800])),
+                            TextSpan(text: "heck"),
+                          ]),
+                    )),
                 Expanded(
                     child: Align(
                         alignment: Alignment.bottomRight,

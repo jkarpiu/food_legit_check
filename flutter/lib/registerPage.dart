@@ -89,7 +89,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             ),
                             TextFormField(
                               decoration: InputDecoration(
-                                  hintText: "Hasełko",
+                                  hintText: "Hasło",
                                   prefixIcon: Icon(Icons.lock)),
                               obscureText: true,
                               validator: (String value) {
@@ -105,7 +105,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             ),
                             TextFormField(
                               decoration: InputDecoration(
-                                  hintText: "Potwierdź Hasełko",
+                                  hintText: "Potwierdź Hasło",
                                   prefixIcon: Icon(Icons.lock)),
                               obscureText: true,
                               validator: (String value) {
