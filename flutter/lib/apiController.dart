@@ -3,6 +3,8 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 import 'package:barcode_food_scaner/userLibrary.dart' as user;
+import 'dart:io';
+import 'dart:convert';
 
 class Api {
   String adress = user.serverIp;
@@ -110,6 +112,16 @@ class Api {
       body: jsonEncode({"product_id": productId, "content": content}),
       headers: await _setHeaders(true),
     );
+    print(data.body);
+    return data.statusCode;
+  }
+
+  addProduct(var product) async {
+    String fullUrl = "http://" + adress + "/api/add_product";
+    SharedPreferences localStorage = await SharedPreferences.getInstance();
+    print(product);
+    var data = await http.post(fullUrl,
+        body: jsonEncode(product), headers: await _setHeaders(true));
     print(data.body);
     return data.statusCode;
   }

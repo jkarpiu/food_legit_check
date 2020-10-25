@@ -33,23 +33,29 @@ class _HistoryWidgetState extends State<HistoryWidget> {
               ? Flex(direction: Axis.vertical, children: [
                   SizedBox(
                       height: 225,
-                      child: ListView.builder(
-                          physics: NeverScrollableScrollPhysics(),
-                          itemCount: 4,
-                          itemBuilder: (BuildContext ctxt, int index) {
-                            return ListTile(
-                              title:
-                                  (_data[index]['product']['name'].length > 20
-                                      ? Text(_data[index]['product']['name']
-                                              .toString()
-                                              .substring(0, 20) +
-                                          "...")
-                                      : Text(_data[index]['product']['name']
-                                          .toString())),
-                              trailing: Text(
-                                  _data[index]['created_at'].substring(0, 10)),
-                            );
-                          })),
+                      child: _data.isEmpty
+                          ? Center(
+                              child: Text(
+                                  "Twoja historia jest niestety pusta ://"),
+                            )
+                          : ListView.builder(
+                              physics: NeverScrollableScrollPhysics(),
+                              itemCount: _data.length,
+                              itemBuilder: (BuildContext ctxt, int index) {
+                                return ListTile(
+                                  title:
+                                      (_data[index]['product']['name'].length >
+                                              20
+                                          ? Text(_data[index]['product']['name']
+                                                  .toString()
+                                                  .substring(0, 20) +
+                                              "...")
+                                          : Text(_data[index]['product']['name']
+                                              .toString())),
+                                  trailing: Text(_data[index]['created_at']
+                                      .substring(0, 10)),
+                                );
+                              })),
                   Divider(
                     height: 1,
                     thickness: 1,

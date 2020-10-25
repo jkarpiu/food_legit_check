@@ -37,6 +37,7 @@ dependencies:
   flutter_signin_button: any
   lazy_load_scrollview: any
   flushbar: any
+  image_picker: any
 
 dev_dependencies:
   flutter_test:

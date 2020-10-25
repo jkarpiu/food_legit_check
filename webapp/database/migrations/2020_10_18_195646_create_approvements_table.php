@@ -16,7 +16,7 @@ class CreateApprovementsTable extends Migration
         Schema::create('approvements', function (Blueprint $table) {
             $table->id('product_id');
             $table->bigInteger('user_id');
-            $table->boolean('is_approved')->default('False');
+            $table->boolean('is_approved')->default(false);
             $table->string('category', 25)->default('Inne');
             $table->string('name', 255);
             $table->string('image', 100);

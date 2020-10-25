@@ -1,8 +1,10 @@
 import "package:flutter/cupertino.dart";
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class Compositors extends StatefulWidget {
   final Composition = new List();
+  bool execute = true;
   @override
   _CompositorsState createState() => _CompositorsState();
 }
@@ -10,7 +12,7 @@ class Compositors extends StatefulWidget {
 class _CompositorsState extends State<Compositors> {
   @override
   Widget build(BuildContext context) {
-    widget.Composition.add(new _CompositionElement().element);
+    addCompositor(false);
     return Column(children: [
       ListView.builder(
         physics: NeverScrollableScrollPhysics(),
@@ -19,46 +21,88 @@ class _CompositorsState extends State<Compositors> {
         itemBuilder: (BuildContext ctxt, int index) {
           widget.Composition[index]["id"] = index;
           var units = new UnitsDropdown();
-          return ListTile(
-            title: Column(
-              children: [
-                TextFormField(
-                  decoration: InputDecoration(hintText: "Nazwa składnika"),
-                  validator: (String value) {
-                    if (value.isEmpty) return "To pole nie może być puste";
-                  },
-                  onSaved: (String value) {
-                    widget.Composition[index]["name"] = value;
-                  },
-                  textInputAction: TextInputAction.next,
-                ),
-                ListTile(
-                    title: TextFormField(
-                      decoration:
-                          InputDecoration(hintText: "Ilość (jeśli znasz)"),
+          return Card(
+              elevation: 4,
+              child: Container(
+                padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+                child: Column(
+                  children: [
+                    Flex(
+                        direction: Axis.horizontal,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Składnik: ",
+                            style: TextStyle(
+                                color: Colors.green[800],
+                                fontFamily: "Monospace"),
+                          ),
+                          IconButton(
+                            icon: Icon(Icons.cancel),
+                            iconSize: 16,
+                            color: Colors.red[900],
+                            onPressed: () {
+                              print("remove" + index.toString());
+                              setState(() {
+                                widget.Composition.removeAt(index);
+                              });
+                            },
+                            constraints: BoxConstraints(maxHeight: 16),
+                          )
+                        ]),
+                    TextFormField(
+                      decoration: InputDecoration(hintText: "Nazwa składnika"),
                       validator: (String value) {
                         if (value.isEmpty) return "To pole nie może być puste";
                       },
                       onSaved: (String value) {
-                        widget.Composition[index]["amount"] = value;
-                        widget.Composition[index]["amountUnit"] =
-                            units.dropdownValue;
+                        widget.Composition[index]["name"] = value;
                       },
-                      keyboardType: TextInputType.number,
                       textInputAction: TextInputAction.next,
                     ),
-                    trailing: units)
-              ],
-            ),
-          );
+                    ListTile(
+                        title: TextFormField(
+                          decoration:
+                              InputDecoration(hintText: "Ilość (jeśli znasz)"),
+                          validator: (String value) {
+                            if (value.isEmpty)
+                              return "To pole nie może być puste";
+                          },
+                          onSaved: (String value) {
+                            widget.Composition[index]["amount"] = value;
+                            widget.Composition[index]["amountUnit"] =
+                                units.dropdownValue;
+                          },
+                          keyboardType: TextInputType.number,
+                          textInputAction:
+                              index == widget.Composition.length - 1
+                                  ? TextInputAction.done
+                                  : TextInputAction.next,
+                        ),
+                        trailing: units)
+                  ],
+                ),
+              ));
         },
       ),
-      RaisedButton(
-          child: Text("Czy karp jest idiotą? "),
+      RaisedButton.icon(
+          color: Colors.white,
+          icon: Icon(Icons.add),
+          label: Text("Dodaj składnik"),
           onPressed: () {
-            setState(() {});
+            addCompositor(true);
           })
     ]);
+  }
+
+  addCompositor(execution) {
+    if (widget.execute || execution) {
+      print("tst");
+      setState(() {
+        widget.Composition.add(new _CompositionElement().element);
+      });
+      widget.execute = false;
+    }
   }
 }
 

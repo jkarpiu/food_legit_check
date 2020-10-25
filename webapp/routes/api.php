@@ -21,5 +21,6 @@ Route::get('/get_product', "apiController@get");
 Route::get('/get_catalog', "apiController@catalog");
 Route::middleware('auth:api')->get('/get_history', "apiController@productsHistory");
 Route::middleware('auth:api')->post('/report', 'apiController@report');
+Route::middleware('auth:api')->post('/add_product', 'apiController@add_product');
 Route::get("/test", "apiController@test");
 Route::get('/categories', 'apiController@categories');
